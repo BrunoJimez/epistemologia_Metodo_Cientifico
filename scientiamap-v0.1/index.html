@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ScientiaMap: laboratório metodológico aberto da dúvida à comunicação científica.">
+  <title>ScientiaMap — Laboratório metodológico aberto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Ir ao conteúdo</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ScientiaMap">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>ScientiaMap <small>beta 0.1</small></span>
+    </a>
+    <div class="top-actions">
+      <label class="sr-only" for="language">Idioma</label>
+      <select id="language">
+        <option value="pt-BR">Português (Brasil)</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh-CN">简体中文</option>
+      </select>
+      <button id="new-project" class="button ghost" type="button">Novo projeto</button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">Laboratório metodológico aberto</p>
+        <h1 data-i18n="hero">Da dúvida ao estudo — sem transformar checklist em verdade.</h1>
+        <p class="hero-copy" data-i18n="intro">Organize perguntas, evidências, modelos, dados e crítica em 12 etapas iterativas. O sistema avalia completude documental; pessoas e comunidades científicas avaliam validade.</p>
+      </div>
+      <div class="principles" aria-label="Princípios do produto">
+        <span><b aria-hidden="true">●</b> <i data-i18n="local">Salvo neste dispositivo</i></span>
+        <span><b aria-hidden="true">◇</b> <i data-i18n="audit">Decisões auditáveis</i></span>
+        <span><b aria-hidden="true">↗</b> <i data-i18n="free">Fontes sem API paga</i></span>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="Módulos ScientiaMap">
+      <button type="button" data-tab="build" class="active" data-i18n="navBuild">Construir estudo</button>
+      <button type="button" data-tab="analyze" data-i18n="navAnalyze">Analisar artigo</button>
+      <button type="button" data-tab="map" data-i18n="navMap">Mapa metodológico</button>
+      <button type="button" data-tab="search" data-i18n="navSearch">Buscar literatura</button>
+    </nav>
+
+    <section id="panel-build" class="panel active" aria-labelledby="build-title">
+      <div class="project-head">
+        <div>
+          <p class="section-kicker" data-i18n="project">Projeto de pesquisa</p>
+          <h2 id="build-title" data-project-title data-i18n="workingTitle">Título provisório</h2>
+        </div>
+        <div class="progress-copy"><strong id="progress-count">0/12</strong><span data-i18n="progress">Progresso documentado</span></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+      </div>
+
+      <div class="project-basics">
+        <label><span data-i18n="workingTitle">Título provisório</span><input id="project-title" type="text" autocomplete="off"></label>
+        <label class="question-field"><span data-i18n="question">Dúvida ou pergunta inicial</span><textarea id="project-question" rows="2"></textarea></label>
+        <label><span data-i18n="studyType">Tipo de estudo</span><select id="study-type"></select></label>
+      </div>
+
+      <div class="builder">
+        <aside id="stage-rail" class="stage-rail" aria-label="Etapas da pesquisa"></aside>
+        <article class="editor">
+          <header class="editor-head">
+            <div><p class="section-kicker"><span data-i18n="stage">Etapa</span> <span id="stage-counter">1/12</span></p><h2 id="stage-title"></h2></div>
+            <span id="stage-status" class="status-pill open"></span>
+          </header>
+
+          <div class="goal"><strong data-i18n="purpose">Finalidade</strong><p id="stage-goal"></p></div>
+          <label><span data-i18n="mainRecord">Registro principal</span><small id="stage-prompt" class="prompt"></small><textarea id="stage-main" rows="7"></textarea></label>
+          <div class="two-fields">
+            <label><span data-i18n="evidence">Evidência, fonte ou decisão</span><textarea id="stage-evidence" rows="4"></textarea></label>
+            <label><span data-i18n="limits">Incerteza, risco ou limitação</span><textarea id="stage-limits" rows="4"></textarea></label>
+          </div>
+          <fieldset><legend data-i18n="readiness">Critérios de prontidão</legend><div id="stage-checks"></div></fieldset>
+          <p class="gate-note" data-i18n="gate">Porta transparente: texto principal ≥ 80 caracteres; evidência/decisão ≥ 40; limitação ≥ 25; todos os itens marcados.</p>
+          <p id="override-note" class="override-note" hidden></p>
+          <p id="validation" class="validation" role="alert" hidden></p>
+
+          <div id="override-box" class="override-box" hidden>
+            <label><span data-i18n="overrideReason">Justifique a ressalva (mínimo 20 caracteres)</span><textarea id="override-reason" rows="2"></textarea></label>
+            <div><button id="confirm-override" type="button" class="button primary" data-i18n="recordCaveat">Registrar ressalva</button><button id="cancel-override" type="button" class="button ghost" aria-label="Cancelar">×</button></div>
+          </div>
+
+          <div class="editor-actions">
+            <button id="previous-stage" class="button ghost" type="button"><span aria-hidden="true">←</span> <span data-i18n="previous">Anterior</span></button>
+            <span class="autosave"><b aria-hidden="true">✓</b> <i data-i18n="autosave">Salvo automaticamente</i></span>
+            <button id="reopen-stage" class="button secondary" type="button" data-i18n="reopen" hidden>Reabrir etapa</button>
+            <button id="override-stage" class="button secondary" type="button" data-i18n="caveat">Avançar com ressalva</button>
+            <button id="validate-stage" class="button primary" type="button"><span data-i18n="validate">Validar e avançar</span> <span aria-hidden="true">→</span></button>
+          </div>
+          <p id="locked-note" class="locked-note"><span aria-hidden="true">⌁</span> <span data-i18n="lockedNext">A etapa seguinte permanece bloqueada até esta ficar pronta.</span></p>
+        </article>
+      </div>
+
+      <div class="export-bar">
+        <div><strong data-i18n="exportProject">Exportar projeto</strong><small data-i18n="safety">ScientiaMap não substitui orientação especializada, comitê de ética, revisão estatística, revisão por pares ou julgamento clínico.</small></div>
+        <div class="export-actions">
+          <button type="button" data-export="md">Markdown</button><button type="button" data-export="html">HTML</button><button type="button" data-export="doc">Word (.doc)</button><button type="button" data-export="csv">Excel (.csv)</button><button type="button" data-export="tex">LaTeX</button><button type="button" data-export="json">JSON</button><button type="button" data-export="pdf">PDF / imprimir</button>
+          <label class="file-button"><span data-i18n="importJson">Importar JSON</span><input id="import-project" type="file" accept=".json,application/json"></label>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-analyze" class="panel module" aria-labelledby="analyze-title" hidden>
+      <header class="module-head"><p class="section-kicker">02 · Article → framework</p><h2 id="analyze-title" data-i18n="analyzeTitle">Decompositor de artigo</h2><p data-i18n="analyzeIntro">Cole o texto integral ou carregue um arquivo textual. A análise procura conteúdo — não apenas títulos — e associa trechos às 12 etapas.</p></header>
+      <div class="analyzer-input">
+        <label class="file-drop"><span data-i18n="textFile">Arquivo textual</span><input id="article-file" type="file" accept=".txt,.md,.html,.htm,.csv,.tex,.json,text/*"><small>TXT · MD · HTML · CSV · TEX · JSON</small></label>
+        <label><span data-i18n="articleText">Texto do artigo</span><textarea id="article-text" rows="14"></textarea></label>
+        <button id="analyze-button" class="button primary wide" type="button" data-i18n="analyzeAction">Analisar conteúdo</button>
+        <p class="gate-note" data-i18n="heuristic">Análise heurística local. Confiança mede correspondência textual, não qualidade, veracidade nem risco de viés.</p>
+      </div>
+      <div id="analysis-results" class="analysis-results" hidden>
+        <div id="analysis-summary" class="analysis-summary"></div>
+        <div id="coverage-list" class="coverage-list"></div>
+      </div>
+    </section>
+
+    <section id="panel-map" class="panel module map-module" aria-labelledby="map-title" hidden>
+      <header class="module-head"><p class="section-kicker">03 · System view</p><h2 id="map-title" data-i18n="mapTitle">O método é uma rede com retornos, não uma escada irreversível</h2><p data-i18n="mapIntro">As portas ajudam a não pular documentação essencial. Resultados inesperados podem obrigar o pesquisador a voltar ao conceito, modelo, predição, instrumento ou análise.</p></header>
+      <div class="map-legend"><span><i class="conceptual"></i><b data-i18n="conceptual">Construção conceitual</b></span><span><i class="empirical"></i><b data-i18n="empirical">Confronto empírico</b></span><span><i class="public"></i><b data-i18n="publicCritique">Crítica pública</b></span></div>
+      <div id="method-map" class="method-map"></div>
+      <div class="loop-band"><span aria-hidden="true">↶</span><strong data-i18n="returns">Retornos permitidos e registrados</strong><span aria-hidden="true">↷</span></div>
+      <p class="map-warning" data-i18n="mapNote">Prontidão significa: os elementos mínimos foram explicitados. Não significa: a hipótese é verdadeira, o desenho é ético ou a análise está correta.</p>
+    </section>
+
+    <section id="panel-search" class="panel module" aria-labelledby="search-title" hidden>
+      <header class="module-head"><p class="section-kicker">04 · Open discovery</p><h2 id="search-title" data-i18n="searchTitle">Descoberta federada de literatura</h2><p data-i18n="searchIntro">Busca metadados em Crossref, Europe PMC e arXiv. É ampla, mas não exaustiva: bases têm coberturas e políticas diferentes.</p></header>
+      <form id="search-form" class="search-panel">
+        <label class="query-field"><span data-i18n="query">Tema, título, autor, DOI ou palavras-chave</span><input id="search-query" type="search" required minlength="2"></label>
+        <label><span data-i18n="yearFrom">Ano inicial</span><input id="year-from" inputmode="numeric" pattern="[0-9]{4}"></label>
+        <label><span data-i18n="yearTo">Ano final</span><input id="year-to" inputmode="numeric" pattern="[0-9]{4}"></label>
+        <button id="search-button" class="button primary" type="submit" data-i18n="searchAction">Buscar</button>
+      </form>
+      <p class="gate-note" data-i18n="paywall">A plataforma nunca contorna paywalls. Ela aponta metadados e textos legalmente abertos, preservando DOI, fonte e licença quando disponíveis.</p>
+      <p id="search-message" class="validation" role="status" hidden></p>
+      <p id="result-count" class="result-count" hidden></p>
+      <div id="literature-list" class="literature-list"></div>
+      <aside class="source-notes"><h3 data-i18n="sourcesLimits">Fontes e limites da versão</h3><p data-i18n="sourceText">A arquitetura de produção prevê também OpenAlex por chave gratuita ou snapshot local, PubMed/PMC, DOAJ, SciELO e repositórios OAI-PMH. Nenhuma fonte isolada representa “todos os estudos”.</p><div><a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/" target="_blank" rel="noreferrer">Crossref</a><a href="https://europepmc.org/RestfulWebService" target="_blank" rel="noreferrer">Europe PMC</a><a href="https://info.arxiv.org/help/api/" target="_blank" rel="noreferrer">arXiv</a><a href="https://www.openarchives.org/pmh/" target="_blank" rel="noreferrer">OAI-PMH</a></div></aside>
+    </section>
+  </main>
+
+  <footer><strong>ScientiaMap</strong><p data-i18n="safety">ScientiaMap não substitui orientação especializada, comitê de ética, revisão estatística, revisão por pares ou julgamento clínico.</p><span>Protótipo aberto · AGPL-3.0 proposta · 2026</span></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

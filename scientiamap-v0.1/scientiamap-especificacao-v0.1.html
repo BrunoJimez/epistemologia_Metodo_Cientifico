@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Documento de concepção e protótipo" />
+  <title>ScientiaMap</title>
+  <style>
+    html {
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root{--ink:#17251f;--green:#124d3c;--muted:#5d6e66;--line:#d6ded8;--paper:#fffefa;--tint:#eef5f1;--warn:#fff3d9}body{max-width:1040px;margin:0 auto;padding:52px 56px 80px;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.68}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--green);line-height:1.15}h1{font-size:3.5rem;letter-spacing:-.045em;margin:.25em 0}h2{font-size:2.1rem;border-top:1px solid var(--line);padding-top:1.2em;margin-top:2em}h3{font-size:1.35rem;margin-top:1.6em}p{margin:.8em 0}a{color:#176b54;text-decoration-thickness:1px;text-underline-offset:3px}blockquote{margin:1.4em 0;padding:.7em 1.2em;border-left:4px solid var(--green);background:var(--tint)}table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:.88rem}th{background:var(--green);color:white;text-align:left}th,td{padding:.65em .75em;border:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#f6f8f6}code{background:#edf1ee;border-radius:4px;padding:.12em .35em}pre{padding:1em;background:#edf1ee;border:1px solid var(--line);border-radius:8px;overflow:auto}pre code{padding:0}#TOC{margin:2em 0;padding:1.2em 1.5em;background:var(--tint);border-left:4px solid var(--green)}#TOC ul{margin:.35em 0}.subtitle{font:italic 1.25rem Georgia,serif;color:var(--muted)}.author,.date{color:var(--muted)}hr{border:0;border-top:1px solid var(--line)}@media(max-width:700px){body{padding:28px 20px;font-size:16px}h1{font-size:2.5rem}table{display:block;overflow-x:auto}}@media print{body{padding:0;max-width:none}a{color:inherit}h2{break-before:auto}table,pre,blockquote{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ScientiaMap</h1>
+<p class="subtitle">Especificação científica, funcional e arquitetural —
+beta 0.1</p>
+<p class="author">Documento de concepção e protótipo</p>
+<p class="date">13 de agosto de 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumo-executivo" id="toc-resumo-executivo">Resumo
+executivo</a>
+<ul>
+<li><a href="#resultado-entregue-na-beta-0.1"
+id="toc-resultado-entregue-na-beta-0.1">Resultado entregue na beta
+0.1</a></li>
+</ul></li>
+<li><a href="#problema-e-visão" id="toc-problema-e-visão">1. Problema e
+visão</a>
+<ul>
+<li><a href="#princípios-inegociáveis"
+id="toc-princípios-inegociáveis">1.1 Princípios inegociáveis</a></li>
+<li><a href="#não-objetivos" id="toc-não-objetivos">1.2 Não
+objetivos</a></li>
+</ul></li>
+<li><a href="#modelo-epistemológico-operacional"
+id="toc-modelo-epistemológico-operacional">2. Modelo epistemológico
+operacional</a>
+<ul>
+<li><a href="#a-unidade-de-raciocínio"
+id="toc-a-unidade-de-raciocínio">2.1 A unidade de raciocínio</a></li>
+<li><a href="#três-classes-de-validação"
+id="toc-três-classes-de-validação">2.2 Três classes de
+validação</a></li>
+<li><a href="#estados-permitidos" id="toc-estados-permitidos">2.3
+Estados permitidos</a></li>
+</ul></li>
+<li><a href="#framework-de-12-etapas" id="toc-framework-de-12-etapas">3.
+Framework de 12 etapas</a>
+<ul>
+<li><a href="#visão-completa" id="toc-visão-completa">3.1 Visão
+completa</a></li>
+<li><a href="#adaptadores-por-desenho"
+id="toc-adaptadores-por-desenho">3.2 Adaptadores por desenho</a></li>
+</ul></li>
+<li><a href="#analisador-de-artigos" id="toc-analisador-de-artigos">4.
+Analisador de artigos</a>
+<ul>
+<li><a href="#pipeline-de-produção" id="toc-pipeline-de-produção">4.1
+Pipeline de produção</a></li>
+<li><a href="#resultado-que-a-interface-deve-mostrar"
+id="toc-resultado-que-a-interface-deve-mostrar">4.2 Resultado que a
+interface deve mostrar</a></li>
+<li><a href="#o-que-não-localizado-significa"
+id="toc-o-que-não-localizado-significa">4.3 O que “não localizado”
+significa</a></li>
+</ul></li>
+<li><a href="#construtor-guiado-como-jogo-sério"
+id="toc-construtor-guiado-como-jogo-sério">5. Construtor guiado como
+“jogo sério”</a>
+<ul>
+<li><a href="#mecânica-segura" id="toc-mecânica-segura">5.1 Mecânica
+segura</a></li>
+<li><a href="#dependências-e-invalidação"
+id="toc-dependências-e-invalidação">5.2 Dependências e
+invalidação</a></li>
+</ul></li>
+<li><a href="#descoberta-de-literatura-sem-api-paga"
+id="toc-descoberta-de-literatura-sem-api-paga">6. Descoberta de
+literatura sem API paga</a>
+<ul>
+<li><a href="#estratégia-federada" id="toc-estratégia-federada">6.1
+Estratégia federada</a></li>
+<li><a href="#processo-de-consulta" id="toc-processo-de-consulta">6.2
+Processo de consulta</a></li>
+</ul></li>
+<li><a href="#arquitetura-recomendada"
+id="toc-arquitetura-recomendada">7. Arquitetura recomendada</a>
+<ul>
+<li><a href="#camadas" id="toc-camadas">7.1 Camadas</a></li>
+<li><a href="#modelo-de-dados-mínimo"
+id="toc-modelo-de-dados-mínimo">7.2 Modelo de dados mínimo</a></li>
+<li><a href="#api-conceitual" id="toc-api-conceitual">7.3 API
+conceitual</a></li>
+</ul></li>
+<li><a href="#formatos-e-interoperabilidade"
+id="toc-formatos-e-interoperabilidade">8. Formatos e
+interoperabilidade</a></li>
+<li><a href="#multilinguismo-e-acessibilidade"
+id="toc-multilinguismo-e-acessibilidade">9. Multilinguismo e
+acessibilidade</a></li>
+<li><a href="#segurança-privacidade-ética-e-integridade"
+id="toc-segurança-privacidade-ética-e-integridade">10. Segurança,
+privacidade, ética e integridade</a>
+<ul>
+<li><a href="#ameaças-principais" id="toc-ameaças-principais">10.1
+Ameaças principais</a></li>
+<li><a href="#integridade-científica"
+id="toc-integridade-científica">10.2 Integridade científica</a></li>
+</ul></li>
+<li><a href="#avaliação-do-próprio-scientiamap"
+id="toc-avaliação-do-próprio-scientiamap">11. Avaliação do próprio
+ScientiaMap</a>
+<ul>
+<li><a href="#conjuntos-de-avaliação"
+id="toc-conjuntos-de-avaliação">11.1 Conjuntos de avaliação</a></li>
+<li><a href="#métricas" id="toc-métricas">11.2 Métricas</a></li>
+</ul></li>
+<li><a href="#roteiro-de-desenvolvimento"
+id="toc-roteiro-de-desenvolvimento">12. Roteiro de desenvolvimento</a>
+<ul>
+<li><a href="#fase-0-protótipo-demonstrável-entregue"
+id="toc-fase-0-protótipo-demonstrável-entregue">Fase 0 — protótipo
+demonstrável (entregue)</a></li>
+<li><a href="#fase-1-fundação-reprodutível"
+id="toc-fase-1-fundação-reprodutível">Fase 1 — fundação
+reprodutível</a></li>
+<li><a href="#fase-2-adaptadores-metodológicos"
+id="toc-fase-2-adaptadores-metodológicos">Fase 2 — adaptadores
+metodológicos</a></li>
+<li><a href="#fase-3-analisador-de-artigos-auditável"
+id="toc-fase-3-analisador-de-artigos-auditável">Fase 3 — analisador de
+artigos auditável</a></li>
+<li><a href="#fase-4-busca-aberta-e-síntese"
+id="toc-fase-4-busca-aberta-e-síntese">Fase 4 — busca aberta e
+síntese</a></li>
+<li><a href="#fase-5-colaboração-e-sustentabilidade"
+id="toc-fase-5-colaboração-e-sustentabilidade">Fase 5 — colaboração e
+sustentabilidade</a></li>
+</ul></li>
+<li><a href="#licença-e-governança-propostas"
+id="toc-licença-e-governança-propostas">13. Licença e governança
+propostas</a></li>
+<li><a href="#decisões-tomadas-na-beta-0.1"
+id="toc-decisões-tomadas-na-beta-0.1">14. Decisões tomadas na beta
+0.1</a></li>
+<li><a href="#conclusão" id="toc-conclusão">Conclusão</a></li>
+<li><a href="#referências" id="toc-referências">Referências</a></li>
+</ul>
+</nav>
+<h1 id="resumo-executivo">Resumo executivo</h1>
+<p>O <strong>ScientiaMap</strong> é uma proposta de infraestrutura
+pública para ensinar, planejar, registrar, analisar e comunicar
+investigações científicas. Sua unidade fundamental não é o “texto gerado
+por inteligência artificial”, mas a ligação auditável entre
+<strong>pergunta, afirmação, evidência, decisão, incerteza e
+fonte</strong>. O protótipo beta 0.1 acompanha o pesquisador por 12
+etapas iterativas, analisa o conteúdo textual de artigos no mesmo
+framework, oferece um mapa metodológico e pesquisa metadados em
+Crossref, Europe PMC e arXiv sem API paga.</p>
+<p>O sistema nasce de uma correção epistemológica decisiva: preencher um
+formulário não torna uma afirmação verdadeira. Ciência não é uma escada
+universal e irreversível, mas uma família de práticas que alterna
+construção conceitual, representação formal, observação, intervenção,
+inferência e crítica pública. Reprodutibilidade e replicação são meios
+de escrutínio, não selos automáticos de verdade; a confiança científica
+se constrói pelo conjunto de evidências e críticas acumuladas.<a
+href="#ref-1">1</a></p>
+<p>A versão completa deve ser <strong>livre, multilíngue, local por
+padrão, federada e extensível</strong>. Seu núcleo determinístico
+precisa funcionar sem modelos generativos. Modelos locais podem auxiliar
+na classificação e na redação, mas nunca criar evidência ausente,
+ocultar incerteza ou decidir sozinhos que um estudo está “correto”.</p>
+<h2 id="resultado-entregue-na-beta-0.1">Resultado entregue na beta
+0.1</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Módulo</th>
+<th>O que já funciona</th>
+<th>Limite explícito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Construir estudo</td>
+<td>12 etapas, portas de prontidão, retorno, ressalva justificada,
+salvamento local</td>
+<td>Prontidão documental não certifica validade</td>
+</tr>
+<tr class="even">
+<td>Analisar artigo</td>
+<td>Entrada textual; localização de trechos; estágio, cobertura e
+confiança heurística</td>
+<td>Não é revisão por pares nem ferramenta de risco de viés</td>
+</tr>
+<tr class="odd">
+<td>Mapa metodológico</td>
+<td>Visão das 12 etapas e estado do projeto</td>
+<td>O diagrama é uma orientação geral, não um método único</td>
+</tr>
+<tr class="even">
+<td>Buscar literatura</td>
+<td>Crossref, Europe PMC e arXiv; filtros anuais; desduplicação</td>
+<td>Não representa toda a literatura e depende das fontes</td>
+</tr>
+<tr class="odd">
+<td>Importar/exportar</td>
+<td>JSON, Markdown, HTML, Word compatível, CSV/Excel, LaTeX e PDF por
+impressão</td>
+<td>Conversão fiel de fórmulas e layouts complexos virá depois</td>
+</tr>
+<tr class="even">
+<td>Idiomas</td>
+<td>Português brasileiro, inglês, espanhol e chinês simplificado</td>
+<td>Tradução metodológica precisa de revisão comunitária contínua</td>
+</tr>
+</tbody>
+</table>
+<h1 id="problema-e-visão">1. Problema e visão</h1>
+<p>Ferramentas acadêmicas normalmente começam tarde demais: ajudam a
+formatar referências, redigir um manuscrito ou executar uma análise
+depois que decisões fundamentais já foram tomadas. O ScientiaMap começa
+antes, no momento em que alguém diz: <strong>“observei isto; por que
+acontece?”</strong>. Ele preserva a genealogia dessa dúvida até as
+conclusões e a crítica pública.</p>
+<p>O objetivo não é impor um ritual único. Ensaios randomizados,
+pesquisas observacionais, provas matemáticas, estudos qualitativos,
+simulações, revisões sistemáticas e física teórica têm estruturas
+distintas. Diretrizes de relato reconhecem essa diversidade: CONSORT
+trata ensaios randomizados; STROBE, estudos observacionais; PRISMA,
+revisões sistemáticas; EQUATOR cataloga diretrizes para muitos outros
+desenhos.<a href="#ref-2">2</a> <a href="#ref-3">3</a> <a
+href="#ref-4">4</a> <a href="#ref-5">5</a> O framework de 12 etapas é,
+portanto, um <strong>vocabulário de tradução entre desenhos</strong>,
+não um substituto das normas específicas.</p>
+<h2 id="princípios-inegociáveis">1.1 Princípios inegociáveis</h2>
+<ol type="1">
+<li><strong>Evidência antes de eloquência.</strong> O sistema deve
+distinguir texto persuasivo de material probatório.</li>
+<li><strong>Proveniência por padrão.</strong> Toda afirmação,
+transformação, decisão e arquivo relevante deve ter origem e
+histórico.</li>
+<li><strong>Incerteza visível.</strong> Resultados sem intervalo, erro,
+alternativas ou limitações não recebem aparência de certeza.</li>
+<li><strong>Iteração registrada.</strong> Voltar a uma etapa é
+comportamento científico normal; o retorno deve gerar histórico, não
+punição.</li>
+<li><strong>Pluralismo metodológico.</strong> Regras variam conforme
+desenho, área, população, risco e pergunta.</li>
+<li><strong>Local primeiro.</strong> Conteúdo de pesquisa permanece no
+dispositivo por padrão.</li>
+<li><strong>Federação, não monopólio.</strong> A descoberta combina
+fontes; nenhuma base é tratada como “toda a ciência”.</li>
+<li><strong>Acessibilidade e internacionalização.</strong> A meta de
+interface é WCAG 2.2 nível AA.<a href="#ref-6">6</a></li>
+<li><strong>Software e documentação livres.</strong> Código, rubricas e
+traduções devem permitir auditoria e reutilização.</li>
+<li><strong>Autoridade humana responsável.</strong> Automação recomenda;
+pesquisadores, orientadores, especialistas, comunidades e comitês
+decidem.</li>
+</ol>
+<h2 id="não-objetivos">1.2 Não objetivos</h2>
+<p>O ScientiaMap não deve:</p>
+<ul>
+<li>declarar uma hipótese “provada” por ter passado pelas etapas;</li>
+<li>conceder aprovação ética, clínica, jurídica ou de
+biossegurança;</li>
+<li>substituir estatísticos, metodologistas, bibliotecários, revisores
+ou orientadores;</li>
+<li>avaliar a verdade de uma teoria apenas por consistência
+matemática;</li>
+<li>contornar paywalls ou redistribuir texto sem licença;</li>
+<li>inventar referências, dados, números de página, trechos ou
+resultados ausentes;</li>
+<li>calcular uma nota opaca de “qualidade científica”;</li>
+<li>esconder divergências metodológicas atrás de uma resposta
+única.</li>
+</ul>
+<h1 id="modelo-epistemológico-operacional">2. Modelo epistemológico
+operacional</h1>
+<h2 id="a-unidade-de-raciocínio">2.1 A unidade de raciocínio</h2>
+<p>Cada projeto deve ser representado por um grafo de objetos:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objeto</th>
+<th>Pergunta que responde</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Observação</td>
+<td>O que foi registrado?</td>
+<td>“A dissolução parece mais rápida na água quente.”</td>
+</tr>
+<tr class="even">
+<td>Pergunta</td>
+<td>O que queremos saber?</td>
+<td>“Como a temperatura altera o tempo de dissolução?”</td>
+</tr>
+<tr class="odd">
+<td>Afirmação</td>
+<td>O que está sendo alegado?</td>
+<td>“Maior temperatura reduz o tempo médio.”</td>
+</tr>
+<tr class="even">
+<td>Hipótese</td>
+<td>Qual resposta provisória será confrontada?</td>
+<td>Relação negativa entre temperatura e tempo</td>
+</tr>
+<tr class="odd">
+<td>Conceito</td>
+<td>O que os termos significam?</td>
+<td>“Dissolvido” = ausência de cristais visíveis após agitação
+padronizada</td>
+</tr>
+<tr class="even">
+<td>Modelo</td>
+<td>Que estrutura simplificada relaciona entidades?</td>
+<td>Taxa dependente da temperatura sob massa e agitação constantes</td>
+</tr>
+<tr class="odd">
+<td>Predição</td>
+<td>O que deve ocorrer se o modelo for adequado?</td>
+<td>Mediana de tempo menor a 60 °C do que a 20 °C</td>
+</tr>
+<tr class="even">
+<td>Evidência</td>
+<td>Que registro sustenta ou contraria uma afirmação?</td>
+<td>Tabela de tempos com calibração e metadados</td>
+</tr>
+<tr class="odd">
+<td>Decisão</td>
+<td>Que escolha foi feita e por quê?</td>
+<td>Excluir teste interrompido por queda do recipiente</td>
+</tr>
+<tr class="even">
+<td>Incerteza</td>
+<td>O que permanece indeterminado?</td>
+<td>Erro do termômetro e variabilidade de agitação</td>
+</tr>
+<tr class="odd">
+<td>Fonte</td>
+<td>De onde veio o material?</td>
+<td>DOI, página, parágrafo, arquivo, autor, data</td>
+</tr>
+</tbody>
+</table>
+<p>Dados e fluxos devem seguir princípios de encontrabilidade,
+acessibilidade, interoperabilidade e reutilização — FAIR — sem confundir
+“acessível” com “necessariamente aberto”.<a href="#ref-7">7</a> A
+proveniência pode ser modelada de forma compatível com PROV-O, que
+representa entidades, atividades e agentes.<a href="#ref-8">8</a>
+Pacotes de pesquisa podem adotar RO-Crate para agrupar dados, código,
+pessoas e metadados em uma estrutura transportável.<a
+href="#ref-9">9</a></p>
+<h2 id="três-classes-de-validação">2.2 Três classes de validação</h2>
+<p>O produto precisa exibir sempre qual validação está sendo feita:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Classe</th>
+<th>Pergunta</th>
+<th>Pode ser automatizada?</th>
+<th>Consequência permitida</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Completude</td>
+<td>Os campos e artefatos mínimos existem?</td>
+<td>Em grande parte</td>
+<td>“Documentado para avançar”</td>
+</tr>
+<tr class="even">
+<td>Coerência</td>
+<td>As partes não apresentam incompatibilidades detectáveis?</td>
+<td>Parcialmente</td>
+<td>“Requer revisão desta relação”</td>
+</tr>
+<tr class="odd">
+<td>Validade</td>
+<td>O desenho, a inferência e a evidência sustentam a conclusão no
+mundo?</td>
+<td>Não de modo geral</td>
+<td>“Requer julgamento especializado e crítica”</td>
+</tr>
+</tbody>
+</table>
+<p>Na beta 0.1, a porta verifica apenas <strong>completude
+transparente</strong>: tamanho mínimo dos registros e três itens
+declarativos. Esses limites são deliberadamente visíveis e
+substituíveis. Não são uma escala psicométrica validada.</p>
+<h2 id="estados-permitidos">2.3 Estados permitidos</h2>
+<ul>
+<li><strong>Em elaboração:</strong> material insuficiente ou ainda
+editado.</li>
+<li><strong>Pronta para prosseguir:</strong> critérios documentais
+explícitos satisfeitos.</li>
+<li><strong>Com ressalva:</strong> o pesquisador decidiu prosseguir e
+registrou a lacuna e a razão.</li>
+<li><strong>Reaberta:</strong> uma mudança posterior exige revisão.</li>
+<li><strong>Requer especialista:</strong> risco, conflito ou domínio
+ultrapassa a competência configurada.</li>
+<li><strong>Sinal crítico:</strong> possível problema ético, legal, de
+segurança ou integridade; o sistema interrompe recomendações
+automáticas.</li>
+</ul>
+<p>Não existe o estado automático “verdadeira”.</p>
+<h1 id="framework-de-12-etapas">3. Framework de 12 etapas</h1>
+<h2 id="visão-completa">3.1 Visão completa</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Etapa</th>
+<th>Produto mínimo</th>
+<th>Porta de prontidão</th>
+<th>Retornos frequentes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1. Fenômeno e problema</td>
+<td>observação delimitada; relevância; contexto</td>
+<td>observação separada de interpretação</td>
+<td>4, 8, 9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2. Pergunta investigável</td>
+<td>pergunta específica; unidade; desfecho</td>
+<td>pode receber evidência contrária</td>
+<td>3, 4, 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3. Conhecimento e hipótese</td>
+<td>síntese inicial; rivais; hipótese provisória</td>
+<td>fontes e rivais registradas</td>
+<td>2, 5, 7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4. Conceitos e operações</td>
+<td>definições; indicadores; instrumentos</td>
+<td>termos observáveis ou justificadamente abstratos</td>
+<td>2, 5, 8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5. Modelo e domínio</td>
+<td>entidades; relações; idealizações; limites</td>
+<td>pressupostos e domínio explícitos</td>
+<td>3, 4, 6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6. Representação formal</td>
+<td>variáveis; unidades; equações ou algoritmos</td>
+<td>símbolos definidos e consistência examinada</td>
+<td>4, 5, 7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7. Consequências e predições</td>
+<td>previsões; rivais; incompatibilidade</td>
+<td>previsões distinguíveis antecedem o teste</td>
+<td>3, 5, 8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8. Desenho e instrumentos</td>
+<td>protocolo; amostra; controles; ética; análise</td>
+<td>desenho responde à pergunta e riscos são tratados</td>
+<td>2, 4, 7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9. Observação e dados</td>
+<td>dados; metadados; desvios; calibração</td>
+<td>proveniência e qualidade preservadas</td>
+<td>4, 8, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10. Análise e incerteza</td>
+<td>código; estimativas; erro; sensibilidade</td>
+<td>decisões auditáveis e incerteza relatada</td>
+<td>5, 8, 9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11. Confronto e interpretação</td>
+<td>comparação previsão–resultado; rivais; limites</td>
+<td>conclusão não ultrapassa evidência</td>
+<td>3, 5, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12. Comunicação e crítica</td>
+<td>relato; materiais; autoria; licença; replicação</td>
+<td>terceiros podem compreender e escrutinar</td>
+<td>qualquer etapa</td>
+</tr>
+</tbody>
+</table>
+<p>A pré-registração pode ser sugerida entre as etapas 7 e 9: ela
+registra o plano antes do exame dos dados e ajuda a distinguir análises
+confirmatórias de explorações posteriores.<a href="#ref-10">10</a> O
+produto não deve proibir exploração; deve rotulá-la corretamente.</p>
+<h2 id="adaptadores-por-desenho">3.2 Adaptadores por desenho</h2>
+<p>O mesmo estágio assume produtos diferentes conforme o estudo:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Desenho</th>
+<th>Predição ou consequência</th>
+<th>Dados ou material probatório</th>
+<th>Análise ou confronto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Experimento controlado</td>
+<td>diferença sob manipulação</td>
+<td>medidas por condição e controles</td>
+<td>efeito, incerteza, vieses e alternativas</td>
+</tr>
+<tr class="even">
+<td>Observacional</td>
+<td>associação temporal/estrutural</td>
+<td>coorte, caso-controle, transversal etc.</td>
+<td>confundimento, seleção, mensuração; STROBE quando aplicável</td>
+</tr>
+<tr class="odd">
+<td>Ensaio randomizado</td>
+<td>efeito da intervenção</td>
+<td>fluxo de participantes e desfechos</td>
+<td>análise planejada, perdas, danos; CONSORT 2025</td>
+</tr>
+<tr class="even">
+<td>Revisão sistemática</td>
+<td>padrão esperado no corpo de evidência</td>
+<td>registros identificados, excluídos e incluídos</td>
+<td>síntese, heterogeneidade, viés; PRISMA 2020</td>
+</tr>
+<tr class="odd">
+<td>Qualitativo</td>
+<td>expectativas sensitizantes, não necessariamente hipótese
+preditiva</td>
+<td>entrevistas, observação, documentos</td>
+<td>codificação, reflexividade, casos negativos</td>
+</tr>
+<tr class="even">
+<td>Computacional</td>
+<td>comportamento do modelo e testes</td>
+<td>código, parâmetros, sementes, benchmarks</td>
+<td>verificação, validação e sensibilidade</td>
+</tr>
+<tr class="odd">
+<td>Teórico/matemático</td>
+<td>teorema, consequência lógica ou estrutura</td>
+<td>axiomas, definições, lemas e prova</td>
+<td>validade dedutiva; relação empírica só quando alegada</td>
+</tr>
+<tr class="even">
+<td>Física teórica</td>
+<td>consequências formais e observacionais</td>
+<td>matemática + dados externos/experimentos</td>
+<td>consistência e confronto empírico são julgamentos distintos</td>
+</tr>
+</tbody>
+</table>
+<p>Essa adaptação impede um erro central: uma prova matemática
+estabelece uma conclusão <strong>dentro de um sistema formal a partir de
+premissas</strong>; não demonstra, por si só, que as premissas modelam
+adequadamente a realidade. Na ciência empírica, a matemática comprime
+relações e produz consequências precisas; a adequação ao mundo depende
+de mensuração, desenho, comparação e crítica.</p>
+<h1 id="analisador-de-artigos">4. Analisador de artigos</h1>
+<h2 id="pipeline-de-produção">4.1 Pipeline de produção</h2>
+<ol type="1">
+<li><strong>Ingestão:</strong> PDF, HTML, JATS XML, DOCX, XLSX,
+Markdown, LaTeX ou texto.</li>
+<li><strong>Extração:</strong> preservar página, bloco, tabela, figura,
+equação e ordem de leitura.</li>
+<li><strong>Segmentação:</strong> dividir em unidades citáveis com
+identificador estável.</li>
+<li><strong>Detecção de desenho:</strong> estimar tipo de estudo,
+registrando confiança e sinais usados.</li>
+<li><strong>Mapeamento:</strong> associar cada unidade a uma ou mais
+etapas.</li>
+<li><strong>Extração de objetos:</strong> pergunta, afirmação, amostra,
+variáveis, instrumentos, equações, estimativas, incerteza, limitações e
+referências.</li>
+<li><strong>Auditoria:</strong> exibir trecho original, localização,
+regra/modelo e confiança.</li>
+<li><strong>Lacunas:</strong> dizer “não localizado” em vez de
+inventar.</li>
+<li><strong>Aplicação de adaptador:</strong> sugerir diretriz específica
+sem confundi-la com avaliação de mérito.</li>
+<li><strong>Exportação:</strong> tabela de evidências e mapa
+artigo–framework.</li>
+</ol>
+<p>GROBID transforma publicações técnicas em TEI XML estruturado e é
+adequado para referências e estrutura científica.<a
+href="#ref-11">11</a> Docling aceita múltiplos formatos e representa
+layout, tabelas e fórmulas em um modelo documental unificado.<a
+href="#ref-12">12</a> Na arquitetura recomendada, Docling é o conversor
+geral e GROBID é um especialista para literatura científica; os
+resultados passam por reconciliação, não por confiança cega.</p>
+<h2 id="resultado-que-a-interface-deve-mostrar">4.2 Resultado que a
+interface deve mostrar</h2>
+<p>Para cada associação:</p>
+<ul>
+<li>etapa e subitem;</li>
+<li>trecho exato curto;</li>
+<li>página, seção e parágrafo;</li>
+<li>tipo de evidência — declaração do autor, método relatado, resultado,
+limitação etc.;</li>
+<li>confiança da classificação;</li>
+<li>razão da associação;</li>
+<li>alerta quando só o resumo, e não o método completo, sustenta a
+inferência;</li>
+<li>botão “corrigir classificação”, cuja decisão alimenta conjunto de
+avaliação local.</li>
+</ul>
+<h2 id="o-que-não-localizado-significa">4.3 O que “não localizado”
+significa</h2>
+<p>Ausência detectada pode significar: o artigo omitiu o item; o item
+está em suplemento; a extração falhou; a terminologia não foi
+reconhecida; o desenho não exige aquele item. Por isso, o sistema nunca
+converte ausência textual diretamente em “má ciência”. Diretrizes de
+relato ajudam a verificar transparência, mas relato e condução do estudo
+são dimensões relacionadas e distintas.</p>
+<h1 id="construtor-guiado-como-jogo-sério">5. Construtor guiado como
+“jogo sério”</h1>
+<h2 id="mecânica-segura">5.1 Mecânica segura</h2>
+<p>O sistema usa progressão, mas evita transformar ciência em competição
+por pontos. A recompensa é a <strong>clareza do projeto</strong>, não
+uma pontuação de verdade. Cada fase tem:</p>
+<ul>
+<li>missão;</li>
+<li>exemplo completo e contraexemplo;</li>
+<li>artefatos obrigatórios e opcionais;</li>
+<li>perguntas socráticas;</li>
+<li>verificação automática de completude;</li>
+<li>revisão humana configurável;</li>
+<li>decisão “pronta”, “reabrir” ou “avançar com ressalva”;</li>
+<li>histórico das alterações.</li>
+</ul>
+<p>Fases futuras permanecem bloqueadas apenas no <strong>modo de
+aprendizagem</strong>. Em modo exploratório, o pesquisador pode navegar
+livremente. Mesmo no modo bloqueado, qualquer etapa anterior pode ser
+reaberta; etapas dependentes recebem o estado “revisão necessária”.</p>
+<h2 id="dependências-e-invalidação">5.2 Dependências e invalidação</h2>
+<p>Se a definição operacional muda na etapa 4, o sistema deve sinalizar
+possíveis impactos nas etapas 5 a 11. Se uma análise não planejada é
+adicionada na etapa 10, ela deve ser rotulada como exploratória, sem
+apagar o plano original. Se o instrumento falha na etapa 9, a etapa 8 é
+reaberta e o desvio permanece no histórico.</p>
+<p>Essa propagação transforma o mapa em uma ferramenta de raciocínio:
+não há apenas 12 caixas, mas relações causais e documentais entre
+decisões.</p>
+<h1 id="descoberta-de-literatura-sem-api-paga">6. Descoberta de
+literatura sem API paga</h1>
+<h2 id="estratégia-federada">6.1 Estratégia federada</h2>
+<p>O requisito correto não é “buscar todos os estudos”, promessa
+tecnicamente impossível. É buscar <strong>múltiplas fontes declaradas,
+medir cobertura, respeitar políticas, deduplicar e permitir
+expansão</strong>.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fonte</th>
+<th>Papel</th>
+<th>Acesso e cuidado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Crossref</td>
+<td>DOI e metadados editoriais multidisciplinares</td>
+<td>REST público; usar identificação e boas práticas do pool educado.<a
+href="#ref-13">13</a></td>
+</tr>
+<tr class="even">
+<td>Europe PMC</td>
+<td>biomedicina, resumos, citações e indicadores de acesso</td>
+<td>REST público.<a href="#ref-14">14</a></td>
+</tr>
+<tr class="odd">
+<td>PubMed/NCBI</td>
+<td>literatura biomédica</td>
+<td>E-utilities; obedecer limites e identificação.<a
+href="#ref-15">15</a></td>
+</tr>
+<tr class="even">
+<td>PMC</td>
+<td>texto completo quando a licença permite</td>
+<td>OAI-PMH oferece metadados e somente textos com direitos de
+reutilização adequados.<a href="#ref-16">16</a></td>
+</tr>
+<tr class="odd">
+<td>arXiv</td>
+<td>preprints em física, matemática, computação e áreas próximas</td>
+<td>API Atom; API legada limita a uma solicitação a cada três
+segundos.<a href="#ref-17">17</a></td>
+</tr>
+<tr class="even">
+<td>DOAJ</td>
+<td>periódicos e artigos de acesso aberto</td>
+<td>API e OAI-PMH; validar versão e campos vigentes.<a
+href="#ref-18">18</a></td>
+</tr>
+<tr class="odd">
+<td>SciELO</td>
+<td>forte cobertura latino-americana e multilíngue</td>
+<td>integrar serviços e coleções oficiais; preservar coleção de
+origem</td>
+</tr>
+<tr class="even">
+<td>OAI-PMH</td>
+<td>federação de repositórios institucionais</td>
+<td>protocolo de baixo limiar com seis verbos.<a
+href="#ref-19">19</a></td>
+</tr>
+<tr class="odd">
+<td>Unpaywall</td>
+<td>localização legal de versões abertas por DOI</td>
+<td>API gratuita, requer identificação por e-mail.<a
+href="#ref-20">20</a></td>
+</tr>
+<tr class="even">
+<td>OpenAlex</td>
+<td>grafo de obras, autores, instituições e citações</td>
+<td>em 2026 exige chave; há orçamento diário gratuito e snapshot aberto,
+mas uso ilimitado hospedado não deve ser prometido.<a
+href="#ref-21">21</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="processo-de-consulta">6.2 Processo de consulta</h2>
+<ol type="1">
+<li>preservar a pergunta original;</li>
+<li>extrair conceitos e sinônimos por idioma;</li>
+<li>construir consultas separadas por fonte;</li>
+<li>registrar consulta, data, filtros e versão;</li>
+<li>receber metadados sem redistribuir conteúdo indevido;</li>
+<li>normalizar DOI, ORCID, títulos, autores, datas e tipos;</li>
+<li>deduplicar por DOI e, secundariamente, por similaridade de
+título/autor/ano;</li>
+<li>separar preprint, versão aceita e versão de registro;</li>
+<li>construir grafo de citações com origem declarada;</li>
+<li>permitir triagem reproduzível, motivos de exclusão e
+exportação.</li>
+</ol>
+<p>Buscas para revisões sistemáticas exigem estratégias próprias,
+múltiplas bases e relato completo. O fluxo PRISMA registra
+identificação, triagem, inclusão e motivos de exclusão.<a
+href="#ref-4">4</a> A busca geral do protótipo não deve ser anunciada
+como revisão sistemática.</p>
+<h1 id="arquitetura-recomendada">7. Arquitetura recomendada</h1>
+<h2 id="camadas">7.1 Camadas</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Camada</th>
+<th>Tecnologia proposta</th>
+<th>Responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interface</td>
+<td>PWA em TypeScript/React; Tauri opcional</td>
+<td>quatro modos, acessibilidade, mapas, trabalho offline</td>
+</tr>
+<tr class="even">
+<td>API local</td>
+<td>Python/FastAPI</td>
+<td>projetos, arquivos, análise, busca e exportações</td>
+</tr>
+<tr class="odd">
+<td>Domínio</td>
+<td>pacote Python independente</td>
+<td>regras de estágio, rubricas, objetos e proveniência</td>
+</tr>
+<tr class="even">
+<td>Documentos</td>
+<td>Docling, GROBID, Pandoc</td>
+<td>leitura estruturada e conversão</td>
+</tr>
+<tr class="odd">
+<td>Dados locais</td>
+<td>SQLite + FTS5 ou DuckDB</td>
+<td>projetos, índice, cache e auditoria</td>
+</tr>
+<tr class="even">
+<td>Hospedagem comunitária</td>
+<td>PostgreSQL + armazenamento compatível com S3</td>
+<td>colaboração opcional e instâncias institucionais</td>
+</tr>
+<tr class="odd">
+<td>Busca</td>
+<td>conectores federados</td>
+<td>APIs públicas, OAI-PMH e snapshots</td>
+</tr>
+<tr class="even">
+<td>IA opcional</td>
+<td>Ollama ou llama.cpp</td>
+<td>classificação/assistência local, sempre rastreada</td>
+</tr>
+<tr class="odd">
+<td>Exportação</td>
+<td>Pandoc, python-docx, openpyxl, LaTeX</td>
+<td>PDF, DOCX, XLSX, HTML, TeX e Markdown</td>
+</tr>
+</tbody>
+</table>
+<p>Pandoc converte entre Markdown, HTML, LaTeX, DOCX e muitos outros
+formatos, além de gerar PDF e processar citações por CSL.<a
+href="#ref-22">22</a> Ollama expõe uma API local sem autenticação,
+enquanto llama.cpp prioriza inferência local em ampla variedade de
+hardware.<a href="#ref-23">23</a> <a href="#ref-24">24</a> O sistema
+deve funcionar sem qualquer um deles; IA é um adaptador, não o
+núcleo.</p>
+<h2 id="modelo-de-dados-mínimo">7.2 Modelo de dados mínimo</h2>
+<pre class="text"><code>ResearchProject
+ ├── StageRevision[]
+ │    ├── Artifact[]
+ │    ├── Claim[] ── EvidenceLink[] ── Evidence[]
+ │    ├── Decision[]
+ │    ├── Risk[]
+ │    └── Validation[]
+ ├── Source[]
+ ├── Contributor[]
+ └── AuditEvent[]</code></pre>
+<p>Campos essenciais:</p>
+<ul>
+<li>identificador UUID estável;</li>
+<li>versão de esquema e versão da rubrica;</li>
+<li>idioma original e traduções;</li>
+<li>autor humano ou processo que realizou a ação;</li>
+<li>timestamp, justificativa e objeto anterior;</li>
+<li>hash de artefato;</li>
+<li>licença e nível de acesso;</li>
+<li>relação entre afirmação e evidência: sustenta, contraria,
+contextualiza ou é inconclusiva;</li>
+<li>confiança de classificação separada da força da evidência.</li>
+</ul>
+<h2 id="api-conceitual">7.3 API conceitual</h2>
+<pre class="text"><code>POST   /projects
+GET    /projects/{id}
+POST   /projects/{id}/stages/{stage}/revisions
+POST   /projects/{id}/validations
+POST   /documents/ingest
+POST   /documents/{id}/map
+GET    /search/works
+POST   /claims/{id}/evidence
+GET    /projects/{id}/audit
+POST   /exports</code></pre>
+<p>Cada resposta automatizada deve incluir <code>engine</code>,
+<code>engine_version</code>, <code>rubric_version</code>,
+<code>confidence</code>, <code>evidence_spans</code> e
+<code>warnings</code>.</p>
+<h1 id="formatos-e-interoperabilidade">8. Formatos e
+interoperabilidade</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formato</th>
+<th>Leitura de produção</th>
+<th>Escrita de produção</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PDF</td>
+<td>Docling/GROBID + OCR opcional</td>
+<td>Pandoc/LaTeX ou motor HTML</td>
+<td>preservar página e coordenadas</td>
+</tr>
+<tr class="even">
+<td>HTML</td>
+<td>parser semântico</td>
+<td>template acessível</td>
+<td>sanitizar scripts e URLs</td>
+</tr>
+<tr class="odd">
+<td>DOCX</td>
+<td>Docling/python-docx</td>
+<td>python-docx/Pandoc</td>
+<td>estilos e comentários exigem testes</td>
+</tr>
+<tr class="even">
+<td>XLSX</td>
+<td>openpyxl/pandas</td>
+<td>openpyxl</td>
+<td>fórmulas não são apenas valores</td>
+</tr>
+<tr class="odd">
+<td>Markdown</td>
+<td>Pandoc/parser</td>
+<td>nativo</td>
+<td>formato canônico legível</td>
+</tr>
+<tr class="even">
+<td>LaTeX</td>
+<td>parser/Pandoc</td>
+<td>template TeX</td>
+<td>preservar equações e bibliografia</td>
+</tr>
+<tr class="odd">
+<td>JATS XML</td>
+<td>parser XML</td>
+<td>exportador futuro</td>
+<td>formato importante para artigos</td>
+</tr>
+<tr class="even">
+<td>CSV/TSV</td>
+<td>parser tabular</td>
+<td>nativo</td>
+<td>exigir codificação, delimitador e dicionário</td>
+</tr>
+<tr class="odd">
+<td>JSON/JSON-LD</td>
+<td>validação por esquema</td>
+<td>nativo</td>
+<td>intercâmbio e proveniência</td>
+</tr>
+<tr class="even">
+<td>BibTeX/CSL JSON</td>
+<td>parser bibliográfico</td>
+<td>nativo</td>
+<td>referências estruturadas</td>
+</tr>
+</tbody>
+</table>
+<p>Conversão pode perder informação. O próprio Pandoc observa que
+diferenças entre modelos internos de formatos podem impedir preservação
+de certos atributos.<a href="#ref-22">22</a> Portanto, o arquivo
+original, o convertido, a versão da ferramenta e os avisos devem ser
+preservados.</p>
+<h1 id="multilinguismo-e-acessibilidade">9. Multilinguismo e
+acessibilidade</h1>
+<p>O idioma não é apenas uma troca de rótulos. O projeto precisa:</p>
+<ul>
+<li>usar tags BCP 47: <code>pt-BR</code>, <code>en</code>,
+<code>es</code>, <code>zh-CN</code>;</li>
+<li>preservar o texto original e tratar tradução como uma
+derivação;</li>
+<li>manter glossário metodológico versionado;</li>
+<li>permitir busca por sinônimos sem substituir a consulta
+original;</li>
+<li>suportar escrita e segmentação chinesas;</li>
+<li>aceitar referências e nomes sem romanização forçada;</li>
+<li>testar navegação por teclado, leitores de tela, contraste, zoom e
+dispositivos móveis;</li>
+<li>nunca comunicar estado apenas por cor.</li>
+</ul>
+<p>A tradução automática pode auxiliar, mas conceitos como
+<em>evidence</em>, <em>proof</em>, <em>trial</em>, <em>bias</em>,
+<em>validity</em> e <em>reliability</em> exigem contexto disciplinar.
+Revisores de cada comunidade linguística devem aprovar rubricas
+oficiais.</p>
+<h1 id="segurança-privacidade-ética-e-integridade">10. Segurança,
+privacidade, ética e integridade</h1>
+<h2 id="ameaças-principais">10.1 Ameaças principais</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ameaça</th>
+<th>Controle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>manuscrito confidencial enviado sem intenção</td>
+<td>processamento local por padrão; consentimento antes de serviço
+remoto</td>
+</tr>
+<tr class="even">
+<td>prompt injection dentro de PDF</td>
+<td>tratar documento como dado, não como instrução</td>
+</tr>
+<tr class="odd">
+<td>referência inventada</td>
+<td>metadado precisa ser resolvido em fonte; estado “não
+verificado”</td>
+</tr>
+<tr class="even">
+<td>texto malicioso em HTML</td>
+<td>sanitização, política de conteúdo e isolamento</td>
+</tr>
+<tr class="odd">
+<td>vazamento de participantes</td>
+<td>detecção de identificadores, criptografia e política de
+retenção</td>
+</tr>
+<tr class="even">
+<td>conclusão superconfiante</td>
+<td>linguagem calibrada e evidência visível</td>
+</tr>
+<tr class="odd">
+<td>uso clínico indevido</td>
+<td>bloqueio de recomendações e encaminhamento a protocolo
+especializado</td>
+</tr>
+<tr class="even">
+<td>viés linguístico ou regional</td>
+<td>testes estratificados e participação comunitária</td>
+</tr>
+<tr class="odd">
+<td>dependência de uma API</td>
+<td>cache, conectores alternativos, snapshots e modo offline</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integridade-científica">10.2 Integridade científica</h2>
+<p>O aplicativo deve registrar versão do protocolo, mudanças pós-dados,
+exclusões, múltiplas análises e materiais disponibilizados. Autoria não
+pode ser inferida de quantidade de texto; contribuições podem usar a
+taxonomia CRediT para papéis como conceituação, metodologia, software,
+curadoria e redação.<a href="#ref-25">25</a></p>
+<p>Boas práticas de pesquisa reproduzível incluem dados e código que
+permitam rerodar análises quando direitos e ética permitem.<a
+href="#ref-26">26</a> Isso não significa publicar dados sensíveis:
+abertura deve ser tão ampla quanto possível e tão restrita quanto
+necessário.</p>
+<h1 id="avaliação-do-próprio-scientiamap">11. Avaliação do próprio
+ScientiaMap</h1>
+<p>O produto precisa ser estudado cientificamente antes de receber
+alegações de eficácia.</p>
+<h2 id="conjuntos-de-avaliação">11.1 Conjuntos de avaliação</h2>
+<ul>
+<li>artigos de acesso aberto, estratificados por idioma, área e
+desenho;</li>
+<li>anotações independentes por pelo menos dois especialistas;</li>
+<li>adjudicação de desacordos;</li>
+<li>exemplos negativos e casos em que a etapa não se aplica;</li>
+<li>documentos com tabelas, fórmulas, suplementos e OCR difícil;</li>
+<li>projetos iniciantes e avançados acompanhados longitudinalmente.</li>
+</ul>
+<h2 id="métricas">11.2 Métricas</h2>
+<ul>
+<li>precisão, revocação e F1 do mapeamento de trechos;</li>
+<li>calibração de confiança;</li>
+<li>taxa de evidência inventada — meta: zero;</li>
+<li>concordância entre anotadores;</li>
+<li>cobertura e duplicatas na busca;</li>
+<li>tempo para detectar lacunas;</li>
+<li>compreensão conceitual antes/depois;</li>
+<li>acessibilidade por tarefa;</li>
+<li>taxa de retornos corretos entre etapas;</li>
+<li>incidência de confiança indevida induzida pela interface.</li>
+</ul>
+<p>Uma pontuação alta de classificação não demonstra que o software
+melhora ciência. Estudos de impacto devem examinar qualidade de
+protocolos, transparência, aprendizagem, erros prevenidos e efeitos
+adversos.</p>
+<h1 id="roteiro-de-desenvolvimento">12. Roteiro de desenvolvimento</h1>
+<h2 id="fase-0-protótipo-demonstrável-entregue">Fase 0 — protótipo
+demonstrável (entregue)</h2>
+<ul>
+<li>construtor local em 12 etapas;</li>
+<li>bloqueio, retorno e ressalva;</li>
+<li>quatro idiomas;</li>
+<li>analisador textual heurístico;</li>
+<li>mapa clicável;</li>
+<li>Crossref + Europe PMC + arXiv;</li>
+<li>sete exportações e importação JSON.</li>
+</ul>
+<p><strong>Critério de saída:</strong> fluxos demonstráveis sem
+dependência paga; avisos e limites visíveis.</p>
+<h2 id="fase-1-fundação-reprodutível">Fase 1 — fundação
+reprodutível</h2>
+<ul>
+<li>repositório público, AGPL-3.0-or-later;</li>
+<li>schemas JSON e migrações;</li>
+<li>testes unitários, integração e acessibilidade;</li>
+<li>aplicativo PWA e API FastAPI;</li>
+<li>SQLite local, auditoria e snapshots;</li>
+<li>importação PDF/DOCX/HTML por Docling; GROBID opcional;</li>
+<li>exportação DOCX/XLSX/PDF real por servidor local.</li>
+</ul>
+<p><strong>Critério de saída:</strong> projeto criado, fechado, reaberto
+e exportado sem perda semântica nos campos testados.</p>
+<h2 id="fase-2-adaptadores-metodológicos">Fase 2 — adaptadores
+metodológicos</h2>
+<ul>
+<li>experimental, observacional, randomizado, sistemático, qualitativo,
+computacional e teórico;</li>
+<li>ligação a EQUATOR e checklists versionados;</li>
+<li>plano de análise, ética, amostragem, instrumentos e riscos;</li>
+<li>grafo de dependências e invalidação.</li>
+</ul>
+<p><strong>Critério de saída:</strong> especialistas confirmam que o
+sistema não força rubrica inadequada ao desenho.</p>
+<h2 id="fase-3-analisador-de-artigos-auditável">Fase 3 — analisador de
+artigos auditável</h2>
+<ul>
+<li>extração de layout e coordenadas;</li>
+<li>classificação conteúdo–etapa;</li>
+<li>afirmações, evidências, incertezas e fontes;</li>
+<li>correção humana e conjunto de avaliação;</li>
+<li>modelos locais opcionais.</li>
+</ul>
+<p><strong>Critério de saída:</strong> desempenho, calibração e falhas
+publicados por idioma e desenho.</p>
+<h2 id="fase-4-busca-aberta-e-síntese">Fase 4 — busca aberta e
+síntese</h2>
+<ul>
+<li>conectores adicionais, cache, snapshots e OAI-PMH;</li>
+<li>histórico reprodutível de consulta;</li>
+<li>triagem, deduplicação de versões e grafo de citações;</li>
+<li>tabelas de evidência sem resumo inventado.</li>
+</ul>
+<p><strong>Critério de saída:</strong> cobertura e erros comparados com
+estratégias de referência em amostras reais.</p>
+<h2 id="fase-5-colaboração-e-sustentabilidade">Fase 5 — colaboração e
+sustentabilidade</h2>
+<ul>
+<li>instância institucional opcional;</li>
+<li>revisão por papéis, comentários e assinatura de decisões;</li>
+<li>federação entre instalações;</li>
+<li>governança comunitária multilíngue;</li>
+<li>política de vulnerabilidades e manutenção de conectores.</li>
+</ul>
+<p><strong>Critério de saída:</strong> comunidade independente consegue
+instalar, auditar, traduzir e manter uma instância.</p>
+<h1 id="licença-e-governança-propostas">13. Licença e governança
+propostas</h1>
+<ul>
+<li><strong>Aplicativo e servidor:</strong> GNU AGPL-3.0-or-later, que
+preserva liberdades também em versões oferecidas por rede.<a
+href="#ref-27">27</a></li>
+<li><strong>Rubricas, exemplos, traduções e documentação:</strong>
+Creative Commons Attribution-ShareAlike 4.0.<a
+href="#ref-28">28</a></li>
+<li><strong>Dados inseridos:</strong> pertencem aos titulares; nenhuma
+licença é presumida.</li>
+<li><strong>Metadados externos:</strong> mantêm seus termos e
+proveniência.</li>
+<li><strong>Modelos locais:</strong> cada peso conserva sua licença;
+“open weight” não significa automaticamente software livre.</li>
+</ul>
+<p>A governança deve incluir pesquisadores de diferentes métodos,
+bibliotecários, estatísticos, especialistas em ética, engenheiros,
+educadores, tradutores, estudantes e representantes de populações
+afetadas. Mudanças em rubricas exigem versão, justificativa e período de
+comentário público.</p>
+<h1 id="decisões-tomadas-na-beta-0.1">14. Decisões tomadas na beta
+0.1</h1>
+<ol type="1">
+<li><strong>Nome provisório:</strong> ScientiaMap.</li>
+<li><strong>Dois núcleos principais:</strong> construir estudo e
+analisar artigo.</li>
+<li><strong>Modelo de 12 etapas:</strong> comum, porém adaptável.</li>
+<li><strong>Porta transparente:</strong> completude, nunca selo
+científico.</li>
+<li><strong>Retorno livre:</strong> qualquer etapa anterior pode ser
+revisitada.</li>
+<li><strong>Ressalva registrada:</strong> avanço excepcional não apaga
+lacunas.</li>
+<li><strong>Heurística local inicial:</strong> permite demonstração sem
+IA nem API.</li>
+<li><strong>Busca real federada:</strong> três fontes sem chave paga;
+sem alegação de exaustividade.</li>
+<li><strong>Quatro idiomas iniciais:</strong> <code>pt-BR</code>,
+<code>en</code>, <code>es</code>, <code>zh-CN</code>.</li>
+<li><strong>Persistência local:</strong> conteúdo fica no navegador;
+JSON serve de backup.</li>
+<li><strong>Formatos graduais:</strong> exportações leves no navegador;
+conversores robustos na arquitetura de produção.</li>
+<li><strong>Licença copyleft proposta:</strong> evitar apropriação
+fechada de uma infraestrutura financiada pela comunidade.</li>
+</ol>
+<h1 id="conclusão">Conclusão</h1>
+<p>O valor do ScientiaMap não está em substituir o cientista, mas em
+tornar visível o que frequentemente permanece implícito: de onde veio a
+pergunta, como conceitos foram definidos, por que um modelo foi
+escolhido, que previsão antecedeu os dados, que decisão alterou a
+análise, qual evidência sustenta cada afirmação e onde a incerteza
+permanece.</p>
+<p>O produto pode começar como um guia para iniciantes e amadurecer em
+infraestrutura de pesquisa. Para isso, deve resistir à tentação de
+parecer onisciente. Um bom sistema científico não diz apenas “prossiga”;
+ele mostra <strong>o que foi documentado, o que depende de julgamento, o
+que pode estar errado e como outra pessoa poderá verificar</strong>.</p>
+<h1 id="referências">Referências</h1>
+<h4 id="ref-1">[1]</h4>
+<p>National Academies of Sciences, Engineering, and Medicine.
+<em>Reproducibility and Replicability in Science</em>. Washington, DC:
+The National Academies Press, 2019. <a
+href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>.</p>
+<h4 id="ref-2">[2]</h4>
+<p>CONSORT Group. <em>CONSORT 2025 Statement</em>. 2025. <a
+href="https://www.consort-statement.org/">https://www.consort-statement.org/</a>.</p>
+<h4 id="ref-3">[3]</h4>
+<p>von Elm, E. et al. “The Strengthening the Reporting of Observational
+Studies in Epidemiology (STROBE) Statement.” <em>PLoS Medicine</em> 4,
+e296, 2007. <a
+href="https://www.equator-network.org/reporting-guidelines/strobe/">https://www.equator-network.org/reporting-guidelines/strobe/</a>.</p>
+<h4 id="ref-4">[4]</h4>
+<p>Page, M. J. et al. “The PRISMA 2020 statement: an updated guideline
+for reporting systematic reviews.” <em>BMJ</em> 372, n71, 2021. <a
+href="https://doi.org/10.1136/bmj.n71">https://doi.org/10.1136/bmj.n71</a>.</p>
+<h4 id="ref-5">[5]</h4>
+<p>EQUATOR Network. <em>Reporting Guidelines Library</em>. <a
+href="https://www.equator-network.org/reporting-guidelines/">https://www.equator-network.org/reporting-guidelines/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-6">[6]</h4>
+<p>W3C. <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. W3C
+Recommendation, 2024. <a
+href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>.</p>
+<h4 id="ref-7">[7]</h4>
+<p>Wilkinson, M. D. et al. “The FAIR Guiding Principles for scientific
+data management and stewardship.” <em>Scientific Data</em> 3, 160018,
+2016. <a
+href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</p>
+<h4 id="ref-8">[8]</h4>
+<p>W3C. <em>PROV-O: The PROV Ontology</em>. W3C Recommendation, 2013. <a
+href="https://www.w3.org/TR/prov-o/">https://www.w3.org/TR/prov-o/</a>.</p>
+<h4 id="ref-9">[9]</h4>
+<p>RO-Crate Community. <em>RO-Crate 1.1 Specification</em>. <a
+href="https://www.researchobject.org/ro-crate/1.1/">https://www.researchobject.org/ro-crate/1.1/</a>.</p>
+<h4 id="ref-10">[10]</h4>
+<p>Center for Open Science. <em>Preregistration</em>. <a
+href="https://www.cos.io/initiatives/prereg">https://www.cos.io/initiatives/prereg</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-11">[11]</h4>
+<p>GROBID Project. <em>GROBID Documentation: Introduction</em>. <a
+href="https://grobid.readthedocs.io/en/latest/Introduction/">https://grobid.readthedocs.io/en/latest/Introduction/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-12">[12]</h4>
+<p>Docling Project. <em>Docling Documentation</em>. <a
+href="https://docling-project.github.io/docling/">https://docling-project.github.io/docling/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-13">[13]</h4>
+<p>Crossref. <em>REST API Documentation</em>. <a
+href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/">https://www.crossref.org/documentation/retrieve-metadata/rest-api/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-14">[14]</h4>
+<p>Europe PMC. <em>RESTful Web Service</em>. <a
+href="https://europepmc.org/RestfulWebService">https://europepmc.org/RestfulWebService</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-15">[15]</h4>
+<p>National Center for Biotechnology Information. <em>APIs —
+E-utilities</em>. <a
+href="https://www.ncbi.nlm.nih.gov/home/develop/api/">https://www.ncbi.nlm.nih.gov/home/develop/api/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-16">[16]</h4>
+<p>PubMed Central. <em>PMC OAI-PMH API</em>. <a
+href="https://pmc.ncbi.nlm.nih.gov/tools/oai/">https://pmc.ncbi.nlm.nih.gov/tools/oai/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-17">[17]</h4>
+<p>arXiv. <em>API User’s Manual</em> e <em>Terms of Use for arXiv
+APIs</em>. <a
+href="https://info.arxiv.org/help/api/user-manual.html">https://info.arxiv.org/help/api/user-manual.html</a>;
+<a
+href="https://info.arxiv.org/help/api/tou.html">https://info.arxiv.org/help/api/tou.html</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-18">[18]</h4>
+<p>Directory of Open Access Journals. <em>API Documentation</em>. <a
+href="https://doaj.org/api/docs">https://doaj.org/api/docs</a>. Acesso
+em 13 ago. 2026.</p>
+<h4 id="ref-19">[19]</h4>
+<p>Open Archives Initiative. <em>Protocol for Metadata Harvesting,
+version 2.0</em>. <a
+href="https://www.openarchives.org/pmh/">https://www.openarchives.org/pmh/</a>.</p>
+<h4 id="ref-20">[20]</h4>
+<p>Unpaywall. <em>REST API</em>. <a
+href="https://unpaywall.org/products/api">https://unpaywall.org/products/api</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-21">[21]</h4>
+<p>OpenAlex. <em>API Documentation</em>; <em>Authentication</em>. <a
+href="https://developers.openalex.org/">https://developers.openalex.org/</a>;
+<a
+href="https://developers.openalex.org/guides/authentication">https://developers.openalex.org/guides/authentication</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-22">[22]</h4>
+<p>MacFarlane, J. <em>Pandoc User’s Guide</em>. <a
+href="https://pandoc.org/MANUAL.html">https://pandoc.org/MANUAL.html</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-23">[23]</h4>
+<p>Ollama. <em>API Documentation: Introduction and Authentication</em>.
+<a
+href="https://docs.ollama.com/api/introduction">https://docs.ollama.com/api/introduction</a>;
+<a
+href="https://docs.ollama.com/api/authentication">https://docs.ollama.com/api/authentication</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-24">[24]</h4>
+<p>ggml-org. <em>llama.cpp</em>. <a
+href="https://github.com/ggml-org/llama.cpp">https://github.com/ggml-org/llama.cpp</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-25">[25]</h4>
+<p>NISO. <em>CRediT — Contributor Roles Taxonomy</em>. <a
+href="https://credit.niso.org/">https://credit.niso.org/</a>. Acesso em
+13 ago. 2026.</p>
+<h4 id="ref-26">[26]</h4>
+<p>The Turing Way Community. <em>The Turing Way: a handbook for
+reproducible, ethical and collaborative data science</em>. <a
+href="https://book.the-turing-way.org/">https://book.the-turing-way.org/</a>.
+Acesso em 13 ago. 2026.</p>
+<h4 id="ref-27">[27]</h4>
+<p>Free Software Foundation. <em>GNU Affero General Public License,
+version 3</em>. <a
+href="https://www.gnu.org/licenses/agpl-3.0.html">https://www.gnu.org/licenses/agpl-3.0.html</a>.</p>
+<h4 id="ref-28">[28]</h4>
+<p>Creative Commons. <em>Attribution-ShareAlike 4.0 International</em>.
+<a
+href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+</body>
+</html>
