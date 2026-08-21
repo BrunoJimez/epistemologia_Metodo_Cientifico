@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tratado bibliográfico — Volume III" />
+  <title>Matemática, realidade objetiva e teorias científicas</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <style>
+  :root {
+    --ink: #17212b;
+    --muted: #5b6774;
+    --paper: #fbfaf6;
+    --navy: #16324f;
+    --teal: #0e6b68;
+    --gold: #a56f18;
+    --line: #d8dde3;
+    --soft: #edf4f3;
+    --warn: #fff6df;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.62;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2.5rem 3rem 5rem;
+  }
+  header#title-block-header {
+    color: white;
+    background: linear-gradient(135deg, var(--navy), #285574 64%, var(--teal));
+    padding: 3.5rem 3rem 2.9rem;
+    margin: -2.5rem -3rem 2.4rem;
+    border-bottom: 8px solid #d7a94a;
+  }
+  h1.title { color: white; font-size: 2.5rem; line-height: 1.08; margin: 0 0 .7rem; }
+  p.subtitle { font-size: 1.22rem; max-width: 50rem; margin: 0 0 1.35rem; opacity: .94; }
+  p.author, p.date { margin: .15rem 0; font-family: Inter, Arial, sans-serif; opacity: .85; }
+  h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; }
+  h2 { margin-top: 3rem; padding-top: .45rem; border-top: 1px solid var(--line); font-size: 1.66rem; }
+  h3 { margin-top: 2rem; font-size: 1.24rem; color: var(--teal); }
+  h4 { font-size: 1.05rem; }
+  p, li { font-size: 1.01rem; }
+  a { color: #086577; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:hover { color: #943f2a; }
+  nav#TOC {
+    background: var(--soft);
+    border-left: 5px solid var(--teal);
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0 3rem;
+  }
+  nav#TOC::before { content: "Sumário"; display: block; font: 700 1.2rem Inter, Arial, sans-serif; color: var(--navy); margin-bottom: .5rem; }
+  nav#TOC ul { margin: .25rem 0; }
+  nav#TOC li { margin: .18rem 0; font-size: .93rem; }
+  blockquote {
+    border-left: 4px solid var(--gold);
+    background: var(--warn);
+    margin: 1.5rem 0;
+    padding: .85rem 1.2rem;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem; font-size: .89rem; }
+  thead { background: var(--navy); color: #fff; }
+  th { text-align: left; font-family: Inter, Arial, sans-serif; font-weight: 700; }
+  th, td { padding: .68rem .72rem; vertical-align: top; border: 1px solid var(--line); }
+  tbody tr:nth-child(even) { background: #f3f5f6; }
+  ol > li, ul > li { margin: .44rem 0; }
+  strong { color: #102f47; }
+  code { background: #eef1f4; padding: .12rem .3rem; border-radius: 3px; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3rem 0; }
+  .references p, #referencias ~ p, #referências ~ p { font-size: .88rem; padding-left: 2.2rem; text-indent: -2.2rem; margin: .62rem 0; }
+  span[id^="ref-"] { scroll-margin-top: 1.2rem; }
+  .tag { font-family: Inter, Arial, sans-serif; font-size: .78rem; font-weight: 700; letter-spacing: .02em; color: white; background: var(--teal); border-radius: 3px; padding: .1rem .36rem; }
+  @media (max-width: 760px) {
+    body { padding: 1.1rem 1rem 3rem; }
+    header#title-block-header { margin: -1.1rem -1rem 1.5rem; padding: 2rem 1.1rem; }
+    h1.title { font-size: 1.95rem; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media print {
+    body { background: white; max-width: none; padding: 0; font-size: 10pt; }
+    header#title-block-header { margin: 0 0 1.5cm; border-bottom-width: 5px; }
+    a { color: #0b5266; }
+    h2, h3, h4 { break-after: avoid; }
+    table, blockquote { break-inside: avoid; }
+  }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Matemática, realidade objetiva e teorias
+científicas</h1>
+<p class="subtitle">Da contagem pré-histórica às equações de Einstein,
+experimentos cotidianos e matemática assistida por computadores em
+2026</p>
+<p class="author">Tratado bibliográfico — Volume III</p>
+<p class="date">10 de agosto de 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumo-executivo" id="toc-resumo-executivo">Resumo
+executivo</a></li>
+<li><a href="#o-mapa-mental-correto" id="toc-o-mapa-mental-correto">1. O
+mapa mental correto</a></li>
+<li><a href="#glossário-lógico-matemático-e-científico"
+id="toc-glossário-lógico-matemático-e-científico">2. Glossário lógico,
+matemático e científico</a></li>
+<li><a href="#história-lógica-como-a-matemática-encontrou-a-natureza"
+id="toc-história-lógica-como-a-matemática-encontrou-a-natureza">3.
+História lógica: como a matemática encontrou a natureza</a></li>
+<li><a href="#resposta-ao-caso-einstein-em-genius"
+id="toc-resposta-ao-caso-einstein-em-genius">4. Resposta ao caso
+Einstein em <em>Genius</em></a></li>
+<li><a href="#por-que-uma-equação-pode-explicar-um-fenômeno"
+id="toc-por-que-uma-equação-pode-explicar-um-fenômeno">5. Por que uma
+equação pode explicar um fenômeno?</a></li>
+<li><a href="#laboratório-doméstico-ver-a-ponte-acontecer"
+id="toc-laboratório-doméstico-ver-a-ponte-acontecer">6. Laboratório
+doméstico: ver a ponte acontecer</a></li>
+<li><a href="#anatomia-de-uma-teoria-científica"
+id="toc-anatomia-de-uma-teoria-científica">7. Anatomia de uma teoria
+científica</a></li>
+<li><a href="#currículo-do-zero-ao-doutorado"
+id="toc-currículo-do-zero-ao-doutorado">8. Currículo do zero ao
+doutorado</a></li>
+<li><a href="#rota-histórica-de-48-leituras-qual-livro-vem-primeiro"
+id="toc-rota-histórica-de-48-leituras-qual-livro-vem-primeiro">9. Rota
+histórica de 48 leituras — qual livro vem primeiro?</a></li>
+<li><a href="#primeiras-16-semanas" id="toc-primeiras-16-semanas">10.
+Primeiras 16 semanas</a></li>
+<li><a href="#critérios-de-domínio" id="toc-critérios-de-domínio">11.
+Critérios de domínio</a></li>
+<li><a href="#respostas-diretas-às-suas-dúvidas"
+id="toc-respostas-diretas-às-suas-dúvidas">12. Respostas diretas às suas
+dúvidas</a></li>
+<li><a href="#conclusão" id="toc-conclusão">13. Conclusão</a></li>
+<li><a href="#referências" id="toc-referências">Referências</a></li>
+</ul>
+</nav>
+<h2 id="resumo-executivo">Resumo executivo</h2>
+<p>Este tratado responde a quatro questões ligadas entre si:</p>
+<ol type="1">
+<li><strong>Quando surgiu a matemática e como ela chegou ao estado de
+2026?</strong></li>
+<li><strong>Por que estruturas matemáticas podem representar fenômenos
+objetivos?</strong></li>
+<li><strong>Qual é a diferença entre prova, teorema, axioma, lei,
+hipótese, teoria, premissa, argumento, modelo e
+experimento?</strong></li>
+<li><strong>Em que ordem estudar, do zero ao doutorado, para compreender
+e praticar essa ligação?</strong></li>
+</ol>
+<p>A primeira conclusão é negativa, mas importante: <strong>não sabemos
+quem foi o primeiro ser humano a usar matemática</strong>. Contagem,
+comparação, simetria, orientação espacial e medida são anteriores à
+escrita; marcas em artefatos pré-históricos admitem interpretações
+diferentes. Os primeiros documentos extensos mostram comunidades de
+escribas já trabalhando com práticas maduras. Ahmes/Ahmose, que copiou o
+Papiro Matemático Rhind por volta do segundo milênio a.C., é um dos
+primeiros praticantes nomeados preservados, mas o próprio texto afirma
+derivar de material anterior. Portanto, “primeiro nome conservado” não
+significa “inventor da matemática”. <a href="#ref-1">[1]</a> <a
+href="#ref-2">[2]</a> <a href="#ref-3">[3]</a></p>
+<p>A segunda conclusão corrige uma confusão escolar frequente:
+<strong>prova matemática e confirmação científica não são a mesma
+operação</strong>. Em matemática, uma prova demonstra que uma conclusão
+decorre de axiomas, definições e regras de inferência. Em ciência
+empírica, equações tornam uma teoria precisa e permitem deduzir
+previsões; observações e experimentos verificam se essas previsões
+concordam com o mundo, dentro de incertezas e condições. Um resultado
+experimental favorável sustenta uma teoria, mas não prova logicamente
+que ela seja a única explicação verdadeira. <a href="#ref-54">[54]</a>
+<a href="#ref-55">[55]</a> <a href="#ref-56">[56]</a></p>
+<p>No caso de Einstein, a matemática não foi um adorno colocado depois
+de uma observação feita “com os olhos”. Experimentos mentais, princípios
+físicos, resultados já conhecidos e anomalias empíricas orientaram a
+busca. Marcel Grossmann ajudou Einstein a dominar geometria diferencial
+e cálculo tensorial; essa linguagem permitiu expressar uma gravidade
+geométrica, testar consistência interna e derivar consequências
+quantitativas. Depois, o periélio de Mercúrio, o desvio gravitacional da
+luz e muitos outros testes confrontaram essas consequências com
+observações. <a href="#ref-41">[41]</a> <a href="#ref-42">[42]</a> <a
+href="#ref-43">[43]</a> <a href="#ref-44">[44]</a></p>
+<blockquote>
+<p><strong>Frase-guia:</strong> a matemática não transforma
+automaticamente uma ideia em verdade física. Ela transforma uma ideia
+suficientemente definida em uma estrutura da qual consequências podem
+ser derivadas, calculadas e comparadas com medições.</p>
+</blockquote>
+<p>Os números entre colchetes são citações clicáveis e conduzem às
+referências completas. A data de corte é 10 de agosto de 2026.</p>
+<h2 id="o-mapa-mental-correto">1. O mapa mental correto</h2>
+<h3 id="cinco-mundos-que-precisam-ser-conectados">1.1 Cinco mundos que
+precisam ser conectados</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Camada</th>
+<th>Exemplo na queda de uma pedra</th>
+<th>Pergunta de controle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Realidade</td>
+<td>A pedra muda de posição, ganha velocidade, encontra ar e chão.</td>
+<td>O que ocorre independentemente da descrição?</td>
+</tr>
+<tr class="even">
+<td>Observação e medida</td>
+<td>Vídeo, régua, relógio e incertezas geram pares
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>h</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(t,h)</annotation></semantics></math>.</td>
+<td>Como o número foi produzido?</td>
+</tr>
+<tr class="odd">
+<td>Modelo conceitual</td>
+<td>“Corpo pontual sob aceleração aproximadamente constante.”</td>
+<td>O que foi mantido e o que foi ignorado?</td>
+</tr>
+<tr class="even">
+<td>Estrutura matemática</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>h</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">h(t)=h_0+v_0t-\frac12gt^2</annotation></semantics></math>.</td>
+<td>O que decorre das suposições?</td>
+</tr>
+<tr class="odd">
+<td>Teste</td>
+<td>Ajustar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+analisar resíduos e repetir em outras alturas.</td>
+<td>Dados e previsão concordam dentro do erro?</td>
+</tr>
+</tbody>
+</table>
+<p>Uma equação vive na quarta camada, mas só fala sobre a pedra porque
+criamos <strong>regras de correspondência</strong>:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+corresponde ao tempo medido por um procedimento,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+a uma posição definida em relação a um eixo,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+a um parâmetro estimado. Sem essa ponte semântica e experimental, os
+símbolos são apenas uma estrutura formal. Modelos científicos
+representam selecionando relações relevantes, idealizando e fornecendo
+procedimentos de comparação. <a href="#ref-58">[58]</a> <a
+href="#ref-59">[59]</a></p>
+<h3 id="três-tipos-de-verdade-que-não-devem-ser-confundidos">1.2 Três
+tipos de verdade que não devem ser confundidos</h3>
+<ul>
+<li><strong>Validade lógica:</strong> se as premissas forem verdadeiras,
+a conclusão não pode ser falsa.</li>
+<li><strong>Verdade matemática:</strong> uma proposição foi derivada em
+determinado sistema de axiomas e definições.</li>
+<li><strong>Adequação empírica:</strong> previsões do modelo concordam
+com observações dentro do domínio e da precisão investigados.</li>
+</ul>
+<p>Um argumento pode ser válido e partir de uma premissa fisicamente
+falsa. Uma equação pode ser resolvida corretamente e modelar o objeto
+errado. Uma teoria pode ser empiricamente excelente num domínio e falhar
+fora dele: a mecânica newtoniana funciona extraordinariamente bem para
+velocidades pequenas comparadas à da luz e campos gravitacionais fracos,
+embora a relatividade tenha estrutura mais geral.</p>
+<h3 id="a-cadeia-completa-de-uma-teoria-quantitativa">1.3 A cadeia
+completa de uma teoria quantitativa</h3>
+<ol type="1">
+<li><strong>Fenômeno-alvo:</strong> queda, calor, órbita, epidemia ou
+circuito.</li>
+<li><strong>Pergunta:</strong> qual quantidade muda, em função de quê e
+sob quais condições?</li>
+<li><strong>Idealização:</strong> corpo pontual, meio contínuo, sistema
+isolado, população homogênea.</li>
+<li><strong>Conceitos e grandezas:</strong> massa, posição, temperatura,
+campo, taxa.</li>
+<li><strong>Princípios/postulados:</strong> conservação, simetria,
+causalidade local ou regras probabilísticas.</li>
+<li><strong>Equações:</strong> relações entre grandezas.</li>
+<li><strong>Condições iniciais e de contorno:</strong> estado inicial e
+interação com o ambiente.</li>
+<li><strong>Derivação ou simulação:</strong> consequências e
+previsões.</li>
+<li><strong>Modelo de medição:</strong> como instrumento e dado se
+relacionam à grandeza teórica.</li>
+<li><strong>Comparação:</strong> estimativa de parâmetros, resíduos,
+incerteza e alternativas.</li>
+<li><strong>Revisão:</strong> ajustar domínio, trocar hipótese auxiliar
+ou substituir teoria.</li>
+</ol>
+<p>O teste não confronta uma frase isolada com um “fato puro”. Ele
+confronta um pacote de teoria, condições, instrumentos, calibração,
+análise e hipóteses auxiliares. Por isso, um desacordo precisa ser
+diagnosticado; e uma concordância não elimina automaticamente todos os
+modelos rivais. <a href="#ref-55">[55]</a> <a
+href="#ref-57">[57]</a></p>
+<h2 id="glossário-lógico-matemático-e-científico">2. Glossário lógico,
+matemático e científico</h2>
+<h3 id="linguagem-e-lógica">2.1 Linguagem e lógica</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Termo</th>
+<th>Definição operacional</th>
+<th>Exemplo</th>
+<th>Erro comum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Conceito</strong></td>
+<td>Unidade de significado usada para classificar ou relacionar.</td>
+<td>Massa, número primo, temperatura.</td>
+<td>Confundir palavra com a coisa.</td>
+</tr>
+<tr class="even">
+<td><strong>Definição</strong></td>
+<td>Regra que fixa como um termo será usado.</td>
+<td>Primo: inteiro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">&gt;1</annotation></semantics></math>
+com dois divisores positivos.</td>
+<td>Tratar definição como descoberta empírica.</td>
+</tr>
+<tr class="odd">
+<td><strong>Proposição</strong></td>
+<td>Enunciado ao qual se atribui verdadeiro ou falso.</td>
+<td>“Todo quadrado tem quatro lados.”</td>
+<td>Confundir com pergunta ou comando.</td>
+</tr>
+<tr class="even">
+<td><strong>Premissa</strong></td>
+<td>Proposição assumida num argumento.</td>
+<td>“Todos os metais desta classe dilatam…”</td>
+<td>A validade do argumento não garante a premissa.</td>
+</tr>
+<tr class="odd">
+<td><strong>Conclusão</strong></td>
+<td>Proposição que o argumento pretende estabelecer.</td>
+<td>“Logo, esta barra dilatará.”</td>
+<td>Repetir a premissa com outras palavras.</td>
+</tr>
+<tr class="even">
+<td><strong>Argumento</strong></td>
+<td>Conjunto de premissas oferecido em apoio a uma conclusão.</td>
+<td>Silogismo ou inferência estatística.</td>
+<td>“Argumento” não significa briga.</td>
+</tr>
+<tr class="odd">
+<td><strong>Inferência</strong></td>
+<td>Passagem racional de enunciados a outro.</td>
+<td>Dedução, indução, abdução.</td>
+<td>Tratar toda inferência como dedução certa.</td>
+</tr>
+<tr class="even">
+<td><strong>Dedução</strong></td>
+<td>Inferência cuja forma preserva verdade.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P\to Q</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>,
+logo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>.</td>
+<td>A conclusão pode ser falsa se uma premissa for falsa.</td>
+</tr>
+<tr class="odd">
+<td><strong>Indução</strong></td>
+<td>Generalização ou previsão a partir de casos.</td>
+<td>Amostras de cobre sustentam uma regularidade.</td>
+<td>Confundir forte evidência com necessidade lógica.</td>
+</tr>
+<tr class="even">
+<td><strong>Abdução</strong></td>
+<td>Escolha da melhor explicação entre alternativas.</td>
+<td>Uma causa explica vários vestígios.</td>
+<td>Ignorar explicações rivais.</td>
+</tr>
+<tr class="odd">
+<td><strong>Validade</strong></td>
+<td>Impossibilidade de premissas verdadeiras e conclusão falsa, dada a
+forma.</td>
+<td>Modus ponens.</td>
+<td>Chamar uma premissa de “válida”.</td>
+</tr>
+<tr class="even">
+<td><strong>Solidez</strong></td>
+<td>Argumento válido com premissas verdadeiras.</td>
+<td>Demonstração com base correta.</td>
+<td>Validar forma sem investigar conteúdo.</td>
+</tr>
+</tbody>
+</table>
+<p>Uma introdução formal e amigável pode começar por Hammack e Velleman;
+lógica filosófica mais ampla por Gensler. <a href="#ref-50">[50]</a> <a
+href="#ref-51">[51]</a> <a href="#ref-52">[52]</a></p>
+<h3 id="vocabulário-matemático">2.2 Vocabulário matemático</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Termo</th>
+<th>O que significa</th>
+<th>Relação típica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Axioma/postulado</strong></td>
+<td>Enunciado adotado como ponto de partida de um sistema. Não é “óbvio
+para sempre”; geometrias diferentes escolhem axiomas diferentes.</td>
+<td>Axiomas + lógica
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">Rightarrow</annotation></semantics></math>
+teoremas.</td>
+</tr>
+<tr class="even">
+<td><strong>Definição matemática</strong></td>
+<td>Introduz um objeto ou propriedade por condições precisas.</td>
+<td>“Grupo” é definido por operação e axiomas.</td>
+</tr>
+<tr class="odd">
+<td><strong>Lema</strong></td>
+<td>Teorema auxiliar usado para chegar a resultado maior.</td>
+<td>Lema
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">Rightarrow</annotation></semantics></math>
+teorema principal.</td>
+</tr>
+<tr class="even">
+<td><strong>Teorema</strong></td>
+<td>Proposição demonstrada a partir do sistema aceito.</td>
+<td>Teorema de Pitágoras.</td>
+</tr>
+<tr class="odd">
+<td><strong>Corolário</strong></td>
+<td>Consequência relativamente imediata de um teorema.</td>
+<td>Teorema
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">Rightarrow</annotation></semantics></math>
+corolário.</td>
+</tr>
+<tr class="even">
+<td><strong>Conjectura</strong></td>
+<td>Proposição matemática considerada plausível, ainda sem prova ou
+refutação.</td>
+<td>Conjectura de Goldbach.</td>
+</tr>
+<tr class="odd">
+<td><strong>Contraexemplo</strong></td>
+<td>Um caso que torna falsa uma afirmação universal.</td>
+<td>Um só basta contra “para todo”.</td>
+</tr>
+<tr class="even">
+<td><strong>Prova/demonstração</strong></td>
+<td>Cadeia finita de inferências aceitas que estabelece o teorema.</td>
+<td>Pode ser direta, contradição, indução etc.</td>
+</tr>
+<tr class="odd">
+<td><strong>Expressão</strong></td>
+<td>Combinação de símbolos que representa um valor/objeto.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">3x^2+2</annotation></semantics></math>.</td>
+</tr>
+<tr class="even">
+<td><strong>Equação</strong></td>
+<td>Afirmação de igualdade entre expressões, às vezes válida só para
+soluções.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">x^2=4</annotation></semantics></math>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Identidade</strong></td>
+<td>Igualdade válida para todos os valores no domínio.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(a+b)^2=a^2+2ab+b^2</annotation></semantics></math>.</td>
+</tr>
+<tr class="even">
+<td><strong>Função</strong></td>
+<td>Regra que associa a cada entrada admissível uma saída.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(t)</annotation></semantics></math>
+associa tempo e temperatura.</td>
+</tr>
+<tr class="odd">
+<td><strong>Parâmetro</strong></td>
+<td>Quantidade que identifica uma família de modelos.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+na lei de resfriamento.</td>
+</tr>
+<tr class="even">
+<td><strong>Variável</strong></td>
+<td>Símbolo que pode assumir valores.</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</td>
+</tr>
+</tbody>
+</table>
+<p>Provas humanas têm história e estilo: diagramas, linguagem
+padronizada, símbolos e comunidades definem o que conta como passo
+aceitável. A dedução grega não apareceu pronta; foi moldada por práticas
+de diagramar e argumentar. <a href="#ref-6">[6]</a> <a
+href="#ref-7">[7]</a> Lakatos mostra ainda que conjecturas,
+contraexemplos e redefinições participam da matemática real, embora a
+apresentação final costume apagar esse percurso. <a
+href="#ref-67">[67]</a></p>
+<h3 id="vocabulário-científico">2.3 Vocabulário científico</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Termo</th>
+<th>Definição operacional</th>
+<th>Relação com matemática</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Observação</strong></td>
+<td>Registro produzido por percepção e/ou instrumento sob condições
+descritas.</td>
+<td>Torna grandezas em dados.</td>
+</tr>
+<tr class="even">
+<td><strong>Medição</strong></td>
+<td>Comparação operacional com padrão, acompanhada de unidade e
+incerteza.</td>
+<td>Número sem unidade ou procedimento é incompleto.</td>
+</tr>
+<tr class="odd">
+<td><strong>Hipótese científica</strong></td>
+<td>Proposição provisória capaz de gerar consequências testáveis.</td>
+<td>Pode conter equação ou ser traduzida num modelo.</td>
+</tr>
+<tr class="even">
+<td><strong>Modelo</strong></td>
+<td>Representação seletiva de um sistema, destinada a explicar, prever
+ou explorar.</td>
+<td>Pode ser verbal, físico, matemático ou computacional.</td>
+</tr>
+<tr class="odd">
+<td><strong>Lei científica</strong></td>
+<td>Regularidade ou relação geral válida sob condições declaradas.</td>
+<td>Muitas leis são equações; não “sobem” para teorias.</td>
+</tr>
+<tr class="even">
+<td><strong>Teoria científica</strong></td>
+<td>Estrutura explicativa ampla que organiza conceitos, leis, modelos e
+evidências.</td>
+<td>Produz famílias de modelos e previsões.</td>
+</tr>
+<tr class="odd">
+<td><strong>Predição</strong></td>
+<td>Consequência observável deduzida antes ou independentemente da
+verificação.</td>
+<td>Exige parâmetros e condições.</td>
+</tr>
+<tr class="even">
+<td><strong>Retrodicção</strong></td>
+<td>Consequência sobre evento já ocorrido, derivada sem ajustá-la
+arbitrariamente.</td>
+<td>Periélio de Mercúrio foi um teste importante.</td>
+</tr>
+<tr class="odd">
+<td><strong>Experimento</strong></td>
+<td>Intervenção planejada para comparar resultados e controlar
+alternativas.</td>
+<td>Realiza fisicamente condições do modelo.</td>
+</tr>
+<tr class="even">
+<td><strong>Evidência</strong></td>
+<td>Informação que altera racionalmente o apoio relativo a
+hipóteses.</td>
+<td>Não é sinônimo de dado bruto.</td>
+</tr>
+<tr class="odd">
+<td><strong>Confirmação/corroboracão</strong></td>
+<td>Aumento de apoio após um teste exigente.</td>
+<td>Nunca equivale automaticamente a prova dedutiva.</td>
+</tr>
+<tr class="even">
+<td><strong>Refutação</strong></td>
+<td>Resultado incompatível com uma afirmação, consideradas condições e
+auxiliares.</td>
+<td>Exige diagnosticar medição e modelo.</td>
+</tr>
+<tr class="odd">
+<td><strong>Causalidade</strong></td>
+<td>Relação em que intervir em uma variável mudaria outra, dentro de
+estrutura definida.</td>
+<td>Correlação e ajuste de curva não bastam.</td>
+</tr>
+<tr class="even">
+<td><strong>Incerteza</strong></td>
+<td>Quantificação do intervalo de valores plausíveis e fontes de
+erro.</td>
+<td>Faz parte do resultado, não é vergonha.</td>
+</tr>
+<tr class="odd">
+<td><strong>Domínio de validade</strong></td>
+<td>Conjunto de escalas e condições em que o modelo funciona
+adequadamente.</td>
+<td>Toda equação física séria possui um.</td>
+</tr>
+</tbody>
+</table>
+<p>Uma teoria não se transforma em lei ao acumular evidência. Leis
+condensam relações; teorias explicam e integram. Tampouco “teórica” é
+uma categoria inferior: física teórica formula estruturas; física
+experimental constrói testes; ambas dependem uma da outra. Testabilidade
+e risco de refutação são controles importantes, embora não constituam
+sozinhos uma receita completa de ciência. <a href="#ref-53">[53]</a> <a
+href="#ref-54">[54]</a> <a href="#ref-56">[56]</a></p>
+<h2 id="história-lógica-como-a-matemática-encontrou-a-natureza">3.
+História lógica: como a matemática encontrou a natureza</h2>
+<h3 id="etapa-1-quantidade-antes-da-escrita-pré-história">Etapa 1 —
+Quantidade antes da escrita (pré-história)</h3>
+<p>Comparar mais/menos, emparelhar objetos, reconhecer formas, estimar
+distância e acompanhar ciclos são capacidades anteriores a numerais
+escritos. Artefatos entalhados podem registrar contagens, mas a função
+exata de muitos permanece incerta. O ponto histórico seguro não é que
+uma peça específica “inventou a matemática”, e sim que práticas
+quantitativas corporais e materiais precederam tratados.</p>
+<p><strong>Leitura:</strong> Katz, capítulos iniciais, e a discussão
+metodológica de Robson sobre matemática como prática social. <a
+href="#ref-1">[1]</a> <a href="#ref-4">[4]</a></p>
+<h3
+id="etapa-2-administração-mensuração-e-algoritmos-mesopotâmia-e-egito-c.-3500500-a.c.">Etapa
+2 — Administração, mensuração e algoritmos (Mesopotâmia e Egito,
+c. 3500–500 a.C.)</h3>
+<p>Escrita, tributação, divisão de terras, construção e calendários
+exigiram números, unidades, tabelas e procedimentos. Na Mesopotâmia,
+escolas de escribas desenvolveram sistemas posicionais e algoritmos para
+problemas que hoje reescrevemos como equações; chamar tudo de “álgebra”
+pode ocultar a forma concreta dos procedimentos. <a
+href="#ref-1">[1]</a> <a href="#ref-5">[5]</a></p>
+<p>O Papiro Rhind, copiado por Ahmes, reúne frações, repartições, áreas
+e volumes. Ele é candidato a <strong>primeiro matemático/escriba nomeado
+preservado</strong>, não ao primeiro humano que calculou. <a
+href="#ref-2">[2]</a> <a href="#ref-3">[3]</a></p>
+<p>Astrônomos babilônicos criaram esquemas numéricos para prever
+posições e fenômenos celestes. Tábuas de c. 350–50 a.C. chegaram a
+calcular o deslocamento de Júpiter como área de uma figura trapezoidal
+em espaço tempo-velocidade. Isso mostra uma forma antiga e sofisticada
+de matemática aplicada à regularidade celeste, sem pressupor a dinâmica
+causal de Newton. <a href="#ref-8">[8]</a></p>
+<p><strong>Mudança conceitual:</strong> de contar objetos para executar
+algoritmos sobre quantidades e prever ciclos.</p>
+<h3
+id="etapa-3-prova-dedutiva-e-cosmos-matemático-grécia-c.-600200-a.c.">Etapa
+3 — Prova dedutiva e cosmos matemático (Grécia, c. 600–200 a.C.)</h3>
+<p>Pensadores gregos não foram os primeiros a calcular; uma inovação
+decisiva foi organizar certas proposições por demonstrações a partir de
+definições e princípios. Aristóteles sistematizou formas de demonstração
+científica; Euclides reuniu geometria numa arquitetura
+axiomático-dedutiva. <a href="#ref-7">[7]</a> <a href="#ref-9">[9]</a>
+<a href="#ref-10">[10]</a></p>
+<p>As histórias sobre Pitágoras misturam testemunho tardio e lenda: ele
+não escreveu, e não há relatos contemporâneos detalhados. É mais seguro
+falar em <strong>tradições pitagóricas</strong> que investigaram
+relações numéricas em consonâncias musicais. Philolaus articulou um
+cosmos de “limitantes” e “ilimitados”; Archytas ofereceu tratamento
+matemático avançado de harmonia e problemas mecânicos. <a
+href="#ref-11">[11]</a> <a href="#ref-12">[12]</a> <a
+href="#ref-13">[13]</a></p>
+<p>Arquimedes demonstrou relações de equilíbrio, alavancas, centros de
+gravidade e hidrostática por geometria. Eratóstenes combinou ângulo
+solar, geometria e distância terrestre para estimar a circunferência da
+Terra. Ptolomeu construiu modelos geométricos quantitativos capazes de
+prever posições planetárias. <a href="#ref-14">[14]</a> <a
+href="#ref-15">[15]</a> <a href="#ref-16">[16]</a></p>
+<p><strong>Melhores candidatos por critério:</strong></p>
+<ul>
+<li>matemática aplicada a uma regularidade física: tradições de
+harmonia, com atribuições historicamente incertas;</li>
+<li>pessoa nomeada com matemática de harmonia/mecânica:
+<strong>Archytas</strong>;</li>
+<li>observação + geometria + grandeza da Terra:
+<strong>Eratóstenes</strong>;</li>
+<li>física matemática dedutiva de equilíbrio e fluidos:
+<strong>Arquimedes</strong>.</li>
+</ul>
+<p>Nenhum realizou “o método científico moderno” inteiro.</p>
+<h3
+id="etapa-4-algoritmos-zero-e-astronomia-na-índia-e-china-c.-200-a.c.1200-d.c.">Etapa
+4 — Algoritmos, zero e astronomia na Índia e China (c. 200 a.C.–1200
+d.C.)</h3>
+<p>Na China, <em>Os nove capítulos</em> organiza procedimentos para
+áreas, proporções, sistemas lineares e problemas administrativos,
+acompanhados por comentários e justificações. Na Índia, sistemas de
+numeração, zero, álgebra, trigonometria e astronomia foram desenvolvidos
+em tradições sânscritas e regionais. O caminho histórico não vai
+simplesmente de Mesopotâmia à Grécia e daí à Europa; formas de prova,
+algoritmo e cálculo tiveram genealogias múltiplas. <a
+href="#ref-17">[17]</a> <a href="#ref-18">[18]</a></p>
+<p><strong>Mudança conceitual:</strong> algoritmos gerais e sistemas de
+representação tornam operações mais potentes e transmissíveis.</p>
+<h3
+id="etapa-5-álgebra-óptica-e-observação-no-mundo-islâmico-c.-8001300">Etapa
+5 — Álgebra, óptica e observação no mundo islâmico (c. 800–1300)</h3>
+<p>Al-Khwārizmī sistematizou procedimentos de resolução de equações em
+texto e geometria; a circulação de obras em árabe articulou fontes
+gregas, indianas, persas e novas pesquisas. <a href="#ref-19">[19]</a>
+<a href="#ref-20">[20]</a></p>
+<p>Ibn al-Haytham é um marco particularmente forte para a pergunta
+“matemática + experimento”: em sua <em>Óptica</em>, geometria dos raios,
+teoria da visão, dispositivos, comparação de condições e crítica a
+alternativas cooperam. Não é correto transformá-lo no inventor solitário
+de uma receita científica, mas ele representa uma integração documentada
+de matemática, fenômeno visual e investigação experimental. <a
+href="#ref-21">[21]</a> <a href="#ref-22">[22]</a></p>
+<p><strong>Mudança conceitual:</strong> a geometria não apenas organiza
+o argumento; ela orienta aparelhos, raios, ângulos e testes.</p>
+<h3
+id="etapa-6-lógica-escolástica-e-quantificação-do-movimento-c.-12001500">Etapa
+6 — Lógica escolástica e quantificação do movimento (c. 1200–1500)</h3>
+<p>Aqui se encontra o episódio de Merton. Universidades medievais
+herdaram Aristóteles, matemática, medicina e óptica por extensas
+traduções. A lógica escolástica treinava distinções, consequências e
+resolução de <em>sophismata</em> — problemas em que uma frase parecia
+gerar contradições. <a href="#ref-22">[22]</a> <a
+href="#ref-23">[23]</a></p>
+<p>Thomas Bradwardine, William Heytesbury, Richard Swineshead e John
+Dumbleton quantificaram intensidades, razões, velocidade e mudança.
+Heytesbury formulou o <strong>teorema do grau médio/velocidade
+média</strong>: durante uma variação uniforme, a distância corresponde à
+produzida pela velocidade do instante médio. Nicole Oresme ofereceu uma
+representação geométrica em que a “intensidade” da velocidade varia ao
+longo do tempo e a área representa quantidade acumulada. <a
+href="#ref-24">[24]</a> <a href="#ref-25">[25]</a> <a
+href="#ref-26">[26]</a></p>
+<p>Em notação moderna, para aceleração constante,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mover><mi>v</mi><mo accent="true">‾</mo></mover><mspace width="0.167em"></mspace><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mi>f</mi></msub></mrow><mn>2</mn></mfrac><mspace width="0.167em"></mspace><mi>t</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+s=\bar v\,t=\frac{v_0+v_f}{2}\,t.
+</annotation></semantics></math></p>
+<p><strong>Sua hipótese — “antes era argumento lógico, depois os monges
+foram para a matemática” — precisa de ajuste.</strong> Eles eram
+clérigos e universitários; lógica e matemática já coexistiam havia
+séculos. O que ocorreu foi uma <strong>quantificação de problemas da
+filosofia natural por ferramentas lógicas e matemáticas</strong>.
+Heytesbury não fazia principalmente medições de corpos em laboratório;
+analisava definições e consequências de movimentos idealizados. O
+resultado só se tornaria uma lei da queda em sentido galileano quando
+conectado a uma hipótese física específica e a medições. A própria
+Stanford Encyclopedia ressalta que o trabalho de Heytesbury se aproxima
+mais de análise matemática que de ciência empírica moderna. <a
+href="#ref-25">[25]</a></p>
+<p><strong>Mudança conceitual:</strong> lógica da mudança → grandezas
+variáveis → equivalência matemática → representação geométrica. Não
+ainda: experimento controlado → lei universal da queda.</p>
+<h3
+id="etapa-7-cosmos-movimento-e-experimento-quantitativo-c.-15001650">Etapa
+7 — Cosmos, movimento e experimento quantitativo (c. 1500–1650)</h3>
+<p>Copérnico reorganizou modelos astronômicos em torno do movimento da
+Terra; Kepler ajustou modelos aos dados de Tycho Brahe e substituiu
+círculos por elipses. A matemática começou a funcionar não apenas como
+técnica de “salvar aparências”, mas como compromisso crescente com a
+estrutura física do cosmos. <a href="#ref-27">[27]</a> <a
+href="#ref-28">[28]</a></p>
+<p>Galileu definiu movimento uniforme e uniformemente acelerado, derivou
+a relação
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>∝</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">s\propto t^2</annotation></semantics></math>,
+estudou projéteis como composição de movimentos e descreveu experimentos
+de plano inclinado. O plano reduz a aceleração e torna o tempo
+mensurável; água escoada e pesada servia como relógio. Aqui,
+idealização, demonstração e medição são deliberadamente ligadas. <a
+href="#ref-29">[29]</a> <a href="#ref-30">[30]</a></p>
+<p>Por isso, Galileu é um dos melhores candidatos a <strong>fundador da
+física matemática experimental moderna</strong>, mas não o primeiro
+humano a combinar número e natureza. Ele recebe esse papel por uma
+combinação mais específica: leis quantitativas gerais, movimento
+idealizado, derivação matemática, aparelho e confronto sistemático.</p>
+<h3 id="etapa-8-leis-universais-e-cálculo-c.-16501750">Etapa 8 — Leis
+universais e cálculo (c. 1650–1750)</h3>
+<p>Newton unificou queda terrestre e órbitas por leis de movimento e
+gravitação. A mesma estrutura explica a maçã e a Lua não porque os
+objetos “contêm equações”, mas porque suas trajetórias podem ser
+aproximadas por grandezas que obedecem às mesmas relações dinâmicas. No
+<em>Principia</em>, Newton usou geometria e métodos de limites; ele e
+Leibniz desenvolveram, independentemente e com notações diferentes, o
+cálculo que hoje expressa taxa instantânea e acumulação. <a
+href="#ref-31">[31]</a> <a href="#ref-32">[32]</a></p>
+<p>Em linguagem moderna:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐅</mi><mo>=</mo><mi>m</mi><mi>𝐚</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>𝐅</mi><mn>12</mn></msub><mo>=</mo><mo>−</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mover><mi>𝐫</mi><mo accent="true">̂</mo></mover><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathbf{F}=m\mathbf{a}, \qquad
+\mathbf{F}_{12}=-G\frac{m_1m_2}{r^2}\hat{\mathbf r}.
+</annotation></semantics></math></p>
+<p>A primeira equação relaciona força resultante e mudança de movimento;
+a segunda modela a atração gravitacional newtoniana. Com condições
+iniciais, elas geram trajetórias. O avanço não é apenas escrever
+fórmulas: é <strong>unificar</strong>, <strong>derivar</strong> e
+<strong>predizer</strong>.</p>
+<h3
+id="etapa-9-equações-diferenciais-probabilidade-calor-e-campos-c.-17501900">Etapa
+9 — Equações diferenciais, probabilidade, calor e campos
+(c. 1750–1900)</h3>
+<p>Equações diferenciais descrevem como uma taxa local produz evolução
+global. Probabilidade e estatística tratam erro, população e fenômenos
+aleatórios. A análise de Fourier mostrou que perfis complexos podem ser
+decompostos em modos simples e tornou o calor um problema matemático de
+propagação. <a href="#ref-33">[33]</a> <a href="#ref-34">[34]</a></p>
+<p>Para uma barra homogênea unidimensional,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>∂</mi><mi>T</mi></mrow><mrow><mi>∂</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>α</mi><mfrac><mrow><msup><mi>∂</mi><mn>2</mn></msup><mi>T</mi></mrow><mrow><mi>∂</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{\partial T}{\partial t}=\alpha\frac{\partial^2T}{\partial x^2}.
+</annotation></semantics></math></p>
+<p>Essa equação não foi adivinhada apenas olhando uma barra. Ela
+combina: temperatura como campo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(x,t)</annotation></semantics></math>;
+conservação local de energia; uma relação empírica entre fluxo de calor
+e gradiente de temperatura; propriedades do material reunidas em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>;
+e condições iniciais/de contorno. Sua solução prevê como o perfil
+térmico muda. A mesma forma matemática reaparece em difusão de
+partículas porque ambos os processos partilham uma estrutura de fluxo
+causado por gradiente. <a href="#ref-34">[34]</a></p>
+<p>Maxwell unificou eletricidade, magnetismo e óptica em equações de
+campo. A consistência matemática do sistema implicava ondas com
+velocidade determinada pelas constantes elétricas e magnéticas; a
+proximidade com a velocidade medida da luz sustentou a identificação da
+luz como onda eletromagnética. Mais tarde, ondas de rádio ofereceram
+novos testes. <a href="#ref-35">[35]</a></p>
+<p>Riemann mostrou que geometria não precisava ser euclidiana nem
+restrita a superfícies em espaço comum. Variedades e curvatura,
+inicialmente matemática abstrata, forneceriam a Einstein a linguagem da
+gravidade. <a href="#ref-36">[36]</a></p>
+<h3
+id="etapa-10-fundamentos-lógica-e-limites-da-prova-c.-18791945">Etapa 10
+— Fundamentos, lógica e limites da prova (c. 1879–1945)</h3>
+<p>Frege tentou fundamentar aritmética em lógica; Hilbert axiomatizou
+geometria com atenção à independência e consistência; Russell e
+Whitehead construíram uma vasta redução lógica. Gödel demonstrou que
+sistemas formais suficientemente expressivos, consistentes e
+efetivamente axiomatizados possuem proposições aritméticas que não podem
+provar internamente, e não podem demonstrar por seus próprios meios
+finitos usuais toda a sua consistência. Turing formalizou procedimento
+computável e mostrou problemas indecidíveis. <a href="#ref-37">[37]</a>
+<a href="#ref-38">[38]</a> <a href="#ref-39">[39]</a> <a
+href="#ref-40">[40]</a></p>
+<p>Esses resultados não dizem que “nada pode ser provado” ou que a
+ciência é subjetiva. Eles delimitam a ambição de capturar toda verdade
+matemática por um único mecanismo formal.</p>
+<h3 id="etapa-11-relatividade-quanta-e-estatística-19001950">Etapa 11 —
+Relatividade, quanta e estatística (1900–1950)</h3>
+<p>Relatividade transforma medidas de espaço e tempo e descreve
+gravidade por geometria. Mecânica quântica emprega vetores, operadores,
+matrizes, equações diferenciais e probabilidade para conectar preparação
+e resultados de medição. Estatística moderna liga planejamento
+experimental, amostragem e inferência. A matemática passa a revelar
+consequências tão afastadas da intuição cotidiana que experimentos
+precisam de instrumentos e análises sofisticados.</p>
+<p>Einstein publicou a relatividade especial em 1905. Entre 1912 e 1913,
+com Marcel Grossmann, explorou cálculo tensorial e produziu a teoria
+preliminar <em>Entwurf</em>. Em novembro de 1915, chegou às equações de
+campo da relatividade geral. <a href="#ref-41">[41]</a> <a
+href="#ref-42">[42]</a> <a href="#ref-43">[43]</a></p>
+<h3 id="etapa-12-computação-informação-e-simulação-c.-19452000">Etapa 12
+— Computação, informação e simulação (c. 1945–2000)</h3>
+<p>Computadores permitem resolver modelos sem solução fechada, simular
+sistemas, tratar dados e verificar casos. Shannon matematizou informação
+e comunicação; Lorenz mostrou sensibilidade extrema a condições iniciais
+em sistemas determinísticos, ajudando a formar a teoria do caos. <a
+href="#ref-45">[45]</a> <a href="#ref-46">[46]</a></p>
+<p>A simulação cria uma nova cadeia de confiança: modelo → discretização
+→ algoritmo → código → hardware → saída → validação. Uma resposta
+numérica pode estar errada mesmo quando a teoria está correta, devido a
+instabilidade, resolução insuficiente ou erro de implementação. <a
+href="#ref-59">[59]</a></p>
+<h3 id="etapa-13-provas-formais-dados-e-ia-200010-ago.-2026">Etapa 13 —
+Provas formais, dados e IA (2000–10 ago. 2026)</h3>
+<p>Assistentes de prova verificam cada passo contra um núcleo lógico
+pequeno. O projeto Flyspeck formalizou a prova da conjectura de Kepler
+em HOL Light e Isabelle; Lean e sua biblioteca <em>mathlib</em> formam
+uma infraestrutura comunitária para matemática formalizada. <a
+href="#ref-47">[47]</a> <a href="#ref-48">[48]</a></p>
+<p>Em 2025, a metodologia do AlphaProof foi publicada na
+<em>Nature</em>: aprendizagem por reforço e linguagem formal alcançaram
+desempenho de nível olímpico em problemas selecionados. Até a data de
+corte de 2026, isso demonstrava avanço em busca e verificação formal,
+não uma substituição geral da compreensão, escolha de definições,
+interpretação física ou validação experimental. <a
+href="#ref-49">[49]</a></p>
+<p><strong>Estado atual:</strong> matemática pura, aplicada,
+estatística, computação e ciência de dados formam ecossistema. Provas
+podem ser humanas, assistidas ou formalmente verificadas; modelos
+físicos podem ser analíticos, numéricos ou aprendidos de dados. A
+obrigação permanece a mesma: explicitar suposições e critérios de
+verificação.</p>
+<h2 id="resposta-ao-caso-einstein-em-genius">4. Resposta ao caso
+Einstein em <em>Genius</em></h2>
+<h3 id="quem-provavelmente-era-o-matemático">4.1 Quem provavelmente era
+o matemático?</h3>
+<p>O personagem mais provável é <strong>Marcel Grossmann</strong>,
+colega de Einstein no Politécnico de Zurique e especialista em
+geometria. Se a cena retrata a disputa final de 1915, também pode
+envolver <strong>David Hilbert</strong>, que trabalhou
+contemporaneamente numa formulação variacional. O papel de Grossmann foi
+mais formativo: ajudou Einstein a encontrar no cálculo tensorial de
+Ricci e Levi-Civita a linguagem adequada à gravidade. A obra conjunta de
+1913 chegou perto, mas ainda não continha as equações finais corretas.
+<a href="#ref-42">[42]</a> <a href="#ref-44">[44]</a></p>
+<h3 id="einstein-não-começou-vendo-espaço-tempo-curvo">4.2 Einstein não
+começou vendo espaço-tempo curvo</h3>
+<p>Uma reconstrução melhor é:</p>
+<ol type="1">
+<li><strong>Problema recebido:</strong> a relatividade especial tornara
+espaço e tempo dependentes do estado de movimento, mas a gravitação
+newtoniana ainda agia instantaneamente.</li>
+<li><strong>Insight físico de 1907:</strong> localmente, queda livre e
+ausência de gravidade são indistinguíveis; aceleração e gravidade têm
+relação profunda — princípio da equivalência.</li>
+<li><strong>Experimentos mentais:</strong> elevador, relógios e raios de
+luz exploram consequências conceituais.</li>
+<li><strong>Exigências:</strong> recuperar Newton no limite apropriado,
+respeitar conservação e tratar referenciais gerais.</li>
+<li><strong>Problema matemático:</strong> como representar uma geometria
+variável e escrever equações independentes de coordenadas
+particulares?</li>
+<li><strong>Ferramenta de Grossmann:</strong> métricas, tensores,
+curvatura e cálculo diferencial absoluto.</li>
+<li><strong>Iteração:</strong> teoria <em>Entwurf</em> de 1913, falhas,
+retorno às equações geralmente covariantes e formulação final em
+1915.</li>
+<li><strong>Consequências:</strong> periélio de Mercúrio, desvio da luz,
+deslocamento gravitacional de frequência e outros efeitos.</li>
+<li><strong>Testes:</strong> astronomia, relógios, pulsares, lentes e
+ondas gravitacionais.</li>
+</ol>
+<p>Einstein combinou imaginação, matemática, conhecimento experimental
+anterior e restrições. Não foi “olhar → abstrair → escrever equação →
+provar”. Foi um ciclo de princípios físicos e estruturas matemáticas que
+se corrigiam mutuamente. <a href="#ref-44">[44]</a></p>
+<h3 id="o-que-a-equação-de-campo-faz">4.3 O que a equação de campo
+faz</h3>
+<p>Em forma compacta,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mo>+</mo><mi>Λ</mi><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>8</mn><mi>π</mi><mi>G</mi></mrow><msup><mi>c</mi><mn>4</mn></msup></mfrac><msub><mi>T</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+G_{\mu\nu}+\Lambda g_{\mu\nu}
+=\frac{8\pi G}{c^4}T_{\mu\nu}.
+</annotation></semantics></math></p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>g</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><annotation encoding="application/x-tex">g_{\mu\nu}</annotation></semantics></math>
+codifica intervalos e geometria do espaço-tempo.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><annotation encoding="application/x-tex">G_{\mu\nu}</annotation></semantics></math>
+resume curvatura construída a partir da métrica.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><annotation encoding="application/x-tex">T_{\mu\nu}</annotation></semantics></math>
+representa densidade e fluxo de energia e momento.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Λ</mi><annotation encoding="application/x-tex">\Lambda</annotation></semantics></math>
+conectam escalas e possíveis propriedades cosmológicas.</li>
+</ul>
+<p>Ler informalmente “matéria diz ao espaço-tempo como curvar” é útil,
+mas incompleto. A equação é um sistema de equações diferenciais não
+lineares. Para um problema concreto, escolhem-se simetria, matéria e
+condições; resolve-se o sistema; então calculam-se trajetórias, relógios
+ou luz.</p>
+<h3 id="como-a-matemática-ajudou-a-teoria">4.4 Como a matemática “ajudou
+a teoria”</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Função da matemática</th>
+<th>Pergunta respondida no caso Einstein</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Linguagem</td>
+<td>Como representar geometria que varia de ponto a ponto?</td>
+</tr>
+<tr class="even">
+<td>Consistência</td>
+<td>As equações respeitam conservação e independência de
+coordenadas?</td>
+</tr>
+<tr class="odd">
+<td>Limite</td>
+<td>Recuperam aproximadamente Newton em campos fracos e baixas
+velocidades?</td>
+</tr>
+<tr class="even">
+<td>Geração de modelo</td>
+<td>Que geometria circunda o Sol ou uma estrela?</td>
+</tr>
+<tr class="odd">
+<td>Predição</td>
+<td>Quanto a órbita de Mercúrio precessiona? Quanto a luz desvia?</td>
+</tr>
+<tr class="even">
+<td>Descoberta</td>
+<td>Existem ondas, buracos negros e universos dinâmicos nas
+soluções?</td>
+</tr>
+<tr class="odd">
+<td>Comparação</td>
+<td>Qual observável e qual precisão distinguem teorias rivais?</td>
+</tr>
+</tbody>
+</table>
+<p>Matemática também pode rejeitar uma ideia antes do experimento:
+contradição, unidade incorreta, instabilidade ou violação de um
+princípio necessário são falhas. Isso é <strong>controle
+interno</strong>, não confirmação do mundo.</p>
+<h3 id="o-que-foi-empiricamente-sustentado">4.5 O que foi empiricamente
+sustentado</h3>
+<p>Em 1915, Einstein obteve o avanço anômalo do periélio de Mercúrio sem
+o ajuste ad hoc que marcava tentativas anteriores. As expedições de 1919
+lideradas por Dyson, Eddington e Davidson mediram posições estelares
+durante eclipse para testar o desvio gravitacional da luz; os resultados
+iniciais eram menos precisos que verificações posteriores, mas foram
+historicamente decisivos. <a href="#ref-43">[43]</a> <a
+href="#ref-91">[91]</a></p>
+<p>Séculos? Não: <strong>quase exatamente um século</strong> depois das
+equações, a colaboração LIGO anunciou a observação de ondas
+gravitacionais de uma fusão de buracos negros, comparando sinais
+instrumentais a formas de onda calculadas pela relatividade numérica. <a
+href="#ref-60">[60]</a></p>
+<p>Nenhum desses testes “prova para sempre” toda solução da relatividade
+geral. Eles confirmam previsões específicas em regimes específicos e
+restringem rivais. A teoria permanece aberta a testes e pode ser uma
+aproximação de estrutura quântica mais profunda.</p>
+<h2 id="por-que-uma-equação-pode-explicar-um-fenômeno">5. Por que uma
+equação pode explicar um fenômeno?</h2>
+<h3 id="uma-equação-não-é-a-realidade-é-uma-relação-candidata">5.1 Uma
+equação não é a realidade; é uma relação candidata</h3>
+<p>Considere o resfriamento aproximado de um corpo:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>T</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mi>k</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{dT}{dt}=-k(T-T_{\mathrm{amb}}).
+</annotation></semantics></math></p>
+<p>A equação diz que a taxa de variação da temperatura é proporcional à
+diferença para o ambiente. A solução é</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">[</mo><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo stretchy="true" form="postfix">]</mo></mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>k</mi><mi>t</mi></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T(t)=T_{\mathrm{amb}}+[T(0)-T_{\mathrm{amb}}]e^{-kt}.
+</annotation></semantics></math></p>
+<p>Ela explica e prevê porque:</p>
+<ol type="1">
+<li>identifica uma variável observável
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>;</li>
+<li>propõe um mecanismo agregado: perda maior quando a diferença é
+maior;</li>
+<li>impõe uma estrutura de taxa;</li>
+<li>gera uma curva quantitativa completa;</li>
+<li>permite estimar
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+com dados;</li>
+<li>pode falhar de maneira diagnosticável.</li>
+</ol>
+<p>Mas é aproximação: convecção, radiação, evaporação, geometria,
+capacidade térmica e ambiente variável podem violar o modelo. O sucesso
+não vem de encaixar qualquer curva; vem de <strong>compressão,
+generalização e risco</strong>: poucos princípios predizem muitos pontos
+e novos casos.</p>
+<h3 id="sete-razões-para-a-eficácia">5.2 Sete razões para a
+eficácia</h3>
+<ol type="1">
+<li><strong>Selecionamos fenômenos com regularidade:</strong> ciência
+quantitativa prospera onde comparação e repetição são possíveis.</li>
+<li><strong>Inventamos grandezas úteis:</strong> temperatura, campo e
+momento são construções conceituais conectadas a procedimentos
+estáveis.</li>
+<li><strong>Simetrias restringem leis:</strong> invariância por
+translação liga-se à conservação de momento; por tempo, à energia.</li>
+<li><strong>Equações preservam estrutura:</strong> ordem, proporção,
+continuidade, rede e grupo podem ser comuns a sistemas diferentes.</li>
+<li><strong>Idealizações isolam dominantes:</strong> ignorar detalhes
+pode revelar o padrão principal.</li>
+<li><strong>Parâmetros absorvem particularidades:</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+ou resistividade tornam o esquema adaptável sem torná-lo vazio.</li>
+<li><strong>Seleção histórica:</strong> lembramos modelos que
+funcionaram e descartamos incontáveis tentativas ruins.</li>
+</ol>
+<p>Wigner chamou de “eficácia irrazoável” o alcance inesperado de
+matemática desenvolvida por outros motivos. Hamming ofereceu explicações
+parciais; Steiner, Pincock e o debate da indispensabilidade tratam
+questões semânticas, epistêmicas e ontológicas. <a
+href="#ref-61">[61]</a> <a href="#ref-62">[62]</a> <a
+href="#ref-63">[63]</a> <a href="#ref-64">[64]</a> <a
+href="#ref-65">[65]</a></p>
+<h3 id="cinco-posições-filosóficas-resumidas">5.3 Cinco posições
+filosóficas resumidas</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Posição</th>
+<th>Ideia central</th>
+<th>Como lê a aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Platonismo/realismo</td>
+<td>Objetos matemáticos existem independentemente de nós.</td>
+<td>A ciência descobre estruturas reais que instanciam matemática.</td>
+</tr>
+<tr class="even">
+<td>Formalismo</td>
+<td>Matemática explora sistemas simbólicos conforme regras.</td>
+<td>Aplicar é interpretar um formalismo em objetos empíricos.</td>
+</tr>
+<tr class="odd">
+<td>Estruturalismo</td>
+<td>Importam relações e posições em estruturas.</td>
+<td>Sistemas físicos podem compartilhar estrutura com modelos
+matemáticos.</td>
+</tr>
+<tr class="even">
+<td>Empirismo/nominalismo</td>
+<td>Evita compromisso com entidades abstratas independentes.</td>
+<td>Matemática pode ser instrumento representacional conservador.</td>
+</tr>
+<tr class="odd">
+<td>Pragmatismo/modelismo</td>
+<td>Valor está na construção e uso de modelos adequados.</td>
+<td>Sucesso é local, orientado a propósitos e sujeito a
+idealizações.</td>
+</tr>
+</tbody>
+</table>
+<p>O fato de a matemática funcionar não resolve sozinho qual ontologia é
+correta. O argumento de indispensabilidade afirma, aproximadamente, que
+deveríamos comprometer-nos com entidades matemáticas indispensáveis às
+melhores teorias; críticos questionam a indispensabilidade e a passagem
+da utilidade à existência. <a href="#ref-65">[65]</a></p>
+<h3 id="a-mesma-equação-em-realidades-diferentes">5.4 A mesma equação em
+realidades diferentes</h3>
+<p>O oscilador amortecido,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mover><mi>x</mi><mo accent="true">̈</mo></mover><mo>+</mo><mi>c</mi><mover><mi>x</mi><mo accent="true">̇</mo></mover><mo>+</mo><mi>k</mi><mi>x</mi><mo>=</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+m\ddot x+c\dot x+kx=F(t),
+</annotation></semantics></math></p>
+<p>pode representar massa-mola, circuito RLC, vibração estrutural ou
+aproximação de sistemas biológicos. Isso não significa que mola e
+corrente sejam a mesma substância. Significa que certas relações entre
+armazenamento, dissipação e forçamento são estruturalmente análogas. O
+“poder explicativo” divide-se entre matemática comum e interpretação
+física específica.</p>
+<h3 id="por-que-ajustar-uma-curva-não-basta">5.5 Por que ajustar uma
+curva não basta</h3>
+<p>Um polinômio de grau alto pode atravessar todos os dados passados e
+prever mal. Para ser ciência útil, o modelo precisa de justificação,
+teste fora da amostra, análise de resíduos, incerteza, comparação com
+linha de base e domínio. Leis fenomenológicas podem prever sem mecanismo
+profundo; teorias mecanísticas podem explicar e ainda exigir
+aproximações numéricas. Cartwright alerta que leis elegantes
+frequentemente descrevem situações idealizadas, não objetos “sem
+correções” do mundo cotidiano. <a href="#ref-66">[66]</a></p>
+<h2 id="laboratório-doméstico-ver-a-ponte-acontecer">6. Laboratório
+doméstico: ver a ponte acontecer</h2>
+<h3 id="protocolo-universal">6.1 Protocolo universal</h3>
+<p>Antes de qualquer experimento, escreva:</p>
+<ol type="1">
+<li><strong>Pergunta quantitativa.</strong> Ex.: “o período depende de
+que potência do comprimento?”</li>
+<li><strong>Modelo e domínio.</strong> Equação, unidades, aproximações e
+condições.</li>
+<li><strong>Predição antes do dado.</strong> Forma do gráfico e efeito
+esperado.</li>
+<li><strong>Variáveis.</strong> Independente, resposta, controles e
+confundidores.</li>
+<li><strong>Segurança.</strong> Nada de altura, chama, alta tensão,
+reagentes, vidro quente ou objetos pesados.</li>
+<li><strong>Plano de medida.</strong> Instrumento, resolução, repetições
+e tabela bruta.</li>
+<li><strong>Análise.</strong> Gráfico, estimativa, intervalo/incerteza e
+resíduos.</li>
+<li><strong>Crítica.</strong> Alternativas, erro sistemático e condição
+de abandono.</li>
+<li><strong>Reprodução.</strong> Outra pessoa consegue repetir com seu
+protocolo?</li>
+</ol>
+<p><strong>Erro aleatório</strong> espalha repetições; <strong>erro
+sistemático</strong> desloca todas na mesma direção;
+<strong>resíduo</strong> é dado menos previsão;
+<strong>incerteza</strong> resume valores plausíveis dadas as fontes
+avaliadas. “Erro” de medição não significa necessariamente engano.</p>
+<h3 id="experimento-a-eratóstenes-geometria-mede-a-terra">Experimento A
+— Eratóstenes: geometria mede a Terra</h3>
+<p><strong>Pergunta:</strong> uma medida local de sombra pode revelar
+uma grandeza planetária?<br />
+<strong>Material:</strong> haste vertical, nível/prumo, trena e relógio;
+área externa segura.<br />
+<strong>Modelo:</strong> raios solares aproximadamente paralelos e Terra
+aproximadamente esférica. Se duas localidades estimam a diferença
+angular
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mi>θ</mi></mrow><annotation encoding="application/x-tex">\Delta\theta</annotation></semantics></math>
+e conhecem a distância meridional
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>≈</mo><mfrac><msup><mn>360</mn><mo>∘</mo></msup><mrow><mi>Δ</mi><mi>θ</mi></mrow></mfrac><mi>d</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+C\approx\frac{360^\circ}{\Delta\theta}d.
+</annotation></semantics></math></p>
+<p><strong>Procedimento:</strong> em uma única cidade, meça sombra no
+meio-dia solar ao longo de vários dias e reconstrua ângulo/latitude com
+material de astronomia. Para estimar circunferência, colabore com pessoa
+em outra latitude no mesmo dia; não viaje nem suponha que distância
+rodoviária seja distância de meridiano.<br />
+<strong>O que ensina:</strong> modelo geométrico, suposição de
+paralelismo, correspondência entre ângulo local e arco global.<br />
+<strong>Limites:</strong> haste inclinada, horário, longitude diferente,
+distância incorreta e refração. <a href="#ref-15">[15]</a></p>
+<h3 id="experimento-b-queda-por-vídeo-de-pontos-à-parábola">Experimento
+B — Queda por vídeo: de pontos à parábola</h3>
+<p><strong>Segurança:</strong> use bola leve, altura máxima aproximada
+de 1,5 m, área desimpedida, câmera fixa e nunca deixe cair de janela,
+escada ou sobre pessoas.<br />
+<strong>Pergunta:</strong> a posição vertical é aproximadamente
+quadrática no tempo?<br />
+<strong>Modelo:</strong> para eixo positivo para cima,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+y(t)=y_0+v_0t-\frac12gt^2.
+</annotation></semantics></math></p>
+<p><strong>Procedimento:</strong> coloque régua vertical no plano do
+movimento, grave em câmera lenta, extraia centro da bola quadro a quadro
+e converta quadro em tempo. Ajuste modelo linear
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">y=a+bt</annotation></semantics></math>
+e quadrático
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>t</mi><mo>+</mo><mi>c</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=a+bt+ct^2</annotation></semantics></math>;
+compare resíduos. Estime
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">g=-2c</annotation></semantics></math>.<br />
+<strong>Por que a conta ajuda:</strong> a hipótese “aceleração
+constante” não descreve apenas alguns pontos; ela exige uma forma
+quadrática inteira e um coeficiente.<br />
+<strong>Limites:</strong> perspectiva, borrão, centro da bola, taxa real
+do vídeo e resistência do ar. Galileu desacelerou o processo com um
+plano inclinado pela mesma razão metodológica: tornar o tempo
+mensurável. <a href="#ref-29">[29]</a> <a href="#ref-30">[30]</a></p>
+<h3 id="experimento-c-pêndulo-medir-g-com-uma-aproximação">Experimento C
+— Pêndulo: medir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+com uma aproximação</h3>
+<p><strong>Segurança:</strong> massa leve e macia, barbante curto,
+suporte firme e trajetória longe do rosto.<br />
+<strong>Modelo de pequeno ângulo:</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≈</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T\approx2\pi\sqrt{\frac{L}{g}}.
+</annotation></semantics></math></p>
+<p><strong>Predições:</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mn>2</mn></msup><annotation encoding="application/x-tex">T^2</annotation></semantics></math>
+versus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+deve ser aproximadamente uma reta de inclinação
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mi>/</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">4\pi^2/g</annotation></semantics></math>;
+dobrar o comprimento multiplica o período por
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt><annotation encoding="application/x-tex">\sqrt2</annotation></semantics></math>.<br />
+<strong>Procedimento:</strong> use cinco comprimentos, ângulo inicial
+menor que cerca de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">10^\circ</annotation></semantics></math>,
+cronometre 10 oscilações por repetição e divida. Faça três repetições.
+Ajuste
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">T^2=a+bL</annotation></semantics></math>;
+estime
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mi>/</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">g=4\pi^2/b</annotation></semantics></math>.<br />
+<strong>Limites:</strong> comprimento deve ir do ponto de suspensão ao
+centro da massa; amplitude, atrito e reação humana afetam. O intercepto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+diferente de zero é pista de viés.</p>
+<h3
+id="experimento-d-resfriamento-testar-uma-equação-diferencial">Experimento
+D — Resfriamento: testar uma equação diferencial</h3>
+<p><strong>Segurança:</strong> água apenas morna, idealmente abaixo de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><msup><mspace width="0.167em"></mspace><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">50\,^\circ</annotation></semantics></math>C,
+recipiente estável e supervisão adulta. Não ingerir o material
+experimental.<br />
+<strong>Modelo agregado:</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo>=</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">[</mo><mi>T</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">]</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>k</mi><mi>t</mi></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T(t)-T_{\mathrm{amb}}=\big[T(0)-T_{\mathrm{amb}}\big]e^{-kt}.
+</annotation></semantics></math></p>
+<p><strong>Procedimento:</strong> meça ambiente e água a intervalos
+fixos sem mover o sensor entre leituras. Repita com dois recipientes de
+formas diferentes. Faça gráfico de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T-T_{\mathrm{amb}}</annotation></semantics></math>
+e, enquanto positivo, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>ln</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\ln(T-T_{\mathrm{amb}})</annotation></semantics></math>
+versus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>.
+Linha aproximada sugere o modelo e inclinação
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">-k</annotation></semantics></math>.<br />
+<strong>Explicação:</strong> a equação codifica uma taxa proporcional ao
+afastamento do equilíbrio.<br />
+<strong>Limites:</strong> evaporação, sensor, radiação, convecção e
+ambiente variável. Compare
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+entre recipientes, não presuma constante universal. <a
+href="#ref-33">[33]</a> <a href="#ref-34">[34]</a></p>
+<h3
+id="experimento-e-som-e-razões-reencontrar-a-harmonia-matemática">Experimento
+E — Som e razões: reencontrar a harmonia matemática</h3>
+<p><strong>Segurança:</strong> volume baixo; não tensionar cordas de
+forma improvisada. Use instrumento musical ou aplicativo
+gerador/analisador.<br />
+<strong>Pergunta:</strong> como frequência se relaciona a comprimento
+efetivo de uma corda sob tensão aproximadamente constante?<br />
+<strong>Modelo ideal:</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>L</mi></mrow></mfrac><msqrt><mfrac><mi>τ</mi><mi>μ</mi></mfrac></msqrt><mo>,</mo></mrow><annotation encoding="application/x-tex">
+f=\frac{1}{2L}\sqrt{\frac{\tau}{\mu}},
+</annotation></semantics></math></p>
+<p>onde
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+é tensão e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+densidade linear. Mantendo-as aproximadamente constantes,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∝</mo><mn>1</mn><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">f\propto1/L</annotation></semantics></math>.<br />
+<strong>Procedimento:</strong> num instrumento adequado, compare
+comprimentos em razões simples e frequências medidas. Teste oitava
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>:</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2{:}1</annotation></semantics></math>,
+quinta
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>:</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">3{:}2</annotation></semantics></math>
+e quarta
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>:</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">4{:}3</annotation></semantics></math>.<br />
+<strong>Limites:</strong> rigidez, tensão alterada ao pressionar,
+posição de medição e harmônicos. A experiência mostra por que relações
+pitagóricas foram historicamente férteis, sem atribuir a Pitágoras
+relatos experimentais tardios. <a href="#ref-11">[11]</a> <a
+href="#ref-13">[13]</a></p>
+<h3
+id="experimento-f-intensidade-luminosa-e-lei-do-inverso-do-quadrado">Experimento
+F — Intensidade luminosa e lei do inverso do quadrado</h3>
+<p><strong>Segurança:</strong> use LED de baixa potência; nunca laser,
+Sol ou fonte quente.<br />
+<strong>Modelo ideal de fonte pontual isotrópica:</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∝</mo><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+I(r)\propto\frac{1}{r^2}.
+</annotation></semantics></math></p>
+<p><strong>Procedimento:</strong> em ambiente escuro, fixe fonte e
+sensor de luz de smartphone; meça várias distâncias muito maiores que o
+tamanho da fonte. Subtraia leitura de fundo. Compare
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+versus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1/r^2</annotation></semantics></math>
+e o produto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Ir^2</annotation></semantics></math>.<br />
+<strong>Limites:</strong> telefone pode ajustar ganho, sensor não
+linear, LED direcional, reflexões e distância de referência
+interna.<br />
+<strong>O que ensina:</strong> uma “lei” requer geometria, idealização e
+medição calibrada; desvio não significa imediatamente que a geometria
+esteja errada.</p>
+<h3 id="modelo-de-relatório">6.2 Modelo de relatório</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Seção</th>
+<th>Pergunta que deve responder</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Título e data</td>
+<td>O que foi testado e quando?</td>
+</tr>
+<tr class="even">
+<td>Hipótese/modelo</td>
+<td>Qual equação e quais suposições?</td>
+</tr>
+<tr class="odd">
+<td>Predição</td>
+<td>Qual resultado era esperado antes da coleta?</td>
+</tr>
+<tr class="even">
+<td>Procedimento</td>
+<td>Como cada número foi obtido?</td>
+</tr>
+<tr class="odd">
+<td>Dados brutos</td>
+<td>O leitor recebe valores, unidades e repetições?</td>
+</tr>
+<tr class="even">
+<td>Análise</td>
+<td>Como parâmetros e incertezas foram estimados?</td>
+</tr>
+<tr class="odd">
+<td>Resíduos</td>
+<td>Onde o modelo erra sistematicamente?</td>
+</tr>
+<tr class="even">
+<td>Conclusão</td>
+<td>O que foi sustentado — sem linguagem de “prova absoluta”?</td>
+</tr>
+<tr class="odd">
+<td>Limitações</td>
+<td>Qual falha de desenho poderia mudar a conclusão?</td>
+</tr>
+<tr class="even">
+<td>Próximo teste</td>
+<td>Como distinguir a principal alternativa?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anatomia-de-uma-teoria-científica">7. Anatomia de uma teoria
+científica</h2>
+<h3 id="teoria-não-é-uma-única-equação">7.1 Teoria não é uma única
+equação</h3>
+<p>Uma teoria física madura contém:</p>
+<ul>
+<li><strong>ontologia de trabalho:</strong> corpos, campos, estados,
+eventos;</li>
+<li><strong>grandezas:</strong> o que pode variar e ser comparado;</li>
+<li><strong>princípios:</strong> simetrias, conservação, dinâmica;</li>
+<li><strong>formalismo:</strong> equações e regras de cálculo;</li>
+<li><strong>modelos particulares:</strong> Sol-planeta, pêndulo, gás,
+circuito;</li>
+<li><strong>regras de ligação:</strong> como leituras instrumentais
+correspondem às grandezas;</li>
+<li><strong>condições e aproximações:</strong> fronteiras, escala,
+ruído, interações ignoradas;</li>
+<li><strong>procedimentos inferenciais:</strong> estimar parâmetros e
+comparar modelos;</li>
+<li><strong>evidência acumulada:</strong> testes independentes e falhas
+conhecidas;</li>
+<li><strong>domínio:</strong> onde funciona e onde outra teoria é
+necessária.</li>
+</ul>
+<p>Godfrey-Smith e Chalmers são boas introduções à passagem do método
+hipotético-dedutivo para debates sobre paradigmas, realismo, modelos e
+prática. <a href="#ref-54">[54]</a> <a href="#ref-55">[55]</a></p>
+<h3 id="derivar-uma-previsão-em-oito-passos">7.2 “Derivar uma previsão”
+em oito passos</h3>
+<p>Exemplo: desvio da luz pelo Sol.</p>
+<ol type="1">
+<li>Aceitar provisoriamente as equações de campo.</li>
+<li>Representar o exterior do Sol por solução aproximadamente esférica e
+estática.</li>
+<li>Obter a métrica correspondente.</li>
+<li>Modelar luz por geodésica nula.</li>
+<li>Fixar trajetória distante e parâmetro de impacto.</li>
+<li>Calcular diferença angular entre direção inicial e final.</li>
+<li>Traduzir ângulo em deslocamento de imagens nas
+placas/instrumentos.</li>
+<li>Comparar com posições de referência e modelos rivais.</li>
+</ol>
+<p>Cada passo tem matemática e hipótese auxiliar. “A equação previu 1,75
+segundo de arco” comprime toda essa cadeia.</p>
+<h3 id="o-que-seria-provar-uma-teoria">7.3 O que seria “provar uma
+teoria”?</h3>
+<p>Em sentido matemático, é possível provar um resultado
+<strong>condicional</strong>:</p>
+<blockquote>
+<p>Se as equações, a solução esférica, as condições e as aproximações
+forem adotadas, então segue determinada deflexão.</p>
+</blockquote>
+<p>O experimento investiga se o antecedente representa o mundo
+suficientemente bem. Uma concordância aumenta apoio; uma discordância
+pode atingir a teoria, solução, aproximação, instrumento ou análise. A
+objetividade vem de tornar essas alternativas criticáveis e repetir
+testes em regimes diferentes. <a href="#ref-57">[57]</a> <a
+href="#ref-96">[96]</a></p>
+<h2 id="currículo-do-zero-ao-doutorado">8. Currículo do zero ao
+doutorado</h2>
+<h3 id="a-regra-dos-três-trilhos">8.1 A regra dos três trilhos</h3>
+<p>Estude simultaneamente, em proporção ajustável:</p>
+<ol type="1">
+<li><strong>Matemática interna — 40%:</strong> calcular, definir e
+provar.</li>
+<li><strong>Modelagem e física — 35%:</strong> traduzir fenômenos,
+derivar e experimentar.</li>
+<li><strong>História e filosofia — 25%:</strong> entender como conceitos
+mudaram e o que os resultados autorizam afirmar.</li>
+</ol>
+<p>Uma semana sem problemas resolvidos produz familiaridade, não
+domínio. Uma semana sem explicação conceitual produz manipulação cega.
+Uma semana sem dados produz matemática sem ponte empírica.</p>
+<h3
+id="nível-0-linguagem-aritmética-e-curiosidade-disciplinada-06-meses">Nível
+0 — Linguagem, aritmética e curiosidade disciplinada (0–6 meses)</h3>
+<p><strong>Objetivo:</strong> ler uma afirmação, identificar
+premissa/conclusão, manipular proporções, unidades e gráficos.</p>
+<ol type="1">
+<li><strong>Richard Hammack, <em>Book of Proof</em>, capítulos
+1–8.</strong> Conjuntos, lógica e prova em acesso aberto. <a
+href="#ref-50">[50]</a></li>
+<li><strong>Serge Lang, <em>Basic Mathematics</em>.</strong> Aritmética,
+álgebra, geometria e trigonometria como revisão rigorosa. <a
+href="#ref-68">[68]</a></li>
+<li><strong>Israel Gelfand e Alexander Shen, <em>Algebra</em>.</strong>
+Problemas que revelam estrutura. <a href="#ref-69">[69]</a></li>
+<li><strong>A. P. Kiselev, <em>Geometry</em>, Livro I.</strong> Figuras
+e demonstrações. <a href="#ref-70">[70]</a></li>
+<li><strong>OpenStax, <em>Precalculus 2e</em>.</strong> Funções,
+exponenciais, logaritmos, trigonometria e vetores. <a
+href="#ref-71">[71]</a></li>
+<li><strong>Paul Hewitt, <em>Conceptual Physics</em>.</strong> Previsões
+qualitativas antes da álgebra pesada. <a href="#ref-72">[72]</a></li>
+</ol>
+<p><strong>Produtos obrigatórios:</strong> 100 problemas mistos, dez
+argumentos reescritos em premissas/conclusão, três provas e dois
+experimentos da seção 6.</p>
+<h3
+id="nível-1-cálculo-vetores-probabilidade-e-física-básica-624-meses">Nível
+1 — Cálculo, vetores, probabilidade e física básica (6–24 meses)</h3>
+<ol start="7" type="1">
+<li><strong>OpenStax, <em>Calculus</em>, vols. 1–3.</strong> Primeira
+passagem por derivada, integral, séries e várias variáveis. <a
+href="#ref-73">[73]</a></li>
+<li><strong>Michael Spivak, <em>Calculus</em>.</strong> Segunda passagem
+orientada a prova; não use como primeiro contato se a base for frágil.
+<a href="#ref-74">[74]</a></li>
+<li><strong>Gilbert Strang, <em>Introduction to Linear
+Algebra</em>.</strong> Sistemas, espaços vetoriais, autovalores e
+decomposições. <a href="#ref-75">[75]</a></li>
+<li><strong>Blitzstein e Hwang, <em>Introduction to
+Probability</em>.</strong> Condicional, variáveis aleatórias e
+expectativa. <a href="#ref-76">[76]</a></li>
+<li><strong>OpenIntro, <em>OpenIntro Statistics</em>.</strong>
+Amostragem, intervalos, testes e regressão em acesso aberto. <a
+href="#ref-77">[77]</a></li>
+<li><strong>Boyce, DiPrima e Meade, <em>Elementary Differential
+Equations</em>.</strong> Evolução, sistemas e problemas de valor
+inicial. <a href="#ref-78">[78]</a></li>
+<li><strong>OpenStax, <em>University Physics</em>, vols. 1–3.</strong>
+Mecânica, termodinâmica, eletromagnetismo, óptica e moderna com cálculo.
+<a href="#ref-79">[79]</a></li>
+</ol>
+<p><strong>Produtos:</strong> derivar pêndulo linearizado em nível
+introdutório; ajustar resfriamento; simular queda com e sem arrasto;
+explicar unidades e resíduos.</p>
+<h3 id="nível-2-prova-modelagem-e-inferência-1842-meses">Nível 2 —
+Prova, modelagem e inferência (18–42 meses)</h3>
+<ol start="14" type="1">
+<li><strong>Daniel Velleman, <em>How to Prove It</em>.</strong> Lógica,
+quantificadores, relações, funções e técnicas de prova. <a
+href="#ref-51">[51]</a></li>
+<li><strong>Theodore Gensler, <em>Introduction to Logic</em>.</strong>
+Argumentos dedutivos e linguagem filosófica. <a
+href="#ref-52">[52]</a></li>
+<li><strong>Giordano, Fox e Horton, <em>A First Course in Mathematical
+Modeling</em>.</strong> Construção, validação, análise dimensional e
+comunicação. <a href="#ref-80">[80]</a></li>
+<li><strong>Douglas Montgomery, <em>Design and Analysis of
+Experiments</em>.</strong> Controle, aleatorização, replicação, bloqueio
+e fatoriais. <a href="#ref-94">[94]</a></li>
+<li><strong>Gelman, Hill e Vehtari, <em>Regression and Other
+Stories</em>.</strong> Modelos estatísticos, diagnóstico e comunicação.
+<a href="#ref-95">[95]</a></li>
+<li><strong>Lakatos, <em>Proofs and Refutations</em>.</strong> Como
+conjecturas e contraexemplos transformam conceitos matemáticos. <a
+href="#ref-67">[67]</a></li>
+<li><strong>Godfrey-Smith, <em>Theory and Reality</em>.</strong>
+Filosofia da ciência contemporânea em trajetória histórica. <a
+href="#ref-54">[54]</a></li>
+</ol>
+<p><strong>Produtos:</strong> uma reprodução computacional; uma prova
+revisada por colega; um experimento pré-especificado; um ensaio “por que
+meu modelo representa o sistema?”.</p>
+<h3 id="nível-3-núcleo-universitário-de-matemática-anos-25">Nível 3 —
+Núcleo universitário de matemática (anos 2–5)</h3>
+<ol start="21" type="1">
+<li><strong>Stephen Abbott, <em>Understanding Analysis</em>.</strong>
+Limites, continuidade, derivação e séries com prova acessível. <a
+href="#ref-84">[84]</a></li>
+<li><strong>Sheldon Axler, <em>Linear Algebra Done Right</em>.</strong>
+Transformações e operadores além de matrizes mecânicas. <a
+href="#ref-85">[85]</a></li>
+<li><strong>Dummit e Foote, <em>Abstract Algebra</em>.</strong> Grupos,
+anéis e corpos; simetria como objeto matemático. <a
+href="#ref-86">[86]</a></li>
+<li><strong>James Munkres, <em>Topology</em>.</strong> Continuidade e
+espaço em nível estrutural. <a href="#ref-87">[87]</a></li>
+<li><strong>Manfredo do Carmo, <em>Differential Geometry of Curves and
+Surfaces</em>.</strong> Curvatura concreta antes de variedades gerais.
+<a href="#ref-88">[88]</a></li>
+<li><strong>Mary Boas, <em>Mathematical Methods in the Physical
+Sciences</em>.</strong> Ferramentas para física: análise vetorial,
+complexos, Fourier e equações. <a href="#ref-89">[89]</a></li>
+<li><strong>Steven Strogatz, <em>Nonlinear Dynamics and
+Chaos</em>.</strong> Fase, estabilidade, bifurcações e caos. <a
+href="#ref-90">[90]</a></li>
+</ol>
+<p><strong>Produtos:</strong> provas completas sem esconder lemas;
+implementação numérica com teste de convergência; seminário ligando um
+conceito puro a duas aplicações.</p>
+<h3 id="nível-4-núcleo-universitário-de-física-matemática-anos-36">Nível
+4 — Núcleo universitário de física matemática (anos 3–6)</h3>
+<ol start="28" type="1">
+<li><strong>John Taylor, <em>Classical Mechanics</em>.</strong> Newton,
+Lagrange, oscilações e sistemas centrais. <a
+href="#ref-81">[81]</a></li>
+<li><strong>Daniel Schroeder, <em>An Introduction to Thermal
+Physics</em>.</strong> Entropia, temperatura e estatística. <a
+href="#ref-82">[82]</a></li>
+<li><strong>David Griffiths, <em>Introduction to
+Electrodynamics</em>.</strong> Campos, potenciais, Maxwell e radiação.
+<a href="#ref-83">[83]</a></li>
+<li><strong>Feynman, Leighton e Sands, <em>The Feynman Lectures on
+Physics</em>.</strong> Segunda visão conceitual, disponível
+oficialmente; não substitui problemas. <a href="#ref-92">[92]</a></li>
+<li><strong>Bernard Schutz, <em>A First Course in General
+Relativity</em>.</strong> Tensores, geometria e primeiros modelos
+relativísticos. <a href="#ref-93">[93]</a></li>
+<li><strong>Sean Carroll, <em>Spacetime and Geometry</em>.</strong>
+Relatividade geral em nível mais avançado. <a
+href="#ref-97">[97]</a></li>
+</ol>
+<p><strong>Produtos:</strong> para um fenômeno, entregar tríade completa
+— derivação analítica, simulação e dado/observação pública — com
+discussão de aproximações.</p>
+<h3 id="nível-5-pós-graduação-e-doutorado-anos-510">Nível 5 —
+Pós-graduação e doutorado (anos 5–10+)</h3>
+<p>Neste nível não existe estante universal. A ordem é definida pelo
+problema. O núcleo de competência inclui:</p>
+<ul>
+<li>análise real/complexa e funcional;</li>
+<li>equações diferenciais ordinárias e parciais;</li>
+<li>probabilidade, estatística e inferência causal;</li>
+<li>geometria, topologia ou álgebra conforme a área;</li>
+<li>métodos numéricos, computação científica e controle de versão;</li>
+<li>mecânica clássica, quântica, estatística, campos ou disciplina
+empírica correspondente;</li>
+<li>filosofia de modelos, explicação e medição;</li>
+<li>desenho, reprodutibilidade, ética e escrita.</li>
+</ul>
+<p>Leia artigos de revisão, depois artigos fundadores e por fim
+literatura atual. Reproduza um resultado antes de buscar novidade. Use o
+relatório das National Academies e <em>The Turing Way</em> para tornar
+dados, código e ambiente auditáveis. <a href="#ref-96">[96]</a> <a
+href="#ref-98">[98]</a></p>
+<p><strong>Prova de saída de doutorado:</strong> contribuição original
+que outros especialistas consigam verificar, criticar, reproduzir ou
+utilizar. Dificuldade algébrica não substitui relevância; bom ajuste não
+substitui identificação; formalização não substitui interpretação.</p>
+<h2 id="rota-histórica-de-48-leituras-qual-livro-vem-primeiro">9. Rota
+histórica de 48 leituras — qual livro vem primeiro?</h2>
+<p>Esta rota é para compreender a <strong>formação da matemática
+aplicada</strong>, não para dominar tecnicamente todas as obras
+originais.</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Passos</th>
+<th>Leitura</th>
+<th>Questão que resolve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1–3</td>
+<td>Katz → Robson → Høyrup</td>
+<td>Como contar, medir e executar algoritmos virou tradição
+escrita?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4–6</td>
+<td>Papiro Rhind → Ossendrijver → <em>Nove capítulos</em></td>
+<td>Como problemas práticos e astronomia geraram procedimentos?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7–10</td>
+<td>Netz, <em>New History</em> → Aristóteles → Euclides → Netz,
+<em>Shaping</em></td>
+<td>Como surgiu a prova dedutiva?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11–14</td>
+<td>Archytas → Arquimedes → Eratóstenes → Ptolomeu</td>
+<td>Como número, geometria, mecânica e céu foram conectados?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15–17</td>
+<td>Plofker → Saliba → al-Khwārizmī</td>
+<td>Como numerais, álgebra e astronomia circularam e mudaram?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18–20</td>
+<td>Ibn al-Haytham → Lindberg → Grant</td>
+<td>Como matemática, óptica e universidades medievais se ligaram?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21–23</td>
+<td>Heytesbury → Sylla → Clagett/Oresme</td>
+<td>O que os calculadores de Oxford realmente fizeram?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24–27</td>
+<td>Copérnico → Kepler → Galileu → Newton</td>
+<td>Como modelos viraram leis quantitativas e dinâmica?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">28–30</td>
+<td>Boyer → Fourier → Maxwell</td>
+<td>Como cálculo, calor e campos ampliaram a física?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">31–34</td>
+<td>Riemann → Frege → Hilbert → Gödel</td>
+<td>Como fundamentos, geometrias e limites foram reconstruídos?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">35–38</td>
+<td>Turing → Einstein 1905 → Einstein/Grossmann → Einstein 1915</td>
+<td>Como computação e relatividade exigiram novas estruturas?</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">39–41</td>
+<td>Janssen/Renn → Dyson/Eddington/Davidson → LIGO</td>
+<td>Como equações relativísticas geraram testes por um século?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">42–44</td>
+<td>Shannon → Lorenz → Hales</td>
+<td>Informação, caos e prova assistida por computador.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45–48</td>
+<td>Wigner → Lakatos → Pincock → AlphaProof</td>
+<td>Por que a matemática funciona e como a prova muda em 2026?</td>
+</tr>
+</tbody>
+</table>
+<p>Depois dessa rota histórica, execute o currículo técnico da seção 8.
+História responde “como chegamos aqui”; problemas e projetos respondem
+“eu consigo fazer?”.</p>
+<h2 id="primeiras-16-semanas">10. Primeiras 16 semanas</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Semanas</th>
+<th>Matemática</th>
+<th>Ciência/história</th>
+<th>Produto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1–2</td>
+<td>Proposições, premissas, validade; Hammack. <a
+href="#ref-50">[50]</a></td>
+<td>Seções 1–2 deste tratado.</td>
+<td>Dez argumentos analisados.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3–4</td>
+<td>Razões, unidades, funções.</td>
+<td>Egito e Mesopotâmia; Robson. <a href="#ref-1">[1]</a></td>
+<td>Problemas Rhind reescritos e crítica ao anacronismo.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5–6</td>
+<td>Geometria e prova; Kiselev. <a href="#ref-70">[70]</a></td>
+<td>Euclides e Eratóstenes.</td>
+<td>Uma prova + experimento de sombra.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7–8</td>
+<td>Gráficos e taxa média.</td>
+<td>Merton e Oresme.</td>
+<td>Demonstrar regra da velocidade média por áreas.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9–10</td>
+<td>Função quadrática.</td>
+<td>Galileu.</td>
+<td>Queda por vídeo e comparação linear/quadrática.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11–12</td>
+<td>Exponencial e logaritmo.</td>
+<td>Fourier e calor.</td>
+<td>Resfriamento, estimativa de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+e resíduos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13–14</td>
+<td>Vetores e noção de derivada.</td>
+<td>Newton e Maxwell.</td>
+<td>Mapa de derivação: princípio → equação → previsão.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15–16</td>
+<td>Revisão e explicação sem consulta.</td>
+<td>Einstein/Grossmann.</td>
+<td>Ensaio de 1.500 palavras respondendo à pergunta da série.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="critérios-de-domínio">11. Critérios de domínio</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nível</th>
+<th>Você consegue…</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Linguagem</td>
+<td>separar definição, premissa, argumento, hipótese, lei e teoria?</td>
+<td>Glossário próprio com exemplos e contraexemplos.</td>
+</tr>
+<tr class="even">
+<td>Prova</td>
+<td>demonstrar e identificar dependência de axiomas?</td>
+<td>Dez provas revisadas.</td>
+</tr>
+<tr class="odd">
+<td>Modelagem</td>
+<td>passar de fenômeno a variáveis, equação e domínio?</td>
+<td>Três modelos com análise dimensional.</td>
+</tr>
+<tr class="even">
+<td>Experimento</td>
+<td>produzir dado rastreável e incerteza?</td>
+<td>Quatro relatórios reproduzíveis.</td>
+</tr>
+<tr class="odd">
+<td>Inferência</td>
+<td>distinguir ajuste, previsão e causalidade?</td>
+<td>Comparação de modelos e crítica a alternativas.</td>
+</tr>
+<tr class="even">
+<td>Física matemática</td>
+<td>derivar consequência e testar limite?</td>
+<td>Projeto analítico + numérico + empírico.</td>
+</tr>
+<tr class="odd">
+<td>Pesquisa</td>
+<td>formular contribuição verificável?</td>
+<td>Reprodução, seminário e trabalho original.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="respostas-diretas-às-suas-dúvidas">12. Respostas diretas às suas
+dúvidas</h2>
+<h3 id="foi-primeiro-lógica-e-depois-matemática">“Foi primeiro lógica e
+depois matemática?”</h3>
+<p>Não. Contagem e medida são anteriores à lógica formal; algoritmos
+antigos antecedem a demonstração grega; lógica e matemática coexistiram
+e se transformaram mutuamente. Em Merton, lógica escolástica ajudou a
+definir problemas de mudança, e matemática quantificou relações. A
+conexão experimental específica veio depois e não de forma linear.</p>
+<h3 id="uma-conta-provou-a-teoria-de-einstein">“Uma conta provou a
+teoria de Einstein?”</h3>
+<p>Não em sentido empírico. A conta mostrou consequências, consistência
+e limites da teoria. Mercúrio, eclipses, relógios, pulsares e ondas
+gravitacionais forneceram testes. Dizer “a conta provou” mistura
+demonstração condicional com confirmação observacional.</p>
+<h3
+id="se-a-prova-matemática-é-verdadeira-a-equação-explica-a-realidade">“Se
+a prova matemática é verdadeira, a equação explica a realidade?”</h3>
+<p>Somente se os axiomas/modelo e as regras que ligam símbolos a
+medições forem adequados. A prova garante a passagem <strong>dentro do
+modelo</strong>; o experimento avalia a ponte
+<strong>modelo–mundo</strong>.</p>
+<h3 id="o-próximo-passo-é-observar-com-os-olhos">“O próximo passo é
+observar com os olhos?”</h3>
+<p>É observar com procedimentos, muitas vezes instrumentos e inferência.
+Olhos não veem ondas gravitacionais, genes ou curvatura diretamente.
+Detectores transformam interações em sinais; modelos de medição
+transformam sinais em evidência.</p>
+<h3
+id="quem-foi-o-primeiro-humano-a-usar-matemática-e-experimento">“Quem
+foi o primeiro humano a usar matemática e experimento?”</h3>
+<p>É irrecuperável. Respostas defensáveis por critério são:</p>
+<ul>
+<li><strong>Ahmes:</strong> um dos primeiros praticantes matemáticos
+nomeados preservados; copista, não inventor.</li>
+<li><strong>escribas babilônicos:</strong> primeiras comunidades
+documentadas de previsão matemática do céu.</li>
+<li><strong>Archytas:</strong> pessoa nomeada ligada à matemática da
+harmonia e mecânica.</li>
+<li><strong>Eratóstenes:</strong> observação angular e geometria para
+medir a Terra.</li>
+<li><strong>Arquimedes:</strong> física matemática dedutiva em
+estática/hidrostática.</li>
+<li><strong>Ibn al-Haytham:</strong> óptica matemática com investigação
+experimental sistemática.</li>
+<li><strong>Galileu:</strong> leis matemáticas do movimento conectadas a
+experimentos quantitativos deliberados.</li>
+</ul>
+<p>Escolher um único “primeiro” apagaria diferenças entre calcular,
+prever, explicar, demonstrar e experimentar.</p>
+<h2 id="conclusão">13. Conclusão</h2>
+<p>Matemática começou como pluralidade de práticas — quantidade, forma,
+medida, algoritmo, prova — e tornou-se linguagem poderosa da ciência
+quando essas práticas foram conectadas a grandezas, instrumentos e leis.
+A história não é “argumento filosófico, depois monges, depois números,
+depois experimento”; é uma rede com avanços, perdas, traduções e
+recombinações.</p>
+<p>A equação explica quando comprime uma estrutura relevante, deriva
+consequências novas, conecta-se a medições e sobrevive a testes que
+poderiam revelar erro. A prova garante a consequência formal; a
+experiência avalia a representação. Einstein e Grossmann são um caso
+exemplar: princípios físicos encontraram a geometria capaz de torná-los
+calculáveis, e os cálculos tornaram possíveis testes que a intuição
+isolada jamais formularia com precisão.</p>
+<p>O caminho do estudante deve repetir conscientemente essa arquitetura:
+<strong>definir → provar → modelar → medir → estimar → testar → criticar
+→ revisar</strong>.</p>
+<h2 id="referências">Referências</h2>
+<div class="references">
+<p><span id="ref-1">[1]</span> ROBSON, Eleanor. <em>Mathematics in
+Ancient Iraq: A Social History</em>. Princeton: Princeton University
+Press, 2008. <a
+href="https://press.princeton.edu/books/hardcover/9780691091822/mathematics-in-ancient-iraq">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-2">[2]</span> CHACE, Arnold Buffum et al. <em>The Rhind
+Mathematical Papyrus</em>. Oberlin: Mathematical Association of America,
+1927–1929. <a
+href="https://archive.org/details/rhindmathematica0000unse">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-3">[3]</span> BRITISH MUSEUM. Learn maths from Egyptian
+secrets in the Rhind Mathematical Papyrus. London, 2025. <a
+href="https://www.britishmuseum.org/blog/learn-maths-egyptian-secrets-rhind-mathematical-papyrus">Museu</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-4">[4]</span> KATZ, Victor J. <em>A History of
+Mathematics: An Introduction</em>. 3. ed. Boston: Addison-Wesley, 2009.
+<a href="https://search.worldcat.org/title/244060368">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-5">[5]</span> HØYRUP, Jens. <em>Lengths, Widths,
+Surfaces: A Portrait of Old Babylonian Algebra and Its Kin</em>. New
+York: Springer, 2002. <a
+href="https://doi.org/10.1007/978-1-4757-3685-4">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-6">[6]</span> NETZ, Reviel. <em>A New History of Greek
+Mathematics</em>. Cambridge: Cambridge University Press, 2022. <a
+href="https://doi.org/10.1017/9781108871518">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-7">[7]</span> NETZ, Reviel. <em>The Shaping of
+Deduction in Greek Mathematics</em>. Cambridge: Cambridge University
+Press, 1999. <a
+href="https://doi.org/10.1017/CBO9780511543296">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-8">[8]</span> OSSENDRIJVER, Mathieu. Ancient Babylonian
+Astronomers Calculated Jupiter’s Position from the Area under a
+Time-Velocity Graph. <em>Science</em>, v. 351, n. 6272, p. 482–484,
+2016. <a href="https://doi.org/10.1126/science.aad8085">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-9">[9]</span> ARISTOTLE. <em>Posterior Analytics</em>.
+Trad. Jonathan Barnes. 2. ed. Oxford: Clarendon Press, 1994. <a
+href="https://search.worldcat.org/title/28676917">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-10">[10]</span> EUCLID. <em>The Thirteen Books of the
+Elements</em>. Trad. Thomas L. Heath. 2. ed. Cambridge: Cambridge
+University Press, 1926. <a
+href="https://mathcs.clarku.edu/~djoyce/java/elements/elements.html">Texto
+digital</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-11">[11]</span> HUFFMAN, Carl. Pythagoras. In:
+<em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics
+Research Lab, revisão contínua. <a
+href="https://plato.stanford.edu/entries/pythagoras/">Verbete</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-12">[12]</span> HUFFMAN, Carl. Philolaus. In:
+<em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics
+Research Lab, revisão contínua. <a
+href="https://plato.stanford.edu/entries/philolaus/">Verbete</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-13">[13]</span> HUFFMAN, Carl. Archytas. In:
+<em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics
+Research Lab, 2003. <a
+href="https://plato.stanford.edu/archives/win2016/entries/archytas/">Verbete
+arquivado</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-14">[14]</span> ARCHIMEDES. <em>The Works of
+Archimedes</em>. Ed. e trad. T. L. Heath. Cambridge: Cambridge
+University Press, 1897. <a
+href="https://archive.org/details/worksofarchimede029517mbp">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-15">[15]</span> MATTHEW, Christopher Anthony.
+<em>Eratosthenes and the Measurement of the Earth’s Circumference
+(c. 230 BC)</em>. Oxford: Oxford University Press, 2023. <a
+href="https://global.oup.com/academic/product/eratosthenes-and-the-measurement-of-the-earths-circumference-c230-bc-9780198874317">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-16">[16]</span> PTOLEMY. <em>Ptolemy’s Almagest</em>.
+Trad. G. J. Toomer. Princeton: Princeton University Press, 1998. <a
+href="https://press.princeton.edu/books/paperback/9780691002606/ptolemys-almagest">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-17">[17]</span> SHEN, Kangshen; CROSSLEY, John N.; LUN,
+Anthony W.-C. <em>The Nine Chapters on the Mathematical Art</em>.
+Oxford: Oxford University Press, 1999. <a
+href="https://search.worldcat.org/title/40838612">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-18">[18]</span> PLOFKER, Kim. <em>Mathematics in
+India</em>. Princeton: Princeton University Press, 2009. <a
+href="https://press.princeton.edu/books/hardcover/9780691120676/mathematics-in-india">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-19">[19]</span> SALIBA, George. <em>Islamic Science and
+the Making of the European Renaissance</em>. Cambridge, MA: MIT Press,
+2007. <a
+href="https://mitpress.mit.edu/9780262516150/islamic-science-and-the-making-of-the-european-renaissance/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-20">[20]</span> AL-KHWĀRIZMĪ, Muḥammad ibn Mūsā.
+<em>The Algebra of Mohammed ben Musa</em>. Trad. Frederic Rosen. London:
+Oriental Translation Fund, 1831. <a
+href="https://archive.org/details/algebraofmohamme00khuwrich">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-21">[21]</span> IBN AL-HAYTHAM. <em>The Optics of Ibn
+al-Haytham: Books I–III</em>. Trad. A. I. Sabra. London: Warburg
+Institute, 1989. <a
+href="https://search.worldcat.org/title/18352576">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-22">[22]</span> LINDBERG, David C. <em>The Beginnings
+of Western Science</em>. 2. ed. Chicago: University of Chicago Press,
+2007. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/B/bo5550077.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-23">[23]</span> GRANT, Edward (org.). <em>A Source Book
+in Medieval Science</em>. Cambridge, MA: Harvard University Press, 1974.
+<a href="https://archive.org/details/sourcebookinmedi0000unse">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-24">[24]</span> SYLLA, Edith Dudley. The Oxford
+Calculators’ Middle Degree Theorem in Context. <em>Early Science and
+Medicine</em>, v. 15, n. 4/5, p. 338–370, 2010. <a
+href="https://www.jstor.org/stable/20787421">JSTOR</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-25">[25]</span> HANKE, Miroslav. William Heytesbury.
+In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics
+Research Lab, 2018. <a
+href="https://plato.stanford.edu/entries/heytesbury/">Verbete</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-26">[26]</span> CLAGETT, Marshall. <em>The Science of
+Mechanics in the Middle Ages</em>. Madison: University of Wisconsin
+Press, 1959. <a
+href="https://archive.org/details/scienceofmechani0000clag">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-27">[27]</span> COPERNICUS, Nicolaus. <em>On the
+Revolutions</em>. Trad. Edward Rosen. Baltimore: Johns Hopkins
+University Press, 1992 [original de 1543]. <a
+href="https://search.worldcat.org/title/24589889">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-28">[28]</span> KEPLER, Johannes. <em>New
+Astronomy</em>. Trad. William H. Donahue. Cambridge: Cambridge
+University Press, 1992 [original de 1609]. <a
+href="https://doi.org/10.1017/CBO9780511569135">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-29">[29]</span> GALILEI, Galileo. <em>Discourses and
+Mathematical Demonstrations Relating to Two New Sciences</em>. Trad.
+Henry Crew; Alfonso de Salvio. New York: Macmillan, 1914 [original de
+1638]. <a
+href="https://galileoandeinstein.physics.virginia.edu/tns_draft/index.html">Texto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-30">[30]</span> DRAKE, Stillman. <em>Galileo at Work:
+His Scientific Biography</em>. Chicago: University of Chicago Press,
+1978. <a href="https://archive.org/details/galileoatwork00stil">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-31">[31]</span> NEWTON, Isaac. <em>The Principia:
+Mathematical Principles of Natural Philosophy</em>. Trad. I. Bernard
+Cohen; Anne Whitman. Berkeley: University of California Press, 1999
+[original de 1687]. <a href="https://www.newtonproject.ox.ac.uk/">Newton
+Project</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-32">[32]</span> BOYER, Carl B. <em>The History of the
+Calculus and Its Conceptual Development</em>. New York: Dover, 1959. <a
+href="https://archive.org/details/historyofcalculu00boye">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-33">[33]</span> FOURIER, Joseph. <em>The Analytical
+Theory of Heat</em>. Trad. Alexander Freeman. Cambridge: Cambridge
+University Press, 1878 [original francês de 1822]. <a
+href="https://archive.org/details/analyticaltheory00fourrich">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-34">[34]</span> NARASIMHAN, T. N. Fourier’s Heat
+Conduction Equation: History, Influence, and Connections.
+<em>Proceedings of the Indian Academy of Sciences — Earth and Planetary
+Sciences</em>, v. 108, n. 3, p. 117–148, 1999. <a
+href="https://www.ias.ac.in/public/Volumes/jess/108/03/0117-0148.pdf">Texto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-35">[35]</span> MAXWELL, James Clerk. <em>A Treatise on
+Electricity and Magnetism</em>. Oxford: Clarendon Press, 1873. <a
+href="https://archive.org/details/treatiseonelectr01maxwrich">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-36">[36]</span> RIEMANN, Bernhard. On the Hypotheses
+Which Lie at the Foundations of Geometry. Trad. William Kingdon
+Clifford. <em>Nature</em>, v. 8, p. 14–17 e 36–37, 1873 [conferência de
+1854]. <a
+href="https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/">Texto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-37">[37]</span> FREGE, Gottlob. <em>The Foundations of
+Arithmetic</em>. Trad. J. L. Austin. Oxford: Basil Blackwell, 1950
+[original de 1884]. <a
+href="https://archive.org/details/foundationsofari0000freg">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-38">[38]</span> HILBERT, David. <em>The Foundations of
+Geometry</em>. Trad. E. J. Townsend. Chicago: Open Court, 1902 [original
+alemão de 1899]. <a
+href="https://www.gutenberg.org/ebooks/17384">Project Gutenberg</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-39">[39]</span> GÖDEL, Kurt. On Formally Undecidable
+Propositions of <em>Principia Mathematica</em> and Related Systems I.
+In: HEIJENOORT, Jean van (org.). <em>From Frege to Gödel</em>.
+Cambridge, MA: Harvard University Press, 1967 [original de 1931]. <a
+href="https://search.worldcat.org/title/523247">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-40">[40]</span> TURING, Alan M. On Computable Numbers,
+with an Application to the Entscheidungsproblem. <em>Proceedings of the
+London Mathematical Society</em>, s. 2, v. 42, p. 230–265, 1936. <a
+href="https://doi.org/10.1112/plms/s2-42.1.230">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-41">[41]</span> EINSTEIN, Albert. On the
+Electrodynamics of Moving Bodies. <em>Annalen der Physik</em>, v. 17,
+p. 891–921, 1905. <a
+href="https://einsteinpapers.press.princeton.edu/vol2-trans/154">Tradução
+— Einstein Papers Project</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-42">[42]</span> EINSTEIN, Albert; GROSSMANN, Marcel.
+<em>Entwurf einer verallgemeinerten Relativitätstheorie und einer
+Theorie der Gravitation</em>. Leipzig: Teubner, 1913. <a
+href="https://einsteinpapers.press.princeton.edu/vol4-doc/192">Einstein
+Papers Project</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-43">[43]</span> EINSTEIN, Albert. Die Feldgleichungen
+der Gravitation. <em>Sitzungsberichte der Königlich Preussischen
+Akademie der Wissenschaften</em>, p. 844–847, 1915. <a
+href="https://einsteinpapers.press.princeton.edu/vol6-doc/110">Einstein
+Papers Project</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-44">[44]</span> JANSSEN, Michel; RENN, Jürgen. <em>How
+Einstein Found His Field Equations: Sources and Interpretation</em>.
+Cham: Springer, 2022. <a
+href="https://doi.org/10.1007/978-3-030-97955-3">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-45">[45]</span> SHANNON, Claude E. A Mathematical
+Theory of Communication. <em>Bell System Technical Journal</em>, v. 27,
+p. 379–423 e 623–656, 1948. <a
+href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-46">[46]</span> LORENZ, Edward N. Deterministic
+Nonperiodic Flow. <em>Journal of the Atmospheric Sciences</em>, v. 20,
+n. 2, p. 130–141, 1963. <a
+href="https://doi.org/10.1175/1520-0469(1963)020%3C0130:DNF%3E2.0.CO;2">DOI</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-47">[47]</span> HALES, Thomas et al. A Formal Proof of
+the Kepler Conjecture. <em>Forum of Mathematics, Pi</em>, v. 5, e2,
+2017. <a href="https://doi.org/10.1017/fmp.2017.1">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-48">[48]</span> LEAN COMMUNITY. <em>Lean and Its
+Mathematical Library</em>. 2026. <a
+href="https://leanprover-community.github.io/">Projeto oficial</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-49">[49]</span> HUBERT, Thomas et al. Olympiad-Level
+Formal Mathematical Reasoning with Reinforcement Learning.
+<em>Nature</em>, 2025. <a
+href="https://doi.org/10.1038/s41586-025-09833-y">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-50">[50]</span> HAMMACK, Richard. <em>Book of
+Proof</em>. 3. ed. Richmond: Virginia Commonwealth University, 2018. <a
+href="https://www.people.vcu.edu/~rhammack/BookOfProof/">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-51">[51]</span> VELLEMAN, Daniel J. <em>How to Prove
+It: A Structured Approach</em>. 3. ed. Cambridge: Cambridge University
+Press, 2019. <a
+href="https://doi.org/10.1017/9781108539890">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-52">[52]</span> GENSLER, Harry J. <em>Introduction to
+Logic</em>. 3. ed. New York: Routledge, 2017. <a
+href="https://www.routledge.com/Introduction-to-Logic/Gensler/p/book/9781138910577">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-53">[53]</span> POPPER, Karl. <em>The Logic of
+Scientific Discovery</em>. London: Hutchinson, 1959 [original alemão de
+1934]. <a
+href="https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-54">[54]</span> GODFREY-SMITH, Peter. <em>Theory and
+Reality: An Introduction to the Philosophy of Science</em>. 2.
+ed. Chicago: University of Chicago Press, 2021. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/T/bo37447570.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-55">[55]</span> CHALMERS, Alan F. <em>What Is This
+Thing Called Science?</em> 4. ed. Indianapolis: Hackett, 2013. <a
+href="https://hackettpublishing.com/what-is-this-thing-called-science-fourth-edition">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-56">[56]</span> NATIONAL ACADEMY OF SCIENCES; INSTITUTE
+OF MEDICINE. <em>Science, Evolution, and Creationism</em>. Washington,
+DC: National Academies Press, 2008. <a
+href="https://doi.org/10.17226/11876">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-57">[57]</span> BOYD, Nora Mills. Theory and
+Observation in Science. In: <em>Stanford Encyclopedia of
+Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua.
+<a
+href="https://plato.stanford.edu/entries/science-theory-observation/">Verbete</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-58">[58]</span> GIERE, Ronald N. <em>Scientific
+Perspectivism</em>. Chicago: University of Chicago Press, 2006. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo4104507.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-59">[59]</span> WEISBERG, Michael. <em>Simulation and
+Similarity: Using Models to Understand the World</em>. Oxford: Oxford
+University Press, 2013. <a
+href="https://global.oup.com/academic/product/simulation-and-similarity-9780199933662">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-60">[60]</span> ABBOTT, B. P. et al. Observation of
+Gravitational Waves from a Binary Black Hole Merger. <em>Physical Review
+Letters</em>, v. 116, 061102, 2016. <a
+href="https://doi.org/10.1103/PhysRevLett.116.061102">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-61">[61]</span> WIGNER, Eugene P. The Unreasonable
+Effectiveness of Mathematics in the Natural Sciences. <em>Communications
+on Pure and Applied Mathematics</em>, v. 13, n. 1, p. 1–14, 1960. <a
+href="https://doi.org/10.1002/cpa.3160130102">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-62">[62]</span> HAMMING, Richard W. The Unreasonable
+Effectiveness of Mathematics. <em>American Mathematical Monthly</em>, v.
+87, n. 2, p. 81–90, 1980. <a
+href="https://www.jstor.org/stable/2321982">JSTOR</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-63">[63]</span> STEINER, Mark. <em>The Applicability of
+Mathematics as a Philosophical Problem</em>. Cambridge, MA: Harvard
+University Press, 1998. <a
+href="https://www.jstor.org/stable/j.ctv1smjt4k">JSTOR Books</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-64">[64]</span> PINCOCK, Christopher. <em>Mathematics
+and Scientific Representation</em>. Oxford: Oxford University Press,
+2012. <a
+href="https://global.oup.com/academic/product/mathematics-and-scientific-representation-9780190201395">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-65">[65]</span> COLYVAN, Mark. Indispensability
+Arguments in the Philosophy of Mathematics. In: <em>Stanford
+Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab,
+revisão contínua. <a
+href="https://plato.stanford.edu/entries/mathphil-indis/">Verbete</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-66">[66]</span> CARTWRIGHT, Nancy. <em>How the Laws of
+Physics Lie</em>. Oxford: Clarendon Press, 1983. <a
+href="https://doi.org/10.1093/0198247044.001.0001">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-67">[67]</span> LAKATOS, Imre. <em>Proofs and
+Refutations: The Logic of Mathematical Discovery</em>. Cambridge:
+Cambridge University Press, 1976. <a
+href="https://doi.org/10.1017/CBO9781139171472">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-68">[68]</span> LANG, Serge. <em>Basic
+Mathematics</em>. New York: Springer, 1988. <a
+href="https://doi.org/10.1007/978-1-4612-1068-9">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-69">[69]</span> GELFAND, Israel M.; SHEN, Alexander.
+<em>Algebra</em>. Boston: Birkhäuser, 1993. <a
+href="https://doi.org/10.1007/978-1-4612-0901-5">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-70">[70]</span> KISELEV, A. P. <em>Kiselev’s Geometry:
+Book I, Planimetry</em>. Trad. Alexander Givental. El Cerrito: Sumizdat,
+2006. <a href="https://www.sumizdat.org/kiselev.html">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-71">[71]</span> ABRAMSON, Jay. <em>Precalculus 2e</em>.
+Houston: OpenStax, 2021. <a
+href="https://openstax.org/details/books/precalculus-2e">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-72">[72]</span> HEWITT, Paul G. <em>Conceptual
+Physics</em>. 13. ed. Boston: Pearson, 2022. <a
+href="https://www.pearson.com/en-us/subject-catalog/p/conceptual-physics/P200000006846">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-73">[73]</span> STRANG, Gilbert; HERMAN, Edwin.
+<em>Calculus</em>, vols. 1–3. Houston: OpenStax, 2016. <a
+href="https://openstax.org/subjects/math">Textos abertos</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-74">[74]</span> SPIVAK, Michael. <em>Calculus</em>. 4.
+ed. Houston: Publish or Perish, 2008. <a
+href="https://www.mathpop.com/books/calculus">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-75">[75]</span> STRANG, Gilbert. <em>Introduction to
+Linear Algebra</em>. 6. ed. Wellesley: Wellesley-Cambridge Press, 2023.
+<a href="https://math.mit.edu/~gs/linearalgebra/">Autor</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-76">[76]</span> BLITZSTEIN, Joseph K.; HWANG, Jessica.
+<em>Introduction to Probability</em>. 2. ed. Boca Raton: CRC Press,
+2019. <a href="https://projects.iq.harvard.edu/stat110/home">Curso e
+recursos</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-77">[77]</span> DIEZ, David M.; BARR, Christopher D.;
+ÇETINKAYA-RUNDEL, Mine. <em>OpenIntro Statistics</em>. 4. ed. OpenIntro,
+2019. <a href="https://www.openintro.org/book/os/">Texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-78">[78]</span> BOYCE, William E.; DIPRIMA, Richard C.;
+MEADE, Douglas B. <em>Elementary Differential Equations and Boundary
+Value Problems</em>. 12. ed. Hoboken: Wiley, 2022. <a
+href="https://www.wiley.com/en-us/Elementary+Differential+Equations+and+Boundary+Value+Problems%2C+12th+Edition-p-9781119777773">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-79">[79]</span> LING, Samuel J.; SANNY, Jeff; MOEBS,
+William. <em>University Physics</em>, vols. 1–3. Houston: OpenStax,
+2016. <a href="https://openstax.org/subjects/science">Textos
+abertos</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-80">[80]</span> GIORDANO, Frank R.; FOX, William P.;
+HORTON, Steven B. <em>A First Course in Mathematical Modeling</em>. 5.
+ed. Boston: Brooks/Cole, 2014. <a
+href="https://search.worldcat.org/title/847985966">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-81">[81]</span> TAYLOR, John R. <em>Classical
+Mechanics</em>. Sausalito: University Science Books, 2005. <a
+href="https://search.worldcat.org/title/55729987">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-82">[82]</span> SCHROEDER, Daniel V. <em>An
+Introduction to Thermal Physics</em>. Oxford: Oxford University Press,
+2000. <a href="https://physics.weber.edu/thermal/">Autor</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-83">[83]</span> GRIFFITHS, David J. <em>Introduction to
+Electrodynamics</em>. 4. ed. Cambridge: Cambridge University Press,
+2017. <a href="https://doi.org/10.1017/9781108333511">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-84">[84]</span> ABBOTT, Stephen. <em>Understanding
+Analysis</em>. 2. ed. New York: Springer, 2015. <a
+href="https://doi.org/10.1007/978-1-4939-2712-8">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-85">[85]</span> AXLER, Sheldon. <em>Linear Algebra Done
+Right</em>. 3. ed. Cham: Springer, 2015. <a
+href="https://doi.org/10.1007/978-3-319-11080-6">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-86">[86]</span> DUMMIT, David S.; FOOTE, Richard M.
+<em>Abstract Algebra</em>. 3. ed. Hoboken: Wiley, 2004. <a
+href="https://search.worldcat.org/title/53113079">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-87">[87]</span> MUNKRES, James R. <em>Topology</em>. 2.
+ed. Upper Saddle River: Prentice Hall, 2000. <a
+href="https://search.worldcat.org/title/42683260">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-88">[88]</span> DO CARMO, Manfredo P. <em>Differential
+Geometry of Curves and Surfaces</em>. Englewood Cliffs: Prentice-Hall,
+1976. <a
+href="https://store.doverpublications.com/products/9780486806990">Dover</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-89">[89]</span> BOAS, Mary L. <em>Mathematical Methods
+in the Physical Sciences</em>. 3. ed. Hoboken: Wiley, 2006. <a
+href="https://search.worldcat.org/title/63046924">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-90">[90]</span> STROGATZ, Steven H. <em>Nonlinear
+Dynamics and Chaos</em>. 2. ed. Boulder: Westview Press, 2015. <a
+href="https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos">Autor</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-91">[91]</span> DYSON, F. W.; EDDINGTON, A. S.;
+DAVIDSON, C. A Determination of the Deflection of Light by the Sun’s
+Gravitational Field, from Observations Made at the Total Eclipse of May
+29, 1919. <em>Philosophical Transactions of the Royal Society A</em>, v.
+220, p. 291–333, 1920. <a
+href="https://doi.org/10.1098/rsta.1920.0009">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-92">[92]</span> FEYNMAN, Richard P.; LEIGHTON, Robert
+B.; SANDS, Matthew. <em>The Feynman Lectures on Physics</em>. New
+Millennium ed. New York: Basic Books, 2011. <a
+href="https://www.feynmanlectures.caltech.edu/">Edição oficial
+aberta</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-93">[93]</span> SCHUTZ, Bernard. <em>A First Course in
+General Relativity</em>. 2. ed. Cambridge: Cambridge University Press,
+2009. <a href="https://doi.org/10.1017/CBO9780511984181">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-94">[94]</span> MONTGOMERY, Douglas C. <em>Design and
+Analysis of Experiments</em>. 10. ed. Hoboken: Wiley, 2019. <a
+href="https://www.wiley.com/en-us/Design+and+Analysis+of+Experiments%2C+10th+Edition-p-9781119492443">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-95">[95]</span> GELMAN, Andrew; HILL, Jennifer;
+VEHTARI, Aki. <em>Regression and Other Stories</em>. Cambridge:
+Cambridge University Press, 2020. <a
+href="https://avehtari.github.io/ROS-Examples/">Recursos</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-96">[96]</span> NATIONAL ACADEMIES OF SCIENCES,
+ENGINEERING, AND MEDICINE. <em>Reproducibility and Replicability in
+Science</em>. Washington, DC: National Academies Press, 2019. <a
+href="https://doi.org/10.17226/25303">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-97">[97]</span> CARROLL, Sean M. <em>Spacetime and
+Geometry: An Introduction to General Relativity</em>. Cambridge:
+Cambridge University Press, 2019. <a
+href="https://doi.org/10.1017/9781108770385">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-98">[98]</span> THE TURING WAY COMMUNITY. <em>The
+Turing Way: A Handbook for Reproducible, Ethical and Collaborative Data
+Science</em>. 2019–. <a
+href="https://the-turing-way.netlify.app/">Manual aberto</a>. <a
+href="#">↩︎</a></p>
+</div>
+</body>
+</html>

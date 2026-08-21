@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tratado bibliográfico — Volume I" />
+  <title>História global da ciência e do método científico</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root {
+    --ink: #17212b;
+    --muted: #5b6774;
+    --paper: #fbfaf6;
+    --navy: #16324f;
+    --teal: #0e6b68;
+    --gold: #a56f18;
+    --line: #d8dde3;
+    --soft: #edf4f3;
+    --warn: #fff6df;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.62;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2.5rem 3rem 5rem;
+  }
+  header#title-block-header {
+    color: white;
+    background: linear-gradient(135deg, var(--navy), #285574 64%, var(--teal));
+    padding: 3.5rem 3rem 2.9rem;
+    margin: -2.5rem -3rem 2.4rem;
+    border-bottom: 8px solid #d7a94a;
+  }
+  h1.title { color: white; font-size: 2.5rem; line-height: 1.08; margin: 0 0 .7rem; }
+  p.subtitle { font-size: 1.22rem; max-width: 50rem; margin: 0 0 1.35rem; opacity: .94; }
+  p.author, p.date { margin: .15rem 0; font-family: Inter, Arial, sans-serif; opacity: .85; }
+  h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; }
+  h2 { margin-top: 3rem; padding-top: .45rem; border-top: 1px solid var(--line); font-size: 1.66rem; }
+  h3 { margin-top: 2rem; font-size: 1.24rem; color: var(--teal); }
+  h4 { font-size: 1.05rem; }
+  p, li { font-size: 1.01rem; }
+  a { color: #086577; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:hover { color: #943f2a; }
+  nav#TOC {
+    background: var(--soft);
+    border-left: 5px solid var(--teal);
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0 3rem;
+  }
+  nav#TOC::before { content: "Sumário"; display: block; font: 700 1.2rem Inter, Arial, sans-serif; color: var(--navy); margin-bottom: .5rem; }
+  nav#TOC ul { margin: .25rem 0; }
+  nav#TOC li { margin: .18rem 0; font-size: .93rem; }
+  blockquote {
+    border-left: 4px solid var(--gold);
+    background: var(--warn);
+    margin: 1.5rem 0;
+    padding: .85rem 1.2rem;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem; font-size: .89rem; }
+  thead { background: var(--navy); color: #fff; }
+  th { text-align: left; font-family: Inter, Arial, sans-serif; font-weight: 700; }
+  th, td { padding: .68rem .72rem; vertical-align: top; border: 1px solid var(--line); }
+  tbody tr:nth-child(even) { background: #f3f5f6; }
+  ol > li, ul > li { margin: .44rem 0; }
+  strong { color: #102f47; }
+  code { background: #eef1f4; padding: .12rem .3rem; border-radius: 3px; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3rem 0; }
+  .references p, #referencias ~ p, #referências ~ p { font-size: .88rem; padding-left: 2.2rem; text-indent: -2.2rem; margin: .62rem 0; }
+  span[id^="ref-"] { scroll-margin-top: 1.2rem; }
+  .tag { font-family: Inter, Arial, sans-serif; font-size: .78rem; font-weight: 700; letter-spacing: .02em; color: white; background: var(--teal); border-radius: 3px; padding: .1rem .36rem; }
+  @media (max-width: 760px) {
+    body { padding: 1.1rem 1rem 3rem; }
+    header#title-block-header { margin: -1.1rem -1rem 1.5rem; padding: 2rem 1.1rem; }
+    h1.title { font-size: 1.95rem; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media print {
+    body { background: white; max-width: none; padding: 0; font-size: 10pt; }
+    header#title-block-header { margin: 0 0 1.5cm; border-bottom-width: 5px; }
+    a { color: #0b5266; }
+    h2, h3, h4 { break-after: avoid; }
+    table, blockquote { break-inside: avoid; }
+  }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">História global da ciência e do método científico</h1>
+<p class="subtitle">Da inteligência técnica pré-histórica à ciência
+aberta e assistida por IA — roteiro cronológico de leitura até 10 de
+agosto de 2026</p>
+<p class="author">Tratado bibliográfico — Volume I</p>
+<p class="date">10 de agosto de 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumo-executivo" id="toc-resumo-executivo">Resumo
+executivo</a></li>
+<li><a href="#o-que-este-roteiro-chama-de-ciência"
+id="toc-o-que-este-roteiro-chama-de-ciência">1. O que este roteiro chama
+de ciência</a></li>
+<li><a href="#antes-da-cronologia-as-quatro-primeiras-leituras"
+id="toc-antes-da-cronologia-as-quatro-primeiras-leituras">2. Antes da
+cronologia: as quatro primeiras leituras</a></li>
+<li><a
+href="#rota-cronológica-de-leitura-do-conhecimento-pré-histórico-a-2026"
+id="toc-rota-cronológica-de-leitura-do-conhecimento-pré-histórico-a-2026">3.
+Rota cronológica de leitura — do conhecimento pré-histórico a
+2026</a></li>
+<li><a href="#a-ordem-definitiva-rota-principal-de-60-passos"
+id="toc-a-ordem-definitiva-rota-principal-de-60-passos">4. A ordem
+definitiva: rota principal de 60 passos</a></li>
+<li><a href="#taxonomia-de-herança-o-que-gerou-o-quê"
+id="toc-taxonomia-de-herança-o-que-gerou-o-quê">5. Taxonomia de herança:
+o que gerou o quê?</a></li>
+<li><a href="#como-estudar-cada-obra-sem-virar-colecionador-de-títulos"
+id="toc-como-estudar-cada-obra-sem-virar-colecionador-de-títulos">6.
+Como estudar cada obra sem virar colecionador de títulos</a></li>
+<li><a href="#plano-de-execução" id="toc-plano-de-execução">7. Plano de
+execução</a></li>
+<li><a href="#conclusões" id="toc-conclusões">8. Conclusões</a></li>
+<li><a href="#referências" id="toc-referências">Referências</a></li>
+</ul>
+</nav>
+<h2 id="resumo-executivo">Resumo executivo</h2>
+<p>Este volume responde a duas perguntas: <strong>como práticas humanas
+de observar, medir, calcular, explicar e intervir na natureza se
+transformaram no que hoje chamamos de ciência?</strong>; e <strong>em
+que ordem ler para compreender essa transformação?</strong> A resposta
+não é uma marcha inevitável de “ignorância” a “verdade”, nem a invenção
+súbita de um método por um único europeu. A ciência contemporânea
+resultou de muitas tradições de conhecimento, redes de tradução e
+comércio, instituições, instrumentos, disputas públicas e regras
+mutáveis de evidência. A matemática mesopotâmica, a medicina egípcia, as
+demonstrações gregas, a astronomia e a matemática indianas, a burocracia
+técnica chinesa, a óptica e a crítica experimental em árabe, os
+conhecimentos indígenas de ecologia e navegação, a expansão colonial,
+oficinas artesanais, universidades, academias, laboratórios,
+estatística, computação e ciência aberta pertencem à história. <a
+href="#ref-1">[1]</a> <a href="#ref-2">[2]</a> <a
+href="#ref-3">[3]</a></p>
+<p>Também não há <strong>um</strong> método científico universal
+entendido como receita. Demonstração matemática, observação comparativa,
+experimento controlado, classificação, inferência estatística, modelagem
+causal, simulação e reprodução computacional respondem a perguntas
+diferentes. O que as ciências maduras compartilham é uma arquitetura
+falível de controle: afirmações públicas, confronto com evidência,
+explicitação de métodos, crítica competente, correção e possibilidade de
+reutilização ou teste independente. <a href="#ref-6">[6]</a> <a
+href="#ref-7">[7]</a> <a href="#ref-8">[8]</a> <a
+href="#ref-11">[11]</a></p>
+<p>O documento oferece uma <strong>rota principal de 60
+leituras</strong>, em ordem histórica dos fenômenos estudados,
+acompanhada de fontes primárias, guias modernos, perguntas de controle e
+exercícios. Os números entre colchetes são citações clicáveis; cada um
+leva à referência bibliográfica completa. A data-limite é <strong>10 de
+agosto de 2026</strong>: os últimos Prêmios Nobel científicos
+confirmados são os de 2025; os de 2026 ainda não haviam sido
+anunciados.</p>
+<blockquote>
+<p><strong>Regra de uso:</strong> não tente ler todos os livros
+integralmente na primeira passagem. Faça primeiro a rota essencial
+marcada como <strong>Núcleo</strong>. Nas fontes primárias extensas,
+leia as seleções indicadas. Volte ao <strong>Aprofundamento</strong>
+apenas depois de produzir a síntese de cada etapa.</p>
+</blockquote>
+<h2 id="o-que-este-roteiro-chama-de-ciência">1. O que este roteiro chama
+de ciência</h2>
+<h3 id="quatro-camadas-históricas">1.1 Quatro camadas históricas</h3>
+<ol type="1">
+<li><strong>Conhecimento operativo:</strong> saber fazer — lascar pedra,
+controlar fogo, reconhecer plantas, navegar, cultivar, construir e
+curar. Pode ser sofisticado sem teoria escrita.</li>
+<li><strong>Investigação sistemática da natureza:</strong> registrar
+regularidades, comparar casos, medir, calcular, classificar e
+explicar.</li>
+<li><strong>Filosofia natural e tradições eruditas:</strong> corpos de
+conhecimento articulados por textos, escolas, demonstrações ou
+comentários.</li>
+<li><strong>Ciência institucional moderna:</strong> comunidades
+especializadas com periódicos, laboratórios, instrumentos calibrados,
+estatística, revisão crítica, financiamento, ética e infraestruturas de
+dados.</li>
+</ol>
+<p>Chamar toda técnica antiga de “ciência moderna” seria anacrônico;
+excluí-la seria apagar os problemas, materiais e observações sem os
+quais as tradições eruditas não existiriam. Este roteiro usa “história
+da ciência” como história dessas quatro camadas e das relações entre
+elas. <a href="#ref-1">[1]</a> <a href="#ref-5">[5]</a></p>
+<h3 id="o-método-mudou-junto-com-os-objetos">1.2 O método mudou junto
+com os objetos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Forma de controle</th>
+<th>Pergunta típica</th>
+<th>Marco histórico</th>
+<th>Limite que permaneceu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetição artesanal e memória coletiva</td>
+<td>“Isto funciona novamente?”</td>
+<td>Pré-história e ofícios</td>
+<td>Êxito prático não identifica necessariamente a causa.</td>
+</tr>
+<tr class="even">
+<td>Registro, tabela e previsão</td>
+<td>“Quando ocorrerá?”</td>
+<td>Mesopotâmia; calendários e astronomia</td>
+<td>Prever não é explicar mecanismo.</td>
+</tr>
+<tr class="odd">
+<td>Demonstração</td>
+<td>“A conclusão decorre das premissas?”</td>
+<td>Matemática grega e tradições afins</td>
+<td>Validade não garante que a premissa descreva a natureza.</td>
+</tr>
+<tr class="even">
+<td>Observação comparativa</td>
+<td>“Que padrão atravessa os casos?”</td>
+<td>Medicina, história natural, astronomia</td>
+<td>Correlação pode não ser causal.</td>
+</tr>
+<tr class="odd">
+<td>Experimento e instrumento</td>
+<td>“Que efeito aparece ao intervir e medir?”</td>
+<td>Óptica medieval; séculos XVII–XVIII</td>
+<td>Instrumentos incorporam teorias e podem criar artefatos.</td>
+</tr>
+<tr class="even">
+<td>Quantificação e padronização</td>
+<td>“Pessoas diferentes obtêm grandezas comparáveis?”</td>
+<td>Séculos XVIII–XIX</td>
+<td>Medidas exigem convenções, calibração e tratamento de erro.</td>
+</tr>
+<tr class="odd">
+<td>Estatística e desenho experimental</td>
+<td>“O efeito excede o acaso e vieses?”</td>
+<td>Séculos XIX–XX</td>
+<td>Significância não equivale a importância ou causalidade.</td>
+</tr>
+<tr class="even">
+<td>Modelagem, computação e simulação</td>
+<td>“Que consequências este modelo produz?”</td>
+<td>Séculos XX–XXI</td>
+<td>Código pode ser opaco; resultado depende de dados e suposições.</td>
+</tr>
+<tr class="odd">
+<td>Ciência aberta, em equipe e assistida por IA</td>
+<td>“Outros podem auditar, reutilizar e desafiar?”</td>
+<td>Século XXI</td>
+<td>Escala e velocidade não substituem validação, ética e
+responsabilidade.</td>
+</tr>
+</tbody>
+</table>
+<p>Objetividade, portanto, não significa ausência de seres humanos;
+significa construir procedimentos que tornem observações, julgamentos e
+desacordos examináveis. A história da imagem científica e dos “modos de
+ver” mostra que até a virtude da objetividade mudou de sentido. <a
+href="#ref-6">[6]</a> A mudança de paradigmas descrita por Kuhn
+acrescenta que padrões de problema e solução também são históricos; isso
+não implica que toda afirmação seja igualmente boa. <a
+href="#ref-9">[9]</a> O trabalho experimental e a confiança pública
+dependem ainda de instituições, testemunho e normas sociais, como mostra
+o estudo da controvérsia entre Boyle e Hobbes. <a
+href="#ref-10">[10]</a></p>
+<h2 id="antes-da-cronologia-as-quatro-primeiras-leituras">2. Antes da
+cronologia: as quatro primeiras leituras</h2>
+<p>Leia estes livros <strong>antes</strong> das fontes antigas. Eles
+oferecem mapas diferentes; nenhum deve funcionar como autoridade
+única.</p>
+<ol type="1">
+<li><strong>William Bynum, <em>A Little History of
+Science</em>.</strong> <strong>Núcleo introdutório.</strong> É a entrada
+mais simples: narrativa curta, biográfica e legível. Use-a para adquirir
+nomes e sequência, não para decidir sozinho questões de prioridade
+histórica. <a href="#ref-4">[4]</a></li>
+<li><strong>Patricia Fara, <em>Science: A Four Thousand Year
+History</em>.</strong> <strong>Núcleo crítico.</strong> Lê ciência como
+atividade humana situada, inclui poder, gênero, império e cultura
+material. <a href="#ref-3">[3]</a></li>
+<li><strong>James Poskett, <em>Horizons: A Global History of
+Science</em>.</strong> <strong>Núcleo global.</strong> Corrige a imagem
+de uma ciência moderna produzida isoladamente na Europa, acompanhando
+circulação de pessoas, objetos e saberes. <a href="#ref-2">[2]</a></li>
+<li><strong>Stephen L. Montgomery e Alok Kumar, <em>A History of Science
+in World Cultures</em>.</strong> <strong>Aprofundamento
+comparativo.</strong> Dá espaço sistemático a tradições da África,
+Américas, Ásia, mundo islâmico e Europa. <a href="#ref-1">[1]</a></li>
+</ol>
+<p><strong>Produto de orientação:</strong> faça uma linha do tempo vazia
+com cinco faixas: <em>instituições</em>, <em>instrumentos</em>,
+<em>matemática</em>, <em>vida/medicina</em> e <em>cosmos/matéria</em>.
+Preencha-a durante todo o curso. Em cada marco, registre também
+<strong>onde a evidência é fragmentária ou disputada</strong>.</p>
+<h2
+id="rota-cronológica-de-leitura-do-conhecimento-pré-histórico-a-2026">3.
+Rota cronológica de leitura — do conhecimento pré-histórico a 2026</h2>
+<h3
+id="etapa-1-pré-história-inteligência-técnica-ambiente-e-transmissão-c.-33-milhões3500-a.c.">Etapa
+1 — Pré-história: inteligência técnica, ambiente e transmissão (c. 3,3
+milhões–3500 a.C.)</h3>
+<p><strong>O que muda:</strong> artefatos líticos, domínio gradual do
+fogo, cuidado social, conhecimento de animais e plantas, navegação,
+agricultura, cerâmica e metalurgia acumulam informação entre gerações.
+Isso é conhecimento empírico e tecnológico; não é ainda ciência
+institucional. A arqueologia infere processos a partir de restos
+materiais e deve distinguir evidência de narrativas especulativas. <a
+href="#ref-12">[12]</a> <a href="#ref-13">[13]</a></p>
+<ol start="5" type="1">
+<li><strong>Steven Mithen, <em>After the Ice</em>.</strong>
+<strong>Núcleo.</strong> Leia introdução e as regiões que cobrem a
+transição de caçadores-coletores a sociedades agrícolas. Observe como
+clima, mobilidade e técnica interagem. <a href="#ref-12">[12]</a></li>
+<li><strong>James C. Scott, <em>Against the Grain</em>.</strong>
+<strong>Contraponto.</strong> A agricultura não produziu automaticamente
+saúde, liberdade ou Estados; compare a tese de sedentarização, grãos
+tributáveis, doença e coerção com a evidência arqueológica que o autor
+mobiliza. <a href="#ref-13">[13]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> que diferença existe entre uma
+técnica que funciona, uma regularidade lembrada e uma explicação
+causal?<br />
+<strong>Exercício seguro:</strong> escolha um objeto doméstico simples e
+reconstrua sua “cadeia de conhecimento”: materiais, medidas, testes,
+correções e transmissão.</p>
+<h3
+id="etapa-2-escrita-número-e-céu-na-mesopotâmia-e-no-egito-c.-3500600-a.c.">Etapa
+2 — Escrita, número e céu na Mesopotâmia e no Egito (c. 3500–600
+a.C.)</h3>
+<p><strong>O que muda:</strong> administração, escrita e escolas de
+escribas tornam cálculos e observações cumulativos. Tabelas babilônicas
+permitem resolver problemas e prever fenômenos celestes; documentos
+egípcios preservam matemática, medicina e engenharia. Não imponha a
+divisão moderna entre ciência, religião e burocracia a essas culturas.
+<a href="#ref-14">[14]</a> <a href="#ref-15">[15]</a> <a
+href="#ref-16">[16]</a></p>
+<ol start="7" type="1">
+<li><strong>Eleanor Robson, <em>Mathematics in Ancient
+Iraq</em>.</strong> <strong>Núcleo.</strong> Mostra matemática como
+prática social de escribas, templos e Estados, não como coleção
+descontextualizada de “descobertas”. <a href="#ref-14">[14]</a></li>
+<li><strong>Francesca Rochberg, <em>The Heavenly Writing</em>.</strong>
+<strong>Núcleo.</strong> Explica por que astrologia e astronomia
+babilônicas formavam um sistema de conhecimento racional dentro de suas
+próprias categorias. <a href="#ref-15">[15]</a></li>
+<li><strong>Otto Neugebauer, <em>The Exact Sciences in
+Antiquity</em>.</strong> <strong>Aprofundamento técnico.</strong> Use os
+capítulos sobre sistemas numéricos, astronomia e transmissão; compare
+com Robson, cuja história social é posterior. <a
+href="#ref-16">[16]</a></li>
+<li><strong>Arnold Buffum Chace et al., <em>The Rhind Mathematical
+Papyrus</em>.</strong> <strong>Fonte primária guiada.</strong> Leia
+problemas selecionados de frações, áreas e volumes; não é necessário
+dominar a edição fac-similar. <a href="#ref-17">[17]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> como tabelas e algoritmos
+podem produzir previsão confiável sem uma teoria física moderna?<br />
+<strong>Produto:</strong> resolva três problemas antigos com notação
+moderna e depois descreva o que se perde na tradução de práticas e
+unidades.</p>
+<h3
+id="etapa-3-grécia-arcaica-e-clássica-causas-naturais-prova-e-medicina-c.-600300-a.c.">Etapa
+3 — Grécia arcaica e clássica: causas naturais, prova e medicina
+(c. 600–300 a.C.)</h3>
+<p><strong>O que muda:</strong> alguns pensadores gregos procuram
+princípios naturais, desenvolvem argumentos públicos e separam
+progressivamente demonstração de mera persuasão. “Do mito à razão” é uma
+fórmula excessiva: explicações religiosas e naturalistas coexistem, e
+saberes vieram de redes mediterrânicas e do Oriente Próximo. <a
+href="#ref-5">[5]</a> <a href="#ref-18">[18]</a></p>
+<ol start="11" type="1">
+<li><strong>G. E. R. Lloyd, <em>Early Greek Science: Thales to
+Aristotle</em>.</strong> <strong>Núcleo.</strong> Leia antes dos
+fragmentos; ele explica competição intelectual, prova e controvérsia. <a
+href="#ref-18">[18]</a></li>
+<li><strong>Hipócrates, “Da doença sagrada”.</strong> <strong>Fonte
+primária.</strong> O tratado rejeita que a epilepsia seja mais divina
+que outras doenças e procura causas corporais, mas conserva uma
+fisiologia historicamente situada. <a href="#ref-19">[19]</a></li>
+<li><strong>Aristóteles, <em>Analíticos posteriores</em>.</strong>
+<strong>Fonte primária seletiva.</strong> Leia Livro I, capítulos 1–13:
+conhecimento demonstrativo, causas e primeiros princípios. Depois
+compare com a prática observacional em <em>Partes dos animais</em>. <a
+href="#ref-20">[20]</a></li>
+<li><strong>David C. Lindberg, <em>The Beginnings of Western
+Science</em>.</strong> <strong>Síntese.</strong> Leia capítulos 2–5; o
+livro impede que “revolução científica” apague a continuidade antiga e
+medieval. <a href="#ref-5">[5]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> uma explicação é científica
+porque é natural, porque é demonstrada ou porque é testada?<br />
+<strong>Produto:</strong> reconstrua um argumento aristotélico em
+premissas e conclusão; identifique qual premissa exigiria observação
+moderna.</p>
+<h3
+id="etapa-4-mundos-helenístico-e-romano-índia-china-e-américas-clássicas-c.-300-a.c.500-d.c.">Etapa
+4 — Mundos helenístico e romano; Índia, China e Américas clássicas
+(c. 300 a.C.–500 d.C.)</h3>
+<p><strong>O que muda:</strong> matemática dedutiva, astronomia
+geométrica, mecânica, anatomia e farmacologia são sistematizadas. Em
+outras regiões, calendários, numerais, algoritmos e observações do céu
+seguem trajetórias próprias. Semelhança não prova influência;
+transmissão deve ser demonstrada por textos, objetos, rotas ou
+vocabulário.</p>
+<ol start="15" type="1">
+<li><strong>Euclides, <em>Os elementos</em>.</strong> <strong>Fonte
+primária seletiva.</strong> Leia definições, postulados e as proposições
+I.1–I.5, I.47 e o Livro XII em resumo. O ponto é entender a arquitetura
+axiomático-dedutiva. <a href="#ref-21">[21]</a></li>
+<li><strong>Arquimedes, <em>The Works of Archimedes</em>.</strong>
+<strong>Fonte primária seletiva.</strong> Leia <em>Sobre o equilíbrio
+dos planos</em> e <em>O método</em>; observe a relação entre heurística
+mecânica e prova geométrica. <a href="#ref-22">[22]</a></li>
+<li><strong>Ptolomeu, <em>Almagest</em>.</strong> <strong>Fonte primária
+guiada.</strong> Leia o prefácio, a construção dos modelos e exemplos; o
+sistema geocêntrico era quantitativo e preditivo, não simples “crença
+irracional”. <a href="#ref-23">[23]</a></li>
+<li><strong>Galen, <em>Selected Works</em>.</strong>
+<strong>Medicina.</strong> Leia método anatômico, pulso e prognóstico;
+diferencie observação, vivissecção animal e autoridade textual
+posterior. <a href="#ref-24">[24]</a></li>
+<li><strong>Kim Plofker, <em>Mathematics in India</em>.</strong>
+<strong>Núcleo global.</strong> Acompanhe numerais, procedimentos,
+astronomia e a tradição sânscrita até a era moderna; o livro evita
+reduzir a história à invenção isolada do zero. <a
+href="#ref-25">[25]</a></li>
+<li><strong>Shen Kangshen, John Crossley e Anthony Lun, <em>The Nine
+Chapters on the Mathematical Art</em>.</strong> <strong>Fonte primária
+chinesa.</strong> Compare algoritmos de eliminação, áreas e problemas
+práticos com a forma demonstrativa euclidiana. <a
+href="#ref-26">[26]</a></li>
+<li><strong>Anthony Aveni, <em>Skywatchers</em>.</strong>
+<strong>Américas.</strong> Leia sobre calendários e arqueoastronomia
+mesoamericana, mantendo separados dados de alinhamento, interpretação
+cultural e especulação popular. <a href="#ref-27">[27]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> por que uma prova, um
+algoritmo e um modelo preditivo são três conquistas metodológicas
+diferentes?<br />
+<strong>Produto:</strong> crie uma matriz comparando problema,
+representação, validação e instituição em Euclides, Ptolomeu, <em>Nove
+capítulos</em> e astronomia maia.</p>
+<h3
+id="etapa-5-índia-china-mundo-islâmico-áfrica-e-europa-medieval-c.-5001450">Etapa
+5 — Índia, China, mundo islâmico, África e Europa medieval
+(c. 500–1450)</h3>
+<p><strong>O que muda:</strong> centros de tradução, observatórios,
+hospitais, oficinas, cortes, madrassas e universidades preservam,
+criticam e transformam saberes. O árabe torna-se grande língua
+científica; textos gregos, persas, indianos e outros circulam. Na China,
+Estado, impressão, engenharia e calendários sustentam tradições
+técnicas. A Europa latina traduz extensamente e cria universidades.
+“Idade das trevas” é uma categoria inadequada para esse ecossistema
+plural. <a href="#ref-5">[5]</a> <a href="#ref-28">[28]</a> <a
+href="#ref-29">[29]</a> <a href="#ref-30">[30]</a></p>
+<ol start="22" type="1">
+<li><strong>Joseph Needham, <em>Science and Civilisation in China</em>,
+vol. 1 (seleções).</strong> <strong>Mapa clássico.</strong> Leia de modo
+crítico: a obra abriu um campo comparativo monumental, embora sua grande
+“questão Needham” e algumas categorias tenham gerado debate posterior.
+<a href="#ref-28">[28]</a></li>
+<li><strong>George Saliba, <em>Islamic Science and the Making of the
+European Renaissance</em>.</strong> <strong>Núcleo.</strong> Acompanhe
+astronomia matemática e circulação; a tese combate a imagem de mera
+conservação passiva. <a href="#ref-29">[29]</a></li>
+<li><strong>J. L. Berggren, <em>Episodes in the Mathematics of Medieval
+Islam</em>.</strong> <strong>Núcleo técnico.</strong> Leia álgebra,
+geometria, trigonometria e métodos numéricos por problemas trabalhados.
+<a href="#ref-30">[30]</a></li>
+<li><strong>al-Khwārizmī, <em>The Algebra of Mohammed ben
+Musa</em>.</strong> <strong>Fonte primária.</strong> Leia os
+procedimentos para equações quadráticas e sua justificação geométrica;
+note que “álgebra” e “algoritmo” têm histórias diferentes associadas ao
+nome e ao título. <a href="#ref-31">[31]</a></li>
+<li><strong>Ibn al-Haytham, <em>The Optics of Ibn al-Haytham</em>,
+livros I–III (seleções).</strong> <strong>Fonte primária
+central.</strong> Estude visão, luz, geometria e uso de arranjos
+experimentais; evite o slogan de que ele “inventou sozinho” o método
+científico. <a href="#ref-32">[32]</a></li>
+<li><strong>Dimitri Gutas, <em>Greek Thought, Arabic
+Culture</em>.</strong> <strong>Instituições de tradução.</strong> Mostra
+patronagem e condições sociais do movimento de tradução abássida. <a
+href="#ref-33">[33]</a></li>
+<li><strong>Lindberg, <em>The Beginnings of Western Science</em>,
+capítulos 9–13.</strong> <strong>Europa medieval.</strong> Filosofia
+natural universitária, óptica, medicina e relações entre razão e
+religião são mais complexas que conflito permanente. <a
+href="#ref-5">[5]</a></li>
+</ol>
+<p><strong>África e conhecimento sem cânone único:</strong> metalurgia,
+agricultura, navegação, medicina, astronomia e sistemas de contagem
+africanos não cabem numa única “obra fundadora”; leia os capítulos
+regionais de Montgomery e Kumar e exija proveniência arqueológica e
+histórica para cada afirmação. <a href="#ref-1">[1]</a> A ausência de um
+livro canônico preservado não é ausência de conhecimento.</p>
+<p><strong>Pergunta de controle:</strong> quando uma tradução é também
+pesquisa?<br />
+<strong>Produto:</strong> desenhe uma rede com um texto, seus idiomas,
+centros de estudo, comentadores e uma modificação conceitual. Use
+“influência” apenas quando houver evidência de transmissão.</p>
+<h3 id="etapa-6-impressão-oceanos-anatomia-e-cosmos-c.-14501600">Etapa 6
+— Impressão, oceanos, anatomia e cosmos (c. 1450–1600)</h3>
+<p><strong>O que muda:</strong> tipos móveis, expansão marítima,
+conquista e comércio aceleram circulação de textos, plantas, mapas e
+instrumentos. A ciência europeia moderna é inseparável de conhecimentos
+locais e também de violência colonial. A anatomia impressa e o
+heliocentrismo reorganizam autoridade, imagem e cálculo. <a
+href="#ref-34">[34]</a> <a href="#ref-35">[35]</a> <a
+href="#ref-36">[36]</a> <a href="#ref-37">[37]</a></p>
+<ol start="29" type="1">
+<li><strong>Nicolau Copérnico, <em>On the Revolutions</em>, Livro
+I.</strong> <strong>Fonte primária.</strong> Leia prefácio, carta ao
+papa e os capítulos cosmológicos; distinga conveniência matemática,
+compromisso físico e recepção posterior. <a href="#ref-34">[34]</a></li>
+<li><strong>Andreas Vesalius, <em>The Fabric of the Human Body</em>
+(seleções).</strong> <strong>Fonte primária visual.</strong> Observe
+como dissecação, oficina gráfica e imagem autorizam correções a Galeno.
+<a href="#ref-35">[35]</a></li>
+<li><strong>Kapil Raj, <em>Relocating Modern Science</em>.</strong>
+<strong>Núcleo global.</strong> Estudos de caso indo-europeus mostram
+conhecimento coproduzido em zonas de contato, não simplesmente exportado
+de um centro. <a href="#ref-36">[36]</a></li>
+<li><strong>Londa Schiebinger, <em>Plants and Empire</em>.</strong>
+<strong>Caso crítico.</strong> A circulação de botânica e medicina
+envolve seleção, tradução, apropriação e apagamento; “não saber” pode
+ser produzido institucionalmente. <a href="#ref-37">[37]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> quem coletou o dado, quem
+recebeu autoria e quem controlou a circulação?<br />
+<strong>Produto:</strong> escolha uma planta, mapa ou espécime e faça
+sua biografia: nome local, coleta, transporte, reclassificação,
+publicação e uso.</p>
+<h3
+id="etapa-7-experimento-instrumento-e-nova-filosofia-natural-c.-16001700">Etapa
+7 — Experimento, instrumento e nova filosofia natural
+(c. 1600–1700)</h3>
+<p><strong>O que muda:</strong> telescópios, bombas de ar, microscópios,
+relógios e sociedades científicas criam fenômenos, públicos e padrões de
+testemunho. Matemática e experimento se aproximam, mas os autores
+discordam sobre indução, hipótese, mecanismo, certeza e metafísica. “A
+Revolução Científica” é uma categoria historiográfica útil se tratada
+como conjunto de transformações, não como evento instantâneo ou
+exclusivamente intelectual. <a href="#ref-38">[38]</a> <a
+href="#ref-39">[39]</a> <a href="#ref-10">[10]</a></p>
+<ol start="33" type="1">
+<li><strong>Johannes Kepler, <em>New Astronomy</em> (seleções).</strong>
+<strong>Fonte primária.</strong> Reconstrua como dados de Tycho Brahe,
+erros persistentes e modelos geométricos conduzem às órbitas elípticas;
+é um caso de teoria modificada pela resistência do dado. <a
+href="#ref-40">[40]</a></li>
+<li><strong>Galileu Galilei, <em>Sidereus Nuncius</em> e <em>Dialogue
+Concerning the Two Chief World Systems</em> (seleções).</strong>
+<strong>Fonte primária.</strong> Compare o relato telescópico de 1610
+com o diálogo de 1632; instrumentos não “falam” sem treino, desenho e
+argumento. <a href="#ref-41">[41]</a></li>
+<li><strong>Francis Bacon, <em>Novum Organum</em>, Livro I.</strong>
+<strong>Fonte primária metodológica.</strong> Estude ídolos, indução e
+história natural; não confunda o programa baconiano com todos os
+experimentos modernos. <a href="#ref-42">[42]</a></li>
+<li><strong>William Harvey, <em>On the Motion of the Heart and
+Blood</em>.</strong> <strong>Fonte primária.</strong> Anatomia,
+ligaduras, vivissecção e argumento quantitativo convergem para a
+circulação do sangue. <a href="#ref-43">[43]</a></li>
+<li><strong>René Descartes, <em>Discourse on Method</em>, partes II, IV
+e V.</strong> <strong>Contraponto racionalista.</strong> Leia a ordem do
+raciocínio e a fisiologia mecanicista; compare “método” filosófico com
+prática laboratorial. <a href="#ref-44">[44]</a></li>
+<li><strong>Robert Boyle, <em>The Sceptical Chymist</em>.</strong>
+<strong>Química e crítica.</strong> A obra desafia princípios
+aristotélicos e paracelsistas, mas não é ainda a química de Lavoisier.
+<a href="#ref-45">[45]</a></li>
+<li><strong>Robert Hooke, <em>Micrographia</em> (prefácio e pranchas
+selecionadas).</strong> <strong>Instrumentos e imagem.</strong>
+Investigue como desenho, linguagem e protocolo transformam uma visão
+privada em evidência compartilhável. <a href="#ref-46">[46]</a></li>
+<li><strong>Isaac Newton, <em>Principia</em>, prefácios e Livros I/III
+(seleções); depois <em>Opticks</em>, Questões.</strong>
+<strong>Síntese.</strong> Compare dedução matemática do movimento com
+experimentos ópticos e especulação controlada. <a
+href="#ref-47">[47]</a></li>
+<li><strong>Steven Shapin, <em>The Scientific Revolution</em>.</strong>
+<strong>Síntese crítica.</strong> Leia depois das fontes; o célebre
+início paradoxal — “não houve tal coisa” — questiona a unidade do
+rótulo, não nega transformações. <a href="#ref-38">[38]</a></li>
+<li><strong>Peter Dear, <em>Revolutionizing the Sciences</em>.</strong>
+<strong>Aprofundamento.</strong> Relaciona experiência, matemática,
+instituições e ambições europeias entre 1500 e 1700. <a
+href="#ref-39">[39]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> um experimento convence por
+repetição privada, por testemunho confiável, por mensuração ou por
+encaixe teórico?<br />
+<strong>Produto:</strong> reconstitua um episódio — telescópio, bomba de
+ar ou prisma — em cinco colunas: aparelho, habilidade, observação,
+inferência e crítica rival.</p>
+<h3
+id="etapa-8-classificação-química-probabilidade-e-iluminismo-c.-17001800">Etapa
+8 — Classificação, química, probabilidade e Iluminismo
+(c. 1700–1800)</h3>
+<p><strong>O que muda:</strong> taxonomias estabilizam nomes; química
+quantitativa redefine elemento e reação; probabilidade migra de jogos
+para decisão e erro; expedições alimentam coleções e impérios. Hume
+formula o problema da indução: nenhuma quantidade de casos observados
+torna logicamente necessária a uniformidade futura. <a
+href="#ref-48">[48]</a> <a href="#ref-49">[49]</a> <a
+href="#ref-50">[50]</a></p>
+<ol start="43" type="1">
+<li><strong>Carl Linnaeus, <em>Systema Naturae</em> (edições
+selecionadas).</strong> <strong>Classificação.</strong> Estude
+nomenclatura binomial e hierarquia, lembrando que classificar pode
+transportar valores sociais e projetos imperiais. <a
+href="#ref-48">[48]</a></li>
+<li><strong>David Hume, <em>An Enquiry Concerning Human
+Understanding</em>, seções IV–VII.</strong> <strong>Método e
+inferência.</strong> Separe validade dedutiva, hábito indutivo e
+causalidade observada. <a href="#ref-49">[49]</a></li>
+<li><strong>Antoine Lavoisier, <em>Elements of Chemistry</em>.</strong>
+<strong>Fonte primária.</strong> Balança, nomenclatura, conservação e
+definição operacional de elemento reorganizam práticas químicas; a
+mudança não foi apenas uma ideia. <a href="#ref-50">[50]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> novos nomes descrevem a
+natureza ou também constroem objetos estáveis para investigação?<br />
+<strong>Produto:</strong> compare duas classificações históricas do
+mesmo conjunto e explicite propósito, critérios e casos anômalos.</p>
+<h3
+id="etapa-9-disciplinas-energia-evolução-micróbios-e-estatística-c.-18001900">Etapa
+9 — Disciplinas, energia, evolução, micróbios e estatística
+(c. 1800–1900)</h3>
+<p><strong>O que muda:</strong> laboratórios, museus, levantamentos,
+periódicos e profissões especializam a ciência. Geologia torna o tempo
+profundo legível; campos e energia unificam fenômenos; evolução liga
+diversidade a descendência; germes reconfiguram medicina; estatística
+trata populações e erro. O termo inglês <em>scientist</em> é proposto
+por William Whewell no século XIX — um sinal de nova identidade
+profissional, não do nascimento súbito da prática científica. <a
+href="#ref-51">[51]</a></p>
+<ol start="46" type="1">
+<li><strong>Alexander von Humboldt, <em>Cosmos</em>, vol. 1.</strong>
+<strong>Integração.</strong> Leia a natureza como sistema conectado por
+medidas, viagem e comparação; depois questione as condições coloniais
+dessas redes. <a href="#ref-52">[52]</a></li>
+<li><strong>Charles Lyell, <em>Principles of Geology</em>, vol. 1
+(seleções).</strong> <strong>Tempo profundo.</strong> Observe a
+explicação de grandes mudanças por causas atuais acumuladas; compare
+uniformidade metodológica e teses históricas específicas. <a
+href="#ref-53">[53]</a></li>
+<li><strong>Michael Faraday, <em>Experimental Researches in
+Electricity</em> (seleções).</strong> <strong>Laboratório.</strong>
+Acompanhe séries de experimentos, visualização por linhas de força e
+diálogo entre habilidade manual e conceito. <a
+href="#ref-54">[54]</a></li>
+<li><strong>Charles Darwin, <em>On the Origin of Species</em>, 1ª
+ed.</strong> <strong>Evolução.</strong> Leia capítulos 1–4, 6, 13 e 14;
+catalogue evidências convergentes, dificuldades admitidas e inferência
+histórica. <a href="#ref-55">[55]</a></li>
+<li><strong>Gregor Mendel, “Experiments on Plant Hybrids”.</strong>
+<strong>Artigo primário.</strong> Refaça as proporções e note a
+diferença entre o texto de 1866 e sua integração à genética do século
+XX. <a href="#ref-56">[56]</a></li>
+<li><strong>James Clerk Maxwell, <em>A Treatise on Electricity and
+Magnetism</em> (seleções guiadas).</strong> <strong>Teoria
+matemática.</strong> Estude o papel de modelos e equações na unificação
+de eletricidade, magnetismo e luz. <a href="#ref-57">[57]</a></li>
+<li><strong>Robert Koch, “The Etiology of Tuberculosis”.</strong>
+<strong>Causalidade biomédica.</strong> Isolamento, coloração, cultivo e
+inoculação formam uma cadeia de evidência; os “postulados de Koch” foram
+sistematizados historicamente e têm limites para vírus, microbiomas e
+causalidade multifatorial. <a href="#ref-58">[58]</a></li>
+<li><strong>William Whewell, <em>The Philosophy of the Inductive
+Sciences</em> (seleções).</strong> <strong>Metaciência.</strong> Leia
+sobre “consiliência de induções”: linhas independentes de evidência
+ganham força ao convergir. <a href="#ref-51">[51]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> como uma ciência histórica
+testa explicações sem repetir o passado?<br />
+<strong>Produto:</strong> faça um “mapa de consiliência” para evolução,
+tectônica ou doença: quais evidências independentes apontam para a mesma
+causa?</p>
+<h3
+id="etapa-10-relatividade-quanta-genes-continentes-e-inferência-c.-19001945">Etapa
+10 — Relatividade, quanta, genes, continentes e inferência
+(c. 1900–1945)</h3>
+<p><strong>O que muda:</strong> conceitos clássicos de espaço, tempo,
+matéria e causalidade são reconstruídos. Física quântica liga teoria
+matemática a novos instrumentos; genética experimental se consolida;
+estatística passa a desenhar experimentos; lógica e computabilidade
+definem limites do cálculo. Filosofia da ciência debate falseabilidade,
+convenções e comunidades. <a href="#ref-59">[59]</a> <a
+href="#ref-60">[60]</a> <a href="#ref-61">[61]</a> <a
+href="#ref-62">[62]</a></p>
+<ol start="54" type="1">
+<li><strong>Albert Einstein, artigos de 1905 sobre quanta de luz,
+movimento browniano e relatividade especial.</strong> <strong>Fontes
+primárias guiadas.</strong> Leia introduções e argumentos conceituais;
+use um manual para a matemática. Um mesmo ano mostra que teoria pode
+conectar anomalias, estatística e princípios. <a
+href="#ref-59">[59]</a></li>
+<li><strong>Ronald A. Fisher, <em>Statistical Methods for Research
+Workers</em>.</strong> <strong>Inferência.</strong> Leia historicamente,
+não como manual atual: significância, graus de liberdade e desenho
+experimental se institucionalizam, mas não encerram o debate. <a
+href="#ref-60">[60]</a></li>
+<li><strong>Alan Turing, “On Computable Numbers”.</strong>
+<strong>Computação.</strong> A máquina abstrata esclarece o que
+significa executar um procedimento e demonstra limites formais; a
+ciência passa a ter objetos e experimentos computacionais. <a
+href="#ref-61">[61]</a></li>
+<li><strong>Karl Popper, <em>The Logic of Scientific
+Discovery</em>.</strong> <strong>Filosofia.</strong> Falseabilidade e
+testes severos oferecem uma norma de demarcação e crescimento; compare
+com áreas observacionais, modelos probabilísticos e prática cotidiana.
+<a href="#ref-62">[62]</a></li>
+<li><strong>Ludwik Fleck, <em>Genesis and Development of a Scientific
+Fact</em>.</strong> <strong>Sociologia do conhecimento.</strong>
+“Coletivos de pensamento” mostram como percepção especializada e fatos
+se estabilizam sem reduzir ciência a opinião arbitrária. <a
+href="#ref-63">[63]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> se teorias auxiliam a perceber
+e medir, como um teste ainda pode surpreendê-las?<br />
+<strong>Produto:</strong> escolha um artigo primário e marque: problema,
+conhecimento anterior, hipótese, formalismo, dado, alternativa e
+predição nova.</p>
+<h3
+id="etapa-11-big-science-informação-dna-ambiente-e-paradigmas-c.-19451980">Etapa
+11 — Big Science, informação, DNA, ambiente e paradigmas
+(c. 1945–1980)</h3>
+<p><strong>O que muda:</strong> guerra e Estado ampliam equipes,
+financiamento e infraestrutura. Informação se torna conceito técnico;
+biologia molecular liga estrutura e hereditariedade; placas tectônicas
+unem oceanografia, geofísica e geologia; ecologia ganha centralidade
+política; ensaios clínicos e ética de pesquisa se formalizam. A autoria
+individual passa a esconder grandes coletivos.</p>
+<ol start="59" type="1">
+<li><strong>Claude Shannon, “A Mathematical Theory of
+Communication”.</strong> <strong>Informação.</strong> Entropia e
+capacidade de canal formalizam transmissão sem resolver, por si,
+significado biológico ou humano. <a href="#ref-64">[64]</a></li>
+<li><strong>James Watson e Francis Crick, “Molecular Structure of
+Nucleic Acids”; Rosalind Franklin e Raymond Gosling, “Molecular
+Configuration in Sodium Thymonucleate”.</strong> <strong>Leitura
+pareada.</strong> Compare modelo, difração, dados não publicados,
+crédito e gênero; não aprenda a história por um único artigo ou
+memorial. <a href="#ref-65">[65]</a> <a href="#ref-66">[66]</a></li>
+<li><strong>Rachel Carson, <em>Silent Spring</em>.</strong>
+<strong>Ciência e política.</strong> Constrói causalidade ambiental a
+partir de toxicologia, ecologia, casos e incerteza; a ciência
+regulatória deve agir sem esperar certeza absoluta. <a
+href="#ref-67">[67]</a></li>
+<li><strong>Thomas Kuhn, <em>The Structure of Scientific
+Revolutions</em>.</strong> <strong>História e filosofia.</strong> Leia
+exemplos concretos antes dos slogans “paradigma” e “revolução”; compare
+a primeira e a pós-escrita de 1969. <a href="#ref-9">[9]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> o que muda quando
+instrumentos, dados e autoria excedem a escala de uma pessoa?<br />
+<strong>Produto:</strong> reconstrua uma descoberta como trabalho
+coletivo: técnicos, fornecedores, amostras, software, financiamento,
+manutenção e pessoas invisibilizadas.</p>
+<h3
+id="etapa-12-intervenção-crítica-social-clima-genoma-e-rede-c.-19802000">Etapa
+12 — Intervenção, crítica social, clima, genoma e rede
+(c. 1980–2000)</h3>
+<p><strong>O que muda:</strong> filosofia volta-se à prática e à
+intervenção; estudos sociais analisam valores, comunidades e tecnologia;
+PCR e sequenciamento aceleram biologia; o IPCC organiza avaliação
+climática; a Web muda publicação e colaboração. O método passa a incluir
+software, governança de grandes bases e sínteses periódicas.</p>
+<ol start="63" type="1">
+<li><strong>Ian Hacking, <em>Representing and Intervening</em>.</strong>
+<strong>Filosofia da prática.</strong> Experimentar e manipular
+entidades oferece uma forma de realismo diferente da mera representação
+teórica. <a href="#ref-68">[68]</a></li>
+<li><strong>Helen Longino, <em>Science as Social
+Knowledge</em>.</strong> <strong>Crítica e valores.</strong> A
+objetividade cresce com crítica transformadora efetiva, diversidade de
+perspectivas e padrões públicos, não com isolamento individual. <a
+href="#ref-69">[69]</a></li>
+<li><strong>Bowler e Morus, <em>Making Modern Science</em>.</strong>
+<strong>Síntese temática.</strong> Leia capítulos sobre evolução,
+genética, física, ciências humanas e organização profissional para
+revisar 1800–2000 sem narrativa exclusivamente heroica. <a
+href="#ref-70">[70]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> valores podem entrar na
+escolha de problemas e ainda haver objetividade?<br />
+<strong>Produto:</strong> analise uma decisão científica em quatro
+níveis: dado, modelo, valor epistêmico e valor social. Não chame todos
+de “viés”.</p>
+<h3
+id="etapa-13-genômica-causalidade-crise-de-replicação-e-ciência-aberta-c.-20002020">Etapa
+13 — Genômica, causalidade, crise de replicação e ciência aberta
+(c. 2000–2020)</h3>
+<p><strong>O que muda:</strong> bancos de dados, colaboração
+internacional e computação em nuvem fazem da reprodutibilidade
+computacional uma exigência. Genomas, ondas gravitacionais, edição
+genética e aprendizagem profunda atravessam disciplinas. Ao mesmo tempo,
+vieses de publicação, flexibilidade analítica e baixa replicação expõem
+que revisão por pares não é selo de verdade. <a href="#ref-71">[71]</a>
+<a href="#ref-72">[72]</a> <a href="#ref-73">[73]</a> <a
+href="#ref-74">[74]</a></p>
+<ol start="66" type="1">
+<li><strong>Jennifer Doudna, Emmanuelle Charpentier e colaboradores, “A
+Programmable Dual-RNA-Guided DNA Endonuclease”.</strong> <strong>Artigo
+primário.</strong> Siga da função bacteriana de CRISPR-Cas9 à
+demonstração de nuclease programável e depois separe descoberta básica,
+engenharia e aplicações clínicas posteriores. <a
+href="#ref-71">[71]</a></li>
+<li><strong>Katalin Karikó et al., “Suppression of RNA Recognition by
+Toll-like Receptors”.</strong> <strong>Artigo primário.</strong> Mostra
+como nucleosídeos modificados reduzem resposta imune inata; conecte-o,
+sem teleologia, ao desenvolvimento posterior de plataformas de mRNA. <a
+href="#ref-72">[72]</a></li>
+<li><strong>LIGO Scientific Collaboration, “Observation of Gravitational
+Waves from a Binary Black Hole Merger”.</strong> <strong>Big
+Science.</strong> Examine cadeia de detecção, significância, calibração,
+simulações e colaboração massiva. <a href="#ref-73">[73]</a></li>
+<li><strong>National Academies, <em>Reproducibility and Replicability in
+Science</em>.</strong> <strong>Núcleo metodológico.</strong> Use as
+definições do relatório: reprodutibilidade computacional com mesmos
+dados/código; replicabilidade com novos dados que respondem à mesma
+questão. <a href="#ref-74">[74]</a></li>
+<li><strong>Naomi Oreskes, <em>Why Trust Science?</em>.</strong>
+<strong>Confiança.</strong> Consenso científico é falível, mas ganha
+autoridade pela crítica especializada, diversidade de evidências e
+histórico de correção — não por infalibilidade individual. <a
+href="#ref-11">[11]</a></li>
+</ol>
+<p><strong>Pergunta de controle:</strong> “não replicou” significa
+fraude, hipótese falsa, contexto diferente, baixa potência ou método
+ambíguo?<br />
+<strong>Produto:</strong> pegue um artigo com dados abertos; crie
+ambiente, execute análise, compare figura e registre divergências.</p>
+<h3
+id="etapa-14-pandemia-ia-para-ciência-clima-e-fronteira-202010-ago.-2026">Etapa
+14 — Pandemia, IA para ciência, clima e fronteira (2020–10 ago.
+2026)</h3>
+<p><strong>O que muda:</strong> pandemia evidencia a potência e a
+fragilidade da ciência em tempo real: ensaios, vigilância genômica,
+preprints, correções e comunicação pública acontecem sob pressão.
+Modelos de aprendizagem profunda predizem estruturas de proteínas;
+instrumentos como LIGO e JWST geram dados em escala; ciência climática
+sintetiza múltiplas linhas; normas de abertura tornam-se política
+internacional. IA acelera busca, previsão e automação, mas não elimina
+validação, proveniência, segurança ou responsabilidade humana. <a
+href="#ref-75">[75]</a> <a href="#ref-76">[76]</a> <a
+href="#ref-77">[77]</a></p>
+<ol start="71" type="1">
+<li><strong>John Jumper et al., “Highly Accurate Protein Structure
+Prediction with AlphaFold”.</strong> <strong>Artigo primário.</strong>
+Leia problema, arquitetura em alto nível, avaliação CASP14 e limites;
+predição estrutural não equivale automaticamente a dinâmica, função ou
+validação experimental. <a href="#ref-75">[75]</a></li>
+<li><strong>IPCC, <em>Climate Change 2023: Synthesis
+Report</em>.</strong> <strong>Síntese de evidência.</strong> Observe
+como graus calibrados de confiança e múltiplos grupos de trabalho
+transformam milhares de estudos em avaliação, não em novo experimento
+singular. <a href="#ref-76">[76]</a></li>
+<li><strong>UNESCO, <em>Recommendation on Open Science</em>.</strong>
+<strong>Política científica.</strong> Dados, publicações, software,
+hardware e engajamento social aparecem como bens e práticas a tornar tão
+abertos quanto possível e tão fechados quanto necessário. <a
+href="#ref-77">[77]</a></li>
+<li><strong>Nobel Prize, páginas científicas dos prêmios de 2024 e
+2025.</strong> <strong>Leitura de fronteira com cautela.</strong> Em
+2024, física destacou fundamentos de redes neurais e química premiou
+projeto computacional e previsão de estruturas de proteínas; em 2025,
+física reconheceu tunelamento quântico macroscópico em circuito, química
+estruturas metalorgânicas e medicina tolerância imune periférica. Leia o
+“scientific background” de cada prêmio e depois os artigos originais; a
+seleção do Nobel é uma narrativa retrospectiva, não um mapa completo da
+ciência. <a href="#ref-78">[78]</a> <a href="#ref-79">[79]</a> <a
+href="#ref-80">[80]</a> <a href="#ref-81">[81]</a> <a
+href="#ref-82">[82]</a></li>
+</ol>
+<p><strong>Estado em 10 de agosto de 2026:</strong> os prêmios de 2026
+ainda não tinham sido anunciados; o calendário oficial previa os
+anúncios entre 5 e 12 de outubro. Por isso, a cronologia termina com
+resultados e instituições verificáveis até a data de corte, não com
+previsões. <a href="#ref-83">[83]</a><br />
+<strong>Produto:</strong> para uma alegação de IA ou “avanço
+revolucionário”, construa uma ficha: dados de treino, conjunto de teste,
+métrica, comparação, validação externa, limites, custo, conflitos e
+risco de uso dual.</p>
+<h2 id="a-ordem-definitiva-rota-principal-de-60-passos">4. A ordem
+definitiva: rota principal de 60 passos</h2>
+<p>Esta é a resposta direta a “qual começo e qual termino?”. Os 74 itens
+anteriores incluem fontes alternativas; a rota abaixo reduz a jornada a
+<strong>60 unidades</strong>, preservando a ordem histórica. “Seleções”
+significa capítulos ou artigos indicados acima.</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Passos</th>
+<th>Leitura</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1–4</td>
+<td>Bynum → Fara → Poskett → Montgomery/Kumar</td>
+<td>Criar mapa geral, crítica e global.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5–8</td>
+<td>Mithen → Robson → Rochberg → Neugebauer</td>
+<td>Passar de conhecimento material a escrita, cálculo e previsão.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9–12</td>
+<td>Lloyd → Hipócrates → Aristóteles → Lindberg</td>
+<td>Entender causa natural, argumento e demonstração.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">13–18</td>
+<td>Euclides → Arquimedes → Ptolomeu → Plofker → <em>Nove capítulos</em>
+→ Aveni</td>
+<td>Comparar prova, modelo, algoritmo e calendário em várias
+tradições.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19–24</td>
+<td>Needham → Saliba → Berggren → al-Khwārizmī → Ibn al-Haytham →
+Gutas</td>
+<td>Estudar China, ciência em árabe, tradução, álgebra e óptica.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25–28</td>
+<td>Copérnico → Vesálio → Raj → Schiebinger</td>
+<td>Relacionar impressão, anatomia, oceanos, império e circulação.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29–38</td>
+<td>Kepler → Galileu → Bacon → Harvey → Descartes → Boyle → Hooke →
+Newton → Shapin → Dear</td>
+<td>Reconstruir a pluralidade da chamada Revolução Científica.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">39–41</td>
+<td>Lineu → Hume → Lavoisier</td>
+<td>Classificação, indução e revolução química.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">42–48</td>
+<td>Humboldt → Lyell → Faraday → Darwin → Mendel → Maxwell → Koch</td>
+<td>A formação das disciplinas do século XIX.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">49–53</td>
+<td>Einstein → Fisher → Turing → Popper → Fleck</td>
+<td>Teoria, estatística, computação e metaciência no início do XX.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">54–57</td>
+<td>Shannon → DNA (leitura pareada) → Carson → Kuhn</td>
+<td>Big Science, informação, biologia molecular, ambiente e
+paradigmas.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">58–60</td>
+<td>NASEM <em>Reproducibility</em> → Oreskes → UNESCO <em>Open
+Science</em></td>
+<td>Terminar dominando auditoria, confiança e ciência aberta.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fontes de fronteira</strong> — CRISPR, mRNA, LIGO, AlphaFold,
+IPCC e documentos Nobel — devem ser lidas como um <strong>laboratório
+final</strong> depois do passo 60, não como atalhos.</p>
+<h2 id="taxonomia-de-herança-o-que-gerou-o-quê">5. Taxonomia de herança:
+o que gerou o quê?</h2>
+<p>“Herança” precisa de quatro rótulos para evitar falsas
+genealogias:</p>
+<ul>
+<li><strong>T — transmissão documentada:</strong> texto, tradução,
+citação, pessoa ou objeto percorre uma rota identificável.</li>
+<li><strong>R — reconfiguração:</strong> uma tradição recebida é
+criticada e transformada.</li>
+<li><strong>C — convergência independente:</strong> problemas
+semelhantes produzem soluções aparentadas sem transmissão
+demonstrada.</li>
+<li><strong>I — infraestrutura:</strong> instrumento, instituição ou
+padrão torna novos conhecimentos possíveis sem determinar seu
+conteúdo.</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Linhagem</th>
+<th>Relação</th>
+<th>Descendência metodológica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tabelas e observações mesopotâmicas → astronomia helenística</td>
+<td>T/R por redes do Oriente Próximo e Mediterrâneo</td>
+<td>Predição tabular combinada a modelos geométricos. <a
+href="#ref-15">[15]</a> <a href="#ref-16">[16]</a></td>
+</tr>
+<tr class="even">
+<td>Geometria grega → tradições em siríaco e árabe → traduções
+latinas</td>
+<td>T/R</td>
+<td>Demonstração, óptica geométrica, astronomia e currículo
+universitário. <a href="#ref-29">[29]</a> <a
+href="#ref-33">[33]</a></td>
+</tr>
+<tr class="odd">
+<td>Matemática/astronomia indianas → autores em árabe</td>
+<td>T/R</td>
+<td>Numerais, procedimentos e parâmetros astronômicos recombinados. <a
+href="#ref-25">[25]</a> <a href="#ref-30">[30]</a></td>
+</tr>
+<tr class="even">
+<td><em>Nove capítulos</em> ↔︎ tradições algorítmicas do Leste
+Asiático</td>
+<td>T/R regional; C em relação a algumas técnicas ocidentais</td>
+<td>Solução por procedimentos, eliminação e comentário. <a
+href="#ref-26">[26]</a></td>
+</tr>
+<tr class="odd">
+<td>Ibn al-Haytham → óptica latina medieval → Kepler</td>
+<td>T/R</td>
+<td>Visão como recepção de luz, análise geométrica e experimentos
+ópticos. <a href="#ref-32">[32]</a> <a href="#ref-5">[5]</a></td>
+</tr>
+<tr class="even">
+<td>Imprensa + oficinas + navegação</td>
+<td>I</td>
+<td>Padronização visual, mapas, espécimes, tabelas e replicação de
+instruções. <a href="#ref-36">[36]</a></td>
+</tr>
+<tr class="odd">
+<td>Copérnico → Kepler → Galileu → Newton</td>
+<td>T/R</td>
+<td>Heliocentrismo matemático → elipses → nova evidência
+telescópica/dinâmica → gravitação. <a href="#ref-34">[34]</a> <a
+href="#ref-40">[40]</a> <a href="#ref-41">[41]</a> <a
+href="#ref-47">[47]</a></td>
+</tr>
+<tr class="even">
+<td>Bacon e histórias naturais → sociedades e programas
+experimentais</td>
+<td>T/R, não receita universal</td>
+<td>Coleta organizada, intervenção e publicidade. <a
+href="#ref-42">[42]</a> <a href="#ref-10">[10]</a></td>
+</tr>
+<tr class="odd">
+<td>Balança, nomenclatura e conservação de Lavoisier → química
+disciplinar</td>
+<td>R/I</td>
+<td>Elementos operacionais, equações e laboratórios padronizados. <a
+href="#ref-50">[50]</a></td>
+</tr>
+<tr class="even">
+<td>Lyell + seleção artificial + biogeografia → Darwin</td>
+<td>T/R</td>
+<td>Inferência histórica por causas observáveis e consiliência. <a
+href="#ref-53">[53]</a> <a href="#ref-55">[55]</a></td>
+</tr>
+<tr class="odd">
+<td>Mendel + citologia + estatística populacional</td>
+<td>R</td>
+<td>Genética do século XX; o artigo de 1866 foi reinterpretado em novo
+quadro. <a href="#ref-56">[56]</a></td>
+</tr>
+<tr class="even">
+<td>Maxwell + anomalias eletromagnéticas → Einstein</td>
+<td>T/R</td>
+<td>Reconstrução de espaço, tempo e invariância. <a
+href="#ref-57">[57]</a> <a href="#ref-59">[59]</a></td>
+</tr>
+<tr class="odd">
+<td>Probabilidade + agricultura experimental → Fisher</td>
+<td>T/R/I</td>
+<td>Desenho, aleatorização, estimativa e teste estatístico. <a
+href="#ref-60">[60]</a></td>
+</tr>
+<tr class="even">
+<td>Lógica formal + noção de procedimento → Turing → computadores</td>
+<td>T/R/I</td>
+<td>Computabilidade, programação, simulação e ciência de dados. <a
+href="#ref-61">[61]</a></td>
+</tr>
+<tr class="odd">
+<td>Difração de raios X + química estrutural + genética → DNA
+molecular</td>
+<td>T/R/I</td>
+<td>Modelo estrutural integrado a evidência física e biológica. <a
+href="#ref-65">[65]</a> <a href="#ref-66">[66]</a></td>
+</tr>
+<tr class="even">
+<td>Biologia molecular + microbiologia CRISPR + engenharia de RNA</td>
+<td>T/R</td>
+<td>Edição genômica programável. <a href="#ref-71">[71]</a></td>
+</tr>
+<tr class="odd">
+<td>Imunologia de RNA + química de nucleosídeos + entrega lipídica</td>
+<td>T/R/I</td>
+<td>Plataformas terapêuticas e vacinais de mRNA. <a
+href="#ref-72">[72]</a></td>
+</tr>
+<tr class="even">
+<td>Relatividade geral + interferometria + computação em equipe →
+LIGO</td>
+<td>T/R/I</td>
+<td>Teste instrumental de previsão secular em nova escala. <a
+href="#ref-73">[73]</a></td>
+</tr>
+<tr class="odd">
+<td>Sequências/estruturas abertas + aprendizagem profunda + competição
+CASP → AlphaFold</td>
+<td>T/R/I</td>
+<td>Previsão estrutural em escala; novas hipóteses experimentais. <a
+href="#ref-75">[75]</a></td>
+</tr>
+<tr class="even">
+<td>Periódicos → revisão por pares → repositórios, código e dados
+abertos</td>
+<td>R/I</td>
+<td>De testemunho seletivo a auditoria distribuída e reprodutibilidade
+computacional. <a href="#ref-74">[74]</a> <a
+href="#ref-77">[77]</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="três-relações-que-não-devem-ser-afirmadas-sem-prova">5.1 Três
+relações que <strong>não</strong> devem ser afirmadas sem prova</h3>
+<ol type="1">
+<li><strong>“A tradição X inventou a ciência e todas as outras apenas
+copiaram.”</strong> A história exibe múltiplas origens, transmissões e
+convergências.</li>
+<li><strong>“Bacon escreveu o método que todos os cientistas passaram a
+seguir.”</strong> Seu programa foi influente, mas Kepler, Harvey,
+Newton, naturalistas e matemáticos trabalharam de modos diferentes.</li>
+<li><strong>“A ciência moderna descende apenas de livros.”</strong>
+Instrumentos, ofícios, plantas, navios, minas, hospitais, coleções,
+administração, trabalho escravizado e conhecimento local também
+constituíram sua infraestrutura. <a href="#ref-2">[2]</a> <a
+href="#ref-36">[36]</a> <a href="#ref-37">[37]</a></li>
+</ol>
+<h2 id="como-estudar-cada-obra-sem-virar-colecionador-de-títulos">6.
+Como estudar cada obra sem virar colecionador de títulos</h2>
+<p>Para cada leitura, produza uma ficha de uma página:</p>
+<ol type="1">
+<li><strong>Problema:</strong> o que o autor tenta explicar, prever ou
+fazer?</li>
+<li><strong>Objeto:</strong> que entidade ou fenômeno ele considera real
+e investigável?</li>
+<li><strong>Evidência:</strong> observação, testemunho, texto,
+experimento, medida, prova, estatística ou simulação?</li>
+<li><strong>Instrumento e habilidade:</strong> o que precisou ser
+construído ou aprendido para a evidência existir?</li>
+<li><strong>Inferência:</strong> como a conclusão passa dos dados ao
+enunciado?</li>
+<li><strong>Alternativa:</strong> que explicação rival foi excluída — ou
+permaneceu viva?</li>
+<li><strong>Instituição e poder:</strong> quem financiou, coletou,
+trabalhou, publicou e recebeu crédito?</li>
+<li><strong>Erro e correção:</strong> o que a tradição posterior reteve,
+rejeitou ou reformulou?</li>
+<li><strong>Herança:</strong> marque T, R, C ou I conforme a taxonomia
+acima.</li>
+<li><strong>Frase auditável:</strong> escreva uma afirmação sua
+acompanhada da página ou seção que a sustenta.</li>
+</ol>
+<p>Uma síntese só está concluída quando você consegue responder:
+<strong>“o que esta obra tornou possível que antes era difícil
+fazer?”</strong></p>
+<h2 id="plano-de-execução">7. Plano de execução</h2>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ritmo</th>
+<th style="text-align: right;">Carga</th>
+<th style="text-align: right;">Duração estimada</th>
+<th>Estratégia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Essencial</td>
+<td style="text-align: right;">4–5 h/semana</td>
+<td style="text-align: right;">30 meses</td>
+<td>Rota de 60 passos, seleções primárias e uma ficha por passo.</td>
+</tr>
+<tr class="even">
+<td>Universitário</td>
+<td style="text-align: right;">8–10 h/semana</td>
+<td style="text-align: right;">18–24 meses</td>
+<td>Rota + aprofundamentos + ensaio de 2.000 palavras por etapa.</td>
+</tr>
+<tr class="odd">
+<td>Tratado completo</td>
+<td style="text-align: right;">12–15 h/semana</td>
+<td style="text-align: right;">30–36 meses</td>
+<td>Todas as leituras, fontes primárias ampliadas, exercícios e projeto
+final.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Projeto final:</strong> escolha uma prática — medir tempo,
+representar o céu, demonstrar, experimentar, classificar, inferir
+causalidade ou reproduzir código — e acompanhe-a em pelo menos quatro
+culturas ou períodos. A tese deve distinguir transmissão,
+reconfiguração, convergência e infraestrutura, e incluir uma seção sobre
+o que as fontes não permitem concluir.</p>
+<h2 id="conclusões">8. Conclusões</h2>
+<ol type="1">
+<li>O “surgimento” da ciência é melhor descrito como
+<strong>estratificação</strong>: conhecimento operativo, registros,
+demonstração, instituições, experimentos, estatística, computação e
+abertura se acumulam e se corrigem.</li>
+<li>O método científico é uma <strong>família histórica de controles de
+erro</strong>, ajustada ao tipo de pergunta. Não há algoritmo que
+substitua conhecimento de domínio e crítica.</li>
+<li>A ciência foi global não porque todas as sociedades tiveram
+instituições idênticas, mas porque observações, técnicas, pessoas e
+objetos circularam e foram reconfigurados.</li>
+<li>Livros canônicos são necessários, mas insuficientes. Ler
+instrumentos, práticas, trabalho e poder corrige a história de “grandes
+homens e grandes ideias”.</li>
+<li>A fronteira de 2026 combina equipes, dados, código, modelos e IA;
+sua credibilidade continua dependendo de rastreabilidade, validação
+independente, ética e disposição para corrigir erros. <a
+href="#ref-74">[74]</a> <a href="#ref-77">[77]</a></li>
+</ol>
+<h2 id="referências">Referências</h2>
+<div class="references">
+<p><span id="ref-1">[1]</span> MONTGOMERY, Scott L.; KUMAR, Alok. <em>A
+History of Science in World Cultures: Voices of Knowledge</em>. New
+York: Routledge, 2016. <a
+href="https://www.routledge.com/A-History-of-Science-in-World-Cultures-Voices-of-Knowledge/Montgomery-Kumar/p/book/9780415639844">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-2">[2]</span> POSKETT, James. <em>Horizons: A Global
+History of Science</em>. Boston: Mariner Books, 2022. <a
+href="https://www.jamesposkett.com/horizons">Autor/editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-3">[3]</span> FARA, Patricia. <em>Science: A Four
+Thousand Year History</em>. Oxford: Oxford University Press, 2009. <a
+href="https://global.oup.com/academic/product/science-9780199580279">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-4">[4]</span> BYNUM, William. <em>A Little History of
+Science</em>. New Haven: Yale University Press, 2012. <a
+href="https://yalebooks.yale.edu/book/9780300197136/a-little-history-of-science/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-5">[5]</span> LINDBERG, David C. <em>The Beginnings of
+Western Science</em>. 2. ed. Chicago: University of Chicago Press, 2007.
+<a
+href="https://press.uchicago.edu/ucp/books/book/chicago/B/bo5550077.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-6">[6]</span> DASTON, Lorraine; GALISON, Peter.
+<em>Objectivity</em>. New York: Zone Books, 2007. <a
+href="https://mitpress.mit.edu/9781890951795/objectivity/">MIT
+Press</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-7">[7]</span> GODFREY-SMITH, Peter. <em>Theory and
+Reality: An Introduction to the Philosophy of Science</em>. 2.
+ed. Chicago: University of Chicago Press, 2021. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/T/bo37447570.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-8">[8]</span> CHALMERS, Alan F. <em>What Is This Thing
+Called Science?</em> 4. ed. Indianapolis: Hackett, 2013. <a
+href="https://hackettpublishing.com/what-is-this-thing-called-science-fourth-edition">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-9">[9]</span> KUHN, Thomas S. <em>The Structure of
+Scientific Revolutions</em>. 4. ed. Chicago: University of Chicago
+Press, 2012 [original de 1962]. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-10">[10]</span> SHAPIN, Steven; SCHAFFER, Simon.
+<em>Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental
+Life</em>. Princeton: Princeton University Press, 1985. <a
+href="https://press.princeton.edu/books/paperback/9780691178165/leviathan-and-the-air-pump">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-11">[11]</span> ORESKES, Naomi. <em>Why Trust
+Science?</em> Princeton: Princeton University Press, 2019. <a
+href="https://press.princeton.edu/books/hardcover/9780691179001/why-trust-science">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-12">[12]</span> MITHEN, Steven. <em>After the Ice: A
+Global Human History, 20,000–5000 BC</em>. Cambridge, MA: Harvard
+University Press, 2003. <a
+href="https://www.hup.harvard.edu/books/9780674019997">Catálogo</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-13">[13]</span> SCOTT, James C. <em>Against the Grain:
+A Deep History of the Earliest States</em>. New Haven: Yale University
+Press, 2017. <a
+href="https://yalebooks.yale.edu/book/9780300240214/against-the-grain/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-14">[14]</span> ROBSON, Eleanor. <em>Mathematics in
+Ancient Iraq: A Social History</em>. Princeton: Princeton University
+Press, 2008. <a
+href="https://press.princeton.edu/books/hardcover/9780691091822/mathematics-in-ancient-iraq">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-15">[15]</span> ROCHBERG, Francesca. <em>The Heavenly
+Writing: Divination, Horoscopy, and Astronomy in Mesopotamian
+Culture</em>. Cambridge: Cambridge University Press, 2004. <a
+href="https://doi.org/10.1017/CBO9780511534814">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-16">[16]</span> NEUGEBAUER, Otto. <em>The Exact
+Sciences in Antiquity</em>. 2. ed. New York: Dover, 1969. <a
+href="https://archive.org/details/exactsciencesina0000neug">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-17">[17]</span> CHACE, Arnold Buffum et al. <em>The
+Rhind Mathematical Papyrus</em>. Oberlin: Mathematical Association of
+America, 1927–1929. <a
+href="https://archive.org/details/rhindmathematica0000unse">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-18">[18]</span> LLOYD, G. E. R. <em>Early Greek
+Science: Thales to Aristotle</em>. New York: Norton, 1970. <a
+href="https://archive.org/details/earlygreekscienc0000lloy">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-19">[19]</span> HIPPOCRATES. <em>The Sacred
+Disease</em>. In: JONES, W. H. S. (trad.). <em>Hippocrates</em>, v. 2.
+Cambridge, MA: Harvard University Press, 1923. <a
+href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0248:text=Sacr.">Perseus</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-20">[20]</span> ARISTOTLE. <em>Posterior
+Analytics</em>. Trad. Jonathan Barnes. 2. ed. Oxford: Clarendon Press,
+1994. <a href="https://search.worldcat.org/title/28676917">WorldCat</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-21">[21]</span> EUCLID. <em>The Thirteen Books of the
+Elements</em>. Trad. Thomas L. Heath. 2. ed. Cambridge: Cambridge
+University Press, 1926. <a
+href="https://mathcs.clarku.edu/~djoyce/java/elements/elements.html">Texto
+digital</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-22">[22]</span> ARCHIMEDES. <em>The Works of
+Archimedes</em>. Ed. e trad. T. L. Heath. Cambridge: Cambridge
+University Press, 1897. <a
+href="https://archive.org/details/worksofarchimede029517mbp">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-23">[23]</span> PTOLEMY. <em>Ptolemy’s Almagest</em>.
+Trad. G. J. Toomer. Princeton: Princeton University Press, 1998. <a
+href="https://press.princeton.edu/books/paperback/9780691002606/ptolemys-almagest">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-24">[24]</span> GALEN. <em>Selected Works</em>. Trad.
+P. N. Singer. Oxford: Oxford University Press, 1997. <a
+href="https://search.worldcat.org/title/35174765">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-25">[25]</span> PLOFKER, Kim. <em>Mathematics in
+India</em>. Princeton: Princeton University Press, 2009. <a
+href="https://press.princeton.edu/books/hardcover/9780691120676/mathematics-in-india">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-26">[26]</span> SHEN, Kangshen; CROSSLEY, John N.; LUN,
+Anthony W.-C. <em>The Nine Chapters on the Mathematical Art: Companion
+and Commentary</em>. Oxford: Oxford University Press, 1999. <a
+href="https://search.worldcat.org/title/40838612">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-27">[27]</span> AVENI, Anthony F. <em>Skywatchers</em>.
+Rev. ed. Austin: University of Texas Press, 2001. <a
+href="https://utpress.utexas.edu/9780292705029/">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-28">[28]</span> NEEDHAM, Joseph. <em>Science and
+Civilisation in China</em>. v. 1: <em>Introductory Orientations</em>.
+Cambridge: Cambridge University Press, 1954. <a
+href="https://www.nri.cam.ac.uk/science.html">Projeto Needham</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-29">[29]</span> SALIBA, George. <em>Islamic Science and
+the Making of the European Renaissance</em>. Cambridge, MA: MIT Press,
+2007. <a
+href="https://mitpress.mit.edu/9780262516150/islamic-science-and-the-making-of-the-european-renaissance/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-30">[30]</span> BERGGREN, J. Lennart. <em>Episodes in
+the Mathematics of Medieval Islam</em>. 2. ed. New York: Springer, 2007.
+<a href="https://doi.org/10.1007/978-0-387-71518-9">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-31">[31]</span> AL-KHWĀRIZMĪ, Muḥammad ibn Mūsā.
+<em>The Algebra of Mohammed ben Musa</em>. Trad. Frederic Rosen. London:
+Oriental Translation Fund, 1831. <a
+href="https://archive.org/details/algebraofmohamme00khuwrich">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-32">[32]</span> IBN AL-HAYTHAM. <em>The Optics of Ibn
+al-Haytham: Books I–III</em>. Trad. A. I. Sabra. London: Warburg
+Institute, 1989. <a
+href="https://search.worldcat.org/title/18352576">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-33">[33]</span> GUTAS, Dimitri. <em>Greek Thought,
+Arabic Culture</em>. London: Routledge, 1998. <a
+href="https://www.routledge.com/Greek-Thought-Arabic-Culture-The-Graeco-Arabic-Translation-Movement-in/Gutas/p/book/9780415061339">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-34">[34]</span> COPERNICUS, Nicolaus. <em>On the
+Revolutions</em>. Trad. Edward Rosen. Baltimore: Johns Hopkins
+University Press, 1992 [original de 1543]. <a
+href="https://search.worldcat.org/title/24589889">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-35">[35]</span> VESALIUS, Andreas. <em>The Fabric of
+the Human Body</em>. Trad. Daniel H. Garrison; Malcolm H. Hast. Basel:
+Karger, 2014 [original de 1543]. <a
+href="https://www.karger.com/Book/Home/261718">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-36">[36]</span> RAJ, Kapil. <em>Relocating Modern
+Science: Circulation and the Construction of Knowledge in South Asia and
+Europe, 1650–1900</em>. Basingstoke: Palgrave Macmillan, 2007. <a
+href="https://doi.org/10.1057/9780230625310">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-37">[37]</span> SCHIEBINGER, Londa. <em>Plants and
+Empire: Colonial Bioprospecting in the Atlantic World</em>. Cambridge,
+MA: Harvard University Press, 2004. <a
+href="https://www.hup.harvard.edu/books/9780674014879">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-38">[38]</span> SHAPIN, Steven. <em>The Scientific
+Revolution</em>. Chicago: University of Chicago Press, 1996. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo3534198.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-39">[39]</span> DEAR, Peter. <em>Revolutionizing the
+Sciences: European Knowledge and Its Ambitions, 1500–1700</em>. 3.
+ed. Princeton: Princeton University Press, 2019. <a
+href="https://press.princeton.edu/books/paperback/9780691174464/revolutionizing-the-sciences">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-40">[40]</span> KEPLER, Johannes. <em>New
+Astronomy</em>. Trad. William H. Donahue. Cambridge: Cambridge
+University Press, 1992 [original de 1609]. <a
+href="https://doi.org/10.1017/CBO9780511569135">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-41">[41]</span> GALILEI, Galileo. <em>Sidereus
+Nuncius</em>. Trad. Albert Van Helden. Chicago: University of Chicago
+Press, 1989 [original de 1610]; GALILEI, Galileo. <em>Dialogue
+Concerning the Two Chief World Systems</em>. Berkeley: University of
+California Press, 1967 [original de 1632]. <a
+href="https://plato.stanford.edu/entries/galileo/">Stanford</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-42">[42]</span> BACON, Francis. <em>The New
+Organon</em>. Ed. Lisa Jardine; Michael Silverthorne. Cambridge:
+Cambridge University Press, 2000 [original de 1620]. <a
+href="https://doi.org/10.1017/CBO9781139164030">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-43">[43]</span> HARVEY, William. <em>On the Motion of
+the Heart and Blood in Animals</em>. Trad. Robert Willis. London:
+Everyman, 1907 [original de 1628]. <a
+href="https://sourcebooks.fordham.edu/mod/1628harvey-blood.asp">Fordham</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-44">[44]</span> DESCARTES, René. <em>Discourse on
+Method and Meditations on First Philosophy</em>. 4. ed. Trad. Donald A.
+Cress. Indianapolis: Hackett, 1998 [original de 1637]. <a
+href="https://hackettpublishing.com/discourse-on-method-and-meditations-on-first-philosophy-1547">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-45">[45]</span> BOYLE, Robert. <em>The Sceptical
+Chymist</em>. London, 1661. <a
+href="https://www.gutenberg.org/ebooks/22914">Project Gutenberg</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-46">[46]</span> HOOKE, Robert. <em>Micrographia</em>.
+London: Royal Society, 1665. <a
+href="https://royalsociety.org/blog/2020/01/micrographia-online/">Royal
+Society</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-47">[47]</span> NEWTON, Isaac. <em>The Principia:
+Mathematical Principles of Natural Philosophy</em>. Trad. I. Bernard
+Cohen; Anne Whitman. Berkeley: University of California Press, 1999
+[original de 1687]; NEWTON, Isaac. <em>Opticks</em>. 4. ed. London,
+1730. <a href="https://www.newtonproject.ox.ac.uk/">Newton Project</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-48">[48]</span> LINNAEUS, Carl. <em>Systema
+Naturae</em>. 10. ed. Stockholm, 1758. <a
+href="https://www.biodiversitylibrary.org/bibliography/542">Biodiversity
+Heritage Library</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-49">[49]</span> HUME, David. <em>An Enquiry Concerning
+Human Understanding</em>. Ed. Tom L. Beauchamp. Oxford: Oxford
+University Press, 1999 [original de 1748]. <a
+href="https://davidhume.org/texts/e/">David Hume</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-50">[50]</span> LAVOISIER, Antoine. <em>Elements of
+Chemistry</em>. Trad. Robert Kerr. Edinburgh, 1790 [original francês de
+1789]. <a href="https://www.gutenberg.org/ebooks/30775">Project
+Gutenberg</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-51">[51]</span> WHEWELL, William. <em>The Philosophy of
+the Inductive Sciences</em>. 2. ed. London: John W. Parker, 1847 [1ª
+ed. 1840]. <a
+href="https://archive.org/details/philosophyinduc01whewgoog">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-52">[52]</span> HUMBOLDT, Alexander von. <em>Cosmos: A
+Sketch of a Physical Description of the Universe</em>. v. 1. Trad. E. C.
+Otté. London: Henry G. Bohn, 1849 [original alemão de 1845]. <a
+href="https://www.gutenberg.org/ebooks/14565">Project Gutenberg</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-53">[53]</span> LYELL, Charles. <em>Principles of
+Geology</em>. v. 1. London: John Murray, 1830. <a
+href="https://www.biodiversitylibrary.org/bibliography/50860">Biodiversity
+Heritage Library</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-54">[54]</span> FARADAY, Michael. <em>Experimental
+Researches in Electricity</em>. v. 1. London: Richard and John Edward
+Taylor, 1839. <a
+href="https://archive.org/details/experimentalrese01fara">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-55">[55]</span> DARWIN, Charles. <em>On the Origin of
+Species</em>. London: John Murray, 1859. <a
+href="https://darwin-online.org.uk/EditorialIntroductions/Freeman_OntheOriginofSpecies.html">Darwin
+Online</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-56">[56]</span> MENDEL, Gregor. Experiments on Plant
+Hybrids. <em>Verhandlungen des naturforschenden Vereines in Brünn</em>,
+v. 4, p. 3–47, 1866. <a
+href="http://www.mendelweb.org/Mendel.html">MendelWeb</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-57">[57]</span> MAXWELL, James Clerk. <em>A Treatise on
+Electricity and Magnetism</em>. Oxford: Clarendon Press, 1873. <a
+href="https://archive.org/details/treatiseonelectr01maxwrich">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-58">[58]</span> KOCH, Robert. Die Aetiologie der
+Tuberculose. <em>Berliner klinische Wochenschrift</em>, v. 19,
+p. 221–230, 1882. Tradução em: BROCK, Thomas D. <em>Milestones in
+Microbiology</em>. Washington: ASM Press, 1999. <a
+href="https://www.rki.de/EN/Content/Institute/History/Robert_Koch.html">Robert
+Koch Institute</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-59">[59]</span> EINSTEIN, Albert. Papers of 1905: light
+quanta, Brownian motion and special relativity. <em>Annalen der
+Physik</em>, v. 17, 1905. <a
+href="https://einsteinpapers.press.princeton.edu/vol2-trans/">English
+translations — Princeton</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-60">[60]</span> FISHER, Ronald A. <em>Statistical
+Methods for Research Workers</em>. Edinburgh: Oliver and Boyd, 1925. <a
+href="https://archive.org/details/statisticalmethoe7fise">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-61">[61]</span> TURING, Alan M. On Computable Numbers,
+with an Application to the Entscheidungsproblem. <em>Proceedings of the
+London Mathematical Society</em>, s. 2, v. 42, p. 230–265, 1936. <a
+href="https://doi.org/10.1112/plms/s2-42.1.230">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-62">[62]</span> POPPER, Karl. <em>The Logic of
+Scientific Discovery</em>. London: Hutchinson, 1959 [original alemão de
+1934]. <a
+href="https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-63">[63]</span> FLECK, Ludwik. <em>Genesis and
+Development of a Scientific Fact</em>. Chicago: University of Chicago
+Press, 1979 [original alemão de 1935]. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/G/bo25676016.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-64">[64]</span> SHANNON, Claude E. A Mathematical
+Theory of Communication. <em>Bell System Technical Journal</em>, v. 27,
+p. 379–423, 623–656, 1948. <a
+href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-65">[65]</span> WATSON, James D.; CRICK, Francis H. C.
+Molecular Structure of Nucleic Acids. <em>Nature</em>, v. 171,
+p. 737–738, 1953. <a href="https://doi.org/10.1038/171737a0">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-66">[66]</span> FRANKLIN, Rosalind E.; GOSLING, Raymond
+G. Molecular Configuration in Sodium Thymonucleate. <em>Nature</em>, v.
+171, p. 740–741, 1953. <a
+href="https://doi.org/10.1038/171740a0">DOI</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-67">[67]</span> CARSON, Rachel. <em>Silent Spring</em>.
+Boston: Houghton Mifflin, 1962. <a
+href="https://rachelcarsoncouncil.org/about-rcc/about-rachel-carson/silent-spring/">Rachel
+Carson Council</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-68">[68]</span> HACKING, Ian. <em>Representing and
+Intervening</em>. Cambridge: Cambridge University Press, 1983. <a
+href="https://doi.org/10.1017/CBO9780511814563">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-69">[69]</span> LONGINO, Helen E. <em>Science as Social
+Knowledge</em>. Princeton: Princeton University Press, 1990. <a
+href="https://press.princeton.edu/books/paperback/9780691020518/science-as-social-knowledge">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-70">[70]</span> BOWLER, Peter J.; MORUS, Iwan Rhys.
+<em>Making Modern Science: A Historical Survey</em>. 2. ed. Chicago:
+University of Chicago Press, 2020. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo50266459.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-71">[71]</span> JINEK, Martin et al. A Programmable
+Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity.
+<em>Science</em>, v. 337, n. 6096, p. 816–821, 2012. <a
+href="https://doi.org/10.1126/science.1225829">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-72">[72]</span> KARIKÓ, Katalin et al. Suppression of
+RNA Recognition by Toll-like Receptors. <em>Immunity</em>, v. 23, n. 2,
+p. 165–175, 2005. <a
+href="https://doi.org/10.1016/j.immuni.2005.06.008">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-73">[73]</span> ABBOTT, B. P. et al. Observation of
+Gravitational Waves from a Binary Black Hole Merger. <em>Physical Review
+Letters</em>, v. 116, 061102, 2016. <a
+href="https://doi.org/10.1103/PhysRevLett.116.061102">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-74">[74]</span> NATIONAL ACADEMIES OF SCIENCES,
+ENGINEERING, AND MEDICINE. <em>Reproducibility and Replicability in
+Science</em>. Washington, DC: National Academies Press, 2019. <a
+href="https://doi.org/10.17226/25303">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-75">[75]</span> JUMPER, John et al. Highly Accurate
+Protein Structure Prediction with AlphaFold. <em>Nature</em>, v. 596,
+p. 583–589, 2021. <a
+href="https://doi.org/10.1038/s41586-021-03819-2">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-76">[76]</span> IPCC. <em>Climate Change 2023:
+Synthesis Report</em>. Geneva: Intergovernmental Panel on Climate
+Change, 2023. <a href="https://www.ipcc.ch/report/ar6/syr/">Relatório
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-77">[77]</span> UNESCO. <em>UNESCO Recommendation on
+Open Science</em>. Paris: UNESCO, 2021. <a
+href="https://unesdoc.unesco.org/ark:/48223/pf0000379949">Documento
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-78">[78]</span> NOBEL PRIZE. The Nobel Prize in Physics
+2024: John J. Hopfield and Geoffrey Hinton. Stockholm: Nobel Foundation,
+2024. <a
+href="https://www.nobelprize.org/prizes/physics/2024/summary/">Página
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-79">[79]</span> NOBEL PRIZE. The Nobel Prize in
+Chemistry 2024: David Baker, Demis Hassabis and John Jumper. Stockholm:
+Nobel Foundation, 2024. <a
+href="https://www.nobelprize.org/prizes/chemistry/2024/summary/">Página
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-80">[80]</span> NOBEL PRIZE. The Nobel Prize in Physics
+2025: John Clarke, Michel H. Devoret and John M. Martinis. Stockholm:
+Nobel Foundation, 2025. <a
+href="https://www.nobelprize.org/prizes/physics/2025/summary/">Página
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-81">[81]</span> NOBEL PRIZE. The Nobel Prize in
+Chemistry 2025: Susumu Kitagawa, Richard Robson and Omar M. Yaghi.
+Stockholm: Nobel Foundation, 2025. <a
+href="https://www.nobelprize.org/prizes/chemistry/2025/summary/">Página
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-82">[82]</span> NOBEL PRIZE. The Nobel Prize in
+Physiology or Medicine 2025: Mary E. Brunkow, Frederick J. Ramsdell and
+Shimon Sakaguchi. Stockholm: Nobel Foundation, 2025. <a
+href="https://www.nobelprize.org/prizes/medicine/2025/summary/">Página
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-83">[83]</span> NOBEL PRIZE. <em>The 2026 Nobel Prize
+Announcements</em>. Stockholm: Nobel Foundation, 2 fev. 2026. <a
+href="https://www.nobelprize.org/press-release/the-2026-nobel-prize-announcements/">Calendário
+oficial</a>. <a href="#">↩︎</a></p>
+</div>
+</body>
+</html>

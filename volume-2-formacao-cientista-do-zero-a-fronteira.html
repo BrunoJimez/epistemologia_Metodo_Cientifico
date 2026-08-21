@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tratado bibliográfico — Volume II" />
+  <title>Formação de um cientista: do zero à pesquisa de
+fronteira</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root {
+    --ink: #17212b;
+    --muted: #5b6774;
+    --paper: #fbfaf6;
+    --navy: #16324f;
+    --teal: #0e6b68;
+    --gold: #a56f18;
+    --line: #d8dde3;
+    --soft: #edf4f3;
+    --warn: #fff6df;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.62;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2.5rem 3rem 5rem;
+  }
+  header#title-block-header {
+    color: white;
+    background: linear-gradient(135deg, var(--navy), #285574 64%, var(--teal));
+    padding: 3.5rem 3rem 2.9rem;
+    margin: -2.5rem -3rem 2.4rem;
+    border-bottom: 8px solid #d7a94a;
+  }
+  h1.title { color: white; font-size: 2.5rem; line-height: 1.08; margin: 0 0 .7rem; }
+  p.subtitle { font-size: 1.22rem; max-width: 50rem; margin: 0 0 1.35rem; opacity: .94; }
+  p.author, p.date { margin: .15rem 0; font-family: Inter, Arial, sans-serif; opacity: .85; }
+  h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; }
+  h2 { margin-top: 3rem; padding-top: .45rem; border-top: 1px solid var(--line); font-size: 1.66rem; }
+  h3 { margin-top: 2rem; font-size: 1.24rem; color: var(--teal); }
+  h4 { font-size: 1.05rem; }
+  p, li { font-size: 1.01rem; }
+  a { color: #086577; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:hover { color: #943f2a; }
+  nav#TOC {
+    background: var(--soft);
+    border-left: 5px solid var(--teal);
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0 3rem;
+  }
+  nav#TOC::before { content: "Sumário"; display: block; font: 700 1.2rem Inter, Arial, sans-serif; color: var(--navy); margin-bottom: .5rem; }
+  nav#TOC ul { margin: .25rem 0; }
+  nav#TOC li { margin: .18rem 0; font-size: .93rem; }
+  blockquote {
+    border-left: 4px solid var(--gold);
+    background: var(--warn);
+    margin: 1.5rem 0;
+    padding: .85rem 1.2rem;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem; font-size: .89rem; }
+  thead { background: var(--navy); color: #fff; }
+  th { text-align: left; font-family: Inter, Arial, sans-serif; font-weight: 700; }
+  th, td { padding: .68rem .72rem; vertical-align: top; border: 1px solid var(--line); }
+  tbody tr:nth-child(even) { background: #f3f5f6; }
+  ol > li, ul > li { margin: .44rem 0; }
+  strong { color: #102f47; }
+  code { background: #eef1f4; padding: .12rem .3rem; border-radius: 3px; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3rem 0; }
+  .references p, #referencias ~ p, #referências ~ p { font-size: .88rem; padding-left: 2.2rem; text-indent: -2.2rem; margin: .62rem 0; }
+  span[id^="ref-"] { scroll-margin-top: 1.2rem; }
+  .tag { font-family: Inter, Arial, sans-serif; font-size: .78rem; font-weight: 700; letter-spacing: .02em; color: white; background: var(--teal); border-radius: 3px; padding: .1rem .36rem; }
+  @media (max-width: 760px) {
+    body { padding: 1.1rem 1rem 3rem; }
+    header#title-block-header { margin: -1.1rem -1rem 1.5rem; padding: 2rem 1.1rem; }
+    h1.title { font-size: 1.95rem; }
+    table { display: block; overflow-x: auto; }
+  }
+  @media print {
+    body { background: white; max-width: none; padding: 0; font-size: 10pt; }
+    header#title-block-header { margin: 0 0 1.5cm; border-bottom-width: 5px; }
+    a { color: #0b5266; }
+    h2, h3, h4 { break-after: avoid; }
+    table, blockquote { break-inside: avoid; }
+  }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Formação de um cientista: do zero à pesquisa de
+fronteira</h1>
+<p class="subtitle">Tratado bibliográfico e currículo por competências
+para um adolescente — fundamentos, projetos, especialização, ética e
+trabalho de impacto</p>
+<p class="author">Tratado bibliográfico — Volume II</p>
+<p class="date">10 de agosto de 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#resumo-executivo" id="toc-resumo-executivo">Resumo
+executivo</a></li>
+<li><a href="#o-que-um-cientista-de-fronteira-realmente-precisa"
+id="toc-o-que-um-cientista-de-fronteira-realmente-precisa">1. O que um
+cientista de fronteira realmente precisa</a></li>
+<li><a href="#visão-geral-doze-estágios-por-domínio"
+id="toc-visão-geral-doze-estágios-por-domínio">2. Visão geral: doze
+estágios por domínio</a></li>
+<li><a href="#estágio-0-primeiros-60-dias-aprender-a-aprender"
+id="toc-estágio-0-primeiros-60-dias-aprender-a-aprender">3. Estágio 0 —
+Primeiros 60 dias: aprender a aprender</a></li>
+<li><a href="#estágio-1-alfabetização-científica-integrada-meses-28"
+id="toc-estágio-1-alfabetização-científica-integrada-meses-28">4.
+Estágio 1 — Alfabetização científica integrada (meses 2–8)</a></li>
+<li><a href="#estágio-2-a-escada-matemática-meses-648"
+id="toc-estágio-2-a-escada-matemática-meses-648">5. Estágio 2 — A escada
+matemática (meses 6–48)</a></li>
+<li><a href="#estágio-3-programação-dados-e-reprodutibilidade-meses-936"
+id="toc-estágio-3-programação-dados-e-reprodutibilidade-meses-936">6.
+Estágio 3 — Programação, dados e reprodutibilidade (meses 9–36)</a></li>
+<li><a
+href="#estágio-4-ciência-em-largura-antes-de-escolher-uma-especialidade-anos-13"
+id="toc-estágio-4-ciência-em-largura-antes-de-escolher-uma-especialidade-anos-13">7.
+Estágio 4 — Ciência em largura antes de escolher uma especialidade (anos
+1–3)</a></li>
+<li><a
+href="#estágio-5-método-desenho-experimental-e-causalidade-anos-36"
+id="toc-estágio-5-método-desenho-experimental-e-causalidade-anos-36">8.
+Estágio 5 — Método, desenho experimental e causalidade (anos
+3–6)</a></li>
+<li><a href="#estágio-6-núcleos-de-especialização"
+id="toc-estágio-6-núcleos-de-especialização">9. Estágio 6 — Núcleos de
+especialização</a></li>
+<li><a href="#estágio-7-tornar-se-aprendiz-de-pesquisa-anos-49"
+id="toc-estágio-7-tornar-se-aprendiz-de-pesquisa-anos-49">10. Estágio 7
+— Tornar-se aprendiz de pesquisa (anos 4–9)</a></li>
+<li><a
+href="#estágios-8-e-9-doutorado-escrita-e-contribuição-original-anos-714"
+id="toc-estágios-8-e-9-doutorado-escrita-e-contribuição-original-anos-714">11.
+Estágios 8 e 9 — Doutorado, escrita e contribuição original (anos
+7–14)</a></li>
+<li><a
+href="#estágios-10-e-11-programa-independente-e-impacto-duradouro"
+id="toc-estágios-10-e-11-programa-independente-e-impacto-duradouro">12.
+Estágios 10 e 11 — Programa independente e impacto duradouro</a></li>
+<li><a href="#primeiro-ano-semana-a-semana"
+id="toc-primeiro-ano-semana-a-semana">13. Primeiro ano, semana a
+semana</a></li>
+<li><a href="#rubrica-de-progressão-só-avance-quando-conseguir-mostrar"
+id="toc-rubrica-de-progressão-só-avance-quando-conseguir-mostrar">14.
+Rubrica de progressão — só avance quando conseguir mostrar</a></li>
+<li><a href="#a-biblioteca-essencial-em-ordem-resposta-curta"
+id="toc-a-biblioteca-essencial-em-ordem-resposta-curta">15. A biblioteca
+essencial em ordem — resposta curta</a></li>
+<li><a href="#armadilhas-previsíveis-e-antídotos"
+id="toc-armadilhas-previsíveis-e-antídotos">16. Armadilhas previsíveis e
+antídotos</a></li>
+<li><a href="#contrato-ético-do-cientista-em-formação"
+id="toc-contrato-ético-do-cientista-em-formação">17. Contrato ético do
+cientista em formação</a></li>
+<li><a href="#conclusão" id="toc-conclusão">18. Conclusão</a></li>
+<li><a href="#referências" id="toc-referências">Referências</a></li>
+</ul>
+</nav>
+<h2 id="resumo-executivo">Resumo executivo</h2>
+<p>Este documento apresenta um percurso para um adolescente que parte
+sem base e deseja tornar-se um cientista capaz de fazer pesquisa de
+classe mundial. “Do zero ao Nobel” é usado como <strong>metáfora de
+ambição intelectual e benefício à humanidade</strong>, não como
+promessa. Não existe currículo que garanta um Prêmio Nobel: a premiação
+depende de uma contribuição excepcional, confirmação ao longo do tempo,
+contexto histórico, redes, indicação por terceiros e decisões de
+comitês. Ninguém pode candidatar a si mesmo, e informações sobre
+nomeações permanecem confidenciais por 50 anos. <a
+href="#ref-73">[73]</a> <a href="#ref-74">[74]</a> O objetivo
+controlável é outro: aprender a fazer perguntas importantes, dominar
+ferramentas, produzir evidência robusta, colaborar de modo ético,
+comunicar com clareza e corrigir erros.</p>
+<p>O plano é <strong>por competências, não por idade</strong>. Um
+estudante avança quando consegue demonstrar o marco anterior. A
+estrutura segue três dimensões usadas em educação científica: práticas
+de ciência e engenharia, ideias disciplinares centrais e conceitos
+transversais como causa e efeito, escala, sistemas, energia/matéria e
+estabilidade/mudança. <a href="#ref-1">[1]</a> Livros são pareados com
+exercícios, projetos e critérios de domínio. Ler sem resolver, medir,
+programar, explicar e escrever não completa uma etapa.</p>
+<p>Os números entre colchetes são citações clicáveis. A bibliografia
+final inclui <strong>todas as obras mencionadas</strong> e identifica
+recursos abertos quando disponíveis.</p>
+<blockquote>
+<p><strong>Mensagem ao jovem:</strong> seu primeiro objetivo não é
+parecer gênio. É tornar-se alguém que aprende continuamente, mede com
+honestidade, aceita crítica, cuida de pessoas e dados, termina projetos
+e faz perguntas melhores a cada ano.</p>
+</blockquote>
+<h2 id="o-que-um-cientista-de-fronteira-realmente-precisa">1. O que um
+cientista de fronteira realmente precisa</h2>
+<h3 id="as-dez-capacidades">1.1 As dez capacidades</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capacidade</th>
+<th>Evidência observável de domínio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curiosidade disciplinada</td>
+<td>Transforma “por quê?” em pergunta investigável, com variável,
+comparação ou modelo.</td>
+</tr>
+<tr class="even">
+<td>Matemática</td>
+<td>Traduz fenômenos em quantidades, relações, incertezas e
+limites.</td>
+</tr>
+<tr class="odd">
+<td>Conhecimento de domínio</td>
+<td>Explica princípios centrais e reconhece quando um modelo não se
+aplica.</td>
+</tr>
+<tr class="even">
+<td>Medição e experimento</td>
+<td>Calibra, controla, registra e estima erro; distingue dado de
+interpretação.</td>
+</tr>
+<tr class="odd">
+<td>Computação</td>
+<td>Automatiza análise, testa código, versiona e torna o ambiente
+reproduzível.</td>
+</tr>
+<tr class="even">
+<td>Inferência</td>
+<td>Separa descrição, previsão e causalidade; explicita suposições e
+alternativas.</td>
+</tr>
+<tr class="odd">
+<td>Leitura crítica</td>
+<td>Reconstrói a alegação de um artigo e avalia evidência, método e
+generalização.</td>
+</tr>
+<tr class="even">
+<td>Comunicação</td>
+<td>Produz gráfico, relatório, apresentação e explicação adequados ao
+público.</td>
+</tr>
+<tr class="odd">
+<td>Ética e colaboração</td>
+<td>Protege participantes, atribui crédito, compartilha com
+responsabilidade e trata colegas com respeito.</td>
+</tr>
+<tr class="even">
+<td>Escolha de problemas</td>
+<td>Identifica questões simultaneamente importantes, tratáveis e
+negligenciadas.</td>
+</tr>
+</tbody>
+</table>
+<p>O cientista não é apenas um depósito de fatos. O <em>Framework for
+K–12 Science Education</em> enfatiza práticas — perguntar, modelar,
+investigar, analisar dados, usar matemática, construir explicações,
+argumentar com evidência e comunicar — integradas a conceitos e
+conteúdo. <a href="#ref-1">[1]</a> O currículo abaixo preserva essa
+integração desde a primeira semana.</p>
+<h3 id="cinco-regras-de-aprendizagem">1.2 Cinco regras de
+aprendizagem</h3>
+<ol type="1">
+<li><strong>Recuperar, não só reler.</strong> Testes de memória,
+explicação sem consulta e prática espaçada produzem retenção mais
+robusta que releitura passiva. <a href="#ref-2">[2]</a> <a
+href="#ref-4">[4]</a></li>
+<li><strong>Alternar exemplo e problema.</strong> Primeiro estude uma
+solução bem explicada; depois resolva variações sem copiar.</li>
+<li><strong>Receber retorno rápido.</strong> Corrija procedimento e
+conceito enquanto ainda recorda seu raciocínio.</li>
+<li><strong>Praticar ciência ativa.</strong> Em STEM, aprendizagem ativa
+supera em média a exposição exclusivamente expositiva; faça previsões,
+medições, debates e problemas em aula. <a href="#ref-5">[5]</a></li>
+<li><strong>Manter um arquivo de erros.</strong> Para cada erro,
+registre: tipo, causa, correção e sinal que permitirá reconhecê-lo no
+futuro.</li>
+</ol>
+<h3 id="segurança-e-integridade-vêm-antes-da-ambição">1.3 Segurança e
+integridade vêm antes da ambição</h3>
+<p>Um menor não deve realizar sozinho experiências com alta tensão,
+radiação ionizante, pressão, chama aberta, reagentes concentrados,
+drogas, patógenos, cultura de amostras ambientais desconhecidas,
+vertebrados ou autoexperimentação. Laboratório só com supervisão
+qualificada, avaliação de risco, equipamento e descarte corretos.
+Pesquisa com seres humanos, animais, dados sensíveis ou potencial de uso
+dual exige revisão institucional. Integridade não é um capítulo final:
+honestidade de registros, atribuição, consentimento, segurança, gestão
+de dados e conflito de interesses entram desde o primeiro projeto. <a
+href="#ref-61">[61]</a></p>
+<h2 id="visão-geral-doze-estágios-por-domínio">2. Visão geral: doze
+estágios por domínio</h2>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estágio</th>
+<th style="text-align: right;">Janela indicativa</th>
+<th>Meta de saída</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0. Diagnóstico e hábitos</td>
+<td style="text-align: right;">0–2 meses</td>
+<td>Rotina sustentável, leitura ativa, aritmética básica diagnosticada,
+diário de perguntas.</td>
+</tr>
+<tr class="even">
+<td>1. Alfabetização científica</td>
+<td style="text-align: right;">2–8 meses</td>
+<td>Explicar modelos básicos das quatro grandes áreas e executar
+investigações seguras.</td>
+</tr>
+<tr class="odd">
+<td>2. Matemática fundamental</td>
+<td style="text-align: right;">6–30 meses</td>
+<td>Álgebra, geometria, funções, trigonometria e início de prova.</td>
+</tr>
+<tr class="even">
+<td>3. Programação e dados</td>
+<td style="text-align: right;">9–30 meses</td>
+<td>Programa testado, gráfico honesto, Git, análise reproduzível.</td>
+</tr>
+<tr class="odd">
+<td>4. Ciências em largura</td>
+<td style="text-align: right;">12–36 meses</td>
+<td>Física, química, biologia, Terra e astronomia em nível
+médio/pré-universitário.</td>
+</tr>
+<tr class="even">
+<td>5. Cálculo, álgebra linear, probabilidade</td>
+<td style="text-align: right;">24–48 meses</td>
+<td>Modelar mudança, sistemas lineares e incerteza.</td>
+</tr>
+<tr class="odd">
+<td>6. Método, desenho e causalidade</td>
+<td style="text-align: right;">30–60 meses</td>
+<td>Planejar estudo, justificar amostra, analisar e discutir
+limites.</td>
+</tr>
+<tr class="even">
+<td>7. Especialização universitária</td>
+<td style="text-align: right;">4–8 anos</td>
+<td>Núcleo de uma área + competência real numa área adjacente.</td>
+</tr>
+<tr class="odd">
+<td>8. Aprendizagem em laboratório/grupo</td>
+<td style="text-align: right;">5–9 anos</td>
+<td>Reproduzir resultado, manter caderno e contribuir para projeto
+coletivo.</td>
+</tr>
+<tr class="even">
+<td>9. Mestrado/doutorado ou equivalente</td>
+<td style="text-align: right;">7–14 anos</td>
+<td>Formular e defender contribuição original.</td>
+</tr>
+<tr class="odd">
+<td>10. Independência</td>
+<td style="text-align: right;">12–20 anos</td>
+<td>Programa coerente de pesquisa, mentoria e infraestrutura
+confiável.</td>
+</tr>
+<tr class="even">
+<td>11. Impacto duradouro</td>
+<td style="text-align: right;">15+ anos</td>
+<td>Resultado confirmado, utilizado por outros e potencialmente
+transformador.</td>
+</tr>
+</tbody>
+</table>
+<p>As janelas se sobrepõem. Um jovem pode programar antes do cálculo,
+estudar biologia enquanto fortalece álgebra e participar de clube
+científico desde o início. <strong>Não pule fundamentos por
+pressa:</strong> lacunas em álgebra, escrita ou estatística cobram juros
+durante toda a carreira.</p>
+<h2 id="estágio-0-primeiros-60-dias-aprender-a-aprender">3. Estágio 0 —
+Primeiros 60 dias: aprender a aprender</h2>
+<h3 id="leituras-nesta-ordem">Leituras, nesta ordem</h3>
+<ol type="1">
+<li><strong>Barbara Oakley e Terrence Sejnowski, <em>Learning How to
+Learn</em>.</strong> Entrada amigável para alternar foco e difusão,
+combater procrastinação e usar recordação ativa. <a
+href="#ref-3">[3]</a></li>
+<li><strong>Peter Brown, Henry Roediger e Mark McDaniel, <em>Make It
+Stick</em>.</strong> Fundamente espaçamento, intercalação e testes de
+recuperação; transforme cada capítulo num experimento sobre seu próprio
+estudo. <a href="#ref-2">[2]</a></li>
+<li><strong>Carl Sagan, <em>The Demon-Haunted World</em>.</strong>
+Aprenda a equilibrar abertura a ideias com exigência de evidência; trate
+o “kit de detecção de absurdos” como heurística, não algoritmo
+infalível. <a href="#ref-6">[6]</a></li>
+<li><strong>Richard Feynman, <em>The Pleasure of Finding Things
+Out</em>.</strong> Use os ensaios sobre curiosidade, dúvida e “cargo
+cult science” para definir honestidade científica. <a
+href="#ref-7">[7]</a></li>
+<li><strong>William Bynum, <em>A Little History of
+Science</em>.</strong> Construa um primeiro mapa histórico antes de
+escolher heróis ou área. <a href="#ref-8">[8]</a></li>
+</ol>
+<h3 id="rotina-mínima">Rotina mínima</h3>
+<ul>
+<li><strong>5 dias por semana, 60–90 minutos:</strong> 25 min de
+matemática, 25 min de leitura/ciência, 20 min de exercício ou
+programação, 10 min de registro.</li>
+<li><strong>Caderno de perguntas:</strong> data, pergunta, por que
+importa, o que já sabe, como poderia testar e que risco existe.</li>
+<li><strong>Revisões:</strong> 1 dia, 1 semana e 1 mês depois de cada
+conceito.</li>
+<li><strong>Explicação Feynman:</strong> uma página sem consultar;
+marque em vermelho o ponto em que precisou usar palavra vaga.</li>
+</ul>
+<h3 id="prova-de-saída">Prova de saída</h3>
+<p>O estudante consegue explicar a diferença entre observação e
+inferência, criar uma hipótese testável, calcular frações/porcentagens,
+fazer um gráfico simples à mão e manter rotina por seis semanas. Se não,
+ajuste carga e método — não conclua que “não nasceu para ciência”.</p>
+<h2 id="estágio-1-alfabetização-científica-integrada-meses-28">4.
+Estágio 1 — Alfabetização científica integrada (meses 2–8)</h2>
+<p>Use livros abertos para que acesso não dependa de renda. Leia
+capítulos selecionados, não quatro manuais completos em paralelo.</p>
+<ol start="6" type="1">
+<li><strong>OpenStax, <em>Biology 2e</em>.</strong> Célula, energia,
+genética, evolução e ecologia. <a href="#ref-9">[9]</a></li>
+<li><strong>OpenStax, <em>Chemistry 2e</em>.</strong> Átomos, ligações,
+estequiometria, energia, equilíbrio e ácidos/bases. <a
+href="#ref-10">[10]</a></li>
+<li><strong>OpenStax, <em>College Physics 2e</em>.</strong> Movimento,
+forças, energia, ondas, eletricidade e óptica, usando álgebra. <a
+href="#ref-11">[11]</a></li>
+<li><strong>OpenStax, <em>Astronomy 2e</em>.</strong> Escala cósmica,
+estrelas, galáxias e cosmologia; treine ordem de grandeza. <a
+href="#ref-12">[12]</a></li>
+<li><strong>National Research Council, <em>A Framework for K–12 Science
+Education</em>.</strong> Leia resumos de práticas e conceitos
+transversais; use-o como lista de competências, não como manual. <a
+href="#ref-1">[1]</a></li>
+</ol>
+<h3 id="quatro-investigações-seguras">Quatro investigações seguras</h3>
+<ol type="1">
+<li><strong>Pêndulo de baixa amplitude:</strong> período versus
+comprimento; repetições, média, gráfico e incerteza. Prenda massa leve
+com segurança.</li>
+<li><strong>Resfriamento de água:</strong> temperatura versus tempo em
+recipientes idênticos; sem líquidos perigosamente quentes.</li>
+<li><strong>Germinação comercial:</strong> luz/água versus crescimento;
+não cultivar microrganismos ou amostras corporais.</li>
+<li><strong>Céu e sombra:</strong> comprimento de sombra ao longo do
+dia; modelo geométrico e limitação meteorológica.</li>
+</ol>
+<p>Cada relatório deve conter pergunta, previsão, materiais, risco,
+método, dados brutos, gráfico, análise, conclusão limitada e próxima
+melhoria. Uma hipótese “errada” com boa medição vale mais que números
+ajustados para parecer corretos.</p>
+<h3 id="prova-de-saída-1">Prova de saída</h3>
+<p>Quatro relatórios curtos, ao menos um resultado nulo, uma correção
+documentada e uma apresentação de cinco minutos para público não
+especialista.</p>
+<h2 id="estágio-2-a-escada-matemática-meses-648">5. Estágio 2 — A escada
+matemática (meses 6–48)</h2>
+<p>Matemática científica precisa de três fios simultâneos:
+<strong>cálculo</strong>, <strong>estrutura/prova</strong> e
+<strong>incerteza</strong>. A ordem abaixo é uma espiral: volte a
+assuntos quando a ciência exigir.</p>
+<h3 id="fundamentos-aritmética-a-pré-cálculo">5.1 Fundamentos:
+aritmética a pré-cálculo</h3>
+<ol start="11" type="1">
+<li><strong>Serge Lang, <em>Basic Mathematics</em>.</strong> Aritmética,
+álgebra, geometria e trigonometria com densidade; use se já tolera um
+texto conciso. <a href="#ref-13">[13]</a></li>
+<li><strong>Israel Gelfand e Alexander Shen, <em>Algebra</em>.</strong>
+Problemas que revelam estrutura em vez de decorar manipulações. <a
+href="#ref-14">[14]</a></li>
+<li><strong>A. P. Kiselev, <em>Geometry</em>, Livro I.</strong>
+Demonstração euclidiana e desenho cuidadoso; não substitui geometria
+analítica, mas forma raciocínio. <a href="#ref-15">[15]</a></li>
+<li><strong>OpenStax, <em>Precalculus 2e</em>.</strong> Funções,
+exponenciais, logaritmos, trigonometria, vetores e sequências; recurso
+aberto para lacunas. <a href="#ref-16">[16]</a></li>
+<li><strong>Richard Hammack, <em>Book of Proof</em>.</strong> Lógica,
+conjuntos, indução, contradição e relações; disponível legalmente de
+forma aberta. <a href="#ref-17">[17]</a></li>
+</ol>
+<p><strong>Critério:</strong> 80% de acerto em problemas mistos, sem
+saber previamente o capítulo, e capacidade de justificar cada
+transformação algébrica.</p>
+<h3 id="mudança-e-espaço-linear">5.2 Mudança e espaço linear</h3>
+<ol start="16" type="1">
+<li><strong>OpenStax, <em>Calculus</em>, vols. 1–3.</strong> Primeira
+passagem acessível: limites, derivadas, integrais, séries e cálculo
+multivariável. <a href="#ref-18">[18]</a></li>
+<li><strong>Michael Spivak, <em>Calculus</em>.</strong> Segunda passagem
+rigorosa. Resolva problemas selecionados quando já souber calcular; o
+objetivo é entender por que os teoremas valem. <a
+href="#ref-19">[19]</a></li>
+<li><strong>Gilbert Strang, <em>Introduction to Linear
+Algebra</em>.</strong> Matrizes, espaços vetoriais, autovalores e
+decomposições; conecte a sistemas, dados e mecânica. <a
+href="#ref-20">[20]</a></li>
+<li><strong>Steven Strogatz, <em>Nonlinear Dynamics and
+Chaos</em>.</strong> Depois de cálculo e equações diferenciais iniciais:
+estabilidade, bifurcação e caos por modelos concretos. <a
+href="#ref-24">[24]</a></li>
+</ol>
+<p><strong>Critério:</strong> derivar um modelo simples, verificar
+unidades, obter solução ou aproximação, visualizar e interpretar — não
+apenas calcular.</p>
+<h3 id="probabilidade-estatística-e-incerteza">5.3 Probabilidade,
+estatística e incerteza</h3>
+<ol start="20" type="1">
+<li><strong>Joseph Blitzstein e Jessica Hwang, <em>Introduction to
+Probability</em>.</strong> Contagem, probabilidade condicional,
+variáveis e expectativas, com problemas fortes. <a
+href="#ref-21">[21]</a></li>
+<li><strong>OpenIntro, <em>OpenIntro Statistics</em>.</strong> Dados,
+amostragem, intervalos, testes e regressão, em acesso aberto. <a
+href="#ref-22">[22]</a></li>
+<li><strong>Larry Wasserman, <em>All of Statistics</em>.</strong> Ponte
+compacta para estatística matemática e aprendizagem de máquina; somente
+após cálculo e probabilidade. <a href="#ref-23">[23]</a></li>
+</ol>
+<p><strong>Critério:</strong> simular um processo, calcular/estimar a
+quantidade teórica, explicar diferença entre variabilidade amostral e
+erro de medição e comunicar incerteza sem esconder resultados.</p>
+<h2 id="estágio-3-programação-dados-e-reprodutibilidade-meses-936">6.
+Estágio 3 — Programação, dados e reprodutibilidade (meses 9–36)</h2>
+<ol start="23" type="1">
+<li><strong>Allen Downey, <em>Think Python</em>.</strong>
+<strong>Primeiro livro.</strong> Aprenda decomposição de problemas,
+funções, estruturas de dados e testes mentais. <a
+href="#ref-25">[25]</a></li>
+<li><strong>Eric Matthes, <em>Python Crash Course</em>.</strong>
+<strong>Projetos.</strong> Consolide linguagem construindo visualização,
+dados ou aplicação pequena. <a href="#ref-26">[26]</a></li>
+<li><strong>Scott Chacon e Ben Straub, <em>Pro Git</em>.</strong>
+<strong>Memória do trabalho.</strong> Commits pequenos, branches,
+revisão e recuperação; livro aberto. <a href="#ref-27">[27]</a></li>
+<li><strong>Greg Wilson et al., “Good Enough Practices in Scientific
+Computing”.</strong> <strong>Checklist mínimo.</strong> Dados brutos
+imutáveis, nomes consistentes, scripts em vez de cliques, controle de
+versão e instruções de execução. <a href="#ref-28">[28]</a></li>
+<li><strong>Community, <em>The Turing Way</em>.</strong> <strong>Manual
+vivo.</strong> Reprodutibilidade, colaboração, ética, comunicação e
+gestão de projeto em ciência de dados. <a href="#ref-29">[29]</a></li>
+<li><strong>Wes McKinney, <em>Python for Data Analysis</em>.</strong>
+<strong>Ferramentas.</strong> Arrays, tabelas, limpeza e séries
+temporais; use depois de saber Python básico. <a
+href="#ref-30">[30]</a></li>
+</ol>
+<h3 id="projeto-de-saída">Projeto de saída</h3>
+<p>Escolha um conjunto de dados público e publique uma pasta com:</p>
+<ul>
+<li><code>README</code> com pergunta, licença, fonte e execução;</li>
+<li>dados brutos preservados ou instrução legal de obtenção;</li>
+<li>script de limpeza separado da análise;</li>
+<li>teste de pelo menos uma função;</li>
+<li>ambiente com versões;</li>
+<li>figura com unidades, legenda e incerteza;</li>
+<li>arquivo <code>LIMITES.md</code> com dados ausentes, vieses e usos
+indevidos possíveis.</li>
+</ul>
+<p>Outra pessoa deve conseguir reproduzir a figura a partir do README.
+Isso é mais importante que um notebook visualmente bonito.</p>
+<h2
+id="estágio-4-ciência-em-largura-antes-de-escolher-uma-especialidade-anos-13">7.
+Estágio 4 — Ciência em largura antes de escolher uma especialidade (anos
+1–3)</h2>
+<p>Uma descoberta importante costuma ocorrer na interseção entre
+problema, instrumento e linguagem. Especializar cedo demais pode ocultar
+conexões; adiar para sempre impede profundidade. Faça uma volta
+introdutória pelas áreas abaixo e escolha a principal no fim, mantendo
+uma secundária.</p>
+<h3 id="física">Física</h3>
+<ol start="29" type="1">
+<li><strong>Paul Hewitt, <em>Conceptual Physics</em>.</strong> Primeira
+intuição: explique fenômenos e faça previsões qualitativas antes das
+equações. <a href="#ref-31">[31]</a></li>
+<li><strong>OpenStax, <em>University Physics</em>, vols. 1–3.</strong>
+Depois de cálculo: mecânica, termodinâmica, eletromagnetismo, óptica e
+física moderna, com problemas. <a href="#ref-32">[32]</a></li>
+</ol>
+<p><strong>Projeto:</strong> modelar o movimento de um carrinho ou vídeo
+público, comparar posição/velocidade/aceleração e discutir atrito e erro
+de quadro.</p>
+<h3 id="química">Química</h3>
+<ol start="31" type="1">
+<li><strong>Peter Atkins et al., <em>Chemical Principles</em>.</strong>
+Estrutura atômica, termodinâmica, equilíbrio, cinética e ligação com
+base quantitativa. <a href="#ref-37">[37]</a></li>
+<li><strong>OpenStax, <em>Chemistry 2e</em>.</strong> Use como apoio
+aberto e banco de problemas antes e durante Atkins. <a
+href="#ref-10">[10]</a></li>
+</ol>
+<p><strong>Projeto seguro:</strong> estudar cinética com comprimido
+efervescente comercial em água a temperaturas moderadas, sob supervisão;
+medir tempo, controlar massa/volume e não ingerir material
+experimental.</p>
+<h3 id="biologia-e-medicina">Biologia e medicina</h3>
+<ol start="33" type="1">
+<li><strong>Bruce Alberts et al., <em>Essential Cell
+Biology</em>.</strong> Célula, DNA, expressão, energia e sinalização; é
+melhor primeira travessia que um tratado enciclopédico. <a
+href="#ref-41">[41]</a></li>
+<li><strong>OpenStax, <em>Biology 2e</em>.</strong> Use para ecologia,
+evolução, diversidade e fisiologia em largura. <a
+href="#ref-9">[9]</a></li>
+</ol>
+<p><strong>Projeto:</strong> analisar uma base aberta de biodiversidade
+ou expressão gênica já anonimizada; nunca coletar dados humanos
+identificáveis sem protocolo.</p>
+<h3 id="terra-clima-e-astronomia">Terra, clima e astronomia</h3>
+<ol start="35" type="1">
+<li><strong>Lee Kump, James Kasting e Robert Crane, <em>The Earth
+System</em>.</strong> Ciclos, energia, clima, vida e tempo geológico
+como sistema acoplado. <a href="#ref-46">[46]</a></li>
+<li><strong>OpenStax, <em>Astronomy 2e</em>.</strong> Observe escala,
+espectros e evolução estelar; conecte observação remota à inferência
+física. <a href="#ref-12">[12]</a></li>
+</ol>
+<p><strong>Projeto:</strong> obter série pública de temperatura, CO₂ ou
+chuva; separar tendência, sazonalidade, variabilidade e limite de
+causalidade.</p>
+<h3 id="computação-e-inteligência-artificial">Computação e inteligência
+artificial</h3>
+<ol start="37" type="1">
+<li><strong>Cormen et al., <em>Introduction to Algorithms</em>.</strong>
+Estruturas, corretude e complexidade; estude em paralelo à
+implementação. <a href="#ref-49">[49]</a></li>
+<li><strong>Ian Goodfellow, Yoshua Bengio e Aaron Courville, <em>Deep
+Learning</em>.</strong> Só depois de cálculo, álgebra linear,
+probabilidade e programação. <a href="#ref-50">[50]</a></li>
+</ol>
+<p><strong>Projeto:</strong> implementar uma linha de base simples antes
+de um modelo complexo; separar treino, validação e teste e relatar
+falhas por subgrupo.</p>
+<h3 id="ciências-sociais-quantitativas-e-economia">Ciências sociais
+quantitativas e economia</h3>
+<ol start="39" type="1">
+<li><strong>Jeffrey Wooldridge, <em>Introductory
+Econometrics</em>.</strong> Regressão, dados em corte, painel e séries,
+sempre ligando estimador a suposições. <a href="#ref-55">[55]</a></li>
+<li><strong>Joshua Angrist e Jörn-Steffen Pischke, <em>Mastering
+’Metrics</em>.</strong> Experimentos naturais, variáveis instrumentais,
+diferenças-em-diferenças e descontinuidade em linguagem acessível. <a
+href="#ref-56">[56]</a></li>
+<li><strong>Hal Varian, <em>Intermediate Microeconomics</em>.</strong>
+Incentivos, escolha, equilíbrio e informação como modelos; compare
+elegância formal com validade empírica. <a href="#ref-53">[53]</a></li>
+<li><strong>Olivier Blanchard, <em>Macroeconomics</em>.</strong> Contas
+nacionais, ciclos, inflação, política e economia aberta; trate modelos
+como aproximações historicamente testáveis. <a
+href="#ref-54">[54]</a></li>
+</ol>
+<p><strong>Projeto:</strong> reproduzir uma tabela de estudo com dados
+abertos e discutir por que associação não basta para política
+causal.</p>
+<h3 id="como-escolher-ao-fim-desta-volta">Como escolher ao fim desta
+volta</h3>
+<p>Pontue de 1 a 5: fascínio pelos problemas, tolerância às atividades
+diárias reais, desempenho, acesso a mentoria, custo de infraestrutura e
+potencial de contribuição. Visite laboratórios e converse com
+estudantes, não apenas com celebridades. Escolha <strong>uma área
+principal</strong>, <strong>uma linguagem instrumental</strong> —
+matemática, computação, imagem, química sintética, estatística — e
+<strong>uma área adjacente</strong>.</p>
+<h2 id="estágio-5-método-desenho-experimental-e-causalidade-anos-36">8.
+Estágio 5 — Método, desenho experimental e causalidade (anos 3–6)</h2>
+<h3 id="ordem-comum-a-todas-as-áreas">Ordem comum a todas as áreas</h3>
+<ol start="43" type="1">
+<li><strong>Wayne Booth et al., <em>The Craft of Research</em>.</strong>
+Converter interesse em problema, problema em pergunta e pergunta em
+argumento sustentado. <a href="#ref-57">[57]</a></li>
+<li><strong>Douglas Montgomery, <em>Design and Analysis of
+Experiments</em>.</strong> Aleatorização, replicação, bloqueio,
+fatoriais e otimização; não use teste estatístico para reparar desenho
+fraco. <a href="#ref-58">[58]</a></li>
+<li><strong>Andrew Gelman, Jennifer Hill e Aki Vehtari, <em>Regression
+and Other Stories</em>.</strong> Modelagem, predição, ajuste,
+diagnóstico e comunicação em problemas reais. <a
+href="#ref-59">[59]</a></li>
+<li><strong>Miguel Hernán e James Robins, <em>Causal Inference: What
+If</em>.</strong> Livro aberto sobre ensaios, emulação de ensaio-alvo,
+confundimento e métodos observacionais. <a href="#ref-60">[60]</a></li>
+<li><strong>Richard McElreath, <em>Statistical Rethinking</em>.</strong>
+Modelos generativos e inferência bayesiana, com ênfase em suposições
+explícitas. <a href="#ref-62">[62]</a></li>
+<li><strong>Judea Pearl e Dana Mackenzie, <em>The Book of
+Why</em>.</strong> Introdução conceitual a diagramas causais e
+intervenções; depois, para teoria, <em>Causality</em>, de Pearl. <a
+href="#ref-63">[63]</a> <a href="#ref-64">[64]</a></li>
+<li><strong>John Ioannidis, “Why Most Published Research Findings Are
+False”.</strong> Leia como argumento modelado sobre combinações de
+potência, multiplicidade, viés e probabilidade prévia — não como prova
+de que “a ciência é falsa”. <a href="#ref-65">[65]</a></li>
+<li><strong>National Academies, <em>Reproducibility and Replicability in
+Science</em>.</strong> Vocabulário, causas de falha, responsabilidades e
+recomendações. <a href="#ref-66">[66]</a></li>
+</ol>
+<h3 id="o-protocolo-de-dez-perguntas">O protocolo de dez perguntas</h3>
+<p>Antes de coletar dados, responda:</p>
+<ol type="1">
+<li>Qual decisão ou explicação mudará se o resultado for A ou B?</li>
+<li>Qual é a unidade de análise?</li>
+<li>O desfecho e a intervenção/exposição foram definidos antes de olhar
+os dados?</li>
+<li>Que comparação identifica a diferença relevante?</li>
+<li>Quais confundidores, vieses de seleção e erros de medição são
+plausíveis?</li>
+<li>Qual tamanho de efeito é cientificamente importante?</li>
+<li>Qual precisão/amostra é necessária e por quê?</li>
+<li>Que análises são confirmatórias e quais exploratórias?</li>
+<li>Que dado, código, material e metadado podem ser compartilhados
+legalmente?</li>
+<li>O que faria você mudar de opinião?</li>
+</ol>
+<h3 id="prova-de-saída-2">Prova de saída</h3>
+<p>Um protocolo pré-especificado, revisão por dois colegas, análise
+simulada antes da coleta e relatório que separe resultado,
+interpretação, limitação e decisão. Para um estudo observacional,
+incluir diagrama causal; para experimento, randomização/bloqueio e plano
+de exclusões.</p>
+<h2 id="estágio-6-núcleos-de-especialização">9. Estágio 6 — Núcleos de
+especialização</h2>
+<p>Escolha <strong>um</strong> trilho principal. Livros avançados são
+referências de anos, não provas de velocidade. A ordem dentro de cada
+trilho pressupõe o núcleo matemático e científico anterior.</p>
+<h3 id="física-1">9.1 Física</h3>
+<ol type="1">
+<li><strong>John Taylor, <em>Classical Mechanics</em>.</strong>
+Lagrangiano, oscilações, dois corpos e caos introdutório. <a
+href="#ref-33">[33]</a></li>
+<li><strong>Daniel Schroeder, <em>An Introduction to Thermal
+Physics</em>.</strong> Entropia, ensembles, química e informação. <a
+href="#ref-36">[36]</a></li>
+<li><strong>David Griffiths, <em>Introduction to
+Electrodynamics</em>.</strong> Campos, potenciais, Maxwell e radiação.
+<a href="#ref-34">[34]</a></li>
+<li><strong>David Griffiths e Darrell Schroeter, <em>Introduction to
+Quantum Mechanics</em>.</strong> Estados, operadores, spin e
+aproximações. <a href="#ref-35">[35]</a></li>
+<li><strong>Feynman, Leighton e Sands, <em>The Feynman Lectures on
+Physics</em>.</strong> Segunda visão conceitual, em acesso aberto; não
+substitui resolver um curso estruturado. <a href="#ref-79">[79]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> derivar, simular e medir um mesmo
+sistema; por exemplo, oscilador amortecido. Compare modelo ideal,
+solução numérica e dado.</p>
+<h3 id="química-e-materiais">9.2 Química e materiais</h3>
+<ol type="1">
+<li><strong>Atkins et al., <em>Chemical Principles</em>.</strong> Base
+geral quantitativa. <a href="#ref-37">[37]</a></li>
+<li><strong>Peter Atkins e Julio de Paula, <em>Physical
+Chemistry</em>.</strong> Termodinâmica, cinética, quântica e
+espectroscopia. <a href="#ref-38">[38]</a></li>
+<li><strong>Jonathan Clayden et al., <em>Organic
+Chemistry</em>.</strong> Mecanismo, estrutura e estratégia de síntese.
+<a href="#ref-39">[39]</a></li>
+<li><strong>Catherine Housecroft e Alan Sharpe, <em>Inorganic
+Chemistry</em>.</strong> Ligação, coordenação, sólidos e
+organometálicos. <a href="#ref-40">[40]</a></li>
+<li><strong>Skoog, Holler e Crouch, <em>Principles of Instrumental
+Analysis</em>.</strong> Calibração, espectrometria, eletroquímica e
+separação. <a href="#ref-80">[80]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> em laboratório institucional, calibrar
+instrumento com padrões, construir curva, propagar incerteza e
+documentar branco, limite de detecção e amostra cega.</p>
+<h3 id="biologia-e-biomedicina">9.3 Biologia e biomedicina</h3>
+<ol type="1">
+<li><strong>Alberts et al., <em>Essential Cell Biology</em>.</strong>
+Primeira base. <a href="#ref-41">[41]</a></li>
+<li><strong>Nelson e Cox, <em>Lehninger Principles of
+Biochemistry</em>.</strong> Estrutura, energia, metabolismo e
+informação. <a href="#ref-42">[42]</a></li>
+<li><strong>Benjamin Pierce, <em>Genetics: A Conceptual
+Approach</em>.</strong> Mendelismo, cromossomos, população e genômica.
+<a href="#ref-43">[43]</a></li>
+<li><strong>Alberts et al., <em>Molecular Biology of the
+Cell</em>.</strong> Referência ampla depois da primeira travessia. <a
+href="#ref-44">[44]</a></li>
+<li><strong>Murphy e Weaver, <em>Janeway’s Immunobiology</em>.</strong>
+Reconhecimento, resposta, tolerância e memória. <a
+href="#ref-45">[45]</a></li>
+<li><strong>Dee Silverthorn, <em>Human Physiology</em>.</strong>
+Sistemas e integração; não usar como guia clínico. <a
+href="#ref-81">[81]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> reproduzir análise de um conjunto aberto
+de sequenciamento ou imagem, registrar pipeline e discutir qualidade,
+lote, múltiplos testes e validação biológica.</p>
+<h3 id="terra-clima-e-planeta">9.4 Terra, clima e planeta</h3>
+<ol type="1">
+<li><strong>Kump, Kasting e Crane, <em>The Earth System</em>.</strong>
+Ciclos e acoplamentos. <a href="#ref-46">[46]</a></li>
+<li><strong>Wallace e Hobbs, <em>Atmospheric Science</em>.</strong>
+Radiação, termodinâmica, dinâmica, nuvens e química. <a
+href="#ref-47">[47]</a></li>
+<li><strong>Turcotte e Schubert, <em>Geodynamics</em>.</strong> Calor,
+elasticidade, fluido, tectônica e convecção. <a
+href="#ref-48">[48]</a></li>
+<li><strong>IPCC, <em>Climate Change 2023: Synthesis
+Report</em>.</strong> Modelo de síntese e comunicação calibrada de
+confiança. <a href="#ref-76">[76]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> combinar observação, balanço físico e
+modelo simples; testar sensibilidade e não confundir clima com um evento
+meteorológico isolado.</p>
+<h3 id="computação-ia-e-ciência-de-dados">9.5 Computação, IA e ciência
+de dados</h3>
+<ol type="1">
+<li><strong>Cormen et al., <em>Introduction to Algorithms</em>.</strong>
+Corretude e eficiência. <a href="#ref-49">[49]</a></li>
+<li><strong>Goodfellow, Bengio e Courville, <em>Deep
+Learning</em>.</strong> Fundamentos de redes neurais. <a
+href="#ref-50">[50]</a></li>
+<li><strong>Kevin Murphy, <em>Probabilistic Machine Learning: An
+Introduction</em>.</strong> Modelos probabilísticos e aprendizagem
+moderna. <a href="#ref-51">[51]</a></li>
+<li><strong>Sutton e Barto, <em>Reinforcement Learning</em>.</strong>
+Predição, controle e aproximação, com acesso aberto. <a
+href="#ref-52">[52]</a></li>
+<li><strong>Pearl, <em>Causality</em>.</strong> Diferencie previsão de
+intervenção. <a href="#ref-64">[64]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> reproduzir uma linha de base publicada,
+avaliar fora da distribuição, relatar custo computacional e documentar
+dados, licenças, vieses e riscos.</p>
+<h3 id="ciências-sociais-quantitativaseconomia">9.6 Ciências sociais
+quantitativas/economia</h3>
+<ol type="1">
+<li><strong>Wooldridge, <em>Introductory Econometrics</em>.</strong>
+Base aplicada. <a href="#ref-55">[55]</a></li>
+<li><strong>Angrist e Pischke, <em>Mastering ’Metrics</em>.</strong>
+Desenhos quase experimentais. <a href="#ref-56">[56]</a></li>
+<li><strong>Gelman, Hill e Vehtari, <em>Regression and Other
+Stories</em>.</strong> Modelagem e diagnóstico. <a
+href="#ref-59">[59]</a></li>
+<li><strong>Hernán e Robins, <em>Causal Inference</em>.</strong>
+Identificação e emulação de ensaio. <a href="#ref-60">[60]</a></li>
+</ol>
+<p><strong>Portfólio:</strong> replicação completa, análise de robustez
+e explicação das ameaças à validade para um público afetado pelo
+resultado.</p>
+<h2 id="estágio-7-tornar-se-aprendiz-de-pesquisa-anos-49">10. Estágio 7
+— Tornar-se aprendiz de pesquisa (anos 4–9)</h2>
+<h3 id="como-entrar-num-grupo">10.1 Como entrar num grupo</h3>
+<p>Não escreva “quero ganhar o Nobel”. Leia duas publicações recentes do
+grupo e envie uma mensagem curta: o problema que entendeu, uma pergunta
+específica, as habilidades já demonstradas e uma contribuição pequena
+que consegue cumprir. Mostre um portfólio reproduzível. Procure
+ambientes onde perguntas são bem-vindas, crédito é discutido, segurança
+é real e mentores dão retorno.</p>
+<p>A ciência do mentorado enfatiza relações estruturadas, expectativas
+explícitas, redes de mentores e ambientes inclusivos; depender de um
+único “mestre” aumenta risco e limita perspectivas. <a
+href="#ref-75">[75]</a></p>
+<h3 id="leituras-de-bancada-e-ofício">10.2 Leituras de bancada e
+ofício</h3>
+<ol start="51" type="1">
+<li><strong>Kathy Barker, <em>At the Bench</em>.</strong> Organização,
+caderno, reagentes, solução de problemas e cultura de laboratório,
+especialmente para biologia experimental. <a
+href="#ref-67">[67]</a></li>
+<li><strong>Santiago Ramón y Cajal, <em>Advice for a Young
+Investigator</em>.</strong> Persistência, independência e crítica a
+mitos de genialidade; leia também como documento de sua época. <a
+href="#ref-68">[68]</a></li>
+<li><strong>Peter Medawar, <em>Advice to a Young
+Scientist</em>.</strong> Perguntas, estilo, colaboração e instituições
+em ensaios breves. <a href="#ref-69">[69]</a></li>
+<li><strong>W. I. B. Beveridge, <em>The Art of Scientific
+Investigation</em>.</strong> Observação, hipótese, acaso preparado e
+intuição; confronte exemplos com padrões atuais. <a
+href="#ref-70">[70]</a></li>
+<li><strong>Richard Hamming, <em>The Art of Doing Science and
+Engineering</em>.</strong> Escolha de problemas importantes, padrões de
+trabalho e comunicação; evite transformar casos pessoais em lei
+universal. <a href="#ref-71">[71]</a></li>
+<li><strong>National Academies, <em>On Being a Scientist</em>.</strong>
+Autoria, dados, revisão, conflitos, erro e má conduta por estudos de
+caso. <a href="#ref-61">[61]</a></li>
+</ol>
+<h3 id="escada-de-responsabilidade">10.3 Escada de responsabilidade</h3>
+<ol type="1">
+<li>Executar protocolo supervisionado.</li>
+<li>Explicar por que cada etapa existe.</li>
+<li>Detectar controle que falhou.</li>
+<li>Reproduzir figura ou análise.</li>
+<li>Melhorar documentação ou teste.</li>
+<li>Propor variação com risco controlado.</li>
+<li>Escrever método e resultado.</li>
+<li>Apresentar e responder a crítica.</li>
+<li>Orientar iniciante sem abandonar supervisão.</li>
+</ol>
+<p>Avance por confiabilidade, não por autopromoção. Um bom grupo delega
+mais quando registros, comunicação e julgamento se mostram
+consistentes.</p>
+<h2
+id="estágios-8-e-9-doutorado-escrita-e-contribuição-original-anos-714">11.
+Estágios 8 e 9 — Doutorado, escrita e contribuição original (anos
+7–14)</h2>
+<h3 id="ordem-de-leitura">Ordem de leitura</h3>
+<ol start="57" type="1">
+<li><strong>Phillips e Pugh, <em>How to Get a PhD</em>.</strong>
+Estrutura de doutorado, relação com supervisor, progresso e tese; adapte
+ao país e disciplina. <a href="#ref-72">[72]</a></li>
+<li><strong>Joshua Schimel, <em>Writing Science</em>.</strong> Construa
+narrativa lógica de contexto, tensão, resolução e implicação sem
+dramatizar evidência. <a href="#ref-82">[82]</a></li>
+<li><strong>Robert Day e Barbara Gastel, <em>How to Write and Publish a
+Scientific Paper</em>.</strong> Títulos, resumos, seções, tabelas,
+submissão e ética editorial. <a href="#ref-83">[83]</a></li>
+<li><strong>UNESCO, <em>Recommendation on Open Science</em>.</strong>
+Planeje abertura, infraestrutura, equidade e participação desde o
+projeto. <a href="#ref-77">[77]</a></li>
+</ol>
+<h3 id="o-ciclo-de-tese-robusta">O ciclo de tese robusta</h3>
+<ol type="1">
+<li><strong>Mapear:</strong> revisão sistemática ou mapa de literatura;
+matriz de afirmações, métodos e lacunas.</li>
+<li><strong>Reproduzir:</strong> execute resultado central de outro
+grupo antes de alegar novidade.</li>
+<li><strong>Delimitar:</strong> pergunta pequena o bastante para
+responder e importante o bastante para importar.</li>
+<li><strong>Pré-mortem:</strong> imagine por que o projeto falhou —
+acesso, medição, poder, código, pessoal, ética — e crie controles.</li>
+<li><strong>Pilotar:</strong> teste instrumentos e pipeline; não
+confunda piloto subdimensionado com conclusão.</li>
+<li><strong>Registrar:</strong> protocolo, decisões, desvios, versões,
+dados brutos e metadados.</li>
+<li><strong>Analisar:</strong> valide código com simulação, controles
+positivos/negativos e revisão.</li>
+<li><strong>Desafiar:</strong> tente quebrar seu resultado; busque
+explicações rivais e dados externos.</li>
+<li><strong>Comunicar:</strong> publique método e limites tão claramente
+quanto o achado.</li>
+<li><strong>Preservar:</strong> identificadores, licenças, documentação
+e formatos reutilizáveis.</li>
+</ol>
+<h3 id="prova-de-saída-3">Prova de saída</h3>
+<p>Uma contribuição original não é “algo que ninguém escreveu com estas
+palavras”. É um resultado, método, dado, instrumento ou síntese que
+reduz uma incerteza relevante e resiste a avaliação competente. O
+estudante deve defender o que sabe, o que supõe e o que permanece
+desconhecido.</p>
+<h2 id="estágios-10-e-11-programa-independente-e-impacto-duradouro">12.
+Estágios 10 e 11 — Programa independente e impacto duradouro</h2>
+<h3 id="escolher-problemas">12.1 Escolher problemas</h3>
+<ol start="61" type="1">
+<li><strong>Donald Stokes, <em>Pasteur’s Quadrant</em>.</strong>
+Abandona a oposição simples entre ciência “pura” e “aplicada”: pesquisa
+pode buscar compreensão fundamental e uso ao mesmo tempo. <a
+href="#ref-84">[84]</a></li>
+<li><strong>Hamming, “You and Your Research” e <em>The Art of Doing
+Science and Engineering</em>.</strong> Pergunte quais problemas
+importantes de sua área são tratáveis e por que você não está
+trabalhando neles; combine ambição com execução. <a
+href="#ref-71">[71]</a></li>
+</ol>
+<p>Use uma carteira:</p>
+<ul>
+<li><strong>70% confiável:</strong> problemas centrais que formam
+estudantes e produzem conhecimento cumulativo;</li>
+<li><strong>20% exploratório:</strong> novas combinações, instrumentos
+ou dados;</li>
+<li><strong>10% alto risco:</strong> hipótese transformadora com marcos
+que permitem parar cedo.</li>
+</ul>
+<p>Percentuais são ponto de partida, não lei. Em áreas clínicas ou de
+infraestrutura, segurança e validação podem exigir distribuição
+diferente.</p>
+<h3 id="o-que-nível-nobel-deve-significar">12.2 O que “nível Nobel” deve
+significar</h3>
+<p>O testamento de Alfred Nobel orienta os prêmios para contribuições de
+grande benefício à humanidade. <a href="#ref-73">[73]</a> Transforme
+essa ideia em perguntas de trabalho:</p>
+<ol type="1">
+<li>O problema afeta compreensão fundamental ou sofrimento humano
+relevante?</li>
+<li>O avanço é verificável por equipes independentes?</li>
+<li>Ele muda o que outras pessoas conseguem medir, prever, construir ou
+tratar?</li>
+<li>A contribuição sobreviveria se o nome do autor fosse removido?</li>
+<li>Benefícios e riscos foram distribuídos e discutidos com os
+afetados?</li>
+</ol>
+<p>Leia documentos científicos e palestras Nobel <strong>depois</strong>
+dos artigos originais. Eles ensinam como uma área reconstrói sua
+história, mas comprimem equipes e contingências. A análise sociológica
+de Harriet Zuckerman mostra carreiras, instituições e padrões de
+reconhecimento entre laureados; use-a para compreender o sistema, não
+para imitar biografias. <a href="#ref-78">[78]</a></p>
+<h3 id="o-que-não-controlar">12.3 O que não controlar</h3>
+<ul>
+<li><strong>Indicação:</strong> ninguém se autoindica; convite e seleção
+pertencem às instituições autorizadas. <a href="#ref-74">[74]</a></li>
+<li><strong>Tempo de reconhecimento:</strong> confirmação pode levar
+décadas.</li>
+<li><strong>Número de pessoas reconhecidas:</strong> prêmios individuais
+comprimem trabalho coletivo.</li>
+<li><strong>Moda, geopolítica e oportunidade:</strong> talento não
+distribui igualmente instrumentos, paz, saúde, mentores ou
+financiamento.</li>
+</ul>
+<p>Controle a qualidade do problema, registro, equipe, evidência,
+abertura responsável e persistência. O prêmio não é uma variável de
+otimização científica.</p>
+<h2 id="primeiro-ano-semana-a-semana">13. Primeiro ano, semana a
+semana</h2>
+<p>O calendário supõe 6–8 horas semanais, escola regular em paralelo e
+supervisão adulta para atividades práticas. Se a base matemática for
+muito fraca, mantenha o mesmo projeto por duas semanas e estenda o
+plano.</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Semanas</th>
+<th>Estudo</th>
+<th>Prática e produto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1–2</td>
+<td>Diagnóstico de aritmética, leitura e escrita; Oakley. <a
+href="#ref-3">[3]</a></td>
+<td>Montar rotina, caderno de perguntas e tabela de revisão.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3–4</td>
+<td><em>Make It Stick</em>; porcentagem e gráficos. <a
+href="#ref-2">[2]</a></td>
+<td>Comparar releitura e recuperação em um miniensaio pessoal.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5–6</td>
+<td>Sagan; observação versus inferência. <a href="#ref-6">[6]</a></td>
+<td>Auditar uma alegação viral: fonte, evidência, alternativa e
+incerteza.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7–8</td>
+<td>Bynum; notação científica. <a href="#ref-8">[8]</a></td>
+<td>Linha do tempo com cinco tradições/regiões e correção de um
+mito.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9–10</td>
+<td>Física: movimento e unidades. <a href="#ref-11">[11]</a></td>
+<td>Medir movimento por vídeo; tabela com unidade e incerteza.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11–12</td>
+<td>Força, energia e modelo.</td>
+<td>Desenhar diagrama, prever e comparar com dado. Relatório 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13–14</td>
+<td>Química: átomo, mol e proporção. <a href="#ref-10">[10]</a></td>
+<td>Modelos com materiais inertes; exercícios de balanço.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15–16</td>
+<td>Soluções e cinética, com supervisão.</td>
+<td>Experimento seguro de efervescência. Relatório 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17–18</td>
+<td>Biologia: célula e energia. <a href="#ref-9">[9]</a></td>
+<td>Modelo anotado; distinguir analogia de mecanismo.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">19–20</td>
+<td>Genética e evolução.</td>
+<td>Simulação de frequências com moedas/dados digitais. Relatório
+3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21–22</td>
+<td>Terra e astronomia; escalas. <a href="#ref-12">[12]</a></td>
+<td>Calendário de sombra/céu ou base aberta.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">23–24</td>
+<td>Sistemas e ciclos.</td>
+<td>Diagrama causal simples; marcar estoques, fluxos e atrasos.
+Relatório 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25–26</td>
+<td>Gelfand/OpenStax: funções. <a href="#ref-14">[14]</a> <a
+href="#ref-16">[16]</a></td>
+<td>Representar mesmo fenômeno em palavras, tabela, gráfico e
+equação.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">27–28</td>
+<td>Exponencial e logaritmo.</td>
+<td>Meia-vida, crescimento e escala logarítmica com simulação
+segura.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29–30</td>
+<td>Geometria e prova. <a href="#ref-15">[15]</a></td>
+<td>Duas demonstrações e diário dos passos não justificados.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">31–32</td>
+<td>Probabilidade introdutória. <a href="#ref-21">[21]</a></td>
+<td>Simular moedas/dados; comparar frequência e probabilidade.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">33–34</td>
+<td>Python: variáveis, funções e testes. <a href="#ref-25">[25]</a></td>
+<td>Programa que limpa e resume pequeno arquivo.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">35–36</td>
+<td>Listas, dicionários, arquivos e erro.</td>
+<td>Testes para casos normal, limite e inválido.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">37–38</td>
+<td>Git e README. <a href="#ref-27">[27]</a></td>
+<td>Repositório local com commits descritivos e instruções.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">39–40</td>
+<td>Tabelas e visualização. <a href="#ref-30">[30]</a></td>
+<td>Reproduzir gráfico e corrigir uma versão enganosa.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">41–42</td>
+<td>Desenho: comparação, controle, repetição. <a
+href="#ref-58">[58]</a></td>
+<td>Escrever protocolo antes dos dados.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">43–44</td>
+<td>Amostragem e incerteza. <a href="#ref-22">[22]</a></td>
+<td>Simular distribuição amostral; intervalo e interpretação.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">45–46</td>
+<td>Artigo científico curto.</td>
+<td>Marcar pergunta, método, figura principal, limite e referência.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">47–48</td>
+<td>Projeto final: piloto.</td>
+<td>Revisão por mentor, risco, dados simulados e correções.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">49–50</td>
+<td>Coleta/análise final.</td>
+<td>Preservar dados brutos, executar script e registrar desvios.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">51</td>
+<td>Escrita e apresentação.</td>
+<td>Relatório de 1.500 palavras, pôster e fala de 7 minutos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">52</td>
+<td>Retrospectiva.</td>
+<td>Auditoria do portfólio, carta ao “eu do próximo ano” e plano de
+lacunas.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rubrica-de-progressão-só-avance-quando-conseguir-mostrar">14.
+Rubrica de progressão — só avance quando conseguir mostrar</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nível</th>
+<th>Produto mínimo</th>
+<th>Padrão de aprovação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Observador</td>
+<td>Caderno e tabela</td>
+<td>Data, unidade, condição e diferença entre registro/inferência.</td>
+</tr>
+<tr class="even">
+<td>2. Investigador iniciante</td>
+<td>Quatro miniestudos</td>
+<td>Pergunta clara, risco controlado, dado bruto e conclusão
+limitada.</td>
+</tr>
+<tr class="odd">
+<td>3. Modelador</td>
+<td>Modelo matemático</td>
+<td>Unidades, suposições, ajuste, resíduo e domínio de validade.</td>
+</tr>
+<tr class="even">
+<td>4. Programador científico</td>
+<td>Pipeline reproduzível</td>
+<td>README, versões, teste, dados com proveniência e figura refeita por
+terceiro.</td>
+</tr>
+<tr class="odd">
+<td>5. Leitor crítico</td>
+<td>Dez fichas de artigos</td>
+<td>Alegação, desenho, estimando, incerteza, alternativa e
+generalização.</td>
+</tr>
+<tr class="even">
+<td>6. Replicador</td>
+<td>Reprodução de resultado</td>
+<td>Divergências registradas; sem alterar silenciosamente o método.</td>
+</tr>
+<tr class="odd">
+<td>7. Colaborador</td>
+<td>Contribuição aceita</td>
+<td>Commit, protocolo, dado ou análise revisada; crédito acordado.</td>
+</tr>
+<tr class="even">
+<td>8. Autor iniciante</td>
+<td>Pôster/preprint/artigo</td>
+<td>Texto auditável, materiais preservados, limites e ética
+aprovados.</td>
+</tr>
+<tr class="odd">
+<td>9. Pesquisador independente</td>
+<td>Tese ou conjunto coerente</td>
+<td>Questão própria, múltiplas linhas de evidência e defesa
+competente.</td>
+</tr>
+<tr class="even">
+<td>10. Líder responsável</td>
+<td>Programa de pesquisa</td>
+<td>Resultados reproduzidos externamente, mentoria, infraestrutura e
+correção pública.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regra contra autoengano:</strong> uma certificação, olimpíada
+ou nota pode ser evidência auxiliar; não substitui o produto. Da mesma
+forma, publicação sem auditabilidade não prova domínio.</p>
+<h2 id="a-biblioteca-essencial-em-ordem-resposta-curta">15. A biblioteca
+essencial em ordem — resposta curta</h2>
+<p>Se for necessário reduzir todo o tratado a uma estante inicial de
+<strong>36 passos</strong>, leia e pratique nesta ordem:</p>
+<ol type="1">
+<li>Oakley &amp; Sejnowski — <em>Learning How to Learn</em>. <a
+href="#ref-3">[3]</a></li>
+<li>Brown, Roediger &amp; McDaniel — <em>Make It Stick</em>. <a
+href="#ref-2">[2]</a></li>
+<li>Sagan — <em>The Demon-Haunted World</em>. <a
+href="#ref-6">[6]</a></li>
+<li>Bynum — <em>A Little History of Science</em>. <a
+href="#ref-8">[8]</a></li>
+<li>OpenStax — <em>College Physics 2e</em>. <a
+href="#ref-11">[11]</a></li>
+<li>OpenStax — <em>Chemistry 2e</em>. <a href="#ref-10">[10]</a></li>
+<li>OpenStax — <em>Biology 2e</em>. <a href="#ref-9">[9]</a></li>
+<li>OpenStax — <em>Astronomy 2e</em>. <a href="#ref-12">[12]</a></li>
+<li>Lang — <em>Basic Mathematics</em>. <a href="#ref-13">[13]</a></li>
+<li>Gelfand &amp; Shen — <em>Algebra</em>. <a
+href="#ref-14">[14]</a></li>
+<li>Kiselev — <em>Geometry</em>. <a href="#ref-15">[15]</a></li>
+<li>OpenStax — <em>Precalculus 2e</em>. <a href="#ref-16">[16]</a></li>
+<li>Hammack — <em>Book of Proof</em>. <a href="#ref-17">[17]</a></li>
+<li>Downey — <em>Think Python</em>. <a href="#ref-25">[25]</a></li>
+<li>Chacon &amp; Straub — <em>Pro Git</em>. <a
+href="#ref-27">[27]</a></li>
+<li>OpenStax — <em>Calculus</em>, vols. 1–3. <a
+href="#ref-18">[18]</a></li>
+<li>Strang — <em>Introduction to Linear Algebra</em>. <a
+href="#ref-20">[20]</a></li>
+<li>Blitzstein &amp; Hwang — <em>Introduction to Probability</em>. <a
+href="#ref-21">[21]</a></li>
+<li>OpenIntro — <em>OpenIntro Statistics</em>. <a
+href="#ref-22">[22]</a></li>
+<li>Wilson et al. — “Good Enough Practices”. <a
+href="#ref-28">[28]</a></li>
+<li><em>The Turing Way</em>. <a href="#ref-29">[29]</a></li>
+<li>Hewitt — <em>Conceptual Physics</em>. <a
+href="#ref-31">[31]</a></li>
+<li>Alberts et al. — <em>Essential Cell Biology</em>. <a
+href="#ref-41">[41]</a></li>
+<li>Atkins et al. — <em>Chemical Principles</em>. <a
+href="#ref-37">[37]</a></li>
+<li>Kump, Kasting &amp; Crane — <em>The Earth System</em>. <a
+href="#ref-46">[46]</a></li>
+<li>Booth et al. — <em>The Craft of Research</em>. <a
+href="#ref-57">[57]</a></li>
+<li>Montgomery — <em>Design and Analysis of Experiments</em>. <a
+href="#ref-58">[58]</a></li>
+<li>Gelman, Hill &amp; Vehtari — <em>Regression and Other Stories</em>.
+<a href="#ref-59">[59]</a></li>
+<li>Hernán &amp; Robins — <em>Causal Inference: What If</em>. <a
+href="#ref-60">[60]</a></li>
+<li>National Academies — <em>On Being a Scientist</em>. <a
+href="#ref-61">[61]</a></li>
+<li>National Academies — <em>Reproducibility and Replicability in
+Science</em>. <a href="#ref-66">[66]</a></li>
+<li>Cajal — <em>Advice for a Young Investigator</em>. <a
+href="#ref-68">[68]</a></li>
+<li>Hamming — <em>The Art of Doing Science and Engineering</em>. <a
+href="#ref-71">[71]</a></li>
+<li>Schimel — <em>Writing Science</em>. <a href="#ref-82">[82]</a></li>
+<li>Stokes — <em>Pasteur’s Quadrant</em>. <a
+href="#ref-84">[84]</a></li>
+<li>UNESCO — <em>Recommendation on Open Science</em>. <a
+href="#ref-77">[77]</a></li>
+</ol>
+<p>Depois do passo 25, insira o núcleo de sua especialidade da seção 9.
+A partir do passo 26, o aprendizado deve ocorrer dentro de projetos
+reais com supervisão.</p>
+<h2 id="armadilhas-previsíveis-e-antídotos">16. Armadilhas previsíveis e
+antídotos</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Armadilha</th>
+<th>Sinal</th>
+<th>Antídoto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Gênio solitário”</td>
+<td>Esconde ajuda e evita crítica</td>
+<td>Rede de mentores, coautoria explícita e revisão precoce.</td>
+</tr>
+<tr class="even">
+<td>Colecionar livros</td>
+<td>Muitos títulos, poucos problemas resolvidos</td>
+<td>Um produto para cada unidade: prova, código, dado ou
+explicação.</td>
+</tr>
+<tr class="odd">
+<td>Pular álgebra</td>
+<td>Erros em unidades e funções</td>
+<td>Diagnóstico trimestral e prática mista.</td>
+</tr>
+<tr class="even">
+<td>Usar IA como oráculo</td>
+<td>Não consegue explicar código ou fonte</td>
+<td>Verificar em fonte primária, testar casos e declarar uso.</td>
+</tr>
+<tr class="odd">
+<td><em>p</em>-valor como verdade</td>
+<td>Ignora desenho e tamanho do efeito</td>
+<td>Estimando, intervalo, gráfico, suposição e replicação.</td>
+</tr>
+<tr class="even">
+<td>Projeto grandioso cedo</td>
+<td>Meses sem dado utilizável</td>
+<td>Piloto de duas semanas e marcos de abandono.</td>
+</tr>
+<tr class="odd">
+<td>Prestígio acima de ambiente</td>
+<td>Medo, crédito opaco, insegurança</td>
+<td>Critérios de mentoria e rota de saída; documentar acordos.</td>
+</tr>
+<tr class="even">
+<td>Ciência aberta ingênua</td>
+<td>Exposição de dados pessoais ou uso dual</td>
+<td>“Tão aberto quanto possível, tão fechado quanto necessário.” <a
+href="#ref-77">[77]</a></td>
+</tr>
+<tr class="odd">
+<td>Nobel como placar</td>
+<td>Escolhe tema pela fama</td>
+<td>Problema importante, contribuição verificável e benefício real.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contrato-ético-do-cientista-em-formação">17. Contrato ético do
+cientista em formação</h2>
+<ol type="1">
+<li>Não fabricar, omitir seletivamente ou “embelezar” dados.</li>
+<li>Preservar dado bruto e registrar toda transformação.</li>
+<li>Distinguir análise planejada de exploração posterior.</li>
+<li>Dar crédito por contribuição; discutir autoria cedo e revisar quando
+o trabalho mudar.</li>
+<li>Proteger participantes, privacidade, animais, ambiente e
+colegas.</li>
+<li>Interromper procedimento inseguro, independentemente de
+hierarquia.</li>
+<li>Declarar conflitos e uso material de ferramentas automatizadas.</li>
+<li>Corrigir publicamente erro relevante.</li>
+<li>Compartilhar materiais quando legal, ético e seguro; documentar por
+que algo precisa ficar restrito.</li>
+<li>Avaliar quem recebe benefícios e quem assume riscos.</li>
+</ol>
+<p>Este contrato operacionaliza a ideia de que a ciência depende de
+confiança merecida. As normas profissionais não servem para preservar
+imagem; servem para tornar resultados auditáveis e relações humanas
+dignas. <a href="#ref-61">[61]</a> <a href="#ref-66">[66]</a></p>
+<h2 id="conclusão">18. Conclusão</h2>
+<p>O caminho não é “ler tudo, entrar numa universidade famosa e ter uma
+ideia genial”. É um ciclo que sobe em espiral:</p>
+<p><strong>perguntar → aprender fundamento → modelar → medir → programar
+→ confrontar alternativas → reproduzir → colaborar → comunicar →
+corrigir → escolher pergunta melhor.</strong></p>
+<p>O estudante deve buscar, nos primeiros anos, amplitude e hábitos;
+depois, matemática, computação e um domínio; em seguida, mentoria e
+replicação; por fim, independência, construção de equipes e escolha de
+problemas com valor duradouro. Se algum dia uma contribuição receber o
+Nobel, o prêmio será consequência histórica. O sucesso científico já
+terá ocorrido antes: outras pessoas conseguem confiar, reproduzir, usar
+e ampliar o conhecimento produzido.</p>
+<h2 id="referências">Referências</h2>
+<div class="references">
+<p><span id="ref-1">[1]</span> NATIONAL RESEARCH COUNCIL. <em>A
+Framework for K–12 Science Education: Practices, Crosscutting Concepts,
+and Core Ideas</em>. Washington, DC: National Academies Press, 2012. <a
+href="https://doi.org/10.17226/13165">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-2">[2]</span> BROWN, Peter C.; ROEDIGER III, Henry L.;
+McDANIEL, Mark A. <em>Make It Stick: The Science of Successful
+Learning</em>. Cambridge, MA: Harvard University Press, 2014. <a
+href="https://www.hup.harvard.edu/books/9780674729018">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-3">[3]</span> OAKLEY, Barbara; SEJNOWSKI, Terrence;
+McCONVILLE, Alistair. <em>Learning How to Learn</em>. New York:
+TarcherPerigee, 2018. <a
+href="https://barbaraoakley.com/books/learning-how-to-learn/">Autora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-4">[4]</span> DUNLOSKY, John et al. Improving Students’
+Learning with Effective Learning Techniques. <em>Psychological Science
+in the Public Interest</em>, v. 14, n. 1, p. 4–58, 2013. <a
+href="https://doi.org/10.1177/1529100612453266">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-5">[5]</span> FREEMAN, Scott et al. Active Learning
+Increases Student Performance in Science, Engineering, and Mathematics.
+<em>Proceedings of the National Academy of Sciences</em>, v. 111, n. 23,
+p. 8410–8415, 2014. <a
+href="https://doi.org/10.1073/pnas.1319030111">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-6">[6]</span> SAGAN, Carl. <em>The Demon-Haunted World:
+Science as a Candle in the Dark</em>. New York: Random House, 1995. <a
+href="https://archive.org/details/demonhauntedworl00saga">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-7">[7]</span> FEYNMAN, Richard P. <em>The Pleasure of
+Finding Things Out</em>. Cambridge, MA: Perseus, 1999. <a
+href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Caltech
+— “Cargo Cult Science”</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-8">[8]</span> BYNUM, William. <em>A Little History of
+Science</em>. New Haven: Yale University Press, 2012. <a
+href="https://yalebooks.yale.edu/book/9780300197136/a-little-history-of-science/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-9">[9]</span> CLARK, Mary Ann et al. <em>Biology
+2e</em>. Houston: OpenStax, 2018. <a
+href="https://openstax.org/details/books/biology-2e">Texto aberto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-10">[10]</span> FLOWERS, Paul et al. <em>Chemistry
+2e</em>. Houston: OpenStax, 2019. <a
+href="https://openstax.org/details/books/chemistry-2e">Texto aberto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-11">[11]</span> URONE, Paul P.; HINRICHS, Roger.
+<em>College Physics 2e</em>. Houston: OpenStax, 2022. <a
+href="https://openstax.org/details/books/college-physics-2e">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-12">[12]</span> FRANKNOI, Andrew; MORRISON, David;
+WOLFF, Sidney. <em>Astronomy 2e</em>. Houston: OpenStax, 2022. <a
+href="https://openstax.org/details/books/astronomy-2e">Texto aberto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-13">[13]</span> LANG, Serge. <em>Basic
+Mathematics</em>. New York: Springer, 1988. <a
+href="https://doi.org/10.1007/978-1-4612-1068-9">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-14">[14]</span> GELFAND, Israel M.; SHEN, Alexander.
+<em>Algebra</em>. Boston: Birkhäuser, 1993. <a
+href="https://doi.org/10.1007/978-1-4612-0901-5">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-15">[15]</span> KISELEV, A. P. <em>Kiselev’s Geometry:
+Book I, Planimetry</em>. Trad. Alexander Givental. El Cerrito: Sumizdat,
+2006. <a href="https://www.sumizdat.org/kiselev.html">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-16">[16]</span> ABRAMSON, Jay. <em>Precalculus 2e</em>.
+Houston: OpenStax, 2021. <a
+href="https://openstax.org/details/books/precalculus-2e">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-17">[17]</span> HAMMACK, Richard. <em>Book of
+Proof</em>. 3. ed. Richmond: Virginia Commonwealth University, 2018. <a
+href="https://www.people.vcu.edu/~rhammack/BookOfProof/">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-18">[18]</span> STRANG, Gilbert; HERMAN, Edwin.
+<em>Calculus</em>, vols. 1–3. Houston: OpenStax, 2016. <a
+href="https://openstax.org/subjects/math">Texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-19">[19]</span> SPIVAK, Michael. <em>Calculus</em>. 4.
+ed. Houston: Publish or Perish, 2008. <a
+href="https://www.mathpop.com/books/calculus">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-20">[20]</span> STRANG, Gilbert. <em>Introduction to
+Linear Algebra</em>. 6. ed. Wellesley: Wellesley-Cambridge Press, 2023.
+<a href="https://math.mit.edu/~gs/linearalgebra/">Autor</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-21">[21]</span> BLITZSTEIN, Joseph K.; HWANG, Jessica.
+<em>Introduction to Probability</em>. 2. ed. Boca Raton: CRC Press,
+2019. <a href="https://projects.iq.harvard.edu/stat110/home">Curso e
+recursos</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-22">[22]</span> DIEZ, David M.; BARR, Christopher D.;
+ÇETINKAYA-RUNDEL, Mine. <em>OpenIntro Statistics</em>. 4. ed. OpenIntro,
+2019. <a href="https://www.openintro.org/book/os/">Texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-23">[23]</span> WASSERMAN, Larry. <em>All of
+Statistics: A Concise Course in Statistical Inference</em>. New York:
+Springer, 2004. <a
+href="https://doi.org/10.1007/978-0-387-21736-9">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-24">[24]</span> STROGATZ, Steven H. <em>Nonlinear
+Dynamics and Chaos</em>. 2. ed. Boulder: Westview Press, 2015. <a
+href="https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos">Autor</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-25">[25]</span> DOWNEY, Allen B. <em>Think Python: How
+to Think Like a Computer Scientist</em>. 3. ed. Sebastopol: O’Reilly,
+2024. <a href="https://allendowney.github.io/ThinkPython/">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-26">[26]</span> MATTHES, Eric. <em>Python Crash
+Course</em>. 3. ed. San Francisco: No Starch Press, 2023. <a
+href="https://nostarch.com/python-crash-course-3rd-edition">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-27">[27]</span> CHACON, Scott; STRAUB, Ben. <em>Pro
+Git</em>. 2. ed. New York: Apress, 2014. <a
+href="https://git-scm.com/book/en/v2">Texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-28">[28]</span> WILSON, Greg et al. Good Enough
+Practices in Scientific Computing. <em>PLOS Computational Biology</em>,
+v. 13, n. 6, e1005510, 2017. <a
+href="https://doi.org/10.1371/journal.pcbi.1005510">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-29">[29]</span> THE TURING WAY COMMUNITY. <em>The
+Turing Way: A Handbook for Reproducible, Ethical and Collaborative Data
+Science</em>. 2019–. <a
+href="https://the-turing-way.netlify.app/">Manual aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-30">[30]</span> McKINNEY, Wes. <em>Python for Data
+Analysis</em>. 3. ed. Sebastopol: O’Reilly, 2022. <a
+href="https://wesmckinney.com/book/">Autor</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-31">[31]</span> HEWITT, Paul G. <em>Conceptual
+Physics</em>. 13. ed. Boston: Pearson, 2022. <a
+href="https://www.pearson.com/en-us/subject-catalog/p/conceptual-physics/P200000006846">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-32">[32]</span> LING, Samuel J.; SANNY, Jeff; MOEBS,
+William. <em>University Physics</em>, vols. 1–3. Houston: OpenStax,
+2016. <a href="https://openstax.org/subjects/science">Texto aberto</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-33">[33]</span> TAYLOR, John R. <em>Classical
+Mechanics</em>. Sausalito: University Science Books, 2005. <a
+href="https://search.worldcat.org/title/55729987">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-34">[34]</span> GRIFFITHS, David J. <em>Introduction to
+Electrodynamics</em>. 4. ed. Cambridge: Cambridge University Press,
+2017. <a href="https://doi.org/10.1017/9781108333511">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-35">[35]</span> GRIFFITHS, David J.; SCHROETER, Darrell
+F. <em>Introduction to Quantum Mechanics</em>. 3. ed. Cambridge:
+Cambridge University Press, 2018. <a
+href="https://doi.org/10.1017/9781316995433">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-36">[36]</span> SCHROEDER, Daniel V. <em>An
+Introduction to Thermal Physics</em>. Oxford: Oxford University Press,
+2000. <a href="https://physics.weber.edu/thermal/">Autor</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-37">[37]</span> ATKINS, Peter et al. <em>Chemical
+Principles: The Quest for Insight</em>. 8. ed. New York: W. H. Freeman,
+2023. <a
+href="https://www.macmillanlearning.com/college/us/product/Chemical-Principles/p/1319430290">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-38">[38]</span> ATKINS, Peter; DE PAULA, Julio; KEELER,
+James. <em>Atkins’ Physical Chemistry</em>. 12. ed. Oxford: Oxford
+University Press, 2022. <a
+href="https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-39">[39]</span> CLAYDEN, Jonathan; GREEVES, Nick;
+WARREN, Stuart. <em>Organic Chemistry</em>. 2. ed. Oxford: Oxford
+University Press, 2012. <a
+href="https://global.oup.com/academic/product/organic-chemistry-9780199270293">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-40">[40]</span> HOUSECROFT, Catherine E.; SHARPE, Alan
+G. <em>Inorganic Chemistry</em>. 5. ed. Harlow: Pearson, 2018. <a
+href="https://www.pearson.com/en-gb/subject-catalog/p/inorganic-chemistry/P200000003973">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-41">[41]</span> ALBERTS, Bruce et al. <em>Essential
+Cell Biology</em>. 6. ed. New York: W. W. Norton, 2023. <a
+href="https://wwnorton.com/books/9781324033358">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-42">[42]</span> NELSON, David L.; COX, Michael M.
+<em>Lehninger Principles of Biochemistry</em>. 8. ed. New York: W. H.
+Freeman, 2021. <a
+href="https://www.macmillanlearning.com/college/us/product/Lehninger-Principles-of-Biochemistry/p/1319228003">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-43">[43]</span> PIERCE, Benjamin A. <em>Genetics: A
+Conceptual Approach</em>. 7. ed. New York: W. H. Freeman, 2020. <a
+href="https://www.macmillanlearning.com/college/us/product/Genetics-A-Conceptual-Approach/p/1319050964">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-44">[44]</span> ALBERTS, Bruce et al. <em>Molecular
+Biology of the Cell</em>. 7. ed. New York: W. W. Norton, 2022. <a
+href="https://wwnorton.com/books/9780393884821">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-45">[45]</span> MURPHY, Kenneth; WEAVER, Casey.
+<em>Janeway’s Immunobiology</em>. 10. ed. New York: W. W. Norton, 2022.
+<a href="https://wwnorton.com/books/9780393884890">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-46">[46]</span> KUMP, Lee R.; KASTING, James F.; CRANE,
+Robert G. <em>The Earth System</em>. 3. ed. Upper Saddle River: Pearson,
+2010. <a
+href="https://search.worldcat.org/title/298184480">WorldCat</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-47">[47]</span> WALLACE, John M.; HOBBS, Peter V.
+<em>Atmospheric Science: An Introductory Survey</em>. 2. ed. Amsterdam:
+Elsevier, 2006. <a
+href="https://www.sciencedirect.com/book/9780127329512/atmospheric-science">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-48">[48]</span> TURCOTTE, Donald L.; SCHUBERT, Gerald.
+<em>Geodynamics</em>. 3. ed. Cambridge: Cambridge University Press,
+2014. <a href="https://doi.org/10.1017/CBO9780511843877">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-49">[49]</span> CORMEN, Thomas H. et
+al. <em>Introduction to Algorithms</em>. 4. ed. Cambridge, MA: MIT
+Press, 2022. <a
+href="https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-50">[50]</span> GOODFELLOW, Ian; BENGIO, Yoshua;
+COURVILLE, Aaron. <em>Deep Learning</em>. Cambridge, MA: MIT Press,
+2016. <a href="https://www.deeplearningbook.org/">Texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-51">[51]</span> MURPHY, Kevin P. <em>Probabilistic
+Machine Learning: An Introduction</em>. Cambridge, MA: MIT Press, 2022.
+<a href="https://probml.github.io/pml-book/book1.html">Autor</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-52">[52]</span> SUTTON, Richard S.; BARTO, Andrew G.
+<em>Reinforcement Learning: An Introduction</em>. 2. ed. Cambridge, MA:
+MIT Press, 2018. <a
+href="http://incompleteideas.net/book/the-book-2nd.html">Texto do
+autor</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-53">[53]</span> VARIAN, Hal R. <em>Intermediate
+Microeconomics: A Modern Approach</em>. 10. ed. New York: W. W. Norton,
+2023. <a href="https://wwnorton.com/books/9781324034300">Editora</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-54">[54]</span> BLANCHARD, Olivier.
+<em>Macroeconomics</em>. 9. ed. Harlow: Pearson, 2024. <a
+href="https://www.pearson.com/en-us/subject-catalog/p/macroeconomics/P200000010841">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-55">[55]</span> WOOLDRIDGE, Jeffrey M. <em>Introductory
+Econometrics: A Modern Approach</em>. 7. ed. Boston: Cengage, 2020. <a
+href="https://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-56">[56]</span> ANGRIST, Joshua D.; PISCHKE,
+Jörn-Steffen. <em>Mastering ’Metrics: The Path from Cause to
+Effect</em>. Princeton: Princeton University Press, 2015. <a
+href="https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-57">[57]</span> BOOTH, Wayne C. et al. <em>The Craft of
+Research</em>. 5. ed. Chicago: University of Chicago Press, 2024. <a
+href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo208419846.html">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-58">[58]</span> MONTGOMERY, Douglas C. <em>Design and
+Analysis of Experiments</em>. 10. ed. Hoboken: Wiley, 2019. <a
+href="https://www.wiley.com/en-us/Design+and+Analysis+of+Experiments%2C+10th+Edition-p-9781119492443">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-59">[59]</span> GELMAN, Andrew; HILL, Jennifer;
+VEHTARI, Aki. <em>Regression and Other Stories</em>. Cambridge:
+Cambridge University Press, 2020. <a
+href="https://avehtari.github.io/ROS-Examples/">Texto e recursos</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-60">[60]</span> HERNÁN, Miguel A.; ROBINS, James M.
+<em>Causal Inference: What If</em>. Boca Raton: Chapman &amp; Hall/CRC,
+2020. <a
+href="https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/">Texto
+aberto</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-61">[61]</span> NATIONAL ACADEMY OF SCIENCES; NATIONAL
+ACADEMY OF ENGINEERING; INSTITUTE OF MEDICINE. <em>On Being a Scientist:
+A Guide to Responsible Conduct in Research</em>. 3. ed. Washington, DC:
+National Academies Press, 2009. <a
+href="https://doi.org/10.17226/12192">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-62">[62]</span> McELREATH, Richard. <em>Statistical
+Rethinking</em>. 2. ed. Boca Raton: CRC Press, 2020. <a
+href="https://xcelab.net/rm/statistical-rethinking/">Autor e
+recursos</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-63">[63]</span> PEARL, Judea; MACKENZIE, Dana. <em>The
+Book of Why</em>. New York: Basic Books, 2018. <a
+href="https://bayes.cs.ucla.edu/WHY/">Autor</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-64">[64]</span> PEARL, Judea. <em>Causality: Models,
+Reasoning, and Inference</em>. 2. ed. Cambridge: Cambridge University
+Press, 2009. <a href="https://doi.org/10.1017/CBO9780511803161">DOI</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-65">[65]</span> IOANNIDIS, John P. A. Why Most
+Published Research Findings Are False. <em>PLOS Medicine</em>, v. 2,
+n. 8, e124, 2005. <a
+href="https://doi.org/10.1371/journal.pmed.0020124">DOI</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-66">[66]</span> NATIONAL ACADEMIES OF SCIENCES,
+ENGINEERING, AND MEDICINE. <em>Reproducibility and Replicability in
+Science</em>. Washington, DC: National Academies Press, 2019. <a
+href="https://doi.org/10.17226/25303">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-67">[67]</span> BARKER, Kathy. <em>At the Bench: A
+Laboratory Navigator</em>. Updated ed. Cold Spring Harbor: Cold Spring
+Harbor Laboratory Press, 2005. <a
+href="https://www.cshlpress.com/default.tpl?action=full&amp;cart=17456217829935190&amp;--eqskudatarq=489">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-68">[68]</span> RAMÓN Y CAJAL, Santiago. <em>Advice for
+a Young Investigator</em>. Trad. Neely Swanson; Larry W. Swanson.
+Cambridge, MA: MIT Press, 1999 [original de 1897]. <a
+href="https://mitpress.mit.edu/9780262681506/advice-for-a-young-investigator/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-69">[69]</span> MEDAWAR, Peter B. <em>Advice to a Young
+Scientist</em>. New York: Basic Books, 1979. <a
+href="https://archive.org/details/advicetoyoungsci0000meda">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-70">[70]</span> BEVERIDGE, W. I. B. <em>The Art of
+Scientific Investigation</em>. New York: Vintage, 1957. <a
+href="https://archive.org/details/artofscientifici00beve">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-71">[71]</span> HAMMING, Richard W. <em>The Art of
+Doing Science and Engineering: Learning to Learn</em>. Revised
+ed. Boulder: Stripe Press, 2020. <a
+href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">Texto
+e materiais</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-72">[72]</span> PHILLIPS, Estelle M.; PUGH, Derek S.
+<em>How to Get a PhD</em>. 7. ed. Maidenhead: Open University Press,
+2022. <a
+href="https://www.mheducation.co.uk/how-to-get-a-phd-a-handbook-for-students-and-their-supervisors-9780335249512-emea-group">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-73">[73]</span> NOBEL PRIZE. <em>Alfred Nobel’s
+Will</em>. Stockholm: Nobel Foundation. <a
+href="https://www.nobelprize.org/alfred-nobel/alfred-nobels-will/">Documento
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-74">[74]</span> NOBEL PRIZE. <em>Nomination and
+Selection of Nobel Prize Laureates</em>. Stockholm: Nobel Foundation. <a
+href="https://www.nobelprize.org/nomination/">Processo oficial</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-75">[75]</span> NATIONAL ACADEMIES OF SCIENCES,
+ENGINEERING, AND MEDICINE. <em>The Science of Effective Mentorship in
+STEMM</em>. Washington, DC: National Academies Press, 2019. <a
+href="https://doi.org/10.17226/25568">DOI e texto aberto</a>. <a
+href="#">↩︎</a></p>
+<p><span id="ref-76">[76]</span> IPCC. <em>Climate Change 2023:
+Synthesis Report</em>. Geneva: Intergovernmental Panel on Climate
+Change, 2023. <a href="https://www.ipcc.ch/report/ar6/syr/">Relatório
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-77">[77]</span> UNESCO. <em>UNESCO Recommendation on
+Open Science</em>. Paris: UNESCO, 2021. <a
+href="https://unesdoc.unesco.org/ark:/48223/pf0000379949">Documento
+oficial</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-78">[78]</span> ZUCKERMAN, Harriet. <em>Scientific
+Elite: Nobel Laureates in the United States</em>. New Brunswick:
+Transaction Publishers, 1996 [1ª ed. 1977]. <a
+href="https://archive.org/details/scientificelite00zuck">Internet
+Archive</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-79">[79]</span> FEYNMAN, Richard P.; LEIGHTON, Robert
+B.; SANDS, Matthew. <em>The Feynman Lectures on Physics</em>. New
+Millennium ed. New York: Basic Books, 2011. <a
+href="https://www.feynmanlectures.caltech.edu/">Edição oficial
+aberta</a>. <a href="#">↩︎</a></p>
+<p><span id="ref-80">[80]</span> SKOOG, Douglas A.; HOLLER, F. James;
+CROUCH, Stanley R. <em>Principles of Instrumental Analysis</em>. 7.
+ed. Boston: Cengage, 2018. <a
+href="https://www.cengage.com/c/principles-of-instrumental-analysis-7e-skoog/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-81">[81]</span> SILVERTHORN, Dee Unglaub. <em>Human
+Physiology: An Integrated Approach</em>. 8. ed. Harlow: Pearson, 2019.
+<a
+href="https://www.pearson.com/en-us/subject-catalog/p/human-physiology-an-integrated-approach/P200000006777">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-82">[82]</span> SCHIMEL, Joshua. <em>Writing Science:
+How to Write Papers That Get Cited and Proposals That Get Funded</em>.
+Oxford: Oxford University Press, 2012. <a
+href="https://global.oup.com/academic/product/writing-science-9780199760244">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-83">[83]</span> DAY, Robert A.; GASTEL, Barbara.
+<em>How to Write and Publish a Scientific Paper</em>. 9. ed. Santa
+Barbara: Greenwood, 2022. <a
+href="https://www.bloomsbury.com/us/how-to-write-and-publish-a-scientific-paper-9781440878826/">Editora</a>.
+<a href="#">↩︎</a></p>
+<p><span id="ref-84">[84]</span> STOKES, Donald E. <em>Pasteur’s
+Quadrant: Basic Science and Technological Innovation</em>. Washington,
+DC: Brookings Institution Press, 1997. <a
+href="https://www.brookings.edu/books/pasteurs-quadrant/">Editora</a>.
+<a href="#">↩︎</a></p>
+</div>
+</body>
+</html>
