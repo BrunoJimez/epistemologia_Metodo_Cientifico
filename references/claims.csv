@@ -1,0 +1,36 @@
+claim_id,capitulo,afirmacao,tipo,status_epistemico,referencias,observacoes
+C001,1,Observação científica depende de conceitos e pode sofrer resistência do mundo,epistemologia,consenso,"25;28",Carga teórica não implica relativismo
+C002,2,Intersubjetividade não garante verdade,epistemologia,consenso,"24",Acordo pode compartilhar viés
+C003,4,Marcas paleolíticas não revelam sozinhas significado numérico específico,história,interpretação historiográfica forte,"2;3",Evitar leitura transparente de Ishango
+C004,5,Fichas participaram de processos administrativos ligados à escrita mesopotâmica,história,interpretação historiográfica forte,"4;5",Não narrar como sequência inevitável
+C005,5,Ahmes é escriba preservado e não inventor absoluto da matemática,história,consenso,"8;88",Prioridade qualificada
+C006,8,Aristóteles sistematizou uma teoria da demonstração,história,consenso,"11",Não inventor de toda razão
+C007,9,Prova matemática não garante aplicação física,epistemologia,consenso,"12;14;65",Garantia condicional
+C008,10,Não há consenso entre platonismo formalismo nominalismo e estruturalismo,filosofia,consenso,"17;18;19;20",Apresentar posições
+C009,11,Textos babilônicos podem ser traduzidos algebricamente sem conter nosso x,história,consenso,"5;7",Anacronismo controlado
+C010,12,Al-Khwarizmi sistematizou álgebra retórica sem ser inventor absoluto,história,consenso,"36;44",Circulação intercultural
+C011,13,O sinal de igualdade moderno estabilizou-se gradualmente,história,consenso,"38;39",Recorde é marco preservado
+C012,14,Compatibilidade dimensional é necessária mas insuficiente,física,consenso,"65",Não prova a lei
+C013,16,A equação do calor combina conservação e lei de Fourier,física,consenso,"54;55",Hipóteses de contínuo
+C014,17,A ciência moderna emergiu de recombinações interculturais,história,interpretação historiográfica forte,"44;46;89;90",Tese sintética
+C015,18,Ibn al-Haytham integrou matemática óptica e testes,história,consenso,"45",Não inventor solitário do método
+C016,19,Calculadores de Oxford analisaram graus e movimento idealizado,história,consenso,"47;48;49;50",Não laboratório moderno
+C017,20,O relato galileano do plano inclinado é fisicamente reconstruível,história da física,interpretação historiográfica forte,"51;52",Reconstrução não repete dado histórico
+C018,21,Newton não inventou equações,história,consenso,"38;53",Contribuição é outra
+C019,22,Hipótese teoria e lei exercem funções diferentes,epistemologia,consenso,"27;28;32",Não degraus
+C020,23,Grossmann colaborou na adoção do cálculo tensorial,história,consenso,"58;60;92",Evitar separação rígida
+C021,23,Hilbert e Einstein trabalharam em proximidade histórica,história,consenso,"59;60;93;94",Prioridade documental complexa
+C022,23,Mercúrio foi retrodicção e o eclipse não prova final,física/história,consenso,"59;61",Corroboração graduada
+C023,25,Incerteza não é sinônimo de erro,metrologia,consenso,"81;82;83",Definições JCGM
+C024,26,R2 alto não basta para validar forma do modelo,estatística,consenso,"68",Examinar resíduos
+C025,27,Rotação reduz aceleração de esfera maciça ideal para 5/7 g sen alfa,física,consenso,"51;52",Modelo de rolamento sem escorregar
+C026,27,Dados didáticos do protocolo são simulados,proveniência,consenso,"",Marcado no CSV e texto
+C027,28,Verificação numérica difere de validação do modelo,simulação,consenso,"64",Equação correta pode representar alvo errado
+C028,29,Lean verifica o enunciado formal e não a aplicação física,lógica/IA,consenso,"71;72;95",Formalização pode errar
+C029,29,AlphaProof resolveu três de cinco problemas não geométricos da IMO 2024,IA,consenso,"73",Versão de registro 2026
+C030,29,OpenAI divulgou resultados de problemas abertos em maio e agosto de 2026,IA,interpretação historiográfica forte,"74;96",Fonte institucional primária
+C031,30,Objetividade científica depende de controles públicos e crítica plural,epistemologia,inferência do autor,"24;33",Síntese do livro
+C032,Apêndice B,Limite newtoniano é teste de consistência e não confirmação empírica suficiente,física,consenso,"59;60;91",Separar caso-limite de teste
+C033,Cronologia,Primeiro preservado não equivale a inventor absoluto,história,consenso,"5;10;44",Regra editorial
+C034,Apêndice A,Aproximação de pequeno ângulo tem domínio de validade,física,consenso,"53;67",Simplificação pedagógica
+C035,Apêndice C,Pré-registro não substitui julgamento ou qualidade de medição,metodologia,consenso,"33;75",Ferramenta de transparência
