@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Bruno Oliveira Costa Jimez"><meta name="date" content="2026-08-20">
+<title>Da mente ao método científico</title><style>
+:root { --ink:#172033; --blue:#173f6b; --teal:#0f766e; --orange:#c2410c; --paper:#fffdfa; --soft:#eef4f8; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0 auto; max-width:920px; padding:48px 62px 80px; color:var(--ink); background:var(--paper); font:18px/1.62 Georgia, 'Times New Roman', serif; text-rendering:optimizeLegibility; }
+h1,h2,h3,h4 { font-family:'Segoe UI', Arial, sans-serif; color:var(--blue); line-height:1.18; page-break-after:avoid; break-after:avoid-page; }
+h1 { font-size:2.45rem; margin:2.4em 0 .7em; border-bottom:4px solid var(--teal); padding-bottom:.22em; }
+h1:first-of-type { margin-top:.3em; font-size:3.1rem; border:0; text-align:center; padding-top:25vh; page-break-after:avoid; }
+h2 { font-size:1.75rem; margin-top:2.1em; }
+h3 { font-size:1.28rem; margin-top:1.7em; }
+p { margin:.75em 0; orphans:3; widows:3; }
+a { color:#0b5a8e; text-decoration-thickness:.06em; text-underline-offset:.14em; }
+blockquote { border-left:5px solid var(--orange); background:#fff4e8; padding:.7em 1.15em; margin:1.2em 0; }
+code { font-family:'Cascadia Mono', Consolas, monospace; background:#edf2f7; padding:.08em .3em; border-radius:3px; font-size:.9em; }
+table { border-collapse:collapse; width:100%; margin:1.2em 0; font-size:.89em; break-inside:auto; }
+thead { display:table-header-group; }
+tr { break-inside:avoid; }
+th { background:#dbe9f2; color:#102a43; text-align:left; }
+th,td { border:1px solid #9fb3c4; padding:.48em .58em; vertical-align:top; }
+img { display:block; max-width:100%; max-height:700px; margin:1.4em auto; break-inside:avoid; }
+nav.toc, .toc { background:var(--soft); border:1px solid #b7c9d6; padding:1.2em 1.5em; margin:2em 0; page-break-before:auto; }
+.toc::before { content:'Sumário'; display:block; font:700 1.8rem 'Segoe UI',Arial,sans-serif; color:var(--blue); margin-bottom:.6em; }
+.toc ul { list-style:none; padding-left:1em; }
+.toc > ul { padding-left:0; }
+.toc a { text-decoration:none; }
+hr { border:0; border-top:1px solid #9fb3c4; }
+@media (max-width:700px) { body{padding:24px 18px;font-size:16px} h1:first-of-type{padding-top:10vh;font-size:2.3rem} table{display:block;overflow-x:auto} }
+@media print {
+  body { max-width:none; padding:0; background:white; font-size:10.35pt; line-height:1.46; }
+  h1 { font-size:23pt; page-break-before:auto; string-set: section content(); }
+  h1:first-of-type { page-break-before:auto; padding-top:62mm; font-size:32pt; }
+  h1[id^="parte-"], h1#apêndices, h1#referências, h1#bibliografia-comentada-por-nível { page-break-before:always; }
+  h2 { font-size:16pt; string-set: chapter content(); }
+  h3 { font-size:12.5pt; }
+  a { color:inherit; text-decoration:none; }
+  nav.toc, .toc { font-size:9.4pt; }
+  img { max-height:175mm; }
+}
+@page { size:A4; margin:18mm 17mm 20mm 21mm; @bottom-center{content:counter(page);font:9pt 'Segoe UI';color:#52606d} @top-center{content:string(chapter);font:8pt 'Segoe UI';color:#52606d} }
+@page:first { @top-center{content:none} @bottom-center{content:none} }
+</style></head>
+<body><main id="conteudo"><h1 id="da-mente-ao-metodo-cientifico">Da mente ao método científico</h1>
+<h2 id="das-primeiras-marcas-humanas-a-matematica-aos-experimentos-as-teorias-de-einstein-e-a-inteligencia-artificial">Das primeiras marcas humanas à matemática, aos experimentos, às teorias de Einstein e à inteligência artificial</h2>
+<p><strong>Bruno Oliveira Costa Jimez</strong><br />
+Edição de 20 de agosto de 2026</p>
+<blockquote>
+<p>Uma experiência não entra na ciência por ser intensa, sincera ou memorável. Ela entra quando pode ser transformada numa afirmação clara, ligada a procedimentos públicos, confrontada com outras possibilidades e corrigida sem depender da autoridade de quem a formulou.</p>
+</blockquote>
+<h2 id="prologo-a-pedra-o-relogio-e-a-pergunta">Prólogo — A pedra, o relógio e a pergunta</h2>
+<p>Solte uma pedra. Você verá um acontecimento. Diga “ela caiu”: terá uma descrição. Marque posições em instantes definidos: produzirá dados. Proponha que a aceleração permaneceu aproximadamente constante; construiu uma hipótese idealizada. Escreva uma relação entre posição e tempo; agora há um modelo matemático. Compare a trajetória prevista com um vídeo calibrado e examine os resíduos: finalmente existe um teste. Nenhuma dessas operações, isolada, é “o método científico”. Juntas, com retornos e crítica, elas fazem uma experiência atravessar a ponte que leva a um conhecimento público e corrigível.</p>
+<p>Este livro reconstrói a longa montagem dessa ponte. Ela não foi erguida por um inventor solitário. Cognição quantitativa, fala, marcas, contabilidade, astronomia, geometria, álgebra, lógica, instrumentos, oficinas, universidades, redes comerciais, impressão, cálculo, estatística, computação e instituições de crítica nasceram em tempos e lugares diferentes. Foram traduzidos, disputados e recombinados. A ciência moderna emergiu dessas conexões; não de uma manhã em que alguém acordou com “o método” pronto.</p>
+<p>O fio condutor é uma pergunta:</p>
+<blockquote>
+<p><strong>Como uma observação, imaginação ou problema humano se transforma numa afirmação científica quantitativa sobre uma realidade que não depende apenas da opinião do pesquisador?</strong></p>
+</blockquote>
+<p>A resposta será montada como um ciclo:</p>
+<p><strong>fenômeno → pergunta → conceitos → definições operacionais → hipótese → idealização → modelo → matemática → derivação → previsão → desenho de investigação → instrumento → medição → dados → estatística → confronto → interpretação → crítica → replicação → revisão.</strong></p>
+<p>As setas retornam. Um instrumento pode revelar o fenômeno antes da teoria; uma simulação pode denunciar uma consequência inesperada; resíduos podem mandar o grupo de volta à calibração; ciências históricas podem testar retrodicções sem controlar planetas, fósseis ou galáxias. A sequência é um mapa de dependências, não uma receita rígida.</p>
+<h2 id="como-ler">Como ler</h2>
+<p>Cada capítulo parte de uma situação, define uma ferramenta, mostra o erro escolar mais comum, localiza a ferramenta historicamente e a devolve ao ciclo. As seções <strong>Para leitores avançados</strong> aprofundam sem serem pré-requisito. Exercícios breves pedem reconstrução, não memorização.</p>
+<p>As citações numéricas levam à bibliografia final. “Primeiro” significa sempre uma prioridade especificada: vestígio possível, texto preservado, autor nomeado ou formulação em notação posterior. Dados didáticos inventados recebem a marca <strong>DADOS SIMULADOS</strong>.</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDc2MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPkZyYW1ld29yayBnZXJhbCBkYSBpbnZlc3RpZ2HDp8OjbyBjaWVudMOtZmljYTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPkRvemUgZXRhcGFzIGVtIGNpY2xvLCBkbyBmZW7DtG1lbm8gw6AgY3LDrXRpY2EgZSByZXZpc8OjbywgY29tIHJldG9ybm9zIHBhcmEgcGVyZ3VudGEsIG1vZGVsbyBlIGluc3RydW1lbnRvLjwvZGVzYz4KICA8ZGVmcz4KICAgIDxzdHlsZT4uYmd7ZmlsbDojZjhmYWZjfS5ib3h7ZmlsbDojZmZmO3N0cm9rZTojMTczZjZiO3N0cm9rZS13aWR0aDozO3J4OjE0fS5ue2ZpbGw6IzBmNzY2ZX0ubnVte2ZvbnQ6NzAwIDIwcHggQXJpYWw7ZmlsbDojZmZmfS50e2ZvbnQ6NjAwIDE5cHggQXJpYWw7ZmlsbDojMTcyMDMzfS5zbWFsbHtmb250OjE2cHggQXJpYWw7ZmlsbDojMzM0ZTY4fS5hcnJvd3tzdHJva2U6I2MyNDEwYztzdHJva2Utd2lkdGg6NDtmaWxsOm5vbmU7bWFya2VyLWVuZDp1cmwoI20pfS5yZXR1cm57c3Ryb2tlOiM2NDc0OGI7c3Ryb2tlLXdpZHRoOjM7c3Ryb2tlLWRhc2hhcnJheTo5IDc7ZmlsbDpub25lO21hcmtlci1lbmQ6dXJsKCNnKX08L3N0eWxlPgogICAgPG1hcmtlciBpZD0ibSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI4IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wLDAgTDAsNiBMOSwzIHoiIGZpbGw9IiNjMjQxMGMiLz48L21hcmtlcj4KICAgIDxtYXJrZXIgaWQ9ImciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOCIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjNjQ3NDhiIi8+PC9tYXJrZXI+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJiZyIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNzYwIi8+CiAgPHRleHQgeD0iNjAwIiB5PSI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMTczZjZiIj5JTlZFU1RJR0HDh8ODTyBDT01PIENJQ0xPIENPUlJJR8ONVkVMPC90ZXh0PgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU1IDgwKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTwvdGV4dD48dGV4dCBjbGFzcz0idCIgeD0iNTUiIHk9IjMxIj5GZW7DtG1lbm88L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI1NSIgeT0iNTciPnByb2JsZW1hIGUgY29udGV4dG88L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1NSA4MCkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTAiIGhlaWdodD0iODIiLz48Y2lyY2xlIGNsYXNzPSJuIiBjeD0iMjgiIGN5PSIyOCIgcj0iMjAiLz48dGV4dCBjbGFzcz0ibnVtIiB4PSIyOCIgeT0iMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgY2xhc3M9InQiIHg9IjU1IiB5PSIzMSI+UGVyZ3VudGE8L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI1NSIgeT0iNTciPmVzY29wbyBlIGNvbnRyYXN0ZTwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjU1IDgwKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MzwvdGV4dD48dGV4dCBjbGFzcz0idCIgeD0iNTUiIHk9IjMxIj5Db25jZWl0b3M8L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI1NSIgeT0iNTciPmRlZmluacOnw7VlcyBvcGVyYWNpb25haXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1NSA4MCkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIxOTAiIGhlaWdodD0iODIiLz48Y2lyY2xlIGNsYXNzPSJuIiBjeD0iMjgiIGN5PSIyOCIgcj0iMjAiLz48dGV4dCBjbGFzcz0ibnVtIiB4PSIyOCIgeT0iMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQ8L3RleHQ+PHRleHQgY2xhc3M9InQiIHg9IjU1IiB5PSIzMSI+SGlww7N0ZXNlczwvdGV4dD48dGV4dCBjbGFzcz0ic21hbGwiIHg9IjU1IiB5PSI1NyI+ZSByaXZhaXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1NSAyMzUpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMTkwIiBoZWlnaHQ9IjgyIi8+PGNpcmNsZSBjbGFzcz0ibiIgY3g9IjI4IiBjeT0iMjgiIHI9IjIwIi8+PHRleHQgY2xhc3M9Im51bSIgeD0iMjgiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41PC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0IiB4PSI1NSIgeT0iMzEiPk1vZGVsbzwvdGV4dD48dGV4dCBjbGFzcz0ic21hbGwiIHg9IjU1IiB5PSI1NyI+aWRlYWxpemHDp8O1ZXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY1NSAyMzUpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjgyIi8+PGNpcmNsZSBjbGFzcz0ibiIgY3g9IjI4IiBjeT0iMjgiIHI9IjIwIi8+PHRleHQgY2xhc3M9Im51bSIgeD0iMjgiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42PC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0IiB4PSI1NSIgeT0iMzEiPk1hdGVtw6F0aWNhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzbWFsbCIgeD0iNTUiIHk9IjU3Ij5kZXJpdmHDp8OjbyBlIHBhcsOibWV0cm9zPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTUgMjM1KSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzwvdGV4dD48dGV4dCBjbGFzcz0idCIgeD0iNTUiIHk9IjMxIj5QcmV2aXPDo288L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI1NSIgeT0iNTciPm91IHJldHJvZGljw6fDo288L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU1IDIzNSkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTAiIGhlaWdodD0iODIiLz48Y2lyY2xlIGNsYXNzPSJuIiBjeD0iMjgiIGN5PSIyOCIgcj0iMjAiLz48dGV4dCBjbGFzcz0ibnVtIiB4PSIyOCIgeT0iMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjg8L3RleHQ+PHRleHQgY2xhc3M9InQiIHg9IjU1IiB5PSIzMSI+RGVzZW5obzwvdGV4dD48dGV4dCBjbGFzcz0ic21hbGwiIHg9IjU1IiB5PSI1NyI+Y29udHJvbGVzIGUgcHLDqS1yZWdpc3RybzwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUgMzkwKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OTwvdGV4dD48dGV4dCBjbGFzcz0idCIgeD0iNTUiIHk9IjMxIj5JbnN0cnVtZW50bzwvdGV4dD48dGV4dCBjbGFzcz0ic21hbGwiIHg9IjU1IiB5PSI1NyI+Y2FsaWJyYcOnw6NvIGUgbWVkacOnw6NvPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTUgMzkwKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTA8L3RleHQ+PHRleHQgY2xhc3M9InQiIHg9IjYwIiB5PSIzMSI+RGFkb3M8L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI2MCIgeT0iNTciPm1ldGFkYWRvcyBlIGluY2VydGV6YTwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjU1IDM5MCkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTAiIGhlaWdodD0iODIiLz48Y2lyY2xlIGNsYXNzPSJuIiBjeD0iMjgiIGN5PSIyOCIgcj0iMjAiLz48dGV4dCBjbGFzcz0ibnVtIiB4PSIyOCIgeT0iMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjExPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ0IiB4PSI2MCIgeT0iMzEiPkNvbmZyb250bzwvdGV4dD48dGV4dCBjbGFzcz0ic21hbGwiIHg9IjYwIiB5PSI1NyI+ZXN0YXTDrXN0aWNhIGUgcmVzw61kdW9zPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NTUgMzkwKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjE5MCIgaGVpZ2h0PSI4MiIvPjxjaXJjbGUgY2xhc3M9Im4iIGN4PSIyOCIgY3k9IjI4IiByPSIyMCIvPjx0ZXh0IGNsYXNzPSJudW0iIHg9IjI4IiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTI8L3RleHQ+PHRleHQgY2xhc3M9InQiIHg9IjYwIiB5PSIzMSI+Q3LDrXRpY2E8L3RleHQ+PHRleHQgY2xhc3M9InNtYWxsIiB4PSI2MCIgeT0iNTciPnJlcGxpY2FyIGUgcmV2aXNhcjwvdGV4dD48L2c+CiAgPHBhdGggY2xhc3M9ImFycm93IiBkPSJNMzA1IDEyMUgzNDUiLz48cGF0aCBjbGFzcz0iYXJyb3ciIGQ9Ik02MDUgMTIxSDY0NSIvPjxwYXRoIGNsYXNzPSJhcnJvdyIgZD0iTTkwNSAxMjFIOTQ1Ii8+PHBhdGggY2xhc3M9ImFycm93IiBkPSJNMTA1MCAxNjJWMjI1Ii8+CiAgPHBhdGggY2xhc3M9ImFycm93IiBkPSJNOTU1IDI3Nkg5MTUiLz48cGF0aCBjbGFzcz0iYXJyb3ciIGQ9Ik02NTUgMjc2SDYxNSIvPjxwYXRoIGNsYXNzPSJhcnJvdyIgZD0iTTM1NSAyNzZIMzE1Ii8+PHBhdGggY2xhc3M9ImFycm93IiBkPSJNMTgwIDMxN1YzODAiLz4KICA8cGF0aCBjbGFzcz0iYXJyb3ciIGQ9Ik0zMDUgNDMxSDM0NSIvPjxwYXRoIGNsYXNzPSJhcnJvdyIgZD0iTTYwNSA0MzFINjQ1Ii8+PHBhdGggY2xhc3M9ImFycm93IiBkPSJNOTA1IDQzMUg5NDUiLz4KICA8cGF0aCBjbGFzcz0icmV0dXJuIiBkPSJNMTA1MCA0NzJWNTYwQzEwNTAgNjIwIDc4MCA2NDAgNzgwIDQ4MiIvPjx0ZXh0IHg9IjkwMCIgeT0iNjEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiM0NzU1NjkiPnJlc8OtZHVvcyByZXRvcm5hbSBhbyBtb2RlbG88L3RleHQ+CiAgPHBhdGggY2xhc3M9InJldHVybiIgZD0iTTEwMjUgNDcyVjY5MEgxODBWNDgyIi8+PHRleHQgeD0iNTAwIiB5PSI3MTYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNyIgZmlsbD0iIzQ3NTU2OSI+Y3LDrXRpY2EgdGFtYsOpbSByZXRvcm5hIGEgaW5zdHJ1bWVudG8sIHBlcmd1bnRhIGUgY29uY2VpdG9zPC90ZXh0PgogIDxwYXRoIGNsYXNzPSJyZXR1cm4iIGQ9Ik0xMDQwIDIzNVYxOTVINDgwVjE3MCIvPjx0ZXh0IHg9IjY1MCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0NzU1NjkiPm1vZGVsYXIgcG9kZSByZWZvcm11bGFyIGEgcGVyZ3VudGE8L3RleHQ+Cjwvc3ZnPgo=" alt="Framework geral da investigação científica em doze etapas com retornos" /></p>
+<p><strong>Descrição da figura:</strong> do fenômeno e da pergunta, o ciclo passa por conceitos e hipótese; modelo e matemática; previsão e desenho; instrumento e medição; dados e incerteza; confronto, crítica e replicação. Setas de retorno ligam resultados a instrumento, modelo, hipótese e pergunta.</p>
+<div class="toc">
+<ul>
+<li><a href="#da-mente-ao-metodo-cientifico">Da mente ao método científico</a><ul>
+<li><a href="#das-primeiras-marcas-humanas-a-matematica-aos-experimentos-as-teorias-de-einstein-e-a-inteligencia-artificial">Das primeiras marcas humanas à matemática, aos experimentos, às teorias de Einstein e à inteligência artificial</a></li>
+<li><a href="#prologo-a-pedra-o-relogio-e-a-pergunta">Prólogo — A pedra, o relógio e a pergunta</a></li>
+<li><a href="#como-ler">Como ler</a></li>
+</ul>
+</li>
+<li><a href="#parte-i-a-mente-diante-do-mundo">Parte I — A mente diante do mundo</a><ul>
+<li><a href="#1-o-acontecimento-a-experiencia-e-a-descricao">1. O acontecimento, a experiência e a descrição</a><ul>
+<li><a href="#para-leitores-avancados">Para leitores avançados</a></li>
+</ul>
+</li>
+<li><a href="#2-objetivo-subjetivo-e-intersubjetivo">2. Objetivo, subjetivo e intersubjetivo</a></li>
+<li><a href="#3-linguagem-memoria-narrativa-e-registro">3. Linguagem, memória, narrativa e registro</a></li>
+<li><a href="#4-quantidade-antes-do-numero">4. Quantidade antes do número</a></li>
+<li><a href="#5-do-gesto-marca-e-ficha-ao-signo-escrito">5. Do gesto, marca e ficha ao signo escrito</a></li>
+</ul>
+</li>
+<li><a href="#parte-ii-a-invencao-das-razoes-publicas">Parte II — A invenção das razões públicas</a><ul>
+<li><a href="#6-termos-proposicoes-premissas-e-argumentos">6. Termos, proposições, premissas e argumentos</a></li>
+<li><a href="#7-deducao-inducao-e-abducao">7. Dedução, indução e abdução</a><ul>
+<li><a href="#para-leitores-avancados_1">Para leitores avançados</a></li>
+</ul>
+</li>
+<li><a href="#8-aristoteles-e-a-demonstracao">8. Aristóteles e a demonstração</a></li>
+<li><a href="#9-euclides-axiomas-e-prova">9. Euclides, axiomas e prova</a></li>
+<li><a href="#10-a-matematica-foi-inventada-ou-descoberta">10. A matemática foi inventada ou descoberta?</a></li>
+</ul>
+</li>
+<li><a href="#parte-iii-quando-relacoes-viram-equacoes">Parte III — Quando relações viram equações</a><ul>
+<li><a href="#11-algoritmos-antigos-sem-x-e-sem">11. Algoritmos antigos sem x e sem =</a></li>
+<li><a href="#12-diofanto-al-khwarizmi-e-a-algebra-retorica">12. Diofanto, al-Khwārizmī e a álgebra retórica</a></li>
+<li><a href="#13-viete-recorde-descartes-e-a-linguagem-simbolica">13. Viète, Recorde, Descartes e a linguagem simbólica</a></li>
+<li><a href="#14-o-que-uma-equacao-afirma">14. O que uma equação afirma</a><ul>
+<li><a href="#movimento-uniforme">Movimento uniforme</a></li>
+<li><a href="#movimento-uniformemente-acelerado">Movimento uniformemente acelerado</a></li>
+</ul>
+</li>
+<li><a href="#15-por-que-a-mesma-forma-aparece-em-sistemas-diferentes">15. Por que a mesma forma aparece em sistemas diferentes</a></li>
+<li><a href="#16-pedra-pendulo-calor-e-ondas-quatro-anatomias">16. Pedra, pêndulo, calor e ondas: quatro anatomias</a><ul>
+<li><a href="#pedra-queda-idealizada">Pedra: queda idealizada</a></li>
+<li><a href="#pendulo-aproximacao-de-pequeno-angulo">Pêndulo: aproximação de pequeno ângulo</a></li>
+<li><a href="#calor-conservacao-mais-constituicao">Calor: conservação mais constituição</a></li>
+<li><a href="#ondas-e-fourier">Ondas e Fourier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#parte-iv-o-nascimento-da-ciencia-matematica-experimental">Parte IV — O nascimento da ciência matemática experimental</a><ul>
+<li><a href="#17-matematica-aplicada-antes-do-laboratorio-moderno">17. Matemática aplicada antes do laboratório moderno</a></li>
+<li><a href="#18-ibn-al-haytham-e-a-optica">18. Ibn al-Haytham e a óptica</a></li>
+<li><a href="#19-merton-oresme-e-a-quantificacao-medieval">19. Merton, Oresme e a quantificação medieval</a></li>
+<li><a href="#20-galileu-e-o-plano-inclinado">20. Galileu e o plano inclinado</a></li>
+<li><a href="#21-newton-e-a-unificacao-de-ceu-e-terra">21. Newton e a unificação de céu e Terra</a></li>
+<li><a href="#22-teoria-lei-hipotese-modelo-e-evidencia">22. Teoria, lei, hipótese, modelo e evidência</a></li>
+<li><a href="#23-einstein-grossmann-hilbert-e-a-geometrizacao-da-gravidade">23. Einstein, Grossmann, Hilbert e a geometrização da gravidade</a></li>
+</ul>
+</li>
+<li><a href="#parte-v-o-laboratorio-corrigivel">Parte V — O laboratório corrigível</a><ul>
+<li><a href="#24-o-metodo-cientifico-como-ciclo-nao-receita">24. O método científico como ciclo, não receita</a></li>
+<li><a href="#25-medicao-calibracao-erro-e-incerteza">25. Medição, calibração, erro e incerteza</a></li>
+<li><a href="#26-estatistica-inferencia-e-modelos-rivais">26. Estatística, inferência e modelos rivais</a><ul>
+<li><a href="#um-modelo-probabilistico-simples">Um modelo probabilístico simples</a></li>
+<li><a href="#regressao-como-inferencia-de-parametros">Regressão como inferência de parâmetros</a></li>
+</ul>
+</li>
+<li><a href="#27-replicacao-completa-do-plano-inclinado">27. Replicação completa do plano inclinado</a><ul>
+<li><a href="#271-fenomeno-pergunta-e-hipoteses">27.1 Fenômeno, pergunta e hipóteses</a></li>
+<li><a href="#272-definicoes-e-idealizacoes">27.2 Definições e idealizações</a></li>
+<li><a href="#273-materiais-e-montagem">27.3 Materiais e montagem</a></li>
+<li><a href="#274-pre-registro-didatico">27.4 Pré-registro didático</a></li>
+<li><a href="#275-metodo-historico-e-metodo-moderno">27.5 Método histórico e método moderno</a></li>
+<li><a href="#276-tabela-e-repeticoes">27.6 Tabela e repetições</a></li>
+<li><a href="#277-analise">27.7 Análise</a></li>
+<li><a href="#278-exemplo-dados-simulados">27.8 Exemplo — DADOS SIMULADOS</a></li>
+<li><a href="#279-erros-sistematicos-e-interpretacao">27.9 Erros sistemáticos e interpretação</a></li>
+<li><a href="#2710-replicacao-e-extensao">27.10 Replicação e extensão</a></li>
+</ul>
+</li>
+<li><a href="#28-simulacao-modelo-algoritmo-codigo-e-hardware">28. Simulação: modelo, algoritmo, código e hardware</a></li>
+<li><a href="#29-provas-formais-e-inteligencia-artificial">29. Provas formais e inteligência artificial</a></li>
+<li><a href="#30-como-pensar-e-ensinar-como-cientista">30. Como pensar e ensinar como cientista</a><ul>
+<li><a href="#um-experimento-cotidiano-completo">Um experimento cotidiano completo</a></li>
+<li><a href="#rubrica-de-maturidade">Rubrica de maturidade</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#apendices">Apêndices</a><ul>
+<li><a href="#apendice-a-ferramentas-matematicas-minimas">Apêndice A — Ferramentas matemáticas mínimas</a><ul>
+<li><a href="#a1-proporcao-escala-e-dimensao">A.1 Proporção, escala e dimensão</a></li>
+<li><a href="#a2-derivada-como-taxa">A.2 Derivada como taxa</a></li>
+<li><a href="#a3-integral-como-acumulacao">A.3 Integral como acumulação</a></li>
+<li><a href="#a4-equacao-diferencial-como-regra-local">A.4 Equação diferencial como regra local</a></li>
+<li><a href="#a5-conservacao-e-fluxo-derivacao-do-calor">A.5 Conservação e fluxo: derivação do calor</a></li>
+<li><a href="#a6-ondas-fourier-e-maxwell">A.6 Ondas, Fourier e Maxwell</a></li>
+<li><a href="#a7-regressao-e-incerteza-de-parametro">A.7 Regressão e incerteza de parâmetro</a></li>
+<li><a href="#a8-dez-passaportes-de-equacoes">A.8 Dez passaportes de equações</a></li>
+</ul>
+</li>
+<li><a href="#apendice-b-relatividade-geral-em-segunda-camada">Apêndice B — Relatividade geral em segunda camada</a><ul>
+<li><a href="#b1-metrica">B.1 Métrica</a></li>
+<li><a href="#b2-geodesica">B.2 Geodésica</a></li>
+<li><a href="#b3-curvatura">B.3 Curvatura</a></li>
+<li><a href="#b4-energia-momento">B.4 Energia-momento</a></li>
+<li><a href="#b5-limite-e-teste">B.5 Limite e teste</a></li>
+</ul>
+</li>
+<li><a href="#apendice-c-caderno-de-laboratorio-modelo">Apêndice C — Caderno de laboratório-modelo</a><ul>
+<li><a href="#pagina-de-identificacao">Página de identificação</a></li>
+<li><a href="#pre-registro-minimo">Pré-registro mínimo</a></li>
+<li><a href="#registro-por-sessao">Registro por sessão</a></li>
+<li><a href="#encerramento">Encerramento</a></li>
+</ul>
+</li>
+<li><a href="#apendice-d-exercicios-e-respostas-comentadas">Apêndice D — Exercícios e respostas comentadas</a><ul>
+<li><a href="#exercicios">Exercícios</a></li>
+<li><a href="#respostas-comentadas">Respostas comentadas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#glossario-alfabetico">Glossário alfabético</a></li>
+<li><a href="#cronologia-comentada">Cronologia comentada</a><ul>
+<li><a href="#nota-bibliografica-critica-e-trilhas-de-aprofundamento">Nota bibliográfica crítica e trilhas de aprofundamento</a></li>
+</ul>
+</li>
+<li><a href="#indice-remissivo-seletivo">Índice remissivo seletivo</a></li>
+<li><a href="#referencias">Referências</a></li>
+<li><a href="#bibliografia-comentada-por-nivel">Bibliografia comentada por nível</a><ul>
+<li><a href="#entrada-compreender-distincoes">Entrada — compreender distinções</a></li>
+<li><a href="#intermediario-historia-e-modelagem">Intermediário — história e modelagem</a></li>
+<li><a href="#avancado-fontes-e-debates">Avançado — fontes e debates</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="parte-i-a-mente-diante-do-mundo">Parte I — A mente diante do mundo</h1>
+<h2 id="1-o-acontecimento-a-experiencia-e-a-descricao">1. O acontecimento, a experiência e a descrição</h2>
+<p>Uma pedra risca a janela; duas pessoas ouvem sons diferentes; uma câmera registra pixels. O <strong>acontecimento</strong> é a mudança do sistema físico. A <strong>experiência</strong> é o modo como um organismo ou detector é afetado. A <strong>descrição</strong> é um enunciado selecionado entre muitos possíveis. Nenhum deles chega com etiquetas prontas de “massa”, “tempo” ou “causa”.</p>
+<p>Um <strong>conceito</strong> é uma regra de classificação ou articulação: permite reconhecer algo como temperatura, órbita ou espécie. O <strong>termo</strong> é a expressão que o designa. Definir não é apenas consultar um dicionário; é fixar como o termo funcionará. Uma <strong>definição operacional</strong> acrescenta um procedimento: “tempo de descida” pode ser o intervalo, em segundos, entre o primeiro quadro em que a esfera é liberada e o primeiro em que cruza uma marca. Instrumentos não são olhos neutros. Eles transformam: o termômetro converte um estado térmico em expansão, resistência ou radiação.</p>
+<p><strong>Distinção essencial.</strong> “Vi uma luz” relata uma experiência; “o sensor recebeu fótons nessa faixa” mobiliza um modelo e um procedimento. Ambos podem ser verdadeiros, mas não dizem a mesma coisa.</p>
+<p><strong>Erro escolar comum.</strong> Supor que observação é copiar fatos puros. A observação é orientada por perguntas e conceitos, embora o mundo possa resistir às expectativas. Essa dupla condição — seleção conceitual e resistência material — torna possível corrigir descrições. <a href="#ref-25">25</a></p>
+<p><strong>Veja em sua vida.</strong> Descreva uma xícara em três vocabulários: uso cotidiano, geometria e transferência de calor. O objeto não mudou; mudaram as propriedades selecionadas e as perguntas respondíveis.</p>
+<h3 id="para-leitores-avancados">Para leitores avançados</h3>
+<p>Dados não são o extremo oposto de teoria. Um valor de <code>21,4 °C</code> pressupõe uma grandeza, uma escala, um instrumento, uma calibração, um local e um instante. A carga teórica da observação não implica que “tudo é opinião”; implica que a objetividade depende de tornar explícita a cadeia de mediações.</p>
+<h2 id="2-objetivo-subjetivo-e-intersubjetivo">2. Objetivo, subjetivo e intersubjetivo</h2>
+<p>Se a dor é sentida em primeira pessoa, ela é <strong>subjetiva</strong> no modo de acesso; isso não a torna fictícia. Se a trajetória de um projétil não depende apenas do desejo do observador, há um componente de <strong>realidade objetiva</strong>. Se uma moeda vale porque práticas e instituições sustentam regras coletivas, falamos em <strong>realidade social</strong>: dependente de agentes e, ainda assim, capaz de constrangê-los.</p>
+<p><strong>Intersubjetividade</strong> é acordo obtido por pessoas que compartilham linguagem e procedimento. Ela é necessária, mas insuficiente: comunidades inteiras podem reproduzir o mesmo viés. <strong>Objetividade científica</strong> não é ausência de perspectiva; é o grau em que uma afirmação sobrevive a controles contra preferências idiossincráticas: calibração, registros, cegamento quando cabível, crítica adversarial, comparação de modelos e replicação. <a href="#ref-24">24</a></p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDcwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPk1hcGEgZGUgZGlzdGluw6fDtWVzIGVwaXN0w6ptaWNhczwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPkNpbmNvIGNvbHVuYXMgc2VwYXJhbSB2ZXJkYWRlIGzDs2dpY2EsIG1hdGVtw6F0aWNhLCBhZGVxdWHDp8OjbyBlbXDDrXJpY2EsIHByZWNpc8OjbyBlc3RhdMOtc3RpY2EgZSBvYmpldGl2aWRhZGUgY29tdW5pdMOhcmlhLjwvZGVzYz4KICA8ZGVmcz48c3R5bGU+LmJne2ZpbGw6I2Y4ZmFmY30uaGVhZHtmb250OjcwMCAyMHB4IEFyaWFsO2ZpbGw6I2ZmZn0uYm9keXtmb250OjE2cHggQXJpYWw7ZmlsbDojMTcyMDMzfS5xe2ZvbnQ6NzAwIDE2cHggQXJpYWw7ZmlsbDojMTczZjZifS5jYXJke2ZpbGw6I2ZmZjtzdHJva2U6IzlmYjNjNDtzdHJva2Utd2lkdGg6Mn0uaDF7ZmlsbDojMTczZjZifS5oMntmaWxsOiMwZjc2NmV9Lmgze2ZpbGw6IzdjM2FlZH0uaDR7ZmlsbDojYzI0MTBjfS5oNXtmaWxsOiM0NzU1Njl9PC9zdHlsZT48L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImJnIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI3MDAiLz48dGV4dCB4PSI2MDAiIHk9IjQyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNzNmNmIiPkNJTkNPIFBFUkdVTlRBUyBRVUUgTsODTyBERVZFTSBTRVIgQ09ORlVORElEQVM8L3RleHQ+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUgODApIj48cmVjdCBjbGFzcz0iY2FyZCIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI1NTAiIHJ4PSIxNCIvPjxyZWN0IGNsYXNzPSJoMSIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI3NiIgcng9IjE0Ii8+PHRleHQgY2xhc3M9ImhlYWQiIHg9IjEwNSIgeT0iMzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlZFUkRBREU8L3RleHQ+PHRleHQgY2xhc3M9ImhlYWQiIHg9IjEwNSIgeT0iNTciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkzDk0dJQ0E8L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIxMTMiPlBlcmd1bnRhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMTQxIj5BIGNvbmNsdXPDo28gZGVjb3JyZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjE2NSI+ZGFzIHByZW1pc3Nhcz88L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIyMTUiPkNvbnRyb2xlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMjQzIj5mb3JtYSBpbmZlcmVuY2lhbDwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjI5MyI+TsOjbyBnYXJhbnRlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMzIxIj5wcmVtaXNzYXMgdmVyZGFkZWlyYXM8L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIzNDUiPm91IG11bmRvIGFkZXF1YWRvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMzk1Ij5FeGVtcGxvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iNDIzIj5zaWxvZ2lzbW8gdsOhbGlkbzwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjY1IDgwKSI+PHJlY3QgY2xhc3M9ImNhcmQiIHdpZHRoPSIyMTAiIGhlaWdodD0iNTUwIiByeD0iMTQiLz48cmVjdCBjbGFzcz0iaDIiIHdpZHRoPSIyMTAiIGhlaWdodD0iNzYiIHJ4PSIxNCIvPjx0ZXh0IGNsYXNzPSJoZWFkIiB4PSIxMDUiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WRVJEQURFPC90ZXh0Pjx0ZXh0IGNsYXNzPSJoZWFkIiB4PSIxMDUiIHk9IjU3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NQVRFTcOBVElDQTwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjExMyI+UGVyZ3VudGE8L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIxNDEiPk8gdGVvcmVtYSBzZWd1ZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjE2NSI+bm8gc2lzdGVtYT88L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIyMTUiPkNvbnRyb2xlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMjQzIj5wcm92YSBlIGF4aW9tYXM8L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIyOTMiPk7Do28gZ2FyYW50ZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjMyMSI+YXBsaWNhw6fDo28gYW8gYWx2bzwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjM0NSI+bmF0dXJhbDwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjM5NSI+RXhlbXBsbzwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjQyMyI+dGVvcmVtYSBkZSBFdWNsaWRlczwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDk1IDgwKSI+PHJlY3QgY2xhc3M9ImNhcmQiIHdpZHRoPSIyMTAiIGhlaWdodD0iNTUwIiByeD0iMTQiLz48cmVjdCBjbGFzcz0iaDMiIHdpZHRoPSIyMTAiIGhlaWdodD0iNzYiIHJ4PSIxNCIvPjx0ZXh0IGNsYXNzPSJoZWFkIiB4PSIxMDUiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BREVRVUHDh8ODTzwvdGV4dD48dGV4dCBjbGFzcz0iaGVhZCIgeD0iMTA1IiB5PSI1NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RU1Qw41SSUNBPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMTEzIj5QZXJndW50YTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjE0MSI+UHJldmlzw7VlcyBlbmNvbnRyYW08L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIxNjUiPmRhZG9zIG5vIGRvbcOtbmlvPzwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjIxNSI+Q29udHJvbGU8L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIyNDMiPm1lZGnDp8OjbyBlIHJpdmFpczwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjI5MyI+TsOjbyBnYXJhbnRlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMzIxIj51bmljaWRhZGUgb3UgdmVyZGFkZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjM0NSI+ZmluYWwgZGEgdGVvcmlhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMzk1Ij5FeGVtcGxvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iNDIzIj5yZXPDrWR1b3Mgc2VtIHBhZHLDo288L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcyNSA4MCkiPjxyZWN0IGNsYXNzPSJjYXJkIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjU1MCIgcng9IjE0Ii8+PHJlY3QgY2xhc3M9Img0IiB3aWR0aD0iMjEwIiBoZWlnaHQ9Ijc2IiByeD0iMTQiLz48dGV4dCBjbGFzcz0iaGVhZCIgeD0iMTA1IiB5PSIzMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UFJFQ0lTw4NPPC90ZXh0Pjx0ZXh0IGNsYXNzPSJoZWFkIiB4PSIxMDUiIHk9IjU3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FU1RBVMONU1RJQ0E8L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIxMTMiPlBlcmd1bnRhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMTQxIj5RdWFudGEgdmFyaWHDp8OjbyBlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iMTY1Ij5pbmNlcnRlemE/PC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMjE1Ij5Db250cm9sZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjI0MyI+bW9kZWxvIGRlIGRhZG9zPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMjkzIj5Ow6NvIGdhcmFudGU8L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIzMjEiPmF1c8OqbmNpYSBkZSB2acOpcyBvdTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjM0NSI+aW1wb3J0w6JuY2lhIHByw6F0aWNhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMzk1Ij5FeGVtcGxvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iNDIzIj5pbnRlcnZhbG8gZSBSTVNFPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NTUgODApIj48cmVjdCBjbGFzcz0iY2FyZCIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI1NTAiIHJ4PSIxNCIvPjxyZWN0IGNsYXNzPSJoNSIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI3NiIgcng9IjE0Ii8+PHRleHQgY2xhc3M9ImhlYWQiIHg9IjEwNSIgeT0iMzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk9CSkVUSVZJREFERTwvdGV4dD48dGV4dCBjbGFzcz0iaGVhZCIgeD0iMTA1IiB5PSI1NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q09NVU5JVMOBUklBPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMTEzIj5QZXJndW50YTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjE0MSI+TyByZXN1bHRhZG8gcmVzaXN0ZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjE2NSI+w6AgY3LDrXRpY2EgcGx1cmFsPzwvdGV4dD48dGV4dCBjbGFzcz0icSIgeD0iMTYiIHk9IjIxNSI+Q29udHJvbGU8L3RleHQ+PHRleHQgY2xhc3M9ImJvZHkiIHg9IjE2IiB5PSIyNDMiPnRyYW5zcGFyw6puY2lhIGUgcsOpcGxpY2E8L3RleHQ+PHRleHQgY2xhc3M9InEiIHg9IjE2IiB5PSIyOTMiPk7Do28gZ2FyYW50ZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjMyMSI+Y29tdW5pZGFkZSBsaXZyZTwvdGV4dD48dGV4dCBjbGFzcz0iYm9keSIgeD0iMTYiIHk9IjM0NSI+ZGUgZXJybyBjb21wYXJ0aWxoYWRvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJxIiB4PSIxNiIgeT0iMzk1Ij5FeGVtcGxvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJib2R5IiB4PSIxNiIgeT0iNDIzIj5sYWJvcmF0w7NyaW9zIGluZGVwZW5kZW50ZXM8L3RleHQ+PC9nPgogIDx0ZXh0IHg9IjYwMCIgeT0iNjY4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiMzMzRlNjgiPlVtYSBhZmlybWHDp8OjbyBjaWVudMOtZmljYSBmb3J0ZSBwcmVjaXNhIGNvb3JkZW5hciBjb250cm9sZXMgZGlmZXJlbnRlcywgbsOjbyBzdWJzdGl0dWlyIHVtIHBlbG8gb3V0cm8uPC90ZXh0Pgo8L3N2Zz4K" alt="Mapa que separa verdade lógica, verdade matemática, adequação empírica, precisão estatística e objetividade comunitária" /></p>
+<p><strong>Erro escolar comum.</strong> “Muitos concordam, logo é objetivo.” A concordância pode resultar de treinamento comum, dependência do mesmo banco de dados ou erro herdado. O acordo ganha força quando existem rotas parcialmente independentes para o mesmo resultado.</p>
+<p><strong>Exercício.</strong> Classifique: (a) “sinto frio”; (b) “o termômetro indica 18 °C”; (c) “18 °C é frio”; (d) “a sala deve permanecer acima de 20 °C por norma”. Identifique experiência, medição, avaliação contextual e regra social.</p>
+<h2 id="3-linguagem-memoria-narrativa-e-registro">3. Linguagem, memória, narrativa e registro</h2>
+<p>A memória biológica comprime. Uma narrativa preserva relações causais presumidas, mas pode reorganizar a ordem e apagar exceções. Um registro externo — marca, lista, tabela, desenho, áudio ou arquivo digital — permite que uma afirmação seja reinspecionada quando seu autor não está presente. A evolução da linguagem permanece um problema aberto; os vestígios não permitem uma cronologia simples entre fala, gesto e simbolização. <a href="#ref-1">1</a></p>
+<p>O ganho científico do registro não é apenas capacidade. É <strong>endereço</strong>: “amostra 7, balança B, 14h32, lote 2026-08” pode ser criticado. Sem metadados, <code>7,3</code> é um número órfão. Com unidade, procedimento e proveniência, torna-se candidato a evidência.</p>
+<p><strong>Veja em sua vida.</strong> Faça duas anotações de uma receita: “coloque um pouco de água” e “adicione 120 mL medidos no copo X”. A segunda não é automaticamente correta, mas permite comparar operadores e investigar divergências.</p>
+<p><strong>Como uma IA pode errar aqui.</strong> Um modelo pode produzir uma narrativa fluente que perde a proveniência. Fluência não reconstrói automaticamente quem mediu, qual versão do dado foi usada ou se uma citação realmente sustenta a frase.</p>
+<h2 id="4-quantidade-antes-do-numero">4. Quantidade antes do número</h2>
+<p>Animais e bebês distinguem, em certas condições, coleções muito diferentes. Essa <strong>numerosidade aproximada</strong> não é ainda a sequência exata “um, dois, três”. Contar exige estabilizar unidades, estabelecer correspondência um a um, usar uma ordem e compreender que a última palavra numérica representa o total.</p>
+<p>Marcas paleolíticas podem ter contado eventos, ciclos, pessoas ou nada disso. Padrões deliberados são evidência de ação estruturada; o significado numérico específico costuma ser uma interpretação. O chamado osso de Ishango, por exemplo, não traz legenda que autorize transformá-lo em prova transparente de aritmética avançada. Estudos arqueológicos distinguem sentido de número, signos e sistemas notacionais, mas preservam a incerteza. <a href="#ref-2">2</a> <a href="#ref-3">3</a></p>
+<p><strong>Controvérsia histórica.</strong> “Primeiro vestígio possível” é uma propriedade do que sobreviveu e do critério do pesquisador. Não identifica o primeiro humano que contou. Esse indivíduo é irrecuperável.</p>
+<p><strong>Experimento mental.</strong> Você precisa controlar vinte ovelhas sem palavras numéricas. Pode usar vinte pedras e parear uma pedra por animal. O sistema registra igualdade de coleções sem representar abstratamente o número vinte. Que capacidade nova surgiria ao adotar um signo repetível para “vinte”?</p>
+<h2 id="5-do-gesto-marca-e-ficha-ao-signo-escrito">5. Do gesto, marca e ficha ao signo escrito</h2>
+<p>No antigo Oriente Próximo, fichas, invólucros, impressões e escrita participaram de práticas administrativas. A conexão entre fichas e cuneiforme é influente, mas não deve ser narrada como uma fila inevitável em que contabilidade “inventa sozinha” toda escrita. <a href="#ref-4">4</a></p>
+<p>Textos mesopotâmicos preservam tabelas e problemas calculados em sistemas posicionais; sua matemática viveu em escolas, administração, agrimensura e astronomia. A leitura social de Robson corrige a imagem de tábuas como folhas modernas de álgebra. <a href="#ref-5">5</a> Problemas egípcios como os do Papiro Rhind mostram procedimentos aritméticos, mas o escriba Ahmes, que copiou o texto conhecido, não foi “o inventor da matemática”. <a href="#ref-8">8</a></p>
+<p>Medir cria uma razão pública entre grandeza e padrão: comprimento como comparação com uma unidade; área como procedimento; tempo como coordenação de processos. Escrita, número e medida então se reforçam. O registro permite acumular; a medida permite comparar; o cálculo permite transformar o registrado.</p>
+<p><strong>Erro escolar comum.</strong> Imaginar uma origem única: primeiro nasceu o número, depois a escrita, depois a ciência. Diferentes técnicas coexistiram, regrediram, viajaram e foram recombinadas.</p>
+<p><strong>Exercício de fechamento.</strong> Para uma conta de mercado, identifique: objeto contado, unidade, signo, operação, registro e instituição que faz a conta valer. Essa pequena cadeia antecipa a ponte científica inteira.</p>
+<h1 id="parte-ii-a-invencao-das-razoes-publicas">Parte II — A invenção das razões públicas</h1>
+<h2 id="6-termos-proposicoes-premissas-e-argumentos">6. Termos, proposições, premissas e argumentos</h2>
+<p>“Órbita” é um termo; o conceito reúne regras para aplicá-lo. “A órbita deste corpo é elíptica” é uma <strong>proposição</strong>: algo que pode ser verdadeiro ou falso. Uma <strong>premissa</strong> é uma proposição assumida dentro de um argumento. A <strong>conclusão</strong> é a proposição que se pretende sustentar. O <strong>argumento</strong> é a estrutura que liga premissas e conclusão; <strong>inferência</strong> é a passagem realizada segundo alguma regra.</p>
+<p>Considere: “Todos os metais desta classe se dilatam ao aquecer; esta barra pertence à classe e foi aquecida; logo, dilatou-se.” A forma pode ser válida e uma premissa falsa. <strong>Validade</strong> pergunta se seria possível ter premissas verdadeiras e conclusão falsa. <strong>Solidez</strong> acrescenta premissas verdadeiras. <strong>Verdade</strong> é propriedade da proposição; <strong>justificação</strong> é a qualidade das razões disponíveis para aceitá-la; <strong>evidência</strong> é informação que altera racionalmente o apoio entre hipóteses, sempre sob pressupostos.</p>
+<p><strong>Erro escolar comum.</strong> “O argumento parece convincente, então é válido.” Retórica e forma lógica são avaliadas por critérios diferentes. <a href="#ref-13">13</a></p>
+<p><strong>Exercício.</strong> Reconstrua: “A bateria acabou porque o aparelho não liga.” Qual é a observação? Qual é a hipótese? Que premissa implícita exclui um botão quebrado?</p>
+<h2 id="7-deducao-inducao-e-abducao">7. Dedução, indução e abdução</h2>
+<p>Na <strong>dedução</strong>, a conclusão é necessária se as premissas forem verdadeiras e a forma válida. Na <strong>indução</strong>, casos observados apoiam uma generalização ou estimativa sem garanti-la. Na <strong>abdução</strong>, parte-se de um resultado e procura-se uma hipótese que, se verdadeira, o tornaria esperado.</p>
+<p>O diagnóstico da bateria é abdutivo. Repetir cem descargas e estimar a vida média é indutivo. Derivar de um modelo elétrico que, abaixo de certa tensão, o circuito desliga é dedutivo. Ciência real entrelaça as três: abdução propõe modelos; dedução extrai previsões; indução estima quão compatíveis dados e modelos são.</p>
+<p><strong>Distinção essencial.</strong> A forma “se H, então D; D; logo H” é a falácia dedutiva de afirmar o consequente. Em investigação, observar D pode aumentar o apoio a H, mas apenas em comparação com alternativas que também poderiam produzir D.</p>
+<p><strong>Veja em sua vida.</strong> Se o chão está molhado, chuva, mangueira e vazamento competem. Procure uma observação que seja esperada sob uma hipótese e improvável sob outra. Você acaba de desenhar um teste discriminante.</p>
+<h3 id="para-leitores-avancados_1">Para leitores avançados</h3>
+<p>Em linguagem probabilística, evidência não é um selo anexado ao dado. O efeito de <code>D</code> sobre <code>H</code> depende de <code>P(D|H)</code>, das alternativas e dos valores prévios. Uma baixa probabilidade do dado sob H pode denunciar H, o instrumento ou o modelo de ruído.</p>
+<h2 id="8-aristoteles-e-a-demonstracao">8. Aristóteles e a demonstração</h2>
+<p>Nos <em>Analíticos posteriores</em>, Aristóteles articula conhecimento demonstrativo a partir de princípios e causas. Isso não significa que inventou toda inferência ou toda racionalidade. Significa que um corpus preservado sistematizou relações entre definição, premissa, necessidade e explicação, influenciando tradições posteriores. <a href="#ref-11">11</a></p>
+<p>A demonstração ideal responde “por que a conclusão decorre?”. O conhecimento de princípios, porém, levanta outro problema: como chegamos a premissas adequadas? Observação, experiência e indução entram numa arquitetura mais ampla. A prática científica moderna deslocará o centro: não basta a conclusão decorrer; o sistema de premissas e idealizações deve encontrar o mundo por medições.</p>
+<p><strong>Controvérsia histórica.</strong> A Grécia não “inventou o pensamento racional”. Mesopotâmia, Egito, Índia, China e outras tradições desenvolveram procedimentos sistemáticos. A contribuição grega preservada inclui um estilo particular de demonstração e organização textual, posteriormente traduzido e transformado. <a href="#ref-10">10</a></p>
+<p><strong>Exercício.</strong> Dê dois sentidos de “explicar por que o sal se dissolve”: derivar um comportamento de um modelo e identificar um mecanismo material. Onde eles se complementam?</p>
+<h2 id="9-euclides-axiomas-e-prova">9. Euclides, axiomas e prova</h2>
+<p>Um <strong>axioma</strong> ou <strong>postulado</strong> funciona como ponto de partida num sistema. Um <strong>lema</strong> prepara um resultado; <strong>teorema</strong> é o resultado demonstrado; <strong>corolário</strong>, uma consequência próxima; <strong>conjectura</strong>, uma afirmação ainda sem prova ou refutação; <strong>contraexemplo</strong>, um caso que derruba uma afirmação universal; <strong>prova</strong>, uma cadeia pública de inferências aceitas no sistema.</p>
+<p>Os <em>Elementos</em> organizam definições, postulados e proposições num programa dedutivo de enorme influência. O texto preservado não é idêntico a um arquivo formal moderno, e a história de suas edições importa, mas ele mostra a força de tornar dependências explícitas. <a href="#ref-12">12</a></p>
+<p>Uma prova garante condicionalmente: dadas as definições, axiomas e regras, a conclusão segue. Não garante que uma ponte não cairá, que o espaço físico é euclidiano ou que a medição foi calibrada. Para aplicar o teorema, construímos uma <strong>interpretação</strong> que associa termos matemáticos a um sistema-alvo e justificamos aproximações.</p>
+<p><strong>O que a matemática garante.</strong> Correção da consequência dentro do sistema, desde que a prova e o verificador sejam corretos.</p>
+<p><strong>O que o experimento garante.</strong> No máximo, compatibilidade ou tensão entre dados e uma rede de modelo, instrumento e hipóteses auxiliares, dentro de incertezas.</p>
+<p><strong>Exercício.</strong> Um teorema calcula o alcance de um projétil sem ar. Liste quatro razões pelas quais a bola real pode não atingir esse ponto.</p>
+<h2 id="10-a-matematica-foi-inventada-ou-descoberta">10. A matemática foi inventada ou descoberta?</h2>
+<p>Quatro respostas organizam o debate. O <strong>platonismo</strong> sustenta que entidades matemáticas existem independentemente de nós; provar seria descobrir fatos sobre elas. O <strong>formalismo/dedutivismo</strong> enfatiza sistemas de símbolos e regras, embora versões sofisticadas precisem explicar aplicação e escolha de axiomas. O <strong>nominalismo/ficcionalismo</strong> evita comprometer-se com objetos abstratos independentes. O <strong>estruturalismo</strong> trata a matemática como estudo de posições e relações em estruturas. Não há consenso que autorize encerrar a questão em uma frase. <a href="#ref-17">17</a> <a href="#ref-20">20</a></p>
+<p>A resposta operacional é dupla: humanos inventam notações, definições e perguntas; depois descobrem consequências que não controlam livremente. Inventamos as regras do xadrez, mas não decidimos por votação todas as posições vencedoras. A analogia é limitada — a aplicação ao mundo exige uma ponte empírica —, mas dissolve o falso dilema.</p>
+<p><strong>Erro escolar comum.</strong> “Se a matemática foi inventada, é arbitrária; se descoberta, cada símbolo já existia na natureza.” Convenções podem ser escolhidas e ainda revelar restrições objetivas.</p>
+<p><strong>Como uma IA pode errar aqui.</strong> Um verificador formal confirma que um termo possui o tipo exigido; não decide sozinho a ontologia da matemática nem se o teorema modela um rio.</p>
+<p><strong>Exercício da parte.</strong> Prove que a soma de dois números pares é par; depois explique por que essa prova não demonstra que duas medições rotuladas “pares” foram feitas corretamente.</p>
+<h1 id="parte-iii-quando-relacoes-viram-equacoes">Parte III — Quando relações viram equações</h1>
+<h2 id="11-algoritmos-antigos-sem-x-e-sem">11. Algoritmos antigos sem <code>x</code> e sem <code>=</code></h2>
+<p>Uma receita pode resolver um problema sem nomear a incógnita. “Tome a área, retire tal parcela, extraia a raiz” é um <strong>algoritmo</strong>: sequência finita de operações para uma classe de entradas. Historiadores traduzem alguns problemas babilônicos como equações quadráticas, mas os textos trabalhavam com grandezas, diagramas e procedimentos em vocabulários próprios. Escrever <code>x² + bx = c</code> ajuda o leitor moderno; não prova que o escriba pensava com nosso <code>x</code>. <a href="#ref-7">7</a></p>
+<p>Na China, <em>Os nove capítulos sobre procedimentos matemáticos</em> e comentários associados organizam métodos para agrimensura, proporções, tributos e sistemas lineares. Na Índia, regras numéricas, astronomia e álgebra foram desenvolvidas em tradições textuais que contribuíram para o sistema decimal posicional e para o tratamento do zero. “A matemática começou” não cabe em nenhuma dessas histórias: problemas, instituições e formas de prova diferem. <a href="#ref-84">84</a> <a href="#ref-85">85</a></p>
+<p><strong>Distinção essencial.</strong> Um algoritmo diz como transformar entradas em saídas. Uma equação afirma uma relação. Resolver uma equação pode exigir um algoritmo; a equação não é o algoritmo.</p>
+<p><strong>Exemplo.</strong> Para <code>2x + 3 = 11</code>, a equação restringe <code>x</code>; “subtraia 3 e divida por 2” é o algoritmo; <code>x = 4</code> é a solução.</p>
+<p><strong>Erro escolar comum.</strong> Chamar toda conta de equação ou atribuir notação moderna ao texto antigo.</p>
+<p><strong>Exercício.</strong> Descreva, sem símbolo de incógnita, como achar o lado de um quadrado de área 81. Depois escreva a equação correspondente. O que ganhou e o que perdeu?</p>
+<h2 id="12-diofanto-al-khwarizmi-e-a-algebra-retorica">12. Diofanto, al-Khwārizmī e a álgebra retórica</h2>
+<p>Diofanto usou abreviações para incógnitas e potências em problemas hoje chamados diofantinos; não escreveu álgebra simbólica moderna. Al-Khwārizmī, no século IX, apresentou procedimentos de <em>al-jabr</em> e <em>al-muqābala</em> em prosa e diagramas, ligados a herança, comércio e mensuração. Sua obra é uma sistematização preservada fundamental, não o instante absoluto em que “a álgebra nasceu”. <a href="#ref-36">36</a> <a href="#ref-37">37</a></p>
+<p>A viagem de textos é parte da matemática. Tradução para o árabe reuniu materiais gregos, indianos, persas e práticas de calculadores; traduções latinas levaram problemas e vocabulários a outros públicos; novos autores reformularam-nos. Falar em “transmissão” não significa simples cópia. Selecionar, comentar e adaptar são atos cognitivos.</p>
+<p><strong>Veja em sua vida.</strong> Juros, partilhas e áreas transformam relações sociais ou espaciais em problemas calculáveis. A representação não é neutra: escolher o que entra como quantidade já enquadra a decisão.</p>
+<p><strong>Para leitores avançados.</strong> Classificar retrospectivamente um texto como “álgebra” é útil se declararmos o critério: tipo de problema, operação ou notação. Torna-se anacrônico quando atribuímos ao autor objetos e metas que seu texto não evidencia.</p>
+<h2 id="13-viete-recorde-descartes-e-a-linguagem-simbolica">13. Viète, Recorde, Descartes e a linguagem simbólica</h2>
+<p>Robert Recorde introduziu, em 1557, um sinal de linhas paralelas para evitar repetir “é igual a”; o <code>=</code> moderno estabilizou-se gradualmente. Viète separou letras para quantidades conhecidas e desconhecidas; Descartes conectou equações e curvas e consolidou convenções, mas nenhum deles inventou sozinho “a equação”. <a href="#ref-38">38</a> <a href="#ref-39">39</a></p>
+<p>Notação comprime uma sequência de raciocínio e permite operar sobre a forma. Isso aumenta a potência e cria um risco: símbolos podem parecer autoexplicativos. Por isso, separe:</p>
+<table>
+<thead>
+<tr>
+<th>Objeto</th>
+<th>Exemplo</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expressão</td>
+<td><code>mv²/2</code></td>
+<td>designa um valor quando variáveis recebem valores</td>
+</tr>
+<tr>
+<td>Equação</td>
+<td><code>x + 3 = 5</code></td>
+<td>impõe uma condição a uma incógnita</td>
+</tr>
+<tr>
+<td>Identidade</td>
+<td><code>(a+b)² = a²+2ab+b²</code></td>
+<td>vale para todo valor no domínio</td>
+</tr>
+<tr>
+<td>Fórmula</td>
+<td><code>A = πr²</code></td>
+<td>regra compacta para calcular/relacionar grandezas</td>
+</tr>
+<tr>
+<td>Função</td>
+<td><code>f(x)=x²</code></td>
+<td>associação entre entradas e saídas</td>
+</tr>
+<tr>
+<td>Algoritmo</td>
+<td>bisseção</td>
+<td>procedimento para aproximar uma raiz</td>
+</tr>
+<tr>
+<td>Lei matemática</td>
+<td>distributividade</td>
+<td>regularidade demonstrável em uma estrutura</td>
+</tr>
+<tr>
+<td>Equação diferencial</td>
+<td><code>dT/dt = -k(T-Tₐ)</code></td>
+<td>regra local para a evolução de uma função</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Erro escolar comum.</strong> <code>F = ma</code> e <code>x + 3 = 5</code> são igualdades, mas cumprem papéis distintos. A segunda costuma ser resolvida para uma incógnita; a primeira pode definir força em certa formulação ou expressar uma lei dinâmica que conecta grandezas medidas.</p>
+<h2 id="14-o-que-uma-equacao-afirma">14. O que uma equação afirma</h2>
+<p>Uma equação afirma igualdade entre duas expressões sob um domínio e uma interpretação. Numa ciência, cada símbolo precisa de seis acompanhantes: significado, unidade, origem, hipóteses, domínio de validade e observável.</p>
+<h3 id="movimento-uniforme">Movimento uniforme</h3>
+<p><code>s(t) = s₀ + vt</code>.</p>
+<ul>
+<li><code>s</code> e <code>s₀</code>: posição, em metros; <code>t</code>: tempo, em segundos; <code>v</code>: velocidade constante, em metros por segundo.</li>
+<li>Origem: integração da definição <code>v = ds/dt</code> sob <code>v</code> constante.</li>
+<li>Hipótese: referencial e eixo definidos; corpo representável pela posição; velocidade aproximadamente constante.</li>
+<li>Previsão: gráfico <code>s</code> contra <code>t</code> é aproximadamente uma reta.</li>
+<li>Falha: resíduos curvos sugerem aceleração, atraso do sensor ou outra inadequação.</li>
+</ul>
+<h3 id="movimento-uniformemente-acelerado">Movimento uniformemente acelerado</h3>
+<p><code>s(t) = s₀ + v₀t + ½at²</code>.</p>
+<p>Aqui <code>a</code> tem unidade <code>m/s²</code>; a relação vem de integrar <code>a = dv/dt</code> duas vezes com <code>a</code> constante e condições iniciais <code>s(0)=s₀</code>, <code>v(0)=v₀</code>. Se o corpo parte do repouso, <code>s-s₀ ∝ t²</code>. Uma prova da derivação garante a consequência do modelo; não garante que a aceleração da esfera real permaneceu constante.</p>
+<p><strong>Análise dimensional.</strong> Cada parcela de uma soma deve ter a mesma dimensão: <code>s₀</code>, <code>v₀t</code> e <code>at²</code> são comprimentos. Dimensões incompatíveis refutam a fórmula escrita, mas compatibilidade dimensional não prova a lei.</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDY1MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPlBvbnRlIGVudHJlIGVxdWHDp8OjbyBlIHJlYWxpZGFkZTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlNldGUgbsOzcyBsaWdhbSBzw61tYm9sbywgZ3JhbmRlemEsIHByb2NlZGltZW50bywgaW5zdHJ1bWVudG8sIGluZGljYcOnw6NvLCBkYWRvIGUgaW5mZXLDqm5jaWEsIGNvbSBjYWxpYnJhw6fDo28gZSBpbmNlcnRlemEgYXRyYXZlc3NhbmRvIGEgY2FkZWlhLjwvZGVzYz4KICA8ZGVmcz48c3R5bGU+LmJne2ZpbGw6I2ZmZmRmYX0ubm9kZXtmaWxsOiNmZmY7c3Ryb2tlOiMxNzNmNmI7c3Ryb2tlLXdpZHRoOjM7cng6MTR9LnR7Zm9udDo3MDAgMTlweCBBcmlhbDtmaWxsOiMxNzNmNmJ9LnN7Zm9udDoxNXB4IEFyaWFsO2ZpbGw6IzMzNGU2OH0uYXtzdHJva2U6IzBmNzY2ZTtzdHJva2Utd2lkdGg6NDtmaWxsOm5vbmU7bWFya2VyLWVuZDp1cmwoI20pfS5iYWNre3N0cm9rZTojYzI0MTBjO3N0cm9rZS13aWR0aDozO3N0cm9rZS1kYXNoYXJyYXk6OCA2O2ZpbGw6bm9uZTttYXJrZXItZW5kOnVybCgjbyl9LmJhbmR7ZmlsbDojZTdmNWYyO3N0cm9rZTojMGY3NjZlO3N0cm9rZS13aWR0aDoyO3J4OjE2fTwvc3R5bGU+PG1hcmtlciBpZD0ibSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI4IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wIDBMMCA2TDkgM3oiIGZpbGw9IiMwZjc2NmUiLz48L21hcmtlcj48bWFya2VyIGlkPSJvIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjgiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEwwIDZMOSAzeiIgZmlsbD0iI2MyNDEwYyIvPjwvbWFya2VyPjwvZGVmcz4KICA8cmVjdCBjbGFzcz0iYmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjY1MCIvPjx0ZXh0IHg9IjYwMCIgeT0iNDMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE3M2Y2YiI+Q09NTyBVTSBTw41NQk9MTyBHQU5IQSBTSUdOSUZJQ0FETyBFTVDDjVJJQ088L3RleHQ+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUgMTIwKSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIxNDUiIGhlaWdodD0iMTIwIi8+PHRleHQgY2xhc3M9InQiIHg9IjcyIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U8ONTUJPTE88L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjcyIiB5PSI2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dCwgcywgVCwgRTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iNzIiIHk9IjkxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5lbSB1bWEgZXF1YcOnw6NvPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDAgMTIwKSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIxNDUiIGhlaWdodD0iMTIwIi8+PHRleHQgY2xhc3M9InQiIHg9IjcyIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R1JBTkRFWkE8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjcyIiB5PSI2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+byBxdWUgdmFyaWE/PC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSI3MiIgeT0iOTEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPnF1YWwgdW5pZGFkZT88L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2NSAxMjApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjE0NSIgaGVpZ2h0PSIxMjAiLz48dGV4dCBjbGFzcz0idCIgeD0iNzIiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QUk9DRURJTUVOVE88L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjcyIiB5PSI2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZXZlbnRvcyBlIHJlZ3JhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSI3MiIgeT0iOTEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPm9wZXJhY2lvbmFsPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzAgMTIwKSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIxNDUiIGhlaWdodD0iMTIwIi8+PHRleHQgY2xhc3M9InQiIHg9IjcyIiB5PSIzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SU5TVFJVTUVOVE88L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjcyIiB5PSI2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+c2Vuc29yLCBlc2NhbGE8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjcyIiB5PSI5MSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZSBjYWxpYnJhw6fDo288L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY5NSAxMjApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjE0NSIgaGVpZ2h0PSIxMjAiLz48dGV4dCBjbGFzcz0idCIgeD0iNzIiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JTkRJQ0HDh8ODTzwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iNzIiIHk9IjY3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5xdWFkcm8sIHRlbnPDo28sPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSI3MiIgeT0iOTEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPm1hcmNhIG91IGxlaXR1cmE8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg2MCAxMjApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjE0NSIgaGVpZ2h0PSIxMjAiLz48dGV4dCBjbGFzcz0idCIgeD0iNzIiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EQURPPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSI3MiIgeT0iNjciIHRleHQtYW5jaG9yPSJtaWRkbGUiPnZhbG9yICsgdW5pZGFkZTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iNzIiIHk9IjkxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4rIG1ldGFkYWRvczwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAyNSAxMjApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjE0NSIgaGVpZ2h0PSIxMjAiLz48dGV4dCBjbGFzcz0idCIgeD0iNzIiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JTkZFUsOKTkNJQTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iNzIiIHk9IjY3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5wYXLDom1ldHJvLCB0ZXN0ZTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iNzIiIHk9IjkxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5lIGludGVycHJldGHDp8OjbzwvdGV4dD48L2c+CiAgPHBhdGggY2xhc3M9ImEiIGQ9Ik0xODAgMTgwaDEyIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zNDUgMTgwaDEyIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik01MTAgMTgwaDEyIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik02NzUgMTgwaDEyIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik04NDAgMTgwaDEyIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMDA1IDE4MGgxMiIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MCAzMTApIj48cmVjdCBjbGFzcz0iYmFuZCIgd2lkdGg9IjgyMCIgaGVpZ2h0PSI4MCIvPjx0ZXh0IHg9IjQxMCIgeT0iMzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBmNzY2ZSI+UkFTVFJFQUJJTElEQURFLCBDQUxJQlJBw4fDg08gRSBJTkNFUlRFWkE8L3RleHQ+PHRleHQgeD0iNDEwIiB5PSI1NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMjg1ZTYxIj5xdWFsaWZpY2FtIGFzIGxpZ2HDp8O1ZXM7IG7Do28gc8OjbyB1bSBhZG9ybm8gYW5leGFkbyBhbyByZXN1bHRhZG88L3RleHQ+PC9nPgogIDxwYXRoIGNsYXNzPSJiYWNrIiBkPSJNMTA5NSAyNDB2MjMwSDYwMFYzOTgiLz48dGV4dCB4PSI4MjAiIHk9IjQ5OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE3IiBmaWxsPSIjOWEzNDEyIj48dHNwYW4geD0iODIwIj5yZXPDrWR1byBwb2RlIHJldmVsYXIgcHJvYmxlbWE8L3RzcGFuPjx0c3BhbiB4PSI4MjAiIGR5PSIyMiI+bm8gaW5zdHJ1bWVudG8gb3UgbmEgZGVmaW5pw6fDo288L3RzcGFuPjwvdGV4dD4KICA8cGF0aCBjbGFzcz0iYmFjayIgZD0iTTEwODAgMjQwdjMzMEgyODBWMjQ4Ii8+PHRleHQgeD0iNDkwIiB5PSI2MDMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNyIgZmlsbD0iIzlhMzQxMiI+Y3LDrXRpY2EgZGEgaW50ZXJwcmV0YcOnw6NvIHBvZGUgZXhpZ2lyIHJlZGVmaW5pciBhIGdyYW5kZXphPC90ZXh0Pgo8L3N2Zz4K" alt="Ponte entre símbolo, grandeza, procedimento, instrumento, dado e inferência" /></p>
+<p><strong>Exercício.</strong> Em <code>E = mc²</code>, identifique unidades; depois explique por que a igualdade não ensina, sozinha, como medir a massa de um núcleo.</p>
+<h2 id="15-por-que-a-mesma-forma-aparece-em-sistemas-diferentes">15. Por que a mesma forma aparece em sistemas diferentes</h2>
+<p>A equação exponencial aparece em resfriamento, decaimento e crescimento porque mecanismos diferentes podem compartilhar uma estrutura local: a taxa de mudança é proporcional ao desvio ou à quantidade presente. A forma matemática preserva relações e omite o material.</p>
+<p>Três fontes comuns de equações são:</p>
+<ol>
+<li><strong>definições</strong>, como densidade <code>ρ = m/V</code>;</li>
+<li><strong>princípios e simetrias</strong>, como conservação de energia ou invariância;</li>
+<li><strong>relações constitutivas e aproximações</strong>, como fluxo de calor proporcional ao gradiente de temperatura.</li>
+</ol>
+<p>Também existem leis empíricas ajustadas. Ajustar parâmetros não é “inventar na hora”: escolhe-se uma família por mecanismo, regularidade ou conveniência, estima-se com dados e testa-se fora da amostra. Formas diferentes podem ajustar igualmente bem um intervalo estreito e divergir longe dele.</p>
+<p><strong>Lei do inverso do quadrado.</strong> Para uma fonte pontual isotrópica sem absorção, a mesma potência atravessa esferas de área <code>4πr²</code>; a intensidade <code>I = P/(4πr²)</code> tem unidade <code>W/m²</code>. A geometria explica a forma. Fonte extensa, reflexão e absorção limitam o domínio.</p>
+<p><strong>O que a matemática garante.</strong> Se a potência se conserva e se distribui uniformemente na esfera, a dependência <code>1/r²</code> segue.</p>
+<p><strong>O que o experimento garante.</strong> Medidas compatíveis sustentam o conjunto de hipótese, geometria, detector e correções no intervalo testado.</p>
+<h2 id="16-pedra-pendulo-calor-e-ondas-quatro-anatomias">16. Pedra, pêndulo, calor e ondas: quatro anatomias</h2>
+<h3 id="pedra-queda-idealizada">Pedra: queda idealizada</h3>
+<p>Próximo à superfície terrestre e desprezando o ar, <code>a ≈ g</code>. Para queda a partir do repouso, <code>s-s₀ = ½gt²</code>. <code>g</code> tem unidade <code>m/s²</code> e varia com local e altitude. Uma bola de papel denuncia o limite do modelo pontual sem arrasto.</p>
+<h3 id="pendulo-aproximacao-de-pequeno-angulo">Pêndulo: aproximação de pequeno ângulo</h3>
+<p>A equação angular ideal é <code>θ'' + (g/L) sen θ = 0</code>. Para <code>|θ|</code> pequeno em radianos, <code>sen θ ≈ θ</code>, obtendo <code>θ''+(g/L)θ=0</code> e período <code>T ≈ 2π√(L/g)</code>. <code>L</code> está em metros, <code>T</code> em segundos. A massa cancela no modelo ideal; amplitude grande, atrito e comprimento efetivo introduzem desvios. A aproximação não é mentira: é uma afirmação controlada sobre erro e domínio.</p>
+<h3 id="calor-conservacao-mais-constituicao">Calor: conservação mais constituição</h3>
+<p>Em uma barra homogênea, a conservação de energia combinada à lei de Fourier leva a <code>∂T/∂t = α∂²T/∂x²</code>. <code>T</code> é temperatura; <code>x</code>, posição; <code>t</code>, tempo; <code>α</code> difusividade térmica em <code>m²/s</code>. Condições iniciais e de contorno são necessárias para uma solução. A equação de resfriamento de Newton, <code>dT/dt=-k(T-Tₐ)</code>, é um modelo concentrado diferente: supõe temperatura interna aproximadamente uniforme. <a href="#ref-54">54</a> <a href="#ref-55">55</a></p>
+<h3 id="ondas-e-fourier">Ondas e Fourier</h3>
+<p>Para uma corda ideal, <code>∂²y/∂t² = c²∂²y/∂x²</code>. <code>y</code> é deslocamento, <code>c</code> velocidade em <code>m/s</code>. Condições nas extremidades selecionam modos. A decomposição de Fourier representa sinais como soma de frequências; não afirma que todo sistema físico é literalmente “feito de senos”.</p>
+<p><strong>Para leitores avançados - Maxwell.</strong> As equações de Maxwell relacionam campos elétricos e magnéticos, cargas e correntes. Em vazio, implicam ondas com velocidade determinada pelas constantes elétricas e magnéticas. A forma vetorial compacta ensinada hoje é uma síntese histórica da teoria, não uma fotografia tipográfica do tratado de 1873. <a href="#ref-56">56</a></p>
+<p><strong>Exercício da parte.</strong> Escolha uma equação acima e escreva uma “ficha de passaporte”: símbolos, unidades, origem, hipóteses, condição inicial, observável e modo de falha.</p>
+<h1 id="parte-iv-o-nascimento-da-ciencia-matematica-experimental">Parte IV — O nascimento da ciência matemática experimental</h1>
+<h2 id="17-matematica-aplicada-antes-do-laboratorio-moderno">17. Matemática aplicada antes do laboratório moderno</h2>
+<p>Eratóstenes relacionou sombras, ângulos e distância para estimar a circunferência da Terra; Arquimedes conectou geometria, equilíbrio e hidrostática; Ptolomeu construiu modelos quantitativos para posições celestes. O que sobreviveu é filtrado por cópia e tradução, portanto “primeiro preservado” não é “primeiro realizado”. <a href="#ref-41">41</a> <a href="#ref-42">42</a> <a href="#ref-43">43</a></p>
+<p>Na China, procedimentos matemáticos, astronomia estatal e engenharia formaram tradições próprias. Na Índia, astronomia e cálculo algorítmico desenvolveram técnicas decisivas. Nas sociedades islâmicas, a tradução para o árabe integrou e transformou materiais gregos, persas e indianos em redes de observatórios, medicina, matemática e instrumentos. <a href="#ref-44">44</a> <a href="#ref-86">86</a></p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPkxpbmhhIGhpc3TDs3JpY2EgcmFtaWZpY2FkYSBkYSBjacOqbmNpYSBtYXRlbcOhdGljYTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlRyYWRpw6fDtWVzIG1lc29wb3TDom1pY2FzLCBlZ8OtcGNpYXMsIGdyZWdhcywgaW5kaWFuYXMsIGNoaW5lc2FzIGUgZW0gw6FyYWJlIGNvbnZlcmdlbSBwYXJjaWFsbWVudGUgY29tIHVuaXZlcnNpZGFkZXMsIGluc3RydW1lbnRvcywgaW1wcmVzc8OjbywgY8OhbGN1bG8gZSBlc3RhdMOtc3RpY2EuPC9kZXNjPgogIDxkZWZzPjxzdHlsZT4uYmd7ZmlsbDojZmZmZGZhfS5ub2Rle2ZpbGw6I2ZmZjtzdHJva2U6IzE3M2Y2YjtzdHJva2Utd2lkdGg6Mi41O3J4OjEyfS5lcmF7ZmlsbDojMTczZjZifS5ldHtmb250OjcwMCAxOHB4IEFyaWFsO2ZpbGw6I2ZmZn0udHtmb250OjYwMCAxNnB4IEFyaWFsO2ZpbGw6IzE3MjAzM30uc3tmb250OjE0cHggQXJpYWw7ZmlsbDojMzM0ZTY4fS5saW5le3N0cm9rZTojMGY3NjZlO3N0cm9rZS13aWR0aDo0O2ZpbGw6bm9uZTttYXJrZXItZW5kOnVybCgjbSl9LmNyb3Nze3N0cm9rZTojYzI0MTBjO3N0cm9rZS13aWR0aDozO3N0cm9rZS1kYXNoYXJyYXk6OCA2O2ZpbGw6bm9uZTttYXJrZXItZW5kOnVybCgjbyl9PC9zdHlsZT48bWFya2VyIGlkPSJtIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjgiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEwwIDZMOSAzeiIgZmlsbD0iIzBmNzY2ZSIvPjwvbWFya2VyPjxtYXJrZXIgaWQ9Im8iIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOCIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCAwTDAgNkw5IDN6IiBmaWxsPSIjYzI0MTBjIi8+PC9tYXJrZXI+PC9kZWZzPgogIDxyZWN0IGNsYXNzPSJiZyIgd2lkdGg9IjEyMDAiIGhlaWdodD0iODIwIi8+PHRleHQgeD0iNjAwIiB5PSIzOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI5IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMTczZjZiIj5ISVNUw5NSSUEgUkFNSUZJQ0FEQTogVMOJQ05JQ0FTLCBURVhUT1MgRSBJTlNUSVRVScOHw5VFUzwvdGV4dD4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNSA3MCkiPjxyZWN0IGNsYXNzPSJlcmEiIHdpZHRoPSIxNzAiIGhlaWdodD0iNDgiIHJ4PSIxMCIvPjx0ZXh0IGNsYXNzPSJldCIgeD0iODUiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BTlRFUyBERSA1MDAgYS5DLjwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwIDU4KSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIyNjAiIGhlaWdodD0iODIiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5NZXNvcG90w6JtaWE8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI1NCI+ZmljaGFzLCBlc2NyaXRhLCB0YWJlbGFzLCBjw6l1PC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NDAgNTgpIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI4MiIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIxOCIgeT0iMjkiPkVnaXRvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNTQiPm1lZGlkYSwgcGFwaXJvcywgYWRtaW5pc3RyYcOnw6NvPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NDAgNTgpIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjMxNSIgaGVpZ2h0PSI4MiIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIxOCIgeT0iMjkiPkNvZ25pw6fDo28gZSByZWdpc3Ryb3MgZGl2ZXJzb3M8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI1NCI+c2VtIG9yaWdlbSDDum5pY2EgaWRlbnRpZmljw6F2ZWw8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1IDIxMCkiPjxyZWN0IGNsYXNzPSJlcmEiIHdpZHRoPSIxNzAiIGhlaWdodD0iNDgiIHJ4PSIxMCIvPjx0ZXh0IGNsYXNzPSJldCIgeD0iODUiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41MDAgYS5DLuKAkzcwMDwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwIDE5MCkiPjxyZWN0IGNsYXNzPSJub2RlIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjkyIi8+PHRleHQgY2xhc3M9InQiIHg9IjE4IiB5PSIyOSI+VHJhZGnDp8O1ZXMgZ3JlZ2FzPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNTQiPmRlbW9uc3RyYcOnw6NvLCBnZW9tZXRyaWEsPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNzUiPm1lY8OibmljYSBlIGFzdHJvbm9taWE8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0MCAxOTApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI5MiIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIxOCIgeT0iMjkiPlRyYWRpw6fDtWVzIGluZGlhbmFzPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNTQiPmFsZ29yaXRtb3MsIHplcm8sPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNzUiPmFzdHJvbm9taWEgZSBzw6lyaWVzPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NDAgMTkwKSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIzMTUiIGhlaWdodD0iOTIiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5UcmFkacOnw7VlcyBjaGluZXNhczwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5wcm9jZWRpbWVudG9zLCBjb21lbnTDoXJpb3MsPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNzUiPmFzdHJvbm9taWEgZSBlbmdlbmhhcmlhPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNSAzNTIpIj48cmVjdCBjbGFzcz0iZXJhIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjQ4IiByeD0iMTAiLz48dGV4dCBjbGFzcz0iZXQiIHg9Ijg1IiB5PSIzMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzAw4oCTMTQ1MDwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwIDMzMCkiPjxyZWN0IGNsYXNzPSJub2RlIiB3aWR0aD0iMzMwIiBoZWlnaHQ9Ijk2Ii8+PHRleHQgY2xhc3M9InQiIHg9IjE4IiB5PSIyOSI+Q2nDqm5jaWFzIGVtIMOhcmFiZTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij50cmFkdcOnw6NvIGUgdHJhbnNmb3JtYcOnw6NvOjwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9Ijc1Ij7DoWxnZWJyYSwgw7NwdGljYSwgb2JzZXJ2YXTDs3Jpb3M8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNSAzMzApIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI5NiIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIxOCIgeT0iMjkiPlVuaXZlcnNpZGFkZXMgbGF0aW5hczwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5lc2NvbMOhc3RpY2EsIE1lcnRvbiw8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI3NSI+T3Jlc21lIGUgY29tZW50w6FyaW9zPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MzAgMzMwKSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIyMjUiIGhlaWdodD0iOTYiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5PZmljaW5hcyBlIGNvbcOpcmNpbzwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5pbnN0cnVtZW50b3MsIG1hcGFzLDwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9Ijc1Ij5jb250YXMgZSBuYXZlZ2HDp8OjbzwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUgNTAwKSI+PHJlY3QgY2xhc3M9ImVyYSIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI0OCIgcng9IjEwIi8+PHRleHQgY2xhc3M9ImV0IiB4PSI4NSIgeT0iMzEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0NTDigJMxNzUwPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDAgNDc4KSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIyODAiIGhlaWdodD0iOTYiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5JbXByZXNzw6NvIGUgYXN0cm9ub21pYTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5Db3DDqXJuaWNvLCBUeWNobyw8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI3NSI+S2VwbGVyLCByZWRlcyBkZSBkYWRvczwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTY1IDQ3OCkiPjxyZWN0IGNsYXNzPSJub2RlIiB3aWR0aD0iMjgwIiBoZWlnaHQ9Ijk2Ii8+PHRleHQgY2xhc3M9InQiIHg9IjE4IiB5PSIyOSI+RXhwZXJpbWVudG8gbWF0ZW3DoXRpY288L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI1NCI+R2FsaWxldSwgw7NwdGljYSwgcmVsw7NnaW9zPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIxOCIgeT0iNzUiPmUgYWNhZGVtaWFzPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OTAgNDc4KSI+PHJlY3QgY2xhc3M9Im5vZGUiIHdpZHRoPSIyNjUiIGhlaWdodD0iOTYiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5Dw6FsY3VsbyBlIG1lY8OibmljYTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5OZXd0b24sIExlaWJuaXogZTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9Ijc1Ij5jb3JyZXNwb25kZW50ZXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1IDY1MCkiPjxyZWN0IGNsYXNzPSJlcmEiIHdpZHRoPSIxNzAiIGhlaWdodD0iNDgiIHJ4PSIxMCIvPjx0ZXh0IGNsYXNzPSJldCIgeD0iODUiIHk9IjMxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNzUw4oCTMjAyNjwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQwIDYyOCkiPjxyZWN0IGNsYXNzPSJub2RlIiB3aWR0aD0iMjcwIiBoZWlnaHQ9IjEwOCIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIxOCIgeT0iMjkiPkNhbG9yLCBjYW1wb3MsIGVzdGF0w61zdGljYTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9IjU0Ij5Gb3VyaWVyLCBNYXh3ZWxsLDwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9Ijc1Ij5wcm9iYWJpbGlkYWRlIGUgaW5mZXLDqm5jaWE8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU1NSA2MjgpIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjI3MCIgaGVpZ2h0PSIxMDgiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5SZWxhdGl2aWRhZGUgZSBxdWFudGE8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI1NCI+RWluc3RlaW4sIEdyb3NzbWFubiw8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI3NSI+SGlsYmVydCBlIG5vdmFzIG1lZGnDp8O1ZXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg3MCA2MjgpIj48cmVjdCBjbGFzcz0ibm9kZSIgd2lkdGg9IjI4NSIgaGVpZ2h0PSIxMDgiLz48dGV4dCBjbGFzcz0idCIgeD0iMTgiIHk9IjI5Ij5Db21wdXRhw6fDo28sIGNpw6puY2lhIGFiZXJ0YSwgSUE8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjE4IiB5PSI1NCI+c2ltdWxhw6fDo28sIExlYW4sIGRhZG9zLDwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMTgiIHk9Ijc1Ij5yZXBsaWNhw6fDo28gZSBwcm92YSBhc3Npc3RpZGE8L3RleHQ+PC9nPgogIDxwYXRoIGNsYXNzPSJsaW5lIiBkPSJNMzcwIDE0MHY0MCIvPjxwYXRoIGNsYXNzPSJsaW5lIiBkPSJNNjcwIDE0MHY0MCIvPjxwYXRoIGNsYXNzPSJsaW5lIiBkPSJNOTk3IDE0MHY0MCIvPgogIDxwYXRoIGNsYXNzPSJjcm9zcyIgZD0iTTM3MCAyODJ2MzgiLz48cGF0aCBjbGFzcz0iY3Jvc3MiIGQ9Ik02NzAgMjgyTDQ1MCAzMjAiLz48cGF0aCBjbGFzcz0iY3Jvc3MiIGQ9Ik05OTcgMjgyTDUyMCAzMjAiLz48cGF0aCBjbGFzcz0iY3Jvc3MiIGQ9Ik00NTAgNDI2TDM1MCA0NjgiLz48cGF0aCBjbGFzcz0iY3Jvc3MiIGQ9Ik03MzAgNDI2TDY5MCA0NjgiLz48cGF0aCBjbGFzcz0iY3Jvc3MiIGQ9Ik0xMDQwIDQyNkw5ODUgNDY4Ii8+CiAgPHBhdGggY2xhc3M9ImxpbmUiIGQ9Ik0zODAgNTc0djQ0Ii8+PHBhdGggY2xhc3M9ImxpbmUiIGQ9Ik03MDUgNTc0TDY5MCA2MTgiLz48cGF0aCBjbGFzcz0ibGluZSIgZD0iTTEwMjAgNTc0djQ0Ii8+CiAgPHRleHQgeD0iNjAwIiB5PSI3ODUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNyIgZmlsbD0iIzQ3NTU2OSI+QXMgc2V0YXMgaW5kaWNhbSBjb25leMO1ZXMgZG9jdW1lbnRhZGFzIG91IGZhbcOtbGlhcyBkZSBjaXJjdWxhw6fDo287IG7Do28gdW1hIMO6bmljYSBlc2NhZGEgY2l2aWxpemFjaW9uYWwuPC90ZXh0Pgo8L3N2Zz4K" alt="Linha histórica ramificada de técnicas, textos, instituições e instrumentos" /></p>
+<p><strong>Controvérsia histórica.</strong> Perguntar “quem foi o primeiro a usar matemática para prever?” produz candidatos diferentes conforme o critério: tabela astronômica preservada, indivíduo nomeado, explicação causal, previsão nova ou integração com experimento. A resposta erudita começa especificando o critério.</p>
+<h2 id="18-ibn-al-haytham-e-a-optica">18. Ibn al-Haytham e a óptica</h2>
+<p>Ibn al-Haytham analisou visão, luz, reflexão e refração combinando geometria, argumentação, observação e dispositivos. Sua <em>Óptica</em> critica a ideia de raios emitidos pelos olhos e organiza experiências para discriminar explicações. O trabalho foi escrito em árabe num ambiente intelectual multilíngue e posteriormente traduzido. <a href="#ref-45">45</a></p>
+<p>Chamà-lo “o inventor do método científico” troca uma história rica por uma medalha. Seu marco está em uma combinação documentada e influente de matemática óptica, análise causal e testes. Outros campos e tradições tinham normas diferentes; o laboratório institucional moderno ainda não existia.</p>
+<p><strong>Experimento seguro.</strong> Faça uma câmara escura com caixa fechada e pequeno orifício, sem olhar para o Sol. Observe a imagem invertida de uma cena iluminada. O fenômeno restringe modelos de propagação, mas interpretar exige geometria e controle de vazamentos de luz.</p>
+<p><strong>Exercício.</strong> Qual observação distingue “a visão sai do olho” de “luz chega ao olho”? Escreva hipóteses auxiliares necessárias.</p>
+<h2 id="19-merton-oresme-e-a-quantificacao-medieval">19. Merton, Oresme e a quantificação medieval</h2>
+<p>No século XIV, Thomas Bradwardine, William Heytesbury, Richard Swineshead e John Dumbleton - os Calculadores de Oxford - analisaram graus de qualidades e movimento com proporções e regras idealizadas. O <strong>teorema do grau médio</strong> afirma, em formulação cinemática posterior, que um movimento uniformemente acelerado percorre no mesmo tempo a distância de um movimento uniforme à velocidade média. <a href="#ref-48">48</a> <a href="#ref-49">49</a></p>
+<p>Nicole Oresme representou intensidades ao longo de uma extensão; a área da figura podia representar quantidade acumulada. Isso antecipa uma maneira gráfica de pensar, mas não autoriza dizer que inventou o plano cartesiano ou o cálculo integral moderno. <a href="#ref-50">50</a></p>
+<p><strong>Distinção essencial.</strong> Uma análise idealizada pode ser matematicamente fecunda sem ser um experimento de laboratório. Os textos medievais discutiam relações possíveis; a integração sistemática de aparelho, tempo medido e movimento local terá outras etapas.</p>
+<p><strong>Erro escolar comum.</strong> “Primeiro havia lógica; os monges trocaram por matemática; depois nasceu a ciência.” Lógica e matemática coexistiam. Os autores eram mestres universitários, nem todos descritos adequadamente como monges, e dependiam de tradições antigas e árabes traduzidas.</p>
+<p><strong>Exercício.</strong> Represente uma velocidade que cresce linearmente de 0 a 10 m/s em 4 s. A área sob o gráfico é 20 m. Que premissas permitem chamá-la distância?</p>
+<h2 id="20-galileu-e-o-plano-inclinado">20. Galileu e o plano inclinado</h2>
+<p>Galileu tornou o movimento um objeto de relações matemáticas conectadas a procedimentos materiais. Em <em>Duas novas ciências</em>, discute movimento uniformemente acelerado e descreve uma rampa com canal, esfera e água para medir tempos. A reconstrução de Straulino mostra que o arranjo é fisicamente plausível e também revela decisões práticas omitidas em versões escolares. <a href="#ref-51">51</a> <a href="#ref-52">52</a></p>
+<p>O plano inclinado desacelera a componente da gravidade ao longo da rampa, tornando diferenças de tempo mensuráveis. Para um corpo ideal que desliza sem atrito, <code>a = g sen α</code>. Para uma esfera maciça que rola sem escorregar, energia translacional e rotacional levam a <code>a = (5/7)g sen α</code>. O modelo histórico não deve ser retroativamente descrito como se Galileu tivesse usado nossa dinâmica rotacional completa.</p>
+<p>Partindo de <code>a = dv/dt</code> constante, integramos: <code>v=v₀+at</code>. Como <code>v=ds/dt</code>, nova integração produz <code>s=s₀+v₀t+½at²</code>. Com <code>v₀=0</code>, a previsão é <code>s-s₀ ∝ t²</code>. A derivação é dedutiva; decidir se a esfera satisfaz as hipóteses é empírico.</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPkZyYW1ld29yayBwcmVlbmNoaWRvIHBlbG8gcGxhbm8gaW5jbGluYWRvPC90aXRsZT4KICA8ZGVzYyBpZD0iZGVzYyI+RG8gbW92aW1lbnRvIGRhIGVzZmVyYSDDoCBjb21wYXJhw6fDo28gZW50cmUgbW9kZWxvcyBsaW5lYXIgZSBxdWFkcsOhdGljbywgaW5jbHVpbmRvIHbDrWRlbywgaW5jZXJ0ZXphLCByZXPDrWR1b3MgZSByZXBsaWNhw6fDo28uPC9kZXNjPgogIDxkZWZzPjxzdHlsZT4uYmd7ZmlsbDojZmZmZGZhfS5ib3h7ZmlsbDojZmZmO3N0cm9rZTojMGY3NjZlO3N0cm9rZS13aWR0aDozO3J4OjEzfS5re2ZvbnQ6NzAwIDE3cHggQXJpYWw7ZmlsbDojMTczZjZifS52e2ZvbnQ6MTVweCBBcmlhbDtmaWxsOiMyNjNiNTB9LmF7c3Ryb2tlOiNjMjQxMGM7c3Ryb2tlLXdpZHRoOjQ7ZmlsbDpub25lO21hcmtlci1lbmQ6dXJsKCNtKX0ucntzdHJva2U6IzY0NzQ4YjtzdHJva2Utd2lkdGg6MztzdHJva2UtZGFzaGFycmF5OjggNjtmaWxsOm5vbmU7bWFya2VyLWVuZDp1cmwoI2cpfTwvc3R5bGU+PG1hcmtlciBpZD0ibSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI4IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wIDBMMCA2TDkgM3oiIGZpbGw9IiNjMjQxMGMiLz48L21hcmtlcj48bWFya2VyIGlkPSJnIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjgiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEwwIDZMOSAzeiIgZmlsbD0iIzY0NzQ4YiIvPjwvbWFya2VyPjwvZGVmcz4KICA8cmVjdCBjbGFzcz0iYmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIvPjx0ZXh0IHg9IjYwMCIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE3M2Y2YiI+UExBTk8gSU5DTElOQURPOiBEQSBQRVJHVU5UQSDDgCBSRVBMSUNBw4fDg088L3RleHQ+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUgNzgpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMjU1IiBoZWlnaHQ9IjEwMCIvPjx0ZXh0IGNsYXNzPSJrIiB4PSIxNiIgeT0iMjkiPjEuIEZlbsO0bWVubyBlIHBlcmd1bnRhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iNTciPkEgZXNmZXJhIGFjZWxlcmE/PC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iODEiPnMgw6kgbGluZWFyIGVtIHQgb3UgdMKyPzwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ1IDc4KSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1NSIgaGVpZ2h0PSIxMDAiLz48dGV4dCBjbGFzcz0iayIgeD0iMTYiIHk9IjI5Ij4yLiBEZWZpbmnDp8O1ZXM8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+czogY2VudHJvIGFvIGxvbmdvIGRhIHJhbXBhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iODEiPnQ6IHF1YWRyb3MgLyBmcHM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0NSA3OCkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTUiIGhlaWdodD0iMTAwIi8+PHRleHQgY2xhc3M9ImsiIHg9IjE2IiB5PSIyOSI+My4gSGlww7N0ZXNlcyByaXZhaXM8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+SDE6IHMgPSBiMCArIGIxIHQ8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI4MSI+SDI6IHMgPSBiMCArIGIyIHTCsjwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTQ1IDc4KSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjIxMCIgaGVpZ2h0PSIxMDAiLz48dGV4dCBjbGFzcz0iayIgeD0iMTYiIHk9IjI5Ij40LiBJZGVhbGl6YcOnw6NvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iNTciPnJhbXBhIHJldGE7PC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iODEiPnJvbGFyIHNlbSBlc2NvcnJlZ2FyPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NDUgMjQ1KSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjIxMCIgaGVpZ2h0PSIxMDAiLz48dGV4dCBjbGFzcz0iayIgeD0iMTYiIHk9IjI5Ij41LiBEZXJpdmHDp8OjbzwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjU3Ij5hIGNvbnN0YW50ZTs8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI4MSI+cyA9IHMwK3YwdCvCvWF0wrI8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0NSAyNDUpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMjU1IiBoZWlnaHQ9IjEwMCIvPjx0ZXh0IGNsYXNzPSJrIiB4PSIxNiIgeT0iMjkiPjYuIFByZWRpw6fDo288L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+cmVwb3VzbzogcyBwcm9wb3JjaW9uYWwgYSB0wrI8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI4MSI+YSBlc2ZlcmE6IDUvNyBnIHNlbihhbHBoYSk8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM0NSAyNDUpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMjU1IiBoZWlnaHQ9IjEwMCIvPjx0ZXh0IGNsYXNzPSJrIiB4PSIxNiIgeT0iMjkiPjcuIERlc2VuaG88L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+NSBwb3Npw6fDtWVzIHggOCByZXBldGnDp8O1ZXM8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI4MSI+cmVncmFzIHByw6ktcmVnaXN0cmFkYXM8L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ1IDI0NSkiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTUiIGhlaWdodD0iMTAwIi8+PHRleHQgY2xhc3M9ImsiIHg9IjE2IiB5PSIyOSI+OC4gSW5zdHJ1bWVudG88L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+dsOtZGVvIDYwIGZwcyArIGVzY2FsYTwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjgxIj5vdSByZWzDs2dpbyBkZSDDoWd1YTwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUgNDEyKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjI1NSIgaGVpZ2h0PSIxMDAiLz48dGV4dCBjbGFzcz0iayIgeD0iMTYiIHk9IjI5Ij45LiBEYWRvczwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjU3Ij5icnV0b3MgKyBtZXRhZGFkb3M8L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI4MSI+ZXhjbHVzw7VlcyBwcmVzZXJ2YWRhczwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ1IDQxMikiPjxyZWN0IGNsYXNzPSJib3giIHdpZHRoPSIyNTUiIGhlaWdodD0iMTAwIi8+PHRleHQgY2xhc3M9ImsiIHg9IjE2IiB5PSIyOSI+MTAuIEluY2VydGV6YTwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjU3Ij5yZXBldGliaWxpZGFkZSArIHJlc29sdcOnw6NvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iODEiPnBlcnNwZWN0aXZhIGUgbGliZXJhw6fDo288L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0NSA0MTIpIj48cmVjdCBjbGFzcz0iYm94IiB3aWR0aD0iMjU1IiBoZWlnaHQ9IjEwMCIvPjx0ZXh0IGNsYXNzPSJrIiB4PSIxNiIgeT0iMjkiPjExLiBDb25mcm9udG88L3RleHQ+PHRleHQgY2xhc3M9InYiIHg9IjE2IiB5PSI1NyI+cmVncmVzc8OjbyBlIHJlc8OtZHVvczwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjgxIj5STVNFIGxpbmVhciB4IHF1YWRyw6F0aWNvPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NDUgNDEyKSI+PHJlY3QgY2xhc3M9ImJveCIgd2lkdGg9IjIxMCIgaGVpZ2h0PSIxMDAiLz48dGV4dCBjbGFzcz0iayIgeD0iMTYiIHk9IjI5Ij4xMi4gUmVwbGljYcOnw6NvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJ2IiB4PSIxNiIgeT0iNTciPsOibmd1bG9zLCBlc2ZlcmFzLDwvdGV4dD48dGV4dCBjbGFzcz0idiIgeD0iMTYiIHk9IjgxIj5vcGVyYWRvcmVzIGUgbGFib3JhdMOzcmlvczwvdGV4dD48L2c+CiAgPHBhdGggY2xhc3M9ImEiIGQ9Ik0zMDAgMTI4aDM1Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik02MDAgMTI4aDM1Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik05MDAgMTI4aDM1Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMDUwIDE3OHY1NyIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNOTQ1IDI5NWgtMzUiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTY0NSAyOTVoLTM1Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zNDUgMjk1aC0zNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTcyIDM0NXY1NyIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMzAwIDQ2MmgzNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNjAwIDQ2MmgzNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNOTAwIDQ2MmgzNSIvPgogIDxwYXRoIGNsYXNzPSJyIiBkPSJNMTA1MCA1MTJ2MTYwSDc3MFY1MjIiLz48dGV4dCB4PSI4MTUiIHk9IjcwNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE3IiBmaWxsPSIjNDc1NTY5Ij5yZXPDrWR1byBlc3RydXR1cmFkbzogcmV2aXNhciBtb2RlbG88L3RleHQ+CiAgPHBhdGggY2xhc3M9InIiIGQ9Ik0xMDIwIDUxMnYyMzBIMTcwVjUyMiIvPjx0ZXh0IHg9IjQzMCIgeT0iNzY4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTciIGZpbGw9IiM0NzU1NjkiPmRpdmVyZ8OqbmNpYSBlbnRyZSBvcGVyYWRvcmVzOiByZXZpc2FyIGluc3RydW1lbnRvIGUgcHJvY2VkaW1lbnRvPC90ZXh0PgogIDxyZWN0IHg9IjM3NSIgeT0iNTY1IiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjcwIiByeD0iMTQiIGZpbGw9IiNmZmY0ZTgiIHN0cm9rZT0iI2MyNDEwYyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNjAwIiB5PSI1OTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlhMzQxMiI+Q09OQ0xVU8ODTyBMSU1JVEFEQTwvdGV4dD48dGV4dCB4PSI2MDAiIHk9IjYxOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjN2MyZDEyIj5tZWxob3IgYWRlcXVhw6fDo28gbmVzdGFzIGNvbmRpw6fDtWVzLCBuw6NvIHByb3ZhIHVuaXZlcnNhbDwvdGV4dD4KPC9zdmc+Cg==" alt="Framework da investigação preenchido com o plano inclinado" /></p>
+<p><strong>O que Galileu acrescentou.</strong> Não “inventou o experimento”. Articulou de modo especialmente produtivo idealização matemática, construção instrumental, medição repetida e argumento sobre movimento, em diálogo com antecessores e artesãos.</p>
+<p><strong>Experimento seguro.</strong> O protocolo completo está no capítulo 27 e na pasta <code>experiments/plano-inclinado</code>.</p>
+<h2 id="21-newton-e-a-unificacao-de-ceu-e-terra">21. Newton e a unificação de céu e Terra</h2>
+<p>Newton formulou princípios do movimento e gravitação capazes de tratar quedas, projéteis, Lua e planetas na mesma arquitetura. No <em>Principia</em>, a apresentação é geométrica; o cálculo foi desenvolvido em paralelo por Newton e Leibniz, com notações e programas distintos. Newton não inventou a equação nem trabalhou fora de redes de dados astronômicos, instrumentos e correspondentes. <a href="#ref-53">53</a></p>
+<p>Na formulação moderna, <code>F = ma</code> conecta força resultante, massa e aceleração. A lei gravitacional <code>F = Gm₁m₂/r²</code> combina massas, distância e constante <code>G</code>. Símbolos têm unidades: <code>F</code> em newtons, <code>m</code> em quilogramas, <code>a</code> em <code>m/s²</code>, <code>G</code> em <code>N·m²/kg²</code>. Para corpos esféricos e velocidades pequenas frente à luz, o esquema é extraordinariamente preciso; campos fortes e velocidades relativísticas pedem outra teoria.</p>
+<p><strong>Distinção essencial.</strong> “Lei” não é uma teoria promovida. Uma lei descreve uma relação estável; uma teoria organiza entidades, princípios, modelos, leis, procedimentos e evidências. A gravitação newtoniana não se tornou falsa para toda finalidade quando surgiu a relatividade; tornou-se um limite aproximado em certo domínio.</p>
+<h2 id="22-teoria-lei-hipotese-modelo-e-evidencia">22. Teoria, lei, hipótese, modelo e evidência</h2>
+<p>Uma <strong>hipótese</strong> é uma proposição examinável; um <strong>modelo</strong> é uma representação seletiva; uma <strong>lei</strong> expressa uma regularidade; uma <strong>teoria</strong> é uma arquitetura que coordena ontologia, conceitos, princípios, matemática, modelos, ligação com medição, previsões e evidência. Um <strong>princípio</strong> ocupa papel organizador; uma <strong>predição</strong> vai do modelo a um resultado ainda não usado; <strong>retrodicção</strong> trata um resultado passado; <strong>simulação</strong> executa computacionalmente um modelo; <strong>parâmetro</strong> caracteriza o modelo; <strong>variável</strong> pode assumir valores; <strong>incerteza</strong> qualifica a dispersão de valores atribuídos. <a href="#ref-23">23</a> <a href="#ref-27">27</a></p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDc2MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPkFuYXRvbWlhIGVtIGNhbWFkYXMgZGUgdW1hIHRlb3JpYSBjaWVudMOtZmljYTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPk9pdG8gY2FtYWRhcyBkYSBvbnRvbG9naWEgw6AgZXZpZMOqbmNpYSwgY29uZWN0YWRhcyBwb3IgaW50ZXJwcmV0YcOnw6NvLCBkZXJpdmHDp8OjbyBlIG1lZGnDp8OjbywgY29tIGNyw610aWNhIHRyYW5zdmVyc2FsLjwvZGVzYz4KICA8ZGVmcz48c3R5bGU+LmJne2ZpbGw6I2Y4ZmFmY30ubGF5ZXJ7c3Ryb2tlOiNmZmY7c3Ryb2tlLXdpZHRoOjM7cng6MTJ9LnR7Zm9udDo3MDAgMjBweCBBcmlhbDtmaWxsOiNmZmZ9LnN7Zm9udDoxNnB4IEFyaWFsO2ZpbGw6I2VlZjZmZn0uc2lkZXtmaWxsOiNmZmY7c3Ryb2tlOiNjMjQxMGM7c3Ryb2tlLXdpZHRoOjM7cng6MTR9LnN0e2ZvbnQ6NzAwIDE4cHggQXJpYWw7ZmlsbDojOWEzNDEyfS5zc3tmb250OjE1cHggQXJpYWw7ZmlsbDojN2MyZDEyfS5he3N0cm9rZTojYzI0MTBjO3N0cm9rZS13aWR0aDo0O2ZpbGw6bm9uZTttYXJrZXItZW5kOnVybCgjbSl9PC9zdHlsZT48bWFya2VyIGlkPSJtIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjgiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEwwIDZMOSAzeiIgZmlsbD0iI2MyNDEwYyIvPjwvbWFya2VyPjwvZGVmcz4KICA8cmVjdCBjbGFzcz0iYmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9Ijc2MCIvPjx0ZXh0IHg9IjYwMCIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzE3M2Y2YiI+QU5BVE9NSUEgREUgVU1BIFRFT1JJQSBDSUVOVMONRklDQTwvdGV4dD4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgNzUpIj48cmVjdCBjbGFzcz0ibGF5ZXIiIGZpbGw9IiMxNzNmNmIiIHdpZHRoPSI2ODAiIGhlaWdodD0iNzAiLz48dGV4dCBjbGFzcz0idCIgeD0iMjQiIHk9IjI5Ij4xLiBPbnRvbG9naWEgZSBzaXN0ZW1hLWFsdm88L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjI0IiB5PSI1MyI+cXVlIGVudGlkYWRlcy9wcm9jZXNzb3MgYSB0ZW9yaWEgcmVwcmVzZW50YT88L3RleHQ+PC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMCAxNDUpIj48cmVjdCBjbGFzcz0ibGF5ZXIiIGZpbGw9IiMxZTVhN2QiIHdpZHRoPSI2ODAiIGhlaWdodD0iNzAiLz48dGV4dCBjbGFzcz0idCIgeD0iMjQiIHk9IjI5Ij4yLiBDb25jZWl0b3MgZSBkZWZpbmnDp8O1ZXM8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjI0IiB5PSI1MyI+Z3JhbmRlemFzLCBjYXRlZ29yaWFzIGUgcmVncmFzIGRlIHVzbzwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIwIDIxNSkiPjxyZWN0IGNsYXNzPSJsYXllciIgZmlsbD0iIzBmNzY2ZSIgd2lkdGg9IjY4MCIgaGVpZ2h0PSI3MCIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIyNCIgeT0iMjkiPjMuIFByaW5jw61waW9zIGUgaGlww7N0ZXNlczwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMjQiIHk9IjUzIj5jb25zZXJ2YcOnw6NvLCBzaW1ldHJpYSwgbWVjYW5pc21vcywgcml2YWlzPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgMjg1KSI+PHJlY3QgY2xhc3M9ImxheWVyIiBmaWxsPSIjMTU4MDNkIiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjcwIi8+PHRleHQgY2xhc3M9InQiIHg9IjI0IiB5PSIyOSI+NC4gRXN0cnV0dXJhIG1hdGVtw6F0aWNhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIyNCIgeT0iNTMiPmVxdWHDp8O1ZXMsIHBhcsOibWV0cm9zLCBjb25kacOnw7VlcyBlIGRlcml2YcOnw6NvPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgMzU1KSI+PHJlY3QgY2xhc3M9ImxheWVyIiBmaWxsPSIjN2MzYWVkIiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjcwIi8+PHRleHQgY2xhc3M9InQiIHg9IjI0IiB5PSIyOSI+NS4gTW9kZWxvcyBlc3BlY8OtZmljb3M8L3RleHQ+PHRleHQgY2xhc3M9InMiIHg9IjI0IiB5PSI1MyI+aWRlYWxpemHDp8O1ZXMgcGFyYSBzaXN0ZW1hcyBlIHJlZ2ltZXMgY29uY3JldG9zPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgNDI1KSI+PHJlY3QgY2xhc3M9ImxheWVyIiBmaWxsPSIjYTg1NWY3IiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjcwIi8+PHRleHQgY2xhc3M9InQiIHg9IjI0IiB5PSIyOSI+Ni4gUG9udGUgZGUgbWVkacOnw6NvPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzIiB4PSIyNCIgeT0iNTMiPnByb2NlZGltZW50b3MsIGluc3RydW1lbnRvcywgY2FsaWJyYcOnw6NvLCB1bmlkYWRlczwvdGV4dD48L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIwIDQ5NSkiPjxyZWN0IGNsYXNzPSJsYXllciIgZmlsbD0iI2MyNDEwYyIgd2lkdGg9IjY4MCIgaGVpZ2h0PSI3MCIvPjx0ZXh0IGNsYXNzPSJ0IiB4PSIyNCIgeT0iMjkiPjcuIFByZXZpc8O1ZXMgZSByZXRyb2RpY8Onw7VlczwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMjQiIHk9IjUzIj5yZXN1bHRhZG9zIG9ic2VydsOhdmVpcyBlIGRvbcOtbmlvIGRlIHZhbGlkYWRlPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAgNTY1KSI+PHJlY3QgY2xhc3M9ImxheWVyIiBmaWxsPSIjOWEzNDEyIiB3aWR0aD0iNjgwIiBoZWlnaHQ9IjcwIi8+PHRleHQgY2xhc3M9InQiIHg9IjI0IiB5PSIyOSI+OC4gRXZpZMOqbmNpYSBlIGluY2VydGV6YTwvdGV4dD48dGV4dCBjbGFzcz0icyIgeD0iMjQiIHk9IjUzIj5kYWRvcywgZXN0YXTDrXN0aWNhLCBhbHRlcm5hdGl2YXMgZSBsaW1pdGVzPC90ZXh0PjwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NjAgMTI1KSI+PHJlY3QgY2xhc3M9InNpZGUiIHdpZHRoPSIyODAiIGhlaWdodD0iNDQwIi8+PHRleHQgY2xhc3M9InN0IiB4PSIxNDAiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DT05UUk9MRVMgVFJBTlNWRVJTQUlTPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzcyIgeD0iMjQiIHk9Ijg4Ij7igKIgY29uc2lzdMOqbmNpYSBsw7NnaWNhPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzcyIgeD0iMjQiIHk9IjEyNSI+4oCiIGFuw6FsaXNlIGRpbWVuc2lvbmFsPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzcyIgeD0iMjQiIHk9IjE2MiI+4oCiIGNhc29zLWxpbWl0ZTwvdGV4dD48dGV4dCBjbGFzcz0ic3MiIHg9IjI0IiB5PSIxOTkiPuKAoiB2ZXJpZmljYcOnw6NvIGRvIGPDs2RpZ288L3RleHQ+PHRleHQgY2xhc3M9InNzIiB4PSIyNCIgeT0iMjM2Ij7igKIgcmVzw61kdW9zIGUgcml2YWlzPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzcyIgeD0iMjQiIHk9IjI3MyI+4oCiIGNyw610aWNhIGNvbXVuaXTDoXJpYTwvdGV4dD48dGV4dCBjbGFzcz0ic3MiIHg9IjI0IiB5PSIzMTAiPuKAoiByZXBsaWNhw6fDo28gaW5kZXBlbmRlbnRlPC90ZXh0Pjx0ZXh0IGNsYXNzPSJzcyIgeD0iMjQiIHk9IjM0NyI+4oCiIHJldmlzw6NvIGRhIHRlb3JpYTwvdGV4dD48cGF0aCBjbGFzcz0iYSIgZD0iTTE0MCAzNzV2NDIiLz48L2c+CiAgPHBhdGggY2xhc3M9ImEiIGQ9Ik04MDAgMTEwaDUwIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik04NTAgMjUwSDgxMCIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNODUwIDM5MEg4MTAiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTg1MCA1MzBIODEwIi8+CiAgPHRleHQgeD0iNDYwIiB5PSI2OTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzNGU2OCI+VW1hIHRlb3JpYSBuw6NvIMOpIHVtYSBlcXVhw6fDo28gaXNvbGFkYTogw6kgdW1hIGFycXVpdGV0dXJhIGNvbSBwb250ZXMgZSBwb250b3MgZGUgZmFsaGEuPC90ZXh0Pgo8L3N2Zz4K" alt="Camadas de uma teoria científica" /></p>
+<p><strong>Erro escolar comum.</strong> Hipótese não vira teoria e teoria não vira lei. Elas exercem funções diferentes. Uma hipótese pode integrar uma teoria; uma lei pode ser explicada por teorias rivais.</p>
+<p>Evidência não confronta uma frase nua. Confronta uma rede: teoria, modelo específico, condições iniciais, hipóteses auxiliares, detector, calibração e modelo estatístico. Se a previsão falha, o desacordo localiza trabalho; não informa automaticamente qual nó descartar.</p>
+<p><strong>Exercício.</strong> Para “fertilizante aumenta crescimento”, separe hipótese causal, variável-resposta, modelo, desenho, parâmetro, fonte de incerteza e interpretação permitida.</p>
+<h2 id="23-einstein-grossmann-hilbert-e-a-geometrizacao-da-gravidade">23. Einstein, Grossmann, Hilbert e a geometrização da gravidade</h2>
+<p>Em 1905, Einstein formulou a relatividade especial a partir de problemas de eletrodinâmica, simultaneidade e invariância da velocidade da luz. Em 1907, percebeu no princípio de equivalência uma pista: localmente, queda livre e ausência de peso aproximam-se. Experimentos mentais orientaram o problema; não substituíram a matemática nem o teste. <a href="#ref-57">57</a></p>
+<p>Generalizar exigia descrever uma geometria variável e formular leis covariantes. Marcel Grossmann, matemático e amigo de Einstein, guiou o acesso à geometria diferencial e ao cálculo tensorial. No <em>Entwurf</em> de 1913, Einstein e Grossmann propuseram uma teoria ainda restrita. A colaboração não cabe em “Grossmann fez a matemática, Einstein a física”: selecionar formalismo e impor requisitos físicos foi trabalho interativo. <a href="#ref-58">58</a></p>
+<p>Em novembro de 1915, Einstein apresentou sucessivas comunicações até as equações de campo. David Hilbert trabalhou em proximidade temporal e trocou ideias com Einstein; a prioridade e a forma dos manuscritos foram estudadas documentalmente. O relato responsável reconhece contribuições sem transformar a corrida numa autoria monocausal. <a href="#ref-59">59</a> <a href="#ref-60">60</a></p>
+<p>Em camada conceitual, a equação é:</p>
+<p><code>Gμν + Λgμν = (8πG/c⁴)Tμν</code>.</p>
+<p>À esquerda, a métrica e sua curvatura descrevem a geometria; à direita, o tensor energia-momento descreve energia, momento e tensões. <code>G</code> é a constante gravitacional, <code>c</code> a velocidade da luz e <code>Λ</code> a constante cosmológica. A igualdade impõe uma relação local, não a frase simplista “matéria diz ao espaço como curvar” tomada literalmente.</p>
+<p>As equações precisam satisfazer consistência matemática, covariância, conservação e limite newtoniano. Recuperar Newton em campo fraco é um caso-limite; explicar a precessão anômala do periélio de Mercúrio foi uma retrodicção; o eclipse de 1919 testou desvio da luz com dados difíceis e não foi verificação final. <a href="#ref-61">61</a> Detecções de ondas gravitacionais um século depois ampliaram a corroboração em outro regime. <a href="#ref-62">62</a></p>
+<p><strong>A matemática provou a relatividade geral?</strong> Não. A matemática permitiu formular, testar consistência e derivar consequências. A conexão com o mundo depende de medições e comparações; nenhum teste isolado prova dedutivamente que a teoria é a descrição final da gravidade.</p>
+<p><strong>Para leitores avançados.</strong> O Apêndice B introduz métrica, geodésica, curvatura, tensor de Einstein e energia-momento sem derivar toda a geometria riemanniana.</p>
+<p><strong>Exercício da parte.</strong> Classifique cada passo do caso Einstein como problema, heurística, formalismo, derivação, caso-limite, retrodicção ou teste novo. O que se perde na narrativa “gênio imaginou e acertou”?</p>
+<h1 id="parte-v-o-laboratorio-corrigivel">Parte V — O laboratório corrigível</h1>
+<h2 id="24-o-metodo-cientifico-como-ciclo-nao-receita">24. O método científico como ciclo, não receita</h2>
+<p>Não há uma sequência universal em que toda ciência primeiro observa, depois formula hipótese e por fim experimenta. Astronomia e geologia não controlam seus objetos como um ensaio de bancada; epidemiologia combina observação, modelos e quase-experimentos; física de partículas depende de instrumentos orientados por teoria; ciência exploratória pode encontrar uma regularidade antes de explicá-la.</p>
+<p>O framework em doze núcleos organiza dependências sem engessar a prática:</p>
+<ol>
+<li>fenômeno e problema;</li>
+<li>pergunta delimitada;</li>
+<li>conceitos e definições operacionais;</li>
+<li>hipótese e rivais;</li>
+<li>idealizações e modelo;</li>
+<li>matemática e derivação;</li>
+<li>previsão ou retrodicção;</li>
+<li>desenho e pré-registro quando útil;</li>
+<li>instrumento, calibração e medição;</li>
+<li>dados, metadados e incerteza;</li>
+<li>confronto, estatística e interpretação;</li>
+<li>crítica, replicação e revisão.</li>
+</ol>
+<p>As setas voltam. Um padrão nos resíduos pode levar ao sensor, à condição inicial, ao modelo de ruído ou à hipótese. <a href="#ref-35">35</a></p>
+<p><strong>Erro escolar comum.</strong> Procurar “o método científico” como algoritmo que transforma qualquer pergunta em verdade. Métodos são famílias de controles adaptadas a objetos e riscos de erro.</p>
+<p><strong>Veja em sua vida.</strong> Para saber se dormir mais melhora seu tempo de reação, não comece pelo aplicativo. Defina “dormir mais”, “tempo de reação”, janela de observação, fatores de confusão, regra de exclusão e interpretação permitida.</p>
+<p><strong>Caderno científico.</strong> Registre antes, durante e depois: propósito, versões, materiais, desvios do plano, decisões e resultados negativos. O caderno é uma extensão da memória e uma superfície de auditoria.</p>
+<h2 id="25-medicao-calibracao-erro-e-incerteza">25. Medição, calibração, erro e incerteza</h2>
+<p><strong>Medição</strong> é um processo de obter valores que podem ser razoavelmente atribuídos a uma grandeza. O <strong>mensurando</strong> é a grandeza pretendida: não “a esfera”, mas “o tempo entre a liberação operacional e a passagem da marca de 0,80 m”. <strong>Calibração</strong> estabelece, sob condições declaradas, relações entre indicações e padrões; não é sinônimo de ajuste nem de verificação. <a href="#ref-81">81</a></p>
+<p>Erro de medição é a diferença entre valor medido e valor de referência; muitas vezes o erro particular é desconhecido. <strong>Incerteza</strong> é um parâmetro não negativo que caracteriza a dispersão dos valores atribuídos ao mensurando com a informação disponível. Ela inclui componentes avaliados por repetição (tipo A) e por resolução, calibração, especificação ou conhecimento prévio (tipo B). <a href="#ref-82">82</a></p>
+<p>Exemplo: vídeo a 60 quadros por segundo tem passo nominal de <code>1/60 s ≈ 0,0167 s</code>. Isso não significa automaticamente incerteza de exatamente meio quadro; o instante de liberação, obturador, seleção do quadro e taxa real precisam entrar no modelo.</p>
+<p><strong>Precisão</strong> descreve proximidade entre resultados repetidos; <strong>exatidão</strong> é conceito qualitativo relacionado à proximidade do valor verdadeiro; <strong>viés</strong> é componente sistemática. Uma balança pode repetir <code>102,0 g</code> e estar deslocada <code>+2,0 g</code>.</p>
+<p><strong>Propagação simples.</strong> Se <code>v = s/t</code>, pequenas incertezas independentes podem ser aproximadas por</p>
+<p><code>u(v)/v ≈ √[(u(s)/s)² + (u(t)/t)²]</code>.</p>
+<p>A fórmula depende de linearização e independência. Correlações exigem covariâncias. Um orçamento de incerteza declara entradas, distribuições assumidas e como foram combinadas. <a href="#ref-83">83</a></p>
+<p><strong>Experimento seguro.</strong> Meça o mesmo livro com duas réguas, troque operadores e orientação. Separe variação de leitura, resolução e possível erro de zero.</p>
+<h2 id="26-estatistica-inferencia-e-modelos-rivais">26. Estatística, inferência e modelos rivais</h2>
+<p>Dados variam. A estatística descreve essa variação e quantifica o que diferentes modelos esperariam; ela não substitui desenho nem qualidade de medição.</p>
+<p>Para valores <code>x₁...xₙ</code>, a média é <code>x̄ = Σxᵢ/n</code>. O desvio-padrão amostral é <code>s = √[Σ(xᵢ-x̄)²/(n-1)]</code>. A incerteza-padrão da média frequentemente é estimada por <code>s/√n</code> sob independência e estabilidade; repetir uma medição com o mesmo viés reduz ruído, não corrige o viés.</p>
+<h3 id="um-modelo-probabilistico-simples">Um modelo probabilístico simples</h3>
+<p>Se resultados binários independentes têm probabilidade constante <code>p</code>, o número de sucessos em <code>n</code> tentativas segue modelo binomial. “Independentes” e “p constante” são hipóteses. Em uma moeda real, desgaste, operador e seleção de lançamentos podem violá-las.</p>
+<h3 id="regressao-como-inferencia-de-parametros">Regressão como inferência de parâmetros</h3>
+<p>No plano inclinado, compare:</p>
+<ul>
+<li>linear no tempo: <code>s = β₀ + β₁t + ε</code>;</li>
+<li>quadrático: <code>s = β₀ + β₂t² + ε</code>;</li>
+<li>modelo físico completo: <code>s = s₀ + v₀t + ½at² + ε</code>.</li>
+</ul>
+<p>O ajuste estima parâmetros. <strong>Resíduo</strong> é <code>observado - previsto</code>; gráficos de resíduos mostram curvatura, variância crescente, atrasos e pontos influentes. Um <code>R²</code> alto pode coexistir com estrutura errada, especialmente quando ambas as variáveis crescem com o tempo. <a href="#ref-68">68</a></p>
+<p><strong>Distinção essencial.</strong> Significância estatística não mede tamanho, importância, ausência de viés nem probabilidade de a hipótese ser verdadeira. Intervalos e probabilidades dependem do modelo e do procedimento.</p>
+<p><strong>Modelos rivais.</strong> Pré-especifique qual observação distingue as alternativas. Compare erro de previsão, resíduos e plausibilidade física; penalize flexibilidade excessiva. Um modelo mais complexo pode ajustar ruído.</p>
+<h2 id="27-replicacao-completa-do-plano-inclinado">27. Replicação completa do plano inclinado</h2>
+<p>Este estudo transforma o ciclo inteiro num protocolo seguro. Adolescente deve trabalhar com supervisão; a rampa fica baixa, estável e longe de escadas, vidro e circulação. Não use esferas pesadas, rampas altas nem cronômetros ligados à rede exposta.</p>
+<h3 id="271-fenomeno-pergunta-e-hipoteses">27.1 Fenômeno, pergunta e hipóteses</h3>
+<p>Uma esfera liberada numa rampa percorre distâncias crescentes em intervalos iguais. Pergunta: <strong>no trecho e nas condições definidos, posição ao longo da rampa é melhor descrita como linear em <code>t</code> ou em <code>t²</code>?</strong></p>
+<ul>
+<li><code>H₁</code>, uniforme: <code>s = s₀ + vt</code>;</li>
+<li><code>H₂</code>, aceleração constante: <code>s = s₀ + v₀t + ½at²</code>;</li>
+<li>rival material: aceleração varia por deslizamento, irregularidade ou rampa curva.</li>
+</ul>
+<h3 id="272-definicoes-e-idealizacoes">27.2 Definições e idealizações</h3>
+<p><code>s</code> é a coordenada do centro da esfera ao longo do canal, em metros; <code>t</code> é o intervalo entre liberação e passagem da marca; <code>v=ds/dt</code>; <code>a=dv/dt</code>. Idealizamos esfera rígida, rampa reta, ângulo constante, rolamento sem escorregar, resistência pequena e liberação sem impulso. Com <code>a</code> constante, integração fornece <code>s=s₀+v₀t+½at²</code>; para <code>s₀=0</code> e <code>v₀≈0</code>, <code>s∝t²</code>.</p>
+<h3 id="273-materiais-e-montagem">27.3 Materiais e montagem</h3>
+<ul>
+<li>canaleta ou perfil reto de 1,2 a 2,0 m, preso a base estável;</li>
+<li>esfera de aço ou vidro com diâmetro registrado;</li>
+<li>calços, fita, régua de 1 mm, nível ou aplicativo de inclinação;</li>
+<li>recipiente de retenção com pano;</li>
+<li>celular em tripé, enquadramento fixo, 60 fps ou mais;</li>
+<li>opcional histórico: recipiente de água, válvula simples, copos e balança.</li>
+</ul>
+<p>Eleve uma extremidade entre 5° e 10°. Marque <code>s = 0,20; 0,40; 0,60; 0,80; 1,00 m</code>, medidos no canal. Filme uma régua no mesmo plano da trajetória. Fixe a rampa; teste a retenção.</p>
+<h3 id="274-pre-registro-didatico">27.4 Pré-registro didático</h3>
+<p>Antes dos dados, escreva: hipótese principal; número de repetições (mínimo 8 por distância); esfera, ângulo e operador; taxa de quadros; regra de início/fim; exclusões permitidas (por exemplo, esfera sai do canal); modelos; gráfico e interpretação. Desvios permanecem no registro.</p>
+<h3 id="275-metodo-historico-e-metodo-moderno">27.5 Método histórico e método moderno</h3>
+<p><strong>Relógio de água:</strong> libere esfera e fluxo tão simultaneamente quanto possível; interrompa no evento final; pese ou meça água. Calibre massa de água por tempo com repetições. É uma reconstrução inspirada no texto, não dados originais de Galileu.</p>
+<p><strong>Vídeo:</strong> câmera perpendicular ao plano, distante para reduzir perspectiva; iluminação curta; marcador de escala; liberação mecânica simples. Conte quadros e divida pela taxa verificada. Guarde arquivo, metadados e código de leitura.</p>
+<h3 id="276-tabela-e-repeticoes">27.6 Tabela e repetições</h3>
+<p>Registre em colunas:</p>
+<ul>
+<li>identificação: <code>run_id</code>, <code>data_hora</code>, <code>operador</code>;</li>
+<li>material: <code>esfera</code>, <code>diametro_m</code>, <code>massa_kg</code>, <code>angulo_deg</code>;</li>
+<li>evento: <code>posicao_m</code>, <code>metodo</code>, <code>fps</code>, <code>quadro_inicio</code>, <code>quadro_fim</code>, <code>tempo_s</code>;</li>
+<li>auditoria: <code>observacoes</code>, <code>excluida</code>, <code>motivo_exclusao</code>.</li>
+</ul>
+<p>Não apague ensaios; marque exclusões.</p>
+<h3 id="277-analise">27.7 Análise</h3>
+<ol>
+<li>resuma média, desvio-padrão e contagem por posição;</li>
+<li>componha resolução temporal e repetibilidade;</li>
+<li>trace <code>s</code> contra <code>t</code> e <code>s</code> contra <code>t²</code>;</li>
+<li>ajuste modelos linear e quadrático sob a mesma regra;</li>
+<li>trace resíduos contra tempo e valor previsto;</li>
+<li>estime <code>a = 2β₂</code> quando intercepto e <code>v₀</code> forem tratados adequadamente;</li>
+<li>compare com esfera rolando: <code>a=(5/7)g sen α</code> para esfera maciça ideal;</li>
+<li>faça análise de sensibilidade incluindo/excluindo ensaios pré-especificados.</li>
+</ol>
+<h3 id="278-exemplo-dados-simulados">27.8 Exemplo — DADOS SIMULADOS</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><code>s</code> (m)</th>
+<th style="text-align: right;">tempo médio simulado (s)</th>
+<th style="text-align: right;">desvio simulado (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0,20</td>
+<td style="text-align: right;">0,506</td>
+<td style="text-align: right;">0,010</td>
+</tr>
+<tr>
+<td style="text-align: right;">0,40</td>
+<td style="text-align: right;">0,714</td>
+<td style="text-align: right;">0,012</td>
+</tr>
+<tr>
+<td style="text-align: right;">0,60</td>
+<td style="text-align: right;">0,874</td>
+<td style="text-align: right;">0,013</td>
+</tr>
+<tr>
+<td style="text-align: right;">0,80</td>
+<td style="text-align: right;">1,011</td>
+<td style="text-align: right;">0,014</td>
+</tr>
+<tr>
+<td style="text-align: right;">1,00</td>
+<td style="text-align: right;">1,130</td>
+<td style="text-align: right;">0,016</td>
+</tr>
+</tbody>
+</table>
+<p>Esses números foram gerados para ensinar análise; <strong>não são medidas reais nem históricas</strong>. O conjunto completo e a semente estão em <code>dados-simulados.csv</code> e <code>analise.py</code>.</p>
+<h3 id="279-erros-sistematicos-e-interpretacao">27.9 Erros sistemáticos e interpretação</h3>
+<p>Possíveis fontes: rampa arqueada, ângulo mal medido, perspectiva, taxa de quadros variável, liberação com impulso, esfera escorregando, marcas espessas, atraso do relógio de água e seleção tendenciosa de tentativas. A rotação desvia a aceleração do modelo de bloco deslizante; o momento de inércia depende da distribuição de massa.</p>
+<p>Conclusão permitida: “Nestas condições, o modelo quadrático produziu resíduos menores e menos estruturados que o linear.” Conclusão excessiva: “Provamos definitivamente a lei universal da queda.”</p>
+<h3 id="2710-replicacao-e-extensao">27.10 Replicação e extensão</h3>
+<p>Repita com ângulos, esferas e operadores diferentes. Uma <strong>repetição</strong> interna estima variação; uma <strong>replicação</strong> independente reconstrói o teste; uma <strong>reprodução computacional</strong> executa análise com os mesmos dados. Extensões: testar <code>a</code> contra <code>sen α</code>, comparar esfera maciça e oca, estimar perda por rolamento e investigar taxa de quadros. <a href="#ref-33">33</a></p>
+<h2 id="28-simulacao-modelo-algoritmo-codigo-e-hardware">28. Simulação: modelo, algoritmo, código e hardware</h2>
+<p>Uma simulação executa regras de um modelo. A cadeia é: sistema-alvo → modelo conceitual → equações → discretização/algoritmo → código → compilador/biblioteca → hardware → saída → análise. Cada seta pode introduzir erro.</p>
+<p>Na equação do calor, substituímos derivadas por diferenças em uma malha. Passos muito grandes podem tornar um método numericamente instável embora a equação física esteja correta. Verificação pergunta “resolvemos corretamente as equações escolhidas?”; validação pergunta “as equações representam o alvo para esta finalidade?”. <a href="#ref-64">64</a></p>
+<p><strong>Distinção essencial.</strong> Dados simulados não são observações. Eles ajudam a testar análise, explorar consequências, calibrar desenho e comparar algoritmos. Só informam diretamente sobre o mundo por meio da adequação do modelo e de parâmetros ligados a medições.</p>
+<p><strong>Como uma IA pode errar aqui.</strong> Pode gerar código executável que conserva a grandeza errada, mistura unidades ou usa condições de contorno implícitas. Testes unitários não substituem testes de convergência, balanços físicos e comparação com casos analíticos.</p>
+<p><strong>Exercício.</strong> Para uma simulação de epidemia, liste uma escolha em cada camada e uma observação externa necessária para validá-la.</p>
+<h2 id="29-provas-formais-e-inteligencia-artificial">29. Provas formais e inteligência artificial</h2>
+<p>Um assistente de prova como Lean representa definições e teoremas numa linguagem formal. Táticas constroem termos que um núcleo pequeno verifica. Isso reduz certas lacunas humanas, mas a garantia permanece condicional à formalização, aos axiomas, ao núcleo, ao compilador e ao hardware. <a href="#ref-71">71</a> <a href="#ref-72">72</a></p>
+<p>Em 2025-2026, sistemas de IA passaram a combinar busca, aprendizado por reforço, autoformalização e verificadores. AlphaProof resolveu três dos cinco problemas não geométricos da Olimpíada Internacional de Matemática de 2024; o artigo foi publicado on-line em 2025 e ganhou versão de registro em 2026. O verificador confirma as provas formalizadas, não a correção automática da tradução de toda frase informal. <a href="#ref-73">73</a></p>
+<p>Em maio de 2026, a OpenAI divulgou uma refutação gerada por modelo de uma conjectura de Erdős sobre distâncias unitárias, acompanhada por prova e avaliação externa. Em 1º de agosto, divulgou dez avanços adicionais. São marcos institucionais recentes; cada resultado deve ser avaliado pelo texto matemático, revisão especializada e estado editorial, não pela autoridade do comunicado. <a href="#ref-74">74</a> <a href="#ref-96">96</a></p>
+<p><strong>IA neuro-simbólica</strong> combina modelos aprendidos com representação ou verificação simbólica. Ela pode sugerir lemas, buscar contraexemplos e controlar provas. Ainda pode formular o teorema errado, omitir uma hipótese física ou citar uma versão inexistente.</p>
+<p><strong>O que a matemática garante.</strong> Uma prova formal aceita garante derivabilidade do enunciado formal no sistema implementado.</p>
+<p><strong>O que não garante.</strong> Que o enunciado formal traduz corretamente a intenção, que descreve a natureza ou que dados e instrumentos são adequados.</p>
+<h2 id="30-como-pensar-e-ensinar-como-cientista">30. Como pensar e ensinar como cientista</h2>
+<p>Pensar cientificamente não é recitar “observe, formule, teste”. É sustentar uma cadeia auditável e saber onde cada garantia termina.</p>
+<p>Use a frase de doze partes:</p>
+<blockquote>
+<p>Diante de <strong>[fenômeno]</strong>, pergunto <strong>[pergunta]</strong>; defino <strong>[grandezas]</strong> por <strong>[procedimentos]</strong>; comparo <strong>[hipóteses]</strong>; idealizo <strong>[sistema]</strong>; represento-o por <strong>[modelo/equação]</strong>; derivo <strong>[previsão]</strong>; observo com <strong>[instrumento/calibração]</strong>; registro <strong>[dados/metadados]</strong>; quantifico <strong>[incerteza]</strong>; confronto por <strong>[análise]</strong>; interpreto dentro de <strong>[domínio]</strong> e abro <strong>[replicação/revisão]</strong>.</p>
+</blockquote>
+<h3 id="um-experimento-cotidiano-completo">Um experimento cotidiano completo</h3>
+<p>Pergunta: chá esfria mais rapidamente em caneca larga? Defina temperatura central, intervalo e ambiente; compare recipientes; alterne ordem; calibre sensores; ajuste <code>T(t)=Tₐ+(T₀-Tₐ)e^{-kt}</code>; examine resíduos; não conclua além dos materiais e condições testados. O modelo pode falhar por evaporação, gradiente interno e ambiente variável.</p>
+<h3 id="rubrica-de-maturidade">Rubrica de maturidade</h3>
+<p>O aprendiz progride quando consegue: separar observação de inferência; explicitar unidades; imaginar rivais; registrar decisões; localizar um viés que repetição não resolve; interpretar resíduos; distinguir prova de teste; reproduzir análise; criticar a própria afirmação mais forte.</p>
+<p><strong>Como ensinar.</strong> Comece por contrastes e objetos reais; peça previsões antes do resultado; valorize um erro bem localizado; faça alunos trocar cadernos e replicar; use história para mostrar escolhas, não para decorar heróis.</p>
+<p><strong>Epílogo — A ponte corrigível.</strong> Uma teoria científica não elimina mediações humanas. Ela as torna criticáveis. A objetividade é uma conquista de procedimentos, diversidade de crítica, instrumentos rastreáveis e disposição institucional para corrigir. A certeza matemática é poderosa dentro do que foi formalizado; a confiança empírica é graduada, histórica e renovável. Saber onde uma afirmação pode quebrar não a enfraquece: é o que a torna ciência.</p>
+<h1 id="apendices">Apêndices</h1>
+<h2 id="apendice-a-ferramentas-matematicas-minimas">Apêndice A — Ferramentas matemáticas mínimas</h2>
+<h3 id="a1-proporcao-escala-e-dimensao">A.1 Proporção, escala e dimensão</h3>
+<p>Se <code>y = kx</code>, dobrar <code>x</code> dobra <code>y</code>; a razão <code>y/x</code> permanece <code>k</code>. Se <code>y = kx²</code>, dobrar <code>x</code> quadruplica <code>y</code>. Em gráfico log-log, uma lei de potência ideal <code>y=kxⁿ</code> tem inclinação <code>n</code>, mas ruído, faixa estreita e transformação dos erros podem enganar.</p>
+<p>Dimensão pergunta que tipo de grandeza aparece; unidade escolhe um padrão. Comprimento tem dimensão <code>L</code> e pode ser expresso em metro ou centímetro. Na relação <code>T=2π√(L/g)</code>, <code>L/g</code> tem dimensão de tempo ao quadrado. A análise elimina formas impossíveis, mas não determina sozinha o fator <code>2π</code> nem o domínio de pequeno ângulo.</p>
+<h3 id="a2-derivada-como-taxa">A.2 Derivada como taxa</h3>
+<p>A velocidade média entre <code>t</code> e <code>t+Δt</code> é <code>Δs/Δt</code>. A derivada <code>ds/dt</code> é o limite dessa razão quando o intervalo tende a zero, quando o limite existe. Ela descreve uma regra local. Aceleração é <code>dv/dt = d²s/dt²</code>.</p>
+<p>Para <code>s(t)=s₀+v₀t+½at²</code>, derivar fornece <code>v(t)=v₀+at</code>; derivar novamente fornece <code>a</code>. Esta é uma relação matemática. Medir uma “velocidade instantânea” exige intervalo finito e um modelo do sensor.</p>
+<h3 id="a3-integral-como-acumulacao">A.3 Integral como acumulação</h3>
+<p>Se <code>v(t)</code> é velocidade, a mudança de posição é a área orientada sob a curva: <code>Δs=∫v(t)dt</code>. Somar retângulos cada vez menores aproxima a integral. O teorema fundamental conecta derivar e integrar sob condições adequadas.</p>
+<p>O diagrama de Oresme torna intuitiva a acumulação, mas não deve ser identificado sem ressalvas com o formalismo integral posterior.</p>
+<h3 id="a4-equacao-diferencial-como-regra-local">A.4 Equação diferencial como regra local</h3>
+<p>Uma equação diferencial relaciona função e derivadas. <code>dT/dt=-k(T-Tₐ)</code> diz que a taxa de resfriamento é proporcional ao desvio térmico. Com <code>T(0)=T₀</code> e <code>k&gt;0</code>, a solução é <code>T(t)=Tₐ+(T₀-Tₐ)e^{-kt}</code>. A equação, a condição inicial e o parâmetro formam o problema; sem eles não há previsão única.</p>
+<h3 id="a5-conservacao-e-fluxo-derivacao-do-calor">A.5 Conservação e fluxo: derivação do calor</h3>
+<p>Considere uma pequena fatia de barra. A variação da energia interna é fluxo que entra menos fluxo que sai. Para densidade <code>ρ</code>, calor específico <code>c</code> e temperatura <code>T</code>, energia por volume varia como <code>ρc ∂T/∂t</code>. A lei de Fourier dá fluxo <code>q=-κ∂T/∂x</code>. O balanço <code>ρc∂T/∂t=-∂q/∂x</code> produz</p>
+<p><code>∂T/∂t = α∂²T/∂x²</code>, com <code>α=κ/(ρc)</code>.</p>
+<p>Origem: conservação mais relação constitutiva. Hipóteses: meio contínuo, parâmetros adequados e condução dominante. Condições de contorno especificam temperatura ou fluxo nas extremidades.</p>
+<h3 id="a6-ondas-fourier-e-maxwell">A.6 Ondas, Fourier e Maxwell</h3>
+<p>Na corda ideal, tensão e densidade linear determinam <code>c</code>; a equação de onda permite superposição. Fourier mostra que, sob condições, um sinal pode ser representado por componentes senoidais. Espectro é representação, não coleção de pequenas ondas materiais escondidas.</p>
+<p>As equações de Maxwell, em notação vetorial moderna, ligam divergência e rotação dos campos às fontes. Carga conserva-se; campos elétricos variáveis geram campo magnético e vice-versa; no vazio surgem ondas. A observação de Hertz e tecnologias posteriores conectam a derivação a sistemas físicos.</p>
+<h3 id="a7-regressao-e-incerteza-de-parametro">A.7 Regressão e incerteza de parâmetro</h3>
+<p>Na regressão <code>y=Xβ+ε</code>, estimar <code>β</code> exige suposições sobre erro, independência e forma. Mínimos quadrados minimiza a soma de resíduos quadráticos. Intervalos-padrão usuais podem falhar com autocorrelação, variância não constante ou seleção posterior do modelo.</p>
+<p>Para o plano inclinado, não force intercepto zero sem justificar <code>s₀</code> e o instante de liberação. Compare o ajuste livre com o restrito e mostre como a estimativa de aceleração muda.</p>
+<h3 id="a8-dez-passaportes-de-equacoes">A.8 Dez passaportes de equações</h3>
+<table>
+<thead>
+<tr>
+<th>Exemplo</th>
+<th>Origem</th>
+<th>Hipótese central</th>
+<th>Observável</th>
+<th>Falha típica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s=s₀+vt</code></td>
+<td>definição integrada</td>
+<td><code>v</code> constante</td>
+<td>posição-tempo</td>
+<td>resíduo curvo</td>
+</tr>
+<tr>
+<td><code>s=s₀+v₀t+½at²</code></td>
+<td>duas integrações</td>
+<td><code>a</code> constante</td>
+<td><code>s∝t²</code> no repouso</td>
+<td>arrasto/impulso</td>
+</tr>
+<tr>
+<td><code>a=(5/7)g sen α</code></td>
+<td>dinâmica/energia</td>
+<td>esfera maciça rolando</td>
+<td>aceleração-ângulo</td>
+<td>escorregamento</td>
+</tr>
+<tr>
+<td><code>T≈2π√(L/g)</code></td>
+<td>linearização</td>
+<td>ângulo pequeno</td>
+<td>período-comprimento</td>
+<td>amplitude grande</td>
+</tr>
+<tr>
+<td><code>dT/dt=-k(T-Tₐ)</code></td>
+<td>lei empírica concentrada</td>
+<td>corpo quase uniforme</td>
+<td>curva exponencial</td>
+<td>evaporação/gradiente</td>
+</tr>
+<tr>
+<td><code>∂T/∂t=α∂²T/∂x²</code></td>
+<td>conservação + Fourier</td>
+<td>contínuo homogêneo</td>
+<td>perfil térmico</td>
+<td>convecção dominante</td>
+</tr>
+<tr>
+<td><code>I=P/(4πr²)</code></td>
+<td>conservação geométrica</td>
+<td>fonte pontual isotrópica</td>
+<td>intensidade-distância</td>
+<td>absorção/fonte extensa</td>
+</tr>
+<tr>
+<td>equação de onda</td>
+<td>balanço local</td>
+<td>pequenas deformações</td>
+<td>modos/velocidade</td>
+<td>não linearidade</td>
+</tr>
+<tr>
+<td>Maxwell</td>
+<td>princípios de campo</td>
+<td>eletromagnetismo clássico</td>
+<td>ondas, forças</td>
+<td>escala quântica</td>
+</tr>
+<tr>
+<td>Einstein</td>
+<td>ação/consistência geométrica</td>
+<td>gravitação métrica clássica</td>
+<td>órbitas, luz, ondas</td>
+<td>regime quântico</td>
+</tr>
+</tbody>
+</table>
+<h2 id="apendice-b-relatividade-geral-em-segunda-camada">Apêndice B — Relatividade geral em segunda camada</h2>
+<h3 id="b1-metrica">B.1 Métrica</h3>
+<p>O intervalo <code>ds²=gμν dxμ dxν</code> usa o tensor métrico <code>gμν</code> para definir durações, distâncias e cones de luz localmente. Em espaço-tempo plano, uma escolha de coordenadas produz a métrica de Minkowski; em gravitação, os componentes variam e não podem, em geral, ser transformados globalmente para a forma plana.</p>
+<h3 id="b2-geodesica">B.2 Geodésica</h3>
+<p>Uma partícula em queda livre segue uma geodésica: trajetória que extremiza tempo próprio e obedece</p>
+<p><code>d²xμ/dτ² + Γμ_{αβ}(dxα/dτ)(dxβ/dτ)=0</code>.</p>
+<p>Os símbolos de Christoffel <code>Γ</code> são construídos da métrica e de suas derivadas; podem ser não nulos por escolha de coordenadas mesmo sem curvatura. Por isso, “força gravitacional” e “coordenada acelerada” exigem distinção local/global.</p>
+<h3 id="b3-curvatura">B.3 Curvatura</h3>
+<p>O tensor de Riemann mede a não comutatividade do transporte e a aceleração relativa de geodésicas. Contrações produzem tensor de Ricci <code>Rμν</code> e escalar <code>R</code>. O tensor de Einstein é <code>Gμν=Rμν-½Rgμν</code> e tem divergência covariante nula, compatível com conservação local.</p>
+<h3 id="b4-energia-momento">B.4 Energia-momento</h3>
+<p><code>Tμν</code> reúne densidade de energia, densidade e fluxo de momento e tensões. Seu conteúdo depende do modelo de matéria. A equação de campo não entrega uma solução sem simetria, matéria e condições de contorno/iniciais.</p>
+<h3 id="b5-limite-e-teste">B.5 Limite e teste</h3>
+<p>No limite de campos fracos e velocidades baixas, componentes da métrica ligam-se ao potencial newtoniano e recuperam a equação de Poisson. Esse caso-limite testa coerência com uma teoria anterior em seu domínio; dados de Mercúrio, luz, relógios, pulsares e ondas gravitacionais testam a ponte empírica em regimes diversos.</p>
+<h2 id="apendice-c-caderno-de-laboratorio-modelo">Apêndice C — Caderno de laboratório-modelo</h2>
+<h3 id="pagina-de-identificacao">Página de identificação</h3>
+<ul>
+<li>título e código do estudo;</li>
+<li>responsáveis e funções;</li>
+<li>pergunta, hipótese principal e rivais;</li>
+<li>data de início, local e riscos;</li>
+<li>versão do protocolo e repositório.</li>
+</ul>
+<h3 id="pre-registro-minimo">Pré-registro mínimo</h3>
+<ol>
+<li>unidade experimental e amostra;</li>
+<li>variáveis e procedimentos operacionais;</li>
+<li>condições e controles;</li>
+<li>número de repetições e regra de parada;</li>
+<li>exclusões e dados ausentes;</li>
+<li>modelos e gráficos;</li>
+<li>decisão que cada resultado autoriza;</li>
+<li>riscos de segurança e ética.</li>
+</ol>
+<h3 id="registro-por-sessao">Registro por sessão</h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>início/fim</td>
+<td>data, hora e fuso</td>
+</tr>
+<tr>
+<td>ambiente</td>
+<td>temperatura, iluminação, vibração</td>
+</tr>
+<tr>
+<td>materiais</td>
+<td>identificadores e versões</td>
+</tr>
+<tr>
+<td>calibração</td>
+<td>padrão, resultado, validade</td>
+</tr>
+<tr>
+<td>dados brutos</td>
+<td>arquivo imutável e checksum</td>
+</tr>
+<tr>
+<td>desvios</td>
+<td>o que mudou e por quê</td>
+</tr>
+<tr>
+<td>observações</td>
+<td>eventos não previstos</td>
+</tr>
+<tr>
+<td>assinatura</td>
+<td>operador e revisor</td>
+</tr>
+</tbody>
+</table>
+<h3 id="encerramento">Encerramento</h3>
+<p>Preserve dado bruto; derive arquivos por script; associe figura a comando e versão; registre resultado negativo; diferencie análise planejada e exploratória; indique licença e dados pessoais.</p>
+<h2 id="apendice-d-exercicios-e-respostas-comentadas">Apêndice D — Exercícios e respostas comentadas</h2>
+<h3 id="exercicios">Exercícios</h3>
+<ol>
+<li>Explique por que <code>x+3=5</code> e <code>F=ma</code> são equações, mas têm funções diferentes.</li>
+<li>Construa um argumento válido com premissa falsa.</li>
+<li>Dê um contraexemplo a “todo objeto mais pesado cai mais rápido”.</li>
+<li>Mostre dimensionalmente que <code>s=at</code> não pode representar posição sob aceleração constante.</li>
+<li>Diferencie um gráfico reto de <code>s</code> contra <code>t</code> e de <code>s</code> contra <code>t²</code>.</li>
+<li>Dê um caso em que repetição reduz dispersão, mas não viés.</li>
+<li>Identifique hipótese auxiliar num teste de luz pelo inverso do quadrado.</li>
+<li>Explique por que o teorema do grau médio não prova que Merton possuía laboratório moderno.</li>
+<li>Classifique periélio de Mercúrio e eclipse de 1919 como retrodicção ou predição/teste.</li>
+<li>Explique o papel de Grossmann sem separar ingenuamente “matemática” e “física”.</li>
+<li>Uma prova Lean é aceita. Liste três coisas que ainda podem estar erradas na aplicação física.</li>
+<li>Escreva a conclusão máxima permitida por dados simulados do plano inclinado.</li>
+</ol>
+<h3 id="respostas-comentadas">Respostas comentadas</h3>
+<ol>
+<li>Ambas afirmam igualdade. A primeira restringe incógnita num problema algébrico; a segunda relaciona grandezas físicas numa arquitetura dinâmica e requer ponte de medição.</li>
+<li>“Todos os planetas são cubos; Marte é planeta; logo Marte é cubo.” A forma é válida; a primeira premissa é falsa.</li>
+<li>Uma folha amassada e uma esfera mais pesada em condições de arrasto podem contrariar a regra; em vácuo ideal, massas diferentes têm a mesma aceleração gravitacional local.</li>
+<li><code>a</code> tem <code>L/T²</code>; multiplicar por <code>t</code> produz <code>L/T</code>, dimensão de velocidade. É preciso <code>t²</code> para comprimento.</li>
+<li>Movimento uniforme torna o primeiro linear; aceleração constante desde repouso torna o segundo linear. Inspecionar resíduos é melhor que “olhar qual parece reto”.</li>
+<li>Uma balança deslocada <code>+2 g</code> pode repetir com dispersão mínima; a média converge para o valor enviesado.</li>
+<li>Fonte aproximadamente pontual, emissão estável, ausência de luz ambiente ou linearidade do detector.</li>
+<li>O teorema é análise matemática idealizada. É preciso evidência documental de aparelho, procedimento, medição e confronto para alegar laboratório.</li>
+<li>Mercúrio já era conhecido e funciona como retrodicção; o desvio da luz era consequência testada em nova campanha, embora medições e previsões anteriores tornem a história mais complexa.</li>
+<li>Grossmann indicou e trabalhou o cálculo tensorial e a geometria diferencial; requisitos físicos influenciaram a escolha matemática e o formalismo reformulou o problema físico.</li>
+<li>Tradução do fenômeno para o enunciado, valores medidos/parâmetros e adequação das idealizações.</li>
+<li>Apenas que, sob o gerador declarado, o roteiro recupera a estrutura quadrática esperada. Nada foi medido no mundo.</li>
+</ol>
+<h1 id="glossario-alfabetico">Glossário alfabético</h1>
+<p><strong>Abdução.</strong> Inferência que propõe uma hipótese capaz de tornar um resultado esperado; não é dedução válida da hipótese a partir do resultado.</p>
+<p><strong>Algoritmo.</strong> Procedimento finito e especificado que transforma entradas em saídas.</p>
+<p><strong>Axioma/postulado.</strong> Enunciado adotado como ponto de partida de um sistema.</p>
+<p><strong>Calibração.</strong> Operação que estabelece relações entre indicações e valores/ incertezas de padrões, sob condições declaradas.</p>
+<p><strong>Conceito.</strong> Regra ou estrutura para classificar, relacionar e inferir.</p>
+<p><strong>Condição de contorno.</strong> Restrição espacial necessária para selecionar solução de uma equação diferencial.</p>
+<p><strong>Condição inicial.</strong> Estado do sistema em instante de referência.</p>
+<p><strong>Contraexemplo.</strong> Caso que torna falsa uma afirmação universal.</p>
+<p><strong>Corolário.</strong> Consequência próxima de um teorema.</p>
+<p><strong>Dado.</strong> Registro estruturado produzido por procedimento, com proveniência e metadados.</p>
+<p><strong>Dedução.</strong> Inferência em que premissas verdadeiras e forma válida tornam necessária a conclusão.</p>
+<p><strong>Definição operacional.</strong> Definição que liga o conceito a procedimento de identificação ou medição.</p>
+<p><strong>Derivação.</strong> Cadeia que obtém uma expressão ou previsão a partir de premissas e regras.</p>
+<p><strong>Evidência.</strong> Informação que altera o apoio comparativo entre hipóteses sob pressupostos declarados.</p>
+<p><strong>Experimento.</strong> Investigação com intervenção e controle planejados; nem toda ciência depende de experimento controlado.</p>
+<p><strong>Expressão.</strong> Combinação simbólica que designa valor quando interpretada.</p>
+<p><strong>Fórmula.</strong> Expressão compacta usada para calcular ou relacionar grandezas.</p>
+<p><strong>Função.</strong> Associação que atribui saídas a entradas segundo domínio e regra.</p>
+<p><strong>Hipótese.</strong> Proposição examinável, frequentemente comparada com rivais.</p>
+<p><strong>Idealização.</strong> Representação deliberadamente simplificada, com domínio e finalidade.</p>
+<p><strong>Identidade.</strong> Igualdade válida para todos os valores admissíveis.</p>
+<p><strong>Incerteza de medição.</strong> Parâmetro que caracteriza dispersão dos valores atribuídos ao mensurando com a informação disponível.</p>
+<p><strong>Indução.</strong> Inferência ampliativa de casos ou amostras para generalização/estimativa.</p>
+<p><strong>Inferência.</strong> Passagem de proposições a outra segundo regra ou padrão de apoio.</p>
+<p><strong>Lei científica.</strong> Regularidade expressa de modo geral dentro de domínio; não é estágio superior de teoria.</p>
+<p><strong>Lema.</strong> Resultado auxiliar usado numa demonstração.</p>
+<p><strong>Medição.</strong> Processo de obter valores razoavelmente atribuíveis a uma grandeza.</p>
+<p><strong>Mensurando.</strong> Grandeza que se pretende medir, especificada em detalhe suficiente.</p>
+<p><strong>Modelo.</strong> Representação seletiva de um sistema-alvo para explicar, prever, explorar ou intervir.</p>
+<p><strong>Objetividade científica.</strong> Resistência de afirmações a preferências idiossincráticas por controles públicos e crítica plural.</p>
+<p><strong>Parâmetro.</strong> Quantidade que caracteriza um modelo ou população e deve ser conhecida ou estimada.</p>
+<p><strong>Predição.</strong> Consequência para resultado ainda não usado na construção/ajuste relevante.</p>
+<p><strong>Premissa.</strong> Proposição usada como base de argumento.</p>
+<p><strong>Princípio.</strong> Enunciado de papel organizador amplo numa teoria.</p>
+<p><strong>Proposição.</strong> Conteúdo de uma afirmação capaz de verdade ou falsidade.</p>
+<p><strong>Prova matemática.</strong> Cadeia de inferências que estabelece um teorema em sistema; não confirma sozinha aplicação natural.</p>
+<p><strong>Replicação.</strong> Novo estudo voltado à mesma afirmação com novos dados; pode variar graus de independência.</p>
+<p><strong>Reprodução computacional.</strong> Obtenção dos mesmos resultados a partir dos mesmos dados e análise especificada.</p>
+<p><strong>Resíduo.</strong> Diferença entre valor observado e previsto pelo modelo.</p>
+<p><strong>Retrodicção.</strong> Consequência de uma teoria para evento ou dado anterior à formulação/ajuste relevante.</p>
+<p><strong>Simulação.</strong> Execução de modelo por algoritmo e código.</p>
+<p><strong>Solidez.</strong> Validade do argumento mais verdade de suas premissas.</p>
+<p><strong>Teorema.</strong> Proposição demonstrada a partir de axiomas/definições por regras aceitas.</p>
+<p><strong>Teoria científica.</strong> Arquitetura de conceitos, princípios, modelos, matemática, ligação à medição e evidência.</p>
+<p><strong>Validade.</strong> Impossibilidade de premissas verdadeiras e conclusão falsa numa forma dedutiva.</p>
+<p><strong>Variável.</strong> Símbolo ou característica que pode assumir valores.</p>
+<p><strong>Verdade.</strong> Propriedade atribuída a proposições; não é sinônimo de justificação ou consenso.</p>
+<h1 id="cronologia-comentada">Cronologia comentada</h1>
+<table>
+<thead>
+<tr>
+<th>Período</th>
+<th>Nó preservado</th>
+<th>O que permitiu</th>
+<th>Limite da afirmação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paleolítico</td>
+<td>marcas deliberadas</td>
+<td>memória externa possível</td>
+<td>significado numérico debatido</td>
+</tr>
+<tr>
+<td>IV milênio a.C.</td>
+<td>fichas, medidas, escrita mesopotâmica</td>
+<td>administração e cálculo registrado</td>
+<td>não é origem única da escrita</td>
+</tr>
+<tr>
+<td>II milênio a.C.</td>
+<td>tábuas e papiros matemáticos</td>
+<td>algoritmos, tabelas, agrimensura</td>
+<td>notação moderna é reconstrução</td>
+</tr>
+<tr>
+<td>séc. IV a.C.</td>
+<td>Aristóteles</td>
+<td>sistematização da demonstração</td>
+<td>não inventa toda lógica</td>
+</tr>
+<tr>
+<td>c. 300 a.C.</td>
+<td><em>Elementos</em></td>
+<td>organização axiomática</td>
+<td>texto tem história editorial</td>
+</tr>
+<tr>
+<td>helenismo</td>
+<td>Arquimedes, Eratóstenes, Ptolomeu</td>
+<td>matemática de equilíbrio, Terra e céu</td>
+<td>fontes são parciais</td>
+</tr>
+<tr>
+<td>sécs. I–VII</td>
+<td>tradições chinesas e indianas</td>
+<td>algoritmos, zero, astronomia</td>
+<td>cronologias e autorias variadas</td>
+</tr>
+<tr>
+<td>sécs. IX–XI</td>
+<td>al-Khwārizmī, Ibn al-Haytham</td>
+<td>álgebra retórica, óptica matemática</td>
+<td>sem “inventor do método”</td>
+</tr>
+<tr>
+<td>sécs. XII–XIII</td>
+<td>traduções e universidades</td>
+<td>circulação e crítica escolástica</td>
+<td>transmissão não é cópia passiva</td>
+</tr>
+<tr>
+<td>séc. XIV</td>
+<td>Merton e Oresme</td>
+<td>graus, velocidade média, gráficos</td>
+<td>não laboratório moderno</td>
+</tr>
+<tr>
+<td>1543–1638</td>
+<td>Copérnico, Tycho, Kepler, Galileu</td>
+<td>novos dados, órbitas e movimento</td>
+<td>processo coletivo e controverso</td>
+</tr>
+<tr>
+<td>1557–1637</td>
+<td>Recorde, Viète, Descartes</td>
+<td>igualdade e simbolismo algébrico</td>
+<td>estabilização gradual</td>
+</tr>
+<tr>
+<td>1687</td>
+<td>Newton</td>
+<td>unificação mecânica e gravitacional</td>
+<td>cálculo também leibniziano</td>
+</tr>
+<tr>
+<td>1822–1873</td>
+<td>Fourier e Maxwell</td>
+<td>calor, ondas e campos</td>
+<td>notação atual é síntese posterior</td>
+</tr>
+<tr>
+<td>séc. XIX</td>
+<td>probabilidade e estatística</td>
+<td>quantificação de variação</td>
+<td>escolas rivais permanecem</td>
+</tr>
+<tr>
+<td>1879–1936</td>
+<td>Frege, Hilbert, Gödel, Turing</td>
+<td>formalização e limites</td>
+<td>não elimina semântica/aplicação</td>
+</tr>
+<tr>
+<td>1905–1915</td>
+<td>Einstein, Grossmann, Hilbert</td>
+<td>relatividades e gravitação métrica</td>
+<td>sem prova empírica definitiva</td>
+</tr>
+<tr>
+<td>1919–2016</td>
+<td>eclipse a ondas gravitacionais</td>
+<td>testes em regimes diversos</td>
+<td>cada teste carrega modelos auxiliares</td>
+</tr>
+<tr>
+<td>1945–2000</td>
+<td>computação e simulação</td>
+<td>executar modelos complexos</td>
+<td>erro numérico e de código</td>
+</tr>
+<tr>
+<td>2000–2024</td>
+<td>ciência aberta, Lean, crise de replicação</td>
+<td>auditoria e prova formal</td>
+<td>transparência não garante correção</td>
+</tr>
+<tr>
+<td>2025–20 ago. 2026</td>
+<td>AlphaProof e IA em problemas abertos</td>
+<td>busca + verificação e descobertas relatadas</td>
+<td>estado editorial e formalização importam</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nota-bibliografica-critica-e-trilhas-de-aprofundamento">Nota bibliográfica crítica e trilhas de aprofundamento</h2>
+<p>Uma narrativa de longa duração precisa combinar síntese e estudos locais. Katz é útil como panorama da história da matemática, mas não substitui Robson, Imhausen, Plofker ou Chemla quando a afirmação depende de contexto e língua. <a href="#ref-6">6</a> O material do British Museum sobre o Papiro Rhind serve como porta de entrada visual e institucional; a sustentação historiográfica principal vem da edição do papiro e da história contextual de Imhausen. <a href="#ref-9">9</a> <a href="#ref-88">88</a> Para a Mesopotâmia, Rochberg mostra por que traduzir categorias cuneiformes diretamente como a “natureza” moderna pode deformar a pergunta histórica. <a href="#ref-87">87</a></p>
+<p>No estudo da prova, Hammack e Velleman ensinam técnicas contemporâneas; Lakatos mostra que a prática matemática também envolve conjecturas, contraexemplos e revisão de conceitos. <a href="#ref-14">14</a> <a href="#ref-15">15</a> <a href="#ref-16">16</a> Os verbetes sobre platonismo e nominalismo impedem que a pergunta “inventada ou descoberta?” seja reduzida a duas caricaturas. <a href="#ref-18">18</a> <a href="#ref-19">19</a> Wigner e Hamming formularam versões influentes - e diferentes - do problema da eficácia da matemática; são pontos de partida para análise, não provas de uma metafísica. <a href="#ref-21">21</a> <a href="#ref-22">22</a></p>
+<p>Para ciência empírica, Tal ancora o vocabulário de medição; Pincock analisa representação matemática; Giere explicita a perspectiva dos modelos. <a href="#ref-26">26</a> <a href="#ref-65">65</a> <a href="#ref-63">63</a> Godfrey-Smith e Chalmers são introduções, enquanto Popper e Kuhn devem ser lidos como programas históricos e filosóficos específicos, não como os dois únicos partidos possíveis. <a href="#ref-28">28</a> <a href="#ref-29">29</a> <a href="#ref-30">30</a> <a href="#ref-31">31</a> A síntese das National Academies sobre ciência e a pesquisa sobre aprendizagem lembram que definição didática de teoria não substitui a análise de práticas. <a href="#ref-32">32</a> <a href="#ref-34">34</a></p>
+<p>Na história pré-moderna, Archytas é um caso de matemática, música, política e mecânica cuja documentação fragmentária exige cautela. <a href="#ref-40">40</a> Lindberg e a coletânea de Grant situam traduções e universidades, mas a historiografia recente pede ainda mais atenção a conexões interculturais. <a href="#ref-46">46</a> <a href="#ref-47">47</a> Ragep documenta ciências naturais em sociedades islâmicas, e Qidwai revisa criticamente as grandes narrativas de ciência e religião. <a href="#ref-89">89</a> <a href="#ref-90">90</a></p>
+<p>No laboratório, Montgomery oferece ferramentas de desenho experimental e Taylor introduz análise de erros; a terminologia final deste livro segue VIM/GUM. <a href="#ref-66">66</a> <a href="#ref-67">67</a> O manual de evidência científica de 2025 é relevante para avaliação pública de inferências, não apenas para tribunais. <a href="#ref-69">69</a> Estudos de educação em física experimental mostram que estudantes precisam aprender iteração, diagnóstico e tomada de decisão, e não só seguir instruções. <a href="#ref-70">70</a> <em>The Turing Way</em> amplia a cadeia para dados, software, colaboração e ética. <a href="#ref-75">75</a></p>
+<p>Na formalização, Shannon separa quantidade de informação de significado; Frege, Hilbert, Gödel e Turing marcam programas distintos de lógica, axiomatização, incompletude e computabilidade. <a href="#ref-76">76</a> <a href="#ref-77">77</a> <a href="#ref-78">78</a> <a href="#ref-79">79</a> <a href="#ref-80">80</a> O artigo técnico do Lean 4 complementa o manual vivo e permite distinguir arquitetura do sistema de uma versão da documentação. <a href="#ref-95">95</a></p>
+<p>Para a relatividade geral, Norton, Stachel e Janssen/Renn ajudam a separar covariância, heurísticas físicas e reconstrução documental. <a href="#ref-91">91</a> <a href="#ref-92">92</a> O estudo de Corry, Renn e Stachel e o texto de Hilbert são indispensáveis para não resolver a prioridade Einstein-Hilbert por anedota. <a href="#ref-93">93</a> <a href="#ref-94">94</a> Finalmente, a publicação de exemplos do GUM em 2026 atualiza a prática metrológica, mas não altera retroativamente a definição do conjunto simulado deste livro. <a href="#ref-97">97</a></p>
+<h1 id="indice-remissivo-seletivo">Índice remissivo seletivo</h1>
+<p><strong>abdução</strong>, 7, 26; <strong>aceleração</strong>, 14, 20, 27; <strong>al-Khwārizmī</strong>, 12; <strong>algoritmo</strong>, 11, 13, 28; <strong>análise dimensional</strong>, 14, Ap. A; <strong>axioma</strong>, 9, 29; <strong>calibração</strong>, 25, 27; <strong>causalidade</strong>, 7, 22; <strong>conceito</strong>, 1, 6; <strong>contraexemplo</strong>, 9, 29; <strong>dedução</strong>, 7–9; <strong>Einstein</strong>, 23, Ap. B; <strong>equação</strong>, 11–16; <strong>evidência</strong>, 6, 22, 26; <strong>Fourier</strong>, 16, Ap. A; <strong>Galileu</strong>, 20, 27; <strong>Grossmann</strong>, 23; <strong>Hilbert</strong>, 23, 29; <strong>hipótese</strong>, 22, 24; <strong>IA</strong>, 29; <strong>Ibn al-Haytham</strong>, 18; <strong>incerteza</strong>, 25–27; <strong>indução</strong>, 7; <strong>instrumento</strong>, 1, 20, 25; <strong>Lean</strong>, 29; <strong>lei</strong>, 21–22; <strong>Maxwell</strong>, 16; <strong>medição</strong>, 1, 25; <strong>Merton</strong>, 19; <strong>modelo</strong>, 1, 14, 22, 28; <strong>Newton</strong>, 16, 21; <strong>objetividade</strong>, 2, 30; <strong>Oresme</strong>, 19; <strong>plano inclinado</strong>, 20, 27; <strong>prova</strong>, 9, 29; <strong>regressão</strong>, 26–27; <strong>replicação</strong>, 24, 27; <strong>resíduo</strong>, 26–27; <strong>simulação</strong>, 28; <strong>teoria</strong>, 22–23; <strong>verdade</strong>, 6, 9.</p>
+<h1 id="referencias">Referências</h1>
+<p><span id="ref-1">[1]</span> HAUSER, Marc D. et al. The Mystery of Language Evolution. <em>Frontiers in Psychology</em>, v. 5, 2014. <a href="https://doi.org/10.3389/fpsyg.2014.00401">DOI</a>.</p>
+<p><span id="ref-2">[2]</span> D’ERRICO, Francesco et al. From Number Sense to Number Symbols: An Archaeological Perspective. <em>Philosophical Transactions of the Royal Society B</em>, v. 373, 1740, 2018. <a href="https://doi.org/10.1098/rstb.2016.0518">DOI</a>.</p>
+<p><span id="ref-3">[3]</span> SCHLAUDT, Oliver. Type and Token in the Prehistoric Origins of Numbers. <em>Cambridge Archaeological Journal</em>, v. 30, n. 4, p. 629-646, 2020. <a href="https://doi.org/10.1017/S0959774320000165">DOI</a>.</p>
+<p><span id="ref-4">[4]</span> SCHMANDT-BESSERAT, Denise. <em>Before Writing. Volume I: From Counting to Cuneiform</em>. Austin: University of Texas Press, 1992. <a href="https://sites.utexas.edu/dsb/tokens/from-accounting-to-writing/">Autora e síntese</a>.</p>
+<p><span id="ref-5">[5]</span> ROBSON, Eleanor. <em>Mathematics in Ancient Iraq: A Social History</em>. Princeton: Princeton University Press, 2008. <a href="https://press.princeton.edu/books/hardcover/9780691091822/mathematics-in-ancient-iraq">Editora</a>.</p>
+<p><span id="ref-6">[6]</span> KATZ, Victor J. <em>A History of Mathematics: An Introduction</em>. 3. ed. Boston: Addison-Wesley, 2009. <a href="https://search.worldcat.org/title/244060368">WorldCat</a>.</p>
+<p><span id="ref-7">[7]</span> HØYRUP, Jens. <em>Lengths, Widths, Surfaces: A Portrait of Old Babylonian Algebra and Its Kin</em>. New York: Springer, 2002. <a href="https://doi.org/10.1007/978-1-4757-3685-4">DOI</a>.</p>
+<p><span id="ref-8">[8]</span> CHACE, Arnold Buffum et al. <em>The Rhind Mathematical Papyrus</em>. Oberlin: Mathematical Association of America, 1927-1929. <a href="https://openlibrary.org/books/OL22228866M/The_Rhind_mathematical_papyrus">Open Library</a>.</p>
+<p><span id="ref-9">[9]</span> BRITISH MUSEUM. Learn Maths from Egyptian Secrets in the Rhind Mathematical Papyrus. London, 2025. <a href="https://www.britishmuseum.org/blog/learn-maths-egyptian-secrets-rhind-mathematical-papyrus">Museu</a>.</p>
+<p><span id="ref-10">[10]</span> NETZ, Reviel. <em>The Shaping of Deduction in Greek Mathematics</em>. Cambridge: Cambridge University Press, 1999. <a href="https://doi.org/10.1017/CBO9780511543296">DOI</a>.</p>
+<p><span id="ref-11">[11]</span> ARISTOTLE. <em>Posterior Analytics</em>. Trad. Jonathan Barnes. 2. ed. Oxford: Clarendon Press, 1994. <a href="https://search.worldcat.org/title/28676917">WorldCat</a>.</p>
+<p><span id="ref-12">[12]</span> EUCLID. <em>The Thirteen Books of the Elements</em>. Trad. Thomas L. Heath. 2. ed. Cambridge: Cambridge University Press, 1926. <a href="https://mathcs.clarku.edu/~djoyce/java/elements/elements.html">Texto digital</a>.</p>
+<p><span id="ref-13">[13]</span> GENSLER, Harry J. <em>Introduction to Logic</em>. 3. ed. New York: Routledge, 2017. <a href="https://www.routledge.com/Introduction-to-Logic/Gensler/p/book/9781138910577">Editora</a>.</p>
+<p><span id="ref-14">[14]</span> HAMMACK, Richard. <em>Book of Proof</em>. 3. ed. Richmond: Virginia Commonwealth University, 2018. <a href="https://www.people.vcu.edu/~rhammack/BookOfProof/">Texto aberto</a>.</p>
+<p><span id="ref-15">[15]</span> VELLEMAN, Daniel J. <em>How to Prove It: A Structured Approach</em>. 3. ed. Cambridge: Cambridge University Press, 2019. <a href="https://doi.org/10.1017/9781108539890">DOI</a>.</p>
+<p><span id="ref-16">[16]</span> LAKATOS, Imre. <em>Proofs and Refutations: The Logic of Mathematical Discovery</em>. Cambridge: Cambridge University Press, 1976. <a href="https://doi.org/10.1017/CBO9781139171472">DOI</a>.</p>
+<p><span id="ref-17">[17]</span> HORSTEN, Leon. Philosophy of Mathematics. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/philosophy-mathematics/">Verbete</a>.</p>
+<p><span id="ref-18">[18]</span> BALAGUER, Mark. Platonism in Metaphysics. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/platonism/">Verbete</a>.</p>
+<p><span id="ref-19">[19]</span> BUENO, Otávio. Nominalism in the Philosophy of Mathematics. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/nominalism-mathematics/">Verbete</a>.</p>
+<p><span id="ref-20">[20]</span> SHAPIRO, Stewart. <em>Philosophy of Mathematics: Structure and Ontology</em>. New York: Oxford University Press, 1997. <a href="https://global.oup.com/academic/product/philosophy-of-mathematics-9780195139303">Editora</a>.</p>
+<p><span id="ref-21">[21]</span> WIGNER, Eugene P. The Unreasonable Effectiveness of Mathematics in the Natural Sciences. <em>Communications on Pure and Applied Mathematics</em>, v. 13, n. 1, p. 1-14, 1960. <a href="https://doi.org/10.1002/cpa.3160130102">DOI</a>.</p>
+<p><span id="ref-22">[22]</span> HAMMING, Richard W. The Unreasonable Effectiveness of Mathematics. <em>American Mathematical Monthly</em>, v. 87, n. 2, p. 81-90, 1980. <a href="https://www.jstor.org/stable/2321982">JSTOR</a>.</p>
+<p><span id="ref-23">[23]</span> FRIGG, Roman; HARTMANN, Stephan. Models in Science. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/models-science/">Verbete</a>.</p>
+<p><span id="ref-24">[24]</span> REISS, Julian; SPRENGER, Jan. Scientific Objectivity. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, 2020. <a href="https://plato.stanford.edu/entries/scientific-objectivity/">Verbete</a>.</p>
+<p><span id="ref-25">[25]</span> BOYD, Nora Mills; BOGEN, James. Theory and Observation in Science. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/science-theory-observation/">Verbete</a>.</p>
+<p><span id="ref-26">[26]</span> TAL, Eran. Measurement in Science. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/measurement-science/">Verbete</a>.</p>
+<p><span id="ref-27">[27]</span> WINTHER, Rasmus Grønfeldt. The Structure of Scientific Theories. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, revisão contínua. <a href="https://plato.stanford.edu/entries/structure-scientific-theories/">Verbete</a>.</p>
+<p><span id="ref-28">[28]</span> GODFREY-SMITH, Peter. <em>Theory and Reality: An Introduction to the Philosophy of Science</em>. 2. ed. Chicago: University of Chicago Press, 2021. <a href="https://press.uchicago.edu/ucp/books/book/chicago/T/bo37447570.html">Editora</a>.</p>
+<p><span id="ref-29">[29]</span> CHALMERS, Alan F. <em>What Is This Thing Called Science?</em> 4. ed. Indianapolis: Hackett, 2013. <a href="https://hackettpublishing.com/what-is-this-thing-called-science-fourth-edition">Editora</a>.</p>
+<p><span id="ref-30">[30]</span> POPPER, Karl. <em>The Logic of Scientific Discovery</em>. London: Hutchinson, 1959 [original alemão de 1934]. <a href="https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447">Editora</a>.</p>
+<p><span id="ref-31">[31]</span> KUHN, Thomas S. <em>The Structure of Scientific Revolutions</em>. 4. ed. Chicago: University of Chicago Press, 2012 [original de 1962]. <a href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html">Editora</a>.</p>
+<p><span id="ref-32">[32]</span> NATIONAL ACADEMY OF SCIENCES; INSTITUTE OF MEDICINE. <em>Science, Evolution, and Creationism</em>. Washington, DC: National Academies Press, 2008. <a href="https://doi.org/10.17226/11876">DOI e texto aberto</a>.</p>
+<p><span id="ref-33">[33]</span> NATIONAL ACADEMIES OF SCIENCES, ENGINEERING, AND MEDICINE. <em>Reproducibility and Replicability in Science</em>. Washington, DC: National Academies Press, 2019. <a href="https://doi.org/10.17226/25303">DOI e texto aberto</a>.</p>
+<p><span id="ref-34">[34]</span> NATIONAL RESEARCH COUNCIL. <em>Taking Science to School: Learning and Teaching Science in Grades K-8</em>. Washington, DC: National Academies Press, 2007. <a href="https://doi.org/10.17226/11625">DOI e texto aberto</a>.</p>
+<p><span id="ref-35">[35]</span> FRANKLIN, Allan; PEROVIC, Slobodan. Experiment in Physics. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, 2023. <a href="https://plato.stanford.edu/entries/physics-experiment/">Verbete</a>.</p>
+<p><span id="ref-36">[36]</span> AL-KHWĀRIZMĪ, Muḥammad ibn Mūsā. <em>The Algebra of Mohammed ben Musa</em>. Trad. Frederic Rosen. London: Oriental Translation Fund, 1831. <a href="https://archive.org/details/algebraofmohamme00khuwrich">Internet Archive</a>.</p>
+<p><span id="ref-37">[37]</span> KATZ, Victor J.; PARSHALL, Karen Hunger. Diophantus. In: <em>Oxford Classical Dictionary</em>. Oxford: Oxford University Press, revisão contínua. <a href="https://doi.org/10.1093/acrefore/9780199381135.013.2229">Verbete</a>.</p>
+<p><span id="ref-38">[38]</span> CAJORI, Florian. <em>A History of Mathematical Notations</em>. 2 v. Chicago: Open Court, 1928-1929. <a href="https://archive.org/details/b29980343_0001">Internet Archive</a>.</p>
+<p><span id="ref-39">[39]</span> RECORDE, Robert. <em>The Whetstone of Witte</em>. London: John Kyngstone, 1557. <a href="https://www.caltech.edu/about/news/question-week-who-invented-equal-sign-and-why-171">Descrição histórica - Caltech</a>.</p>
+<p><span id="ref-40">[40]</span> HUFFMAN, Carl. Archytas. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab. <a href="https://plato.stanford.edu/archives/win2016/entries/archytas/">Verbete arquivado</a>.</p>
+<p><span id="ref-41">[41]</span> MATTHEW, Christopher Anthony. <em>Eratosthenes and the Measurement of the Earth’s Circumference (c. 230 BC)</em>. Oxford: Oxford University Press, 2023. <a href="https://global.oup.com/academic/product/eratosthenes-and-the-measurement-of-the-earths-circumference-c230-bc-9780198874317">Editora</a>.</p>
+<p><span id="ref-42">[42]</span> ARCHIMEDES. <em>The Works of Archimedes</em>. Ed. e trad. T. L. Heath. Cambridge: Cambridge University Press, 1897. <a href="https://archive.org/details/worksofarchimede029517mbp">Internet Archive</a>.</p>
+<p><span id="ref-43">[43]</span> PTOLEMY. <em>Ptolemy’s Almagest</em>. Trad. G. J. Toomer. Princeton: Princeton University Press, 1998. <a href="https://press.princeton.edu/books/paperback/9780691002606/ptolemys-almagest">Editora</a>.</p>
+<p><span id="ref-44">[44]</span> SALIBA, George. <em>Islamic Science and the Making of the European Renaissance</em>. Cambridge, MA: MIT Press, 2007. <a href="https://mitpress.mit.edu/9780262516150/islamic-science-and-the-making-of-the-european-renaissance/">Editora</a>.</p>
+<p><span id="ref-45">[45]</span> IBN AL-HAYTHAM. <em>The Optics of Ibn al-Haytham: Books I-III</em>. Trad. A. I. Sabra. London: Warburg Institute, 1989. <a href="https://search.worldcat.org/title/18352576">WorldCat</a>.</p>
+<p><span id="ref-46">[46]</span> LINDBERG, David C. <em>The Beginnings of Western Science</em>. 2. ed. Chicago: University of Chicago Press, 2007. <a href="https://press.uchicago.edu/ucp/books/book/chicago/B/bo5550077.html">Editora</a>.</p>
+<p><span id="ref-47">[47]</span> GRANT, Edward (org.). <em>A Source Book in Medieval Science</em>. Cambridge, MA: Harvard University Press, 1974. <a href="https://search.worldcat.org/title/A-source-book-in-medieval-science/oclc/1501424063">WorldCat</a>.</p>
+<p><span id="ref-48">[48]</span> SYLLA, Edith Dudley. The Oxford Calculators’ Middle Degree Theorem in Context. <em>Early Science and Medicine</em>, v. 15, n. 4/5, p. 338-370, 2010. <a href="https://www.jstor.org/stable/20787421">JSTOR</a>.</p>
+<p><span id="ref-49">[49]</span> HANKE, Miroslav. William Heytesbury. In: <em>Stanford Encyclopedia of Philosophy</em>. Stanford: Metaphysics Research Lab, 2018. <a href="https://plato.stanford.edu/entries/heytesbury/">Verbete</a>.</p>
+<p><span id="ref-50">[50]</span> CLAGETT, Marshall. <em>The Science of Mechanics in the Middle Ages</em>. Madison: University of Wisconsin Press, 1959. <a href="https://archive.org/details/scienceofmechani0000clag">Internet Archive</a>.</p>
+<p><span id="ref-51">[51]</span> GALILEI, Galileo. <em>Discourses and Mathematical Demonstrations Relating to Two New Sciences</em>. Trad. Henry Crew; Alfonso de Salvio. New York: Macmillan, 1914 [original de 1638]. <a href="https://galileoandeinstein.physics.virginia.edu/tns_draft/index.html">Texto</a>.</p>
+<p><span id="ref-52">[52]</span> STRAULINO, S. Reconstruction of Galileo Galilei’s Experiment: The Inclined Plane. <em>Physics Education</em>, v. 43, n. 3, p. 316-321, 2008. <a href="https://doi.org/10.1088/0031-9120/43/3/012">DOI</a>.</p>
+<p><span id="ref-53">[53]</span> NEWTON, Isaac. <em>The Principia: Mathematical Principles of Natural Philosophy</em>. Trad. I. Bernard Cohen; Anne Whitman. Berkeley: University of California Press, 1999 [original de 1687]. <a href="https://www.newtonproject.ox.ac.uk/">Newton Project</a>.</p>
+<p><span id="ref-54">[54]</span> FOURIER, Joseph. <em>The Analytical Theory of Heat</em>. Trad. Alexander Freeman. Cambridge: Cambridge University Press, 1878 [original francês de 1822]. <a href="https://archive.org/details/analyticaltheory00fourrich">Internet Archive</a>.</p>
+<p><span id="ref-55">[55]</span> NARASIMHAN, T. N. Fourier’s Heat Conduction Equation: History, Influence, and Connections. <em>Proceedings of the Indian Academy of Sciences - Earth and Planetary Sciences</em>, v. 108, n. 3, p. 117-148, 1999. <a href="https://www.ias.ac.in/public/Volumes/jess/108/03/0117-0148.pdf">Texto</a>.</p>
+<p><span id="ref-56">[56]</span> MAXWELL, James Clerk. <em>A Treatise on Electricity and Magnetism</em>. Oxford: Clarendon Press, 1873. <a href="https://archive.org/details/treatiseonelectr01maxwrich">Internet Archive</a>.</p>
+<p><span id="ref-57">[57]</span> EINSTEIN, Albert. On the Electrodynamics of Moving Bodies. <em>Annalen der Physik</em>, v. 17, p. 891-921, 1905. <a href="https://einsteinpapers.press.princeton.edu/vol2-trans/154">Tradução - Einstein Papers Project</a>.</p>
+<p><span id="ref-58">[58]</span> EINSTEIN, Albert; GROSSMANN, Marcel. <em>Entwurf einer verallgemeinerten Relativitätstheorie und einer Theorie der Gravitation</em>. Leipzig: Teubner, 1913. <a href="https://einsteinpapers.press.princeton.edu/vol4-doc/192">Einstein Papers Project</a>.</p>
+<p><span id="ref-59">[59]</span> EINSTEIN, Albert. Die Feldgleichungen der Gravitation. <em>Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften</em>, p. 844-847, 1915. <a href="https://einsteinpapers.press.princeton.edu/vol6-doc/110">Einstein Papers Project</a>.</p>
+<p><span id="ref-60">[60]</span> JANSSEN, Michel; RENN, Jürgen. <em>How Einstein Found His Field Equations: Sources and Interpretation</em>. Cham: Springer, 2022. <a href="https://doi.org/10.1007/978-3-030-97955-3">DOI</a>.</p>
+<p><span id="ref-61">[61]</span> DYSON, F. W.; EDDINGTON, A. S.; DAVIDSON, C. A Determination of the Deflection of Light by the Sun’s Gravitational Field, from Observations Made at the Total Eclipse of May 29, 1919. <em>Philosophical Transactions of the Royal Society A</em>, v. 220, p. 291-333, 1920. <a href="https://doi.org/10.1098/rsta.1920.0009">DOI</a>.</p>
+<p><span id="ref-62">[62]</span> ABBOTT, B. P. et al. Observation of Gravitational Waves from a Binary Black Hole Merger. <em>Physical Review Letters</em>, v. 116, 061102, 2016. <a href="https://doi.org/10.1103/PhysRevLett.116.061102">DOI</a>.</p>
+<p><span id="ref-63">[63]</span> GIERE, Ronald N. <em>Scientific Perspectivism</em>. Chicago: University of Chicago Press, 2006. <a href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo4094708.html">Editora</a>.</p>
+<p><span id="ref-64">[64]</span> WEISBERG, Michael. <em>Simulation and Similarity: Using Models to Understand the World</em>. Oxford: Oxford University Press, 2013. <a href="https://global.oup.com/academic/product/simulation-and-similarity-9780199933662">Editora</a>.</p>
+<p><span id="ref-65">[65]</span> PINCOCK, Christopher. <em>Mathematics and Scientific Representation</em>. Oxford: Oxford University Press, 2012. <a href="https://global.oup.com/academic/product/mathematics-and-scientific-representation-9780190201395">Editora</a>.</p>
+<p><span id="ref-66">[66]</span> MONTGOMERY, Douglas C. <em>Design and Analysis of Experiments</em>. 10. ed. Hoboken: Wiley, 2019. <a href="https://www.wiley.com/en-us/Design+and+Analysis+of+Experiments%2C+10th+Edition-p-9781119492443">Editora</a>.</p>
+<p><span id="ref-67">[67]</span> TAYLOR, John R. <em>An Introduction to Error Analysis</em>. 2. ed. Sausalito: University Science Books, 1997. <a href="https://search.worldcat.org/title/34704921">WorldCat</a>.</p>
+<p><span id="ref-68">[68]</span> GELMAN, Andrew; HILL, Jennifer; VEHTARI, Aki. <em>Regression and Other Stories</em>. Cambridge: Cambridge University Press, 2020. <a href="https://avehtari.github.io/ROS-Examples/">Recursos</a>.</p>
+<p><span id="ref-69">[69]</span> NATIONAL ACADEMIES OF SCIENCES, ENGINEERING, AND MEDICINE. <em>Reference Manual on Scientific Evidence</em>. 4. ed. Washington, DC: National Academies Press, 2025. <a href="https://www.nationalacademies.org/read/26919/">Texto</a>.</p>
+<p><span id="ref-70">[70]</span> HOEHN, Jessica R. et al. Investigating Undergraduate Students’ Views about the Process of Experimental Physics. <em>Physical Review Physics Education Research</em>, v. 18, 020146, 2022. <a href="https://doi.org/10.1103/PhysRevPhysEducRes.18.020146">DOI</a>.</p>
+<p><span id="ref-71">[71]</span> HALES, Thomas et al. A Formal Proof of the Kepler Conjecture. <em>Forum of Mathematics, Pi</em>, v. 5, e2, 2017. <a href="https://doi.org/10.1017/fmp.2017.1">DOI</a>.</p>
+<p><span id="ref-72">[72]</span> LEAN COMMUNITY. <em>Theorem Proving in Lean 4</em>. 2026. <a href="https://lean-lang.org/theorem_proving_in_lean4/Introduction/">Documentação oficial</a>.</p>
+<p><span id="ref-73">[73]</span> HUBERT, Thomas et al. Olympiad-Level Formal Mathematical Reasoning with Reinforcement Learning. <em>Nature</em>, v. 651, p. 607-613, 2026 [publicado on-line em 2025]. <a href="https://doi.org/10.1038/s41586-025-09833-y">DOI</a>.</p>
+<p><span id="ref-74">[74]</span> OPENAI. An OpenAI Model Has Disproved a Central Conjecture in Discrete Geometry. 20 maio 2026. <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">Relato e materiais</a>.</p>
+<p><span id="ref-75">[75]</span> THE TURING WAY COMMUNITY. <em>The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Data Science</em>. 2019-. <a href="https://the-turing-way.netlify.app/">Manual aberto</a>.</p>
+<p><span id="ref-76">[76]</span> SHANNON, Claude E. A Mathematical Theory of Communication. <em>Bell System Technical Journal</em>, v. 27, p. 379-423 e 623-656, 1948. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">DOI</a>.</p>
+<p><span id="ref-77">[77]</span> FREGE, Gottlob. <em>The Foundations of Arithmetic</em>. Trad. J. L. Austin. Oxford: Basil Blackwell, 1950 [original de 1884]. <a href="https://archive.org/details/foundationsofari0000freg">Internet Archive</a>.</p>
+<p><span id="ref-78">[78]</span> HILBERT, David. <em>The Foundations of Geometry</em>. Trad. E. J. Townsend. Chicago: Open Court, 1902 [original alemão de 1899]. <a href="https://www.gutenberg.org/ebooks/17384">Project Gutenberg</a>.</p>
+<p><span id="ref-79">[79]</span> GÖDEL, Kurt. On Formally Undecidable Propositions of <em>Principia Mathematica</em> and Related Systems I. In: HEIJENOORT, Jean van (org.). <em>From Frege to Gödel</em>. Cambridge, MA: Harvard University Press, 1967 [original de 1931]. <a href="https://search.worldcat.org/title/523247">WorldCat</a>.</p>
+<p><span id="ref-80">[80]</span> TURING, Alan M. On Computable Numbers, with an Application to the Entscheidungsproblem. <em>Proceedings of the London Mathematical Society</em>, s. 2, v. 42, p. 230-265, 1936. <a href="https://doi.org/10.1112/plms/s2-42.1.230">DOI</a>.</p>
+<p><span id="ref-81">[81]</span> JOINT COMMITTEE FOR GUIDES IN METROLOGY. <em>International Vocabulary of Metrology — Basic and General Concepts and Associated Terms (VIM)</em>. 3. ed. JCGM 200:2012. <a href="https://doi.org/10.59161/JCGM200-2012">DOI</a>.</p>
+<p><span id="ref-82">[82]</span> JOINT COMMITTEE FOR GUIDES IN METROLOGY. Measurement uncertainty, VIM 2.26. In: <em>Annotated VIM3</em>. <a href="https://jcgm.bipm.org/vim/en/2.26.html">Definição oficial</a>.</p>
+<p><span id="ref-83">[83]</span> JOINT COMMITTEE FOR GUIDES IN METROLOGY. <em>Guide to the Expression of Uncertainty in Measurement — Part 1: Introduction</em>. JCGM GUM-1:2023. <a href="https://doi.org/10.59161/JCGMGUM-1-2023">DOI</a>.</p>
+<p><span id="ref-84">[84]</span> PLOFKER, Kim. <em>Mathematics in India</em>. Princeton: Princeton University Press, 2009. <a href="https://press.princeton.edu/books/hardcover/9780691120676/mathematics-in-india">Editora</a>.</p>
+<p><span id="ref-85">[85]</span> CHEMLA, Karine; GUO, Shuchun. <em>The Nine Chapters on the Mathematical Art: Companion and Commentary</em>. Oxford: Oxford University Press, 2004. <a href="https://search.worldcat.org/title/54079646">WorldCat</a>.</p>
+<p><span id="ref-86">[86]</span> NEEDHAM, Joseph; WANG, Ling. <em>Science and Civilisation in China. Volume 3: Mathematics and the Sciences of the Heavens and the Earth</em>. Cambridge: Cambridge University Press, 1959. <a href="https://wellcomecollection.org/works/a79zbnkg">Registro bibliográfico</a>.</p>
+<p><span id="ref-87">[87]</span> ROCHBERG, Francesca. <em>Before Nature: Cuneiform Knowledge and the History of Science</em>. Chicago: University of Chicago Press, 2016. <a href="https://press.uchicago.edu/ucp/books/book/chicago/B/bo24663151.html">Editora</a>.</p>
+<p><span id="ref-88">[88]</span> IMHAUSEN, Annette. <em>Mathematics in Ancient Egypt: A Contextual History</em>. Princeton: Princeton University Press, 2016. <a href="https://press.princeton.edu/books/hardcover/9780691117133/mathematics-in-ancient-egypt">Editora</a>.</p>
+<p><span id="ref-89">[89]</span> RAGEP, F. Jamil. Islamic Culture and the Natural Sciences. In: LINDBERG, David C.; SHANK, Michael H. (org.). <em>The Cambridge History of Science, v. 2: Medieval Science</em>. Cambridge: Cambridge University Press, 2013, p. 27–61. <a href="https://doi.org/10.1017/CHO9780511974007.003">DOI</a>.</p>
+<p><span id="ref-90">[90]</span> QIDWAI, Sarah. History of Science, Religion and the “Big Picture”. <em>BJHS Themes</em>, v. 9, p. 183–194, 2024. <a href="https://doi.org/10.1017/bjt.2024.25">DOI</a>.</p>
+<p><span id="ref-91">[91]</span> NORTON, John D. General Covariance and the Foundations of General Relativity: Eight Decades of Dispute. <em>Reports on Progress in Physics</em>, v. 56, p. 791–858, 1993. <a href="https://doi.org/10.1088/0034-4885/56/7/001">DOI</a>.</p>
+<p><span id="ref-92">[92]</span> HOWARD, Don; STACHEL, John (org.). <em>Einstein and the History of General Relativity</em>. Boston: Birkhäuser, 1989. <a href="https://link.springer.com/book/9780817633929">Editora</a>.</p>
+<p><span id="ref-93">[93]</span> CORRY, Leo; RENN, Jürgen; STACHEL, John. Belated Decision in the Hilbert–Einstein Priority Dispute. <em>Science</em>, v. 278, p. 1270–1273, 1997. <a href="https://doi.org/10.1126/science.278.5341.1270">DOI</a>.</p>
+<p><span id="ref-94">[94]</span> HILBERT, David. Die Grundlagen der Physik (Erste Mitteilung). <em>Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen</em>, 1915, p. 395–407. <a href="https://eudml.org/doc/59046">GDZ</a>.</p>
+<p><span id="ref-95">[95]</span> DE MOURA, Leonardo; ULLRICH, Sebastian. The Lean 4 Theorem Prover and Programming Language. In: PELLEGRINI, E. et al. (org.). <em>Automated Deduction — CADE 28</em>. LNCS 12699. Cham: Springer, 2021, p. 625–635. <a href="https://doi.org/10.1007/978-3-030-79876-5_37">DOI</a>.</p>
+<p><span id="ref-96">[96]</span> OPENAI. Ten Advances in Mathematics and Theoretical Computer Science. 1 ago. 2026. <a href="https://openai.com/index/ten-advances-in-mathematics/">Relato e materiais técnicos</a>. Fonte institucional primária; estado editorial deve ser verificado por resultado.</p>
+<p><span id="ref-97">[97]</span> JOINT COMMITTEE FOR GUIDES IN METROLOGY. <em>Guide to the Expression of Uncertainty in Measurement — Part 5: Examples</em>. JCGM GUM-5:2026. <a href="https://doi.org/10.59161/YNLY8209">DOI</a>.</p>
+<h1 id="bibliografia-comentada-por-nivel">Bibliografia comentada por nível</h1>
+<h2 id="entrada-compreender-distincoes">Entrada — compreender distinções</h2>
+<ul>
+<li>GODFREY-SMITH, <em>Theory and Reality</em>. Porta de entrada equilibrada para teorias, evidência e mudança científica.</li>
+<li>HAMMACK, <em>Book of Proof</em>. Introdução aberta à escrita e leitura de provas.</li>
+<li>NATIONAL ACADEMIES, <em>Reproducibility and Replicability in Science</em>. Vocabulário institucional e estudos de caso.</li>
+<li>GELMAN; HILL; VEHTARI, <em>Regression and Other Stories</em>. Estatística orientada por modelos e problemas reais.</li>
+</ul>
+<h2 id="intermediario-historia-e-modelagem">Intermediário — história e modelagem</h2>
+<ul>
+<li>ROBSON, <em>Mathematics in Ancient Iraq</em>. Mostra por que contexto social muda a leitura de tábuas.</li>
+<li>PLOFKER, <em>Mathematics in India</em>. Corrige narrativas que reduzem Índia a “transmissora do zero”.</li>
+<li>CHEMLA; GUO, <em>The Nine Chapters</em>. Procedimentos e comentários como prática matemática.</li>
+<li>SALIBA, <em>Islamic Science and the Making of the European Renaissance</em>. Circulação e transformação, com tese historiográfica explícita.</li>
+<li>WEISBERG, <em>Simulation and Similarity</em>. Modelos e simulações sem confundi-los com o alvo.</li>
+<li>TAYLOR, <em>An Introduction to Error Analysis</em>. Introdução física clássica; complementar com o VIM/GUM para terminologia metrológica.</li>
+</ul>
+<h2 id="avancado-fontes-e-debates">Avançado — fontes e debates</h2>
+<ul>
+<li>NETZ, <em>The Shaping of Deduction in Greek Mathematics</em>. Forma textual e prática da dedução.</li>
+<li>SYLLA, “The Oxford Calculators’ Middle Degree Theorem in Context”. Evita a genealogia linear Merton–Galileu.</li>
+<li>SABRA, tradução e estudo da <em>Óptica</em> de Ibn al-Haytham. Fonte fundamental, tecnicamente exigente.</li>
+<li>JANSSEN; RENN, <em>How Einstein Found His Field Equations</em>. Reconstrução documental detalhada.</li>
+<li>JCGM, VIM e GUM. Vocabulário e estrutura normativa para medição e incerteza.</li>
+<li>HALES et al., “A Formal Proof of the Kepler Conjecture”; HUBERT et al., AlphaProof. Leitura conjunta para separar busca, formalização e verificação.</li>
+</ul></main></body></html>
