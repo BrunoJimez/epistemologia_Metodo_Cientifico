@@ -1,0 +1,17 @@
+{
+  "status": "DADOS SIMULADOS",
+  "arquivo": "dados-simulados.csv",
+  "n": 40,
+  "modelo_linear": {
+    "intercepto_m": -0.48184820068793954,
+    "coef_m_s": 1.2781760405103255,
+    "rmse_m": 0.034276574824918506
+  },
+  "modelo_quadratico": {
+    "intercepto_m": 0.0014698257359917477,
+    "coef_m_s2": 0.7827593094802455,
+    "aceleracao_estimada_m_s2": 1.565518618960491,
+    "rmse_m": 0.015728751210473672
+  },
+  "interpretacao": "Comparação didática; não constitui medição real ou histórica."
+}

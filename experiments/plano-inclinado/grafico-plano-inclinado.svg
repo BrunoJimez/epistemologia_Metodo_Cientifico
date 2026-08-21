@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img">
+<title>Posição contra tempo ao quadrado — dados simulados</title>
+<desc>Pontos simulados e regressão quadrática linearizada para o plano inclinado.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="100" y1="530" x2="950" y2="530" stroke="#172554" stroke-width="3"/>
+<line x1="100" y1="70" x2="100" y2="530" stroke="#172554" stroke-width="3"/>
+<text x="500" y="35" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700">PLANO INCLINADO — DADOS SIMULADOS</text>
+<text x="500" y="595" text-anchor="middle" font-family="Arial" font-size="22">t² (s²)</text>
+<text x="28" y="300" text-anchor="middle" transform="rotate(-90 28 300)" font-family="Arial" font-size="22">posição s (m)</text>
+<line x1="100.0" y1="529.373963112448" x2="950.0" y2="61.187524166632215" stroke="#ea580c" stroke-width="5"/>
+<circle cx="247.11" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="252.54" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="258.05" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="254.98" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="262.41" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="249.51" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="256.82" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="258.67" cy="444.81" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="394.90" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="405.99" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="415.53" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="410.30" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="421.68" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="400.84" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="412.04" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="407.71" cy="359.63" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="543.52" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="557.09" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="569.80" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="563.42" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="582.69" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="549.76" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="566.61" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="558.14" cy="274.44" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="694.44" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="710.14" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="730.98" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="721.13" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="742.15" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="702.87" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="724.81" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="716.23" cy="189.26" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="843.09" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="860.63" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="885.25" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="875.63" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="901.89" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="852.51" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="881.12" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<circle cx="870.16" cy="104.07" r="5" fill="#2563eb" opacity="0.72"/>
+<text x="120" y="105" font-family="Arial" font-size="18">s = 0.0015 + 0.7828 t²</text>
+</svg>
