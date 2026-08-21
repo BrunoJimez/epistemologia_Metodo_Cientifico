@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Framework geral da investigação científica</title>
+  <desc id="desc">Doze etapas em ciclo, do fenômeno à crítica e revisão, com retornos para pergunta, modelo e instrumento.</desc>
+  <defs>
+    <style>.bg{fill:#f8fafc}.box{fill:#fff;stroke:#173f6b;stroke-width:3;rx:14}.n{fill:#0f766e}.num{font:700 20px Arial;fill:#fff}.t{font:600 19px Arial;fill:#172033}.small{font:16px Arial;fill:#334e68}.arrow{stroke:#c2410c;stroke-width:4;fill:none;marker-end:url(#m)}.return{stroke:#64748b;stroke-width:3;stroke-dasharray:9 7;fill:none;marker-end:url(#g)}</style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c2410c"/></marker>
+    <marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="760"/>
+  <text x="600" y="42" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#173f6b">INVESTIGAÇÃO COMO CICLO CORRIGÍVEL</text>
+  <g transform="translate(55 80)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">1</text><text class="t" x="55" y="31">Fenômeno</text><text class="small" x="55" y="57">problema e contexto</text></g>
+  <g transform="translate(355 80)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">2</text><text class="t" x="55" y="31">Pergunta</text><text class="small" x="55" y="57">escopo e contraste</text></g>
+  <g transform="translate(655 80)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">3</text><text class="t" x="55" y="31">Conceitos</text><text class="small" x="55" y="57">definições operacionais</text></g>
+  <g transform="translate(955 80)"><rect class="box" width="190" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">4</text><text class="t" x="55" y="31">Hipóteses</text><text class="small" x="55" y="57">e rivais</text></g>
+  <g transform="translate(955 235)"><rect class="box" width="190" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">5</text><text class="t" x="55" y="31">Modelo</text><text class="small" x="55" y="57">idealizações</text></g>
+  <g transform="translate(655 235)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">6</text><text class="t" x="55" y="31">Matemática</text><text class="small" x="55" y="57">derivação e parâmetros</text></g>
+  <g transform="translate(355 235)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">7</text><text class="t" x="55" y="31">Previsão</text><text class="small" x="55" y="57">ou retrodicção</text></g>
+  <g transform="translate(55 235)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">8</text><text class="t" x="55" y="31">Desenho</text><text class="small" x="55" y="57">controles e pré-registro</text></g>
+  <g transform="translate(55 390)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">9</text><text class="t" x="55" y="31">Instrumento</text><text class="small" x="55" y="57">calibração e medição</text></g>
+  <g transform="translate(355 390)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">10</text><text class="t" x="60" y="31">Dados</text><text class="small" x="60" y="57">metadados e incerteza</text></g>
+  <g transform="translate(655 390)"><rect class="box" width="250" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">11</text><text class="t" x="60" y="31">Confronto</text><text class="small" x="60" y="57">estatística e resíduos</text></g>
+  <g transform="translate(955 390)"><rect class="box" width="190" height="82"/><circle class="n" cx="28" cy="28" r="20"/><text class="num" x="28" y="35" text-anchor="middle">12</text><text class="t" x="60" y="31">Crítica</text><text class="small" x="60" y="57">replicar e revisar</text></g>
+  <path class="arrow" d="M305 121H345"/><path class="arrow" d="M605 121H645"/><path class="arrow" d="M905 121H945"/><path class="arrow" d="M1050 162V225"/>
+  <path class="arrow" d="M955 276H915"/><path class="arrow" d="M655 276H615"/><path class="arrow" d="M355 276H315"/><path class="arrow" d="M180 317V380"/>
+  <path class="arrow" d="M305 431H345"/><path class="arrow" d="M605 431H645"/><path class="arrow" d="M905 431H945"/>
+  <path class="return" d="M1050 472V560C1050 620 780 640 780 482"/><text x="900" y="610" font-family="Arial" font-size="17" fill="#475569">resíduos retornam ao modelo</text>
+  <path class="return" d="M1025 472V690H180V482"/><text x="500" y="716" font-family="Arial" font-size="17" fill="#475569">crítica também retorna a instrumento, pergunta e conceitos</text>
+  <path class="return" d="M1040 235V195H480V170"/><text x="650" y="190" font-family="Arial" font-size="16" fill="#475569">modelar pode reformular a pergunta</text>
+</svg>
